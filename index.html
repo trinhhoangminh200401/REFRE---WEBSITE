@@ -18,10 +18,11 @@
             integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./css/style.css">
-        <title>Document</title>
+        <link rel="stylesheet" href="./css/reponsive.css">
+        <title>Document</title> 
     </head>
-    <header class="py-2 header-container">
-        <nav class=" navbar-expand-lg header-container__navigation ">
+    <header class="py-2 header-container ">
+        <nav class="navbar-expand-lg header-container__navigation ">
             <div
                 class="d-flex justify-content-center  align-items-center  navigation">
                 <a class="navbar-brand navigation__logo" href="#"><img
@@ -31,7 +32,7 @@
                     id="navbarSupportedContent">
                     <div class="collapse navbar-collapse ">
                         <ul
-                            class="navbar-nav  fw-bold d-flex justify-content-between mx-auto ">
+                            class="navbar-nav  fw-bold d-flex justify-content-between ">
                             <li class="nav-item navbar-nav__item ">
                                 <a class="nav-link active" aria-current="page"
                                     href="#">Về Refre</a>
@@ -53,9 +54,13 @@
                         </div>
 
                     </div>
-                    <a class="navbar-brand navigation__logo" href="#"><img
+                    <a class="navbar-brand navigation__logo d-block d-md-none" href="#"><img
                             class="rounded-circle img2 lazy banner fade-in"
                             data-src="./assets/images/SaleLogo.jpg" alt></a>
+                </div>
+                <div class="navbar-icon-bar navbar-logo">
+                    <span class="navbar-toggler-icon"></span>
+
                 </div>
             </nav>
 
@@ -64,10 +69,10 @@
         <body class="lazy" data-loader="customLoaderName">
 
             <div class="banner">
-                <!-- Replace your image tags with lazy loading and fade-in animation -->
+             
                 <img data-src="./assets/images/1 top banner.png"
                     class="lazy banner fade-in" alt="banner">
-                <!-- Update other image tags similarly -->
+             
 
             </div>
             <div class="best-seller">
@@ -75,15 +80,14 @@
                     <img src="./assets/images/headline 2.png"
                         alt="Product Seller">
                 </div>
-
                 <div class="container-carousel">
                     <div id="carouselExampleControls" class="carousel slide "
                         data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div
-                                class="carousel-item active row   d-flex justify-content-center">
+                                class="carousel-item active row d-flex justify-content-center">
                                 <div
-                                    class="card card-purple col-lg-2     col-sm-6 col-md-4 my-sm-2 my-md-2 my-lg-2 ">
+                                    class="card card-purple col-lg-2  col-sm-6 col-md-4">
                                     <p
                                         class="card-title purple-category my-4">Dạng
                                         xịt</p>
@@ -199,8 +203,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="recipe">
-                    <div class="recipe-container  w-100">
+               
+             <div class="recipe">
+                    <div class="recipe-container row w-100">
                     <div class="recipe-item col-xl-4 mx-auto">
                         <img src="/assets/images/48h.png "  class="icon-circle" alt=""/>
                         <h5 class="text-center my-4">48H giảm tiết mồ hôi hiệu quả</h5>
@@ -215,7 +220,7 @@
                         <img src="./assets/images/Cong thuc_text.png" class="icon-image" alt />
 
                     </div>
-                    <div class="recipe-item col-xl-4  mx-auto">
+                    <div class="recipe-item col-xl-4 mx-auto">
                         <img src="./assets/images/24h.png" class="icon-circle" alt />
                         <h5 class="text-center my-4">24H Khử mùi cơ thể</h5>
 
@@ -235,9 +240,8 @@
                 <p>* Theo kết quả thử nghiệm thực hiện bởi PT Equilab International, Indonesia vào 11/2022.
                 </p>
                 <p> ** Theo kết quả thử nghiệm thực hiện bởi DRC (ThaiLand) Co., Ltd. vào 10/2022.</p>
-                </div>
-                <div class="product">
-
+                </div>              -->
+               <div class="product">
                     <div class="headline">
                         <img src="./assets/images/headline.png" alt>
                     </div>
@@ -249,7 +253,7 @@
                                 <div
                                     class="carousel-item active row  d-flex justify-content-center">
                                     <div
-                                        class="card-product-item card col-lg-5 col-sm-12 col-xl-5">
+                                        class="card-product-item card col-lg-5 col-sm-6 col-xl-5">
                                         <img
                                             data-src="./assets/images/Refre12096 copy.png"
                                             class="lazy banner fade-in d-block  w-100"
@@ -273,7 +277,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="card-product-item col-xl-5 col-md-4 card col-sm-12 col-lg-5  ">
+                                        class="card-product-item col-lg-5  col-sm-6  col-xl-5 card   ">
                                         <img
                                             data-src="./assets/images/Refre260500(color blend) copy 2.png"
                                             class="lazy banner fade-in  "
@@ -601,7 +605,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <footer>
                         <div class="container position-relative">
                             <img data-src="/assets/images/Layer 1314.png"
@@ -641,7 +645,7 @@
                                         <p>Chính sách bảo mật </p>
                                         <p>Sitemap</p>
                                     </div>
-                                    <div class="content content4 col-md-3 ">
+                                    <div class="content content4">
                                         <img src="./assets/images/logo.png" />
                                     </div>
                                 </div>

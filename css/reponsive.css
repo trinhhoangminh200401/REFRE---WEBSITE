@@ -1,0 +1,27 @@
+.navbar-logo {
+    display: none; /* Hide by default */
+}
+
+@media (max-width: 767px) {
+    /* Display the icon bar on small screens */
+    .navbar-icon-bar {
+        display: block;
+    }
+
+    /* Hide the logo on small screens */
+    .navbar-logo {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Display the logo on larger screens */
+    .navbar-logo {
+        display: block;
+    }
+
+    /* Hide the icon bar on larger screens */
+    .navbar-icon-bar {
+        display: none;
+    }
+}

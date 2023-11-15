@@ -7,24 +7,30 @@
     font-family: 'Noto Sans JP', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
-html{
-    overflow-x: hidden;
 
+body {
+    background-image: url("../assets/images/backgroundimage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-header {
+header.header-container {
     background-color: #c9cfff;
-
+    width: 100%;
+    
 }
 
-header .header-container__navigation {
+header  .header-container__navigation {
 
-    margin: auto;
-    max-width: 1228px;
+    margin:0 auto;
+   
 }
 
 
-
+header .header-container__navigation .navigation{
+    width: 100%;
+}
 .header-container__navigation .navigation__content .navbar-nav .navbar-nav__item {
     margin: 0 15px;
     color: #000;
@@ -50,12 +56,7 @@ header .header-container__navigation {
 
 }
 
-body.lazy {
-    background-image: url("../assets/images/backgroundimage.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
+
 
 .banner {
 
@@ -169,7 +170,7 @@ body.lazy {
 }
 
 .recipe {
-    width: 80%;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.3);
     margin: 4em auto;
     display: flex;
@@ -442,7 +443,7 @@ footer .container .row h6 {
 }
 
 .content4 img {
-    width: 200px;
+    background-color:#04AA6D ;
 }
 
 .fade-in {
