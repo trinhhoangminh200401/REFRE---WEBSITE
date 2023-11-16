@@ -16,6 +16,7 @@
 
 @media (min-width: 768px) {
     /* Display the logo on larger screens */
+  
     .navbar-logo {
         display: block;
     }
@@ -24,4 +25,17 @@
     .navbar-icon-bar {
         display: none;
     }
+}
+@media (max-width: 500px){
+    .product .owl-carousel  .card-product-item img{
+        height: 25em;
+    }
+    .product .owl-carousel  .card-product-item .card-product-action p{
+        font-size: 18px;
+      
+    }
+    .product .owl-carousel  .card-product-item .card-product-action .button-action .btn{
+        font-size: 12px;
+    }
+    
 }
