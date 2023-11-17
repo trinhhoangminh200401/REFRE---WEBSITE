@@ -65,13 +65,13 @@ header .header-container__navigation .navigation{
 }
 
 .header-container__navigation .navigation__logo img {
-
+    
     object-position: center;
 
 }
 
 .header-container__navigation .navigation__logo .img2 {
-
+    
     object-fit: cover;
     object-position: center;
 
@@ -101,7 +101,7 @@ header .header-container__navigation .navigation{
 
 .best-seller img {
     width: 100%;
-
+    
     object-position: center;
 
 }
@@ -445,7 +445,7 @@ footer .container{
     bottom: 0;
 }
 footer .container .img-footer {
-    width: 15%;
+    width: 15em;
     height: 25%;
 }
 
@@ -479,7 +479,7 @@ footer .container .row h6 {
 .popup {
     top: -200px;
     font-size: 20px;
-    right: 60px;
+    right: 0px;
 
     height: 300px;
     display: flex;

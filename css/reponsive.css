@@ -1,13 +1,15 @@
-.navbar-logo {
-    display: none; /* Hide by default */
-}
+ 
 
 @media (max-width: 767px) {
     /* Display the icon bar on small screens */
+    .headline {
+        margin: 0px auto;
+        width: 100%;
+    }
     .navbar-icon-bar {
         display: block;
     }
-
+   
     /* Hide the logo on small screens */
     .navbar-logo {
         display: none;
@@ -37,5 +39,17 @@
     .product .owl-carousel  .card-product-item .card-product-action .button-action .btn{
         font-size: 12px;
     }
+ 
+    
+}
+@media (max-width: 1000px){
+    .product .youtube{
+        width: 80%;
+        height: 20em;
+
+    }
+   .product .youtube iframe{
+        width: 40em;
+   }
     
 }
