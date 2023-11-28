@@ -406,10 +406,7 @@ body {
 .productList {
     margin-top:5em; 
 }
-.productList .productlist-container{
-    display: flex;
-    justify-content: space-between;
-}
+
 .productList .productlist-container .card-content {
     margin: 0 10px;
     padding-top:12px ;
@@ -481,6 +478,7 @@ body {
 }
 
 .feedback>.container {
+    border-radius: 20px;
 
 
     background-color: rgba(255, 255, 255, 0.3);
@@ -655,9 +653,9 @@ footer .container .row h6 {
 
 }
 .popup {
-    top: -200px;
+    top: -50%;
     font-size: 20px;
-    right: -1.2em;
+    /* right: 1.2em; */
     
     height: 300px;
     display: flex;

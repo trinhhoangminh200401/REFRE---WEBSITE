@@ -193,43 +193,16 @@ header .header-container__navigation .navigation {
 .card-body .btn-green {
     background: linear-gradient(to right, #76be83, #5db36a, #38a041);
 }
-
-.recipe {
-
+.Breakthrough-formula .Breakthrough-formula_container{
     background-color: rgba(255, 255, 255, 0.3);
+    padding: 1em;
+    border-radius: 20px;
 
-
-    padding: 20px 20px;
+}
+.Breakthrough-formula_container img{
+    width: 70%;
 }
 
-.recipe .recipe-container {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    align-items: flex-start;
-}
-
-.recipe .recipe-container .recipe-item {
-    display: flex;
-    padding: 1.2em;
-    align-items: center;
-    flex-direction: column;
-}
-
-.recipe .recipe-container .recipe-item h5 {
-    font-size: 1.4rem;
-    color: #87479c;
-    font-style: italic;
-    font-weight: bolder;
-}
-
-.recipe .recipe-container .recipe-item img {
-    width: 9em;
-}
-
-.recipe .recipe-container .recipe-item .icon-image {
-    width: 22em;
-}
 
 .product {
     width: 100%;
@@ -267,7 +240,7 @@ header .header-container__navigation .navigation {
     border-top-right-radius: 30px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    max-height: 35em;
+    height: 35em;
 
     border-top-left-radius: 30px;
 
