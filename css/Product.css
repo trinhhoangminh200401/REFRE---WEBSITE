@@ -408,7 +408,6 @@ body {
 }
 
 .productList .productlist-container .card-content {
-    margin: 0 10px;
     padding-top:12px ;
    position: relative;
     width: 22em;
@@ -652,17 +651,16 @@ footer .container .row h6 {
     color: #87469c;
 
 }
-.popup {
+footer .container .popup {
     top: -50%;
+   
     font-size: 20px;
-    /* right: 1.2em; */
-    
     height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
 }
-.popup img {
+footer .popup img {
     width: 70%;
 }

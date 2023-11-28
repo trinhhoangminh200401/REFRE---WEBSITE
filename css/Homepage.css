@@ -112,7 +112,7 @@ header .header-container__navigation .navigation {
 .best-seller .owl-carousel .card-purple {
     background-image: linear-gradient(#c4a1f5, #f4e7ff, #f4e7ff);
     border: 5px solid #fff;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .card-content {
@@ -124,16 +124,12 @@ header .header-container__navigation .navigation {
 .card-content .card-img-top {
     /* width: 50%; */
     height: 280px;
-
-    object-position: center top;
+    margin-bottom:2em;
+    object-position: center bottom;
     object-fit: none;
 }
 
-.card .bottom {
 
-    object-position: center bottom;
-
-}
 
 .card-content .purple-category {
     width: 7em;
@@ -195,7 +191,7 @@ header .header-container__navigation .navigation {
 }
 .Breakthrough-formula .Breakthrough-formula_container{
     background-color: rgba(255, 255, 255, 0.3);
-    padding: 1em;
+    padding: 2.7em;
     border-radius: 20px;
 
 }
@@ -241,6 +237,7 @@ header .header-container__navigation .navigation {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     height: 35em;
+    object-fit: cover;
 
     border-top-left-radius: 30px;
 
