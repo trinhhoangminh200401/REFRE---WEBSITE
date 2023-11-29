@@ -124,16 +124,6 @@
  @media (min-width: 768px) {
      /* Display the logo on larger screens */
     
-  
-     .navbar-logo {
-         display: block;
-     }
-
-     /* Hide the icon bar on larger screens */
-     .navbar-icon-bar {
-         display: none;
-     }
-
      .tab-slider-gallery .container-tabs {
          display: flex;
          align-items: center;
@@ -155,6 +145,7 @@
  }
 
  @media (max-width: 1000px) {
+    
      .product .youtube {
          width: 80%;
          height: 20em;

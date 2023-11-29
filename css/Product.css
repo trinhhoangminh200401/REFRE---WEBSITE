@@ -64,37 +64,35 @@
 }
 
 header .header-container__navigation {
-
+    width: 95%;
     margin: 0 auto;
 
 }
-
-
-header .header-container__navigation .navigation {
-    width: 100%;
-   
+.header-container__navigation button {
+    color:#87469c
 }
 
-.header-container__navigation .navigation__content .navbar-nav .navbar-nav__item {
+
+.header-container .navbar-nav__item {
     margin: 0 15px;
     color: #000;
    
 }
 
-.header-container__navigation .navigation__content .navbar-nav .navbar-nav__item .nav-link {
+.header-container .nav-link {
     color: #000;
     text-transform: uppercase;
     font-weight: 800;
 }
 
-.header-container__navigation .navigation__logo img {
+.header-container .navigation__logo img {
     width: 7em;
     object-fit: cover;
     object-position: center;
 
 }
 
-.header-container__navigation .navigation__logo .img2 {
+.header-container .navigation__logo .img2 {
 
     object-fit: cover;
     object-position: center;
