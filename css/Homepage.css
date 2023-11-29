@@ -143,7 +143,7 @@ header .header-container__navigation .navigation {
     color: white;
     text-transform: uppercase;
     background-color: #766dff;
-    border: 5px double white;
+    border: 5px solid white;
 
 
 }
@@ -161,7 +161,7 @@ header .header-container__navigation .navigation {
     color: white;
     text-transform: uppercase;
     background-color: #01b700;
-    border: 5px double white;
+    border: 5px solid white;
 }
 
 .card-body .purple-text {
@@ -217,13 +217,13 @@ header .header-container__navigation .navigation {
 
 .product .owl-carousel .card-product-item {
     position: relative;
-    padding: 3px;
+    padding: 5px;
     border-radius: 20px;
 }
 
 .product .owl-carousel .card-product-item .card-product-action {
     position: absolute;
-    bottom: 2px;
+    bottom: 5px;
     left: 3.5px;
 
     right: 5px;
@@ -233,21 +233,21 @@ header .header-container__navigation .navigation {
 }
 
 .product .owl-carousel .card-product-item img {
-    border-top-right-radius: 30px;
+    border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     height: 35em;
     object-fit: cover;
 
-    border-top-left-radius: 30px;
+    border-top-left-radius: 20px;
 
 }
 
 
 .product .owl-carousel .card-product-item .green-bg {
     background-color: #daefc8;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 
@@ -255,8 +255,8 @@ header .header-container__navigation .navigation {
 
 .product .owl-carousel .purple-bg {
     background-color: #dfc3fa;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 
@@ -474,10 +474,10 @@ footer .container .row h6 {
 }
 
 .popup {
-    top: -200px;
+    top: -50%;
     font-size: 20px;
-    right: -1.4em;
-
+    right: 0em;
+    z-index: 70;
     height: 300px;
     display: flex;
     flex-direction: column;

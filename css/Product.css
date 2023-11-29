@@ -416,14 +416,14 @@ body {
 .productList .productlist-container .card-content .card-img-top {
     /* width: 50%; */
     width: 80%;
-    height: 18em;
-    
+    height: 20em;
+    margin-top: 1em;
    object-fit: cover;
 }
 
 .productList .productlist-container  .card .bottom {
 
-    object-position: center bottom;
+    object-position: center ;
 
 }
 
@@ -448,6 +448,7 @@ body {
     background-image: linear-gradient(#c4a1f5, #f4e7ff, #f4e7ff);
     border: 5px solid #fff;
     border-radius: 1.5em;
+    padding: 0;
 }
 
 .productList .productlist-container .card-body .purple-text {
@@ -653,7 +654,8 @@ footer .container .row h6 {
 }
 footer .container .popup {
     top: -50%;
-   
+    right: 0;
+    z-index: 70;
     font-size: 20px;
     height: 300px;
     display: flex;
