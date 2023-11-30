@@ -1,5 +1,5 @@
 import { DataUser } from "./mockDATA/user.js";
-import { HomePageService } from "./services/Homepage.js";
+import { ProductPageService } from "./services/Product.js";
 $(document).ready(function () {
   $(".lazy").Lazy({
     afterLoad: function (element) {
@@ -92,7 +92,7 @@ $(document).ready(function () {
     var selectedPage = parseInt(pagination.val()) ;
      // Calculate the start and end indices for the current page
     
-    var displayedItems = HomePageService.getItems(selectedPage-1, itemsPerPage,DataUser);
+    var displayedItems = ProductPageService.getItems(selectedPage-1, itemsPerPage,DataUser);
      if (displayedItems.length > 0 ){
       displayedItems.forEach(function(item, index)  {
         var itemElement = $("<div>")

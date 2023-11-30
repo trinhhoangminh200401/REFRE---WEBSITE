@@ -83,10 +83,12 @@ header .header-container__navigation {
     color: #000;
     text-transform: uppercase;
     font-weight: 800;
+    font-size: 1.175em;
+
 }
 
 .header-container .navigation__logo img {
-    width: 7em;
+    width: 6em;
     object-fit: cover;
     object-position: center;
 
@@ -96,7 +98,7 @@ header .header-container__navigation {
 
     object-fit: cover;
     object-position: center;
-    width: 8em;
+    width: 6em;
 
 }
 
@@ -187,17 +189,16 @@ body {
 
 .tab-slider-gallery .container-slider-image {
     border-radius: 20px;
-    height: fit-content;
+    max-height: 45em;
     border: 5px solid #fff;
     margin: 0;
     background: linear-gradient(to bottom,  #f8f6ff, #e8e4ff, #e3dfff);
 }
 
 .tab-slider-gallery .container-slider-image img {
-    max-height: 40em;
     object-fit: scale-down;
     padding: 3em;
-
+  max-height: 35em;
 }
 
 .tab-slider-gallery .container-tabs .card-body {
@@ -638,7 +639,7 @@ footer .container .img-footer {
 }
 
 footer .container .row p {
-    font-size: 14px;
+    font-size: 13px;
     margin: 0 10px;
     color: #87469c;
     font-weight: 600;
@@ -646,7 +647,7 @@ footer .container .row p {
 
 footer .container .row h6 {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     color: #87469c;
 
 }
