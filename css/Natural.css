@@ -642,7 +642,7 @@ footer {
     bottom: 0;
 }
 
-footer .container {
+footer .container{
     bottom: 0;
 }
 
@@ -660,7 +660,7 @@ footer .container .row p {
 
 footer .container .row h6 {
     font-weight: bold;
-    font-size: 155px;
+    font-size: 15px;
     color: #87469c;
 
 }
