@@ -190,7 +190,7 @@ body {
     height: fit-content;
     border: 5px solid #fff;
     margin: 0;
-    background: linear-gradient(to bottom, #f8f6ff, #e8e4ff, #e3dfff);
+    background: linear-gradient(to bottom,  #f8f6ff, #e8e4ff, #e3dfff);
 }
 
 .tab-slider-gallery .container-slider-image img {

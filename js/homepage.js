@@ -175,6 +175,5 @@ console.log(DataUser)
 
   // Add event listeners for previous and next buttons
   
-  
 
 });

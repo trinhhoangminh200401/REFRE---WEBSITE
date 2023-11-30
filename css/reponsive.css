@@ -201,19 +201,14 @@
     display: block;
     
   }
-  .navbar-nav .nav-link{
-    font-size: 16px;
-   }
-   .header-container__navigation .navigation__logo .img2{
-    width: 5.5em;
-  }
-  .header-container__navigation .navigation__logo img{
-    width: 5.5em;
-  }
-
+  
+.header-container .nav-link{
+    font-size:14px;
+    white-space: nowrap;
+}
  }
  @media screen and (min-width: 1024px) and (max-width: 1242px){
-   
+    
     .card-content{
         margin: 0 7px;
     }
@@ -222,10 +217,10 @@
         
       }
       .header-container__navigation .navigation__logo .img2{
-        width: 6em;
+        width: 5em;
       }
       .header-container__navigation .navigation__logo img{
-        width: 6em;
+        width: 5em;
       }
 
     }

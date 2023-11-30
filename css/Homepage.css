@@ -49,10 +49,12 @@ header .header-container__navigation {
     color: #000;
     text-transform: uppercase;
     font-weight: 800;
+    font-size: 1.175em;
+
 }
 
 .header-container .navigation__logo img {
-    width: 7em;
+    width: 6em;
     object-fit: cover;
     object-position: center;
 
@@ -62,7 +64,7 @@ header .header-container__navigation {
 
     object-fit: cover;
     object-position: center;
-    width: 8em;
+    width: 6em;
 
 }
 .header-container .header-container__navigation button {
@@ -362,6 +364,10 @@ header .header-container__navigation {
 }
 .feedback .container .card-user .card-text{
     font-weight: 600;
+    padding :0.1em;
+    /* background-color: #036040; */
+    /* text-align: left; */
+    /* background-color: #01b700; */
     color: #87469c;
 }
 .feedback .container .card-user .card-body {
