@@ -286,7 +286,7 @@ body {
 
 .description-containers .description-containers_div .description-containers_content .content-div {
     position: relative;
-    margin: 20px 0;
+    margin: 1em 2em;
 
     display: flex;
     flex-direction: column;
@@ -300,6 +300,9 @@ body {
 
 
 }
+.content-div ul{
+    padding :0;
+}
 
 .content-div li::before {
     content: "-";
@@ -309,8 +312,8 @@ body {
 
 .content-div li {
     font-weight: 600;
-    text-justify: inter-word;
     list-style-type: none;
+    margin: 10px 0;
     font-size: 0.9em;
     font-size: 0.875em;
 
@@ -374,17 +377,17 @@ body {
     border: 3px solid white;
     border-radius: 10px;
     
-    padding: 5px;
+    padding: 4px;
 
 }
 .section .section-content {
-    border: 7px solid white;
+    border: 4px solid white;
     border-radius: 10px;
     padding:10px;
 }
 
 .section .section-content .section-content_title {
-    font-size: 1.7em;
+    font-size: 2.2em;
     text-transform: uppercase;
     
     font-weight: 900;
@@ -394,6 +397,8 @@ body {
 .section .section-content .section-content_list .list .section-content-list_item {
     list-style: none;
     font-weight: 600;
+    font-size: 1.3em;
+
     text-align: justify;
 }
 
@@ -404,6 +409,8 @@ body {
 .section .section-content .section-content_list .result {
  font-style: italic;
  font-weight: 500;
+ font-size: 1.2em;
+
 }
 .productList {
     margin-top:5em; 
@@ -431,25 +438,27 @@ body {
 
 .productList .productlist-container .card-content .green-category {
     width: 7em;
-   
+
+
     padding-top: 5px;
     padding-bottom: 5px;
-    text-align: center;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
-    position: absolute;
+    padding-left: 8px;
     color: white;
-    left: 0;
-    text-transform: uppercase;
-    background-color: #00c30f;
-    border: 5px solid white;
+    font-weight: 700;
+    font-style: italic;
+    box-shadow: rgba(0,191,0, 0.4) 3px 2.5px;   
+     text-transform: uppercase;
+    background-color: #01b700;
+    border: 3px solid white;
 
 
 }
 .productList .productlist-container .card-purple{
     background-image: linear-gradient(to  bottom ,#FDC0FF,#f0e9fe,#e8ffed,#e8ffed);
    
-    border: 5px solid #fff;
+    border: 3px solid #fff;
     border-radius: 1.5em;
     padding: 0;
 }
@@ -464,7 +473,7 @@ body {
 }
 .productList .productlist-container .card-body p {
   
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.2;
   }
   
@@ -577,7 +586,7 @@ body {
 }
 .latestupdate .owl-carousel .card {
     height: 500px;
-    border: 4px solid #fff;
+    border: 3px solid #fff;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.3);
 }
@@ -651,7 +660,7 @@ footer .container .row p {
 
 footer .container .row h6 {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 155px;
     color: #87469c;
 
 }

@@ -110,7 +110,7 @@ header .header-container__navigation {
 
 .best-seller .owl-carousel .card-purple {
     background-image: linear-gradient(#c4a1f5, #f4e7ff, #f4e7ff);
-    border: 5px solid #fff;
+    border: 3px solid #fff;
     border-radius: 20px;
 }
 
@@ -135,14 +135,17 @@ header .header-container__navigation {
 
     padding-top: 5px;
     padding-bottom: 5px;
-    text-align: center;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
-    padding-left: 7px;
+    padding-left: 8px;
     color: white;
+    box-shadow: rgba(115,111,255) 3px 2.5px;   
+    font-weight: 900;
+
     text-transform: uppercase;
     background-color: #766dff;
-    border: 5px solid white;
+    border: 3px solid white;
+    font-style: italic;
 
 
 }
@@ -153,14 +156,17 @@ header .header-container__navigation {
 
     padding-top: 5px;
     padding-bottom: 5px;
-    text-align: center;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
-    padding-left: 7px;
+    padding-left: 8px;
     color: white;
-    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 900;
+
+    box-shadow: rgba(0,191,0, 0.4) 3px 2.5px;   
+     text-transform: uppercase;
     background-color: #01b700;
-    border: 5px solid white;
+    border: 3px solid white;
 }
 
 .card-body .purple-text {
@@ -178,7 +184,9 @@ header .header-container__navigation {
     border-top-left-radius: 25px;
     padding: 0.5em 1em;
     color: white;
-    border: 5px solid #fff;
+    border: 3px solid #fff;
+    border-bottom-right-radius: 25px;
+
 }
 
 .card-body .btn-purple {
@@ -428,7 +436,7 @@ header .header-container__navigation {
 
 .latestupdate .owl-carousel .card {
     height: 500px;
-    border: 4px solid #fff;
+    border: 3px solid #fff;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.3);
 }
@@ -442,8 +450,9 @@ footer {
     bottom: 0;
 }
 
-footer .container {
+footer .container-footer {
     bottom: 0;
+    
 }
 
 footer .container .img-footer {
@@ -460,7 +469,7 @@ footer .container .row p {
 
 footer .container .row h6 {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
     color: #87469c;
 
 }

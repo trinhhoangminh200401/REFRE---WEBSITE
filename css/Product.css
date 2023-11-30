@@ -284,7 +284,7 @@ body {
 
 .description-containers .description-containers_div .description-containers_content .content-div {
     position: relative;
-    margin: 20px 0;
+    margin: 1em 2em;
 
     display: flex;
     flex-direction: column;
@@ -297,6 +297,9 @@ body {
     font-size: 0.875em;
 
 
+}
+.content-div ul{
+    padding :0;
 }
 
 .content-div li::before {
@@ -376,13 +379,13 @@ body {
 
 }
 .section .section-content {
-    border: 7px solid white;
+    border: 4px solid white;
     border-radius: 10px;
     padding:10px;
 }
 
 .section .section-content .section-content_title {
-    font-size: 1.7em;
+    font-size: 2.2em;
     text-transform: uppercase;
     
     font-weight: 900;
@@ -392,6 +395,7 @@ body {
 .section .section-content .section-content_list .list .section-content-list_item {
     list-style: none;
     font-weight: 600;
+    font-size: 1.3em;
 }
 
 .section .section-content .section-content_list .list .section-content-list_item::before {
@@ -401,6 +405,7 @@ body {
 .section .section-content .section-content_list .result {
  font-style: italic;
  font-weight: 500;
+ font-size: 1.2em;
 }
 .productList {
     margin-top:5em; 
@@ -428,24 +433,25 @@ body {
 
 .productList .productlist-container .card-content .purple-category {
     width: 7em;
-   
+
     padding-top: 5px;
     padding-bottom: 5px;
-    text-align: center;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
-    position: absolute;
+    padding-left: 8px;
     color: white;
-    left: 0;
+    box-shadow: rgba(115,111,255) 3px 2.5px;   
+    font-weight: 900;
     text-transform: uppercase;
     background-color: #766dff;
-    border: 5px solid white;
+    border: 3px solid white;
+    font-style: italic;
 
 
 }
 .productList .productlist-container .card-purple{
     background-image: linear-gradient(#c4a1f5, #f4e7ff, #f4e7ff);
-    border: 5px solid #fff;
+    border: 3px solid #fff;
     border-radius: 1.5em;
     padding: 0;
 }
@@ -460,7 +466,7 @@ body {
 }
 .productList .productlist-container .card-body p {
   
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.2;
   }
   
@@ -474,6 +480,7 @@ body {
 
 .productList .productlist-container .card-body .btn-purple {
     background: linear-gradient(to right, #e1a1f5, #e1a1f5, #c98cfe,#c98cfe);
+    font-weight: 500;
 }
 
 .feedback>.container {
@@ -573,7 +580,7 @@ body {
 }
 .latestupdate .owl-carousel .card {
     height: 500px;
-    border: 4px solid #fff;
+    border: 3px solid #fff;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.3);
 }
@@ -647,7 +654,7 @@ footer .container .row p {
 
 footer .container .row h6 {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
     color: #87469c;
 
 }

@@ -12,7 +12,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url("/assets/images/backgroundimage.jpg");
+    background-image: url("/assets/images/BG.png");
 }
 .btn{
     border-radius: 0;
