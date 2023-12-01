@@ -217,9 +217,9 @@ body {
 }
 
 .description-containers {
-    border: 3.5px solid #fff;
+    border: 5px solid #fff;
     border-radius: 20px;
-    padding: 0.3em;
+    padding: 0.1em;
 }
 
 .description-containers .description-containers_div {
@@ -229,7 +229,7 @@ body {
     /* background-color: aqua;  */
     outline: none;
 
-    border: 7px solid #fff;
+    box-shadow: inset 0px 0px 7px 7px #fff;    
     border-radius: 20px;
 }
 
