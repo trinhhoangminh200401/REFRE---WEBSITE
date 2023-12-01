@@ -6,7 +6,6 @@ $(document).ready(function () {
       element.addClass("loaded");
     },
   });
-console.log(DataUser)
   $(".product .owl-carousel").owlCarousel({
     responsiveClass: true,
     navText: [

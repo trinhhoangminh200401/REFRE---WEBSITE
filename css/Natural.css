@@ -420,6 +420,8 @@ body {
     padding-top:12px ;
    position: relative;
     width: 22em;
+    margin: 0 10px;
+    
 }
 
 .productList .productlist-container .card-content .card-img-top {
