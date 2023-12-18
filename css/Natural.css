@@ -137,6 +137,7 @@ body {
 
 .banner img {
     object-fit: cover;
+  
     object-position: center;
 }
 
@@ -190,6 +191,7 @@ body {
 .tab-slider-gallery .container-slider-image {
     border-radius: 20px;
     max-height: 45em;
+    overflow: hidden;
 
     border: 5px solid #fff;
     margin: 0;
@@ -198,9 +200,11 @@ body {
 }
 
 .tab-slider-gallery .container-slider-image img {
+    max-width: 100%;
     object-fit: scale-down;
-    padding: 3em;
-    max-height: 35em;
+    max-height: 35em; /* Adjust this value based on your preference */
+    height: auto;
+    display: block;
 }
 
 .tab-slider-gallery .container-tabs .card-body {
@@ -215,7 +219,8 @@ body {
 .tab-slider-gallery .container-tabs .card-body img {
 
     margin: 0 auto;
-
+    object-fit: scale-down;
+    height: 100%;
 }
 
 .description-containers {
@@ -459,7 +464,8 @@ body {
 }
 .productList .productlist-container .card-purple{
     background-image: linear-gradient(to  bottom ,#FDC0FF,#f0e9fe,#e8ffed,#e8ffed);
-   
+    margin-left:8px;
+
     border: 3px solid #fff;
     border-radius: 1.5em;
     padding: 0;
@@ -500,7 +506,6 @@ body {
 
 .feedback .container .card-user {
 
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     padding: 20px 0;

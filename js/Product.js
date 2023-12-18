@@ -9,7 +9,7 @@ $(document).ready(function () {
   
   $(".tab-slider-gallery .owl-carousel").owlCarousel({
     responsiveClass: true,
-    autoplay: true,
+    // autoplay: true,
     navText:"",
     autoplayTimeout: 3000,
     responsive: {

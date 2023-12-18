@@ -40,3 +40,14 @@ body {
     outline: none;
     box-shadow: none;
 }
+/* Add this to your stylesheet or in a style tag in the head of your HTML document */
+.fadein {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;}
+
+.fadein.active {
+    transform: translateX(0);
+      opacity: 1;
+
+}

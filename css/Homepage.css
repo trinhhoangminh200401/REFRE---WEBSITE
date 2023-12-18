@@ -373,8 +373,8 @@ header .header-container__navigation {
 
 .feedback .container .card-user img {
     width: 30%;
-    margin: 0 auto;
     display: flex;
+    margin: auto;
     flex-wrap: wrap;
 }
 
@@ -412,15 +412,13 @@ header .header-container__navigation {
 
 .feedback .slider {
     -webkit-appearance: none;
-    width: 30%;
+    width: 30%; /* Adjust this value based on your layout */
     height: 25px;
-    margin:20px auto;
+    margin: 20px auto; /* Adjust margin for spacing */
     border: 2px solid #fff;
-
     background: #8987ff;
     outline: none;
     border-radius: 10px;
-    -webkit-transition: .2s;
     transition: opacity .2s;
 }
 

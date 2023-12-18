@@ -40,6 +40,16 @@
     .card-user > div:nth-child(3) {
         order: -1;
       }
+      .description-containers .description-containers_div {
+     padding: 1em;  
+    }
+    .description-containers .description-containers_div .description-containers_title h3 {
+        font-size: 1.2em;
+        width: 100%;
+    }
+    .description-containers .description-containers_div .description-containers_content .content-div{
+        margin: 1em;
+    }
  }
  @media only screen and (max-width: 767px) {
 
@@ -84,7 +94,7 @@
 
      .container-tab .button-tab-action .btn {
          font-size: 0.7em;
-         flex-basis: 45%;
+         flex-basis: 40%;
        
          padding:  10px 10px;
      }
@@ -99,7 +109,7 @@
         height: 8em;
     }
       .tab-slider-gallery .container-slider-image .owl-carousel img{
-        height: 20em;
+        height: 100%;
         
      }
      .input-container {
