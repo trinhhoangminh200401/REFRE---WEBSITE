@@ -1,0 +1,53 @@
+.header-container {
+    width: 100%;
+    background-image: linear-gradient(to right top, #ccd3ff,#ccd3ff,#ede4ff,#ede4ff);
+
+
+}
+
+header .header-container__navigation {
+    width: 95%;
+    margin: 0 auto;
+
+}
+.header-container__navigation button {
+    color:#87469c
+}
+
+
+.header-container .navbar-nav__item {
+    margin: 0 15px;
+    color: #000;
+   
+}
+
+.header-container .nav-link {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.4em;
+
+}
+
+.header-container .navigation__logo img {
+    width: 6em;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.header-container .navigation__logo .img2 {
+
+    object-fit: cover;
+    object-position: center;
+    width: 6em;
+
+}
+.bannerTop {
+    background-image:url("/assets/images/Top_Banner.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center top;
+    height: 30em;
+
+}
