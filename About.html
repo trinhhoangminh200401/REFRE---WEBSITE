@@ -6,7 +6,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,800;0,900;1,300;1,500;1,700;1,800;1,900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600;1,800;1,900&family=Montserrat:ital,wght@0,500;0,600;0,800;0,900;1,300;1,500;1,700;1,800;1,900&display=swap"
             rel="stylesheet">
 
         <link rel="stylesheet"
@@ -32,7 +32,8 @@
     <body>
         <header class="py-2 header-container ">
             <nav class="navbar-expand-lg navbar  header-container__navigation">
-                <a class="navbar-brand navigation__logo  " href="#"><img
+                <a class="navbar-brand navigation__logo  " href="/index.html"
+                    aria-current="page"><img
                         data-src="./assets/images/HomePage/Refre_=Logo.png"
                         class="lazy banner fade-in " alt></a>
                 <button class="navbar-toggler border-0"
@@ -46,24 +47,28 @@
                 <div class="collapse navbar-collapse justify-content-center"
                     id="navbarSupportedContent">
                     <ul
-                        class="navbar-nav  d-flex justify-content-between align-items-center ">
+                        class="navbar-nav  d-flex justify-content-center align-items-center ">
                         <li class="nav-item navbar-nav__item ">
-                            <a class="nav-link active h4" aria-current="page"
-                                href="/index.html">Về Refre</a>
+                            <a class="nav-link active hoverActive h4"
+                                href="/About.html">Về Refre</a>
                         </li>
                         <li class="nav-item navbar-nav__item">
-                            <a class="nav-link h5" href="/Whitening.html">Sản
+                            <a class="nav-link h4 " href="/Whitening.html">Sản
                                 Phẩm</a>
                         </li>
                         <li class="nav-item navbar-nav__item">
-                            <a class="nav-link h5" href="#">Đối tác bán hàng</a>
+                            <a class="nav-link h4" href="#">Đối tác bán hàng</a>
                         </li>
                         <li class="nav-item navbar-nav__item">
-                            <a class="nav-link h5" href="#">Tin tức</a>
+                            <a class="nav-link h4" href="#">Tin tức</a>
                         </li>
-                        <li class="nav-item navbar-nav__item">
-                            <a class="nav-link h5" href="/About.html">Hỏi Đáp & liên hệ</a>
-
+                        <li class="nav-item dropdown navbar-nav__item">
+                            <a class="nav-link h4 dropdown-toggle" href="#">Hỏi Đáp & liên hệ</a>
+                            <!-- <ul class="dropdownmenu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul> -->
                         </li>
                     </ul>
 
@@ -77,6 +82,7 @@
             </nav>
 
         </header>
+
         <div class="bannerFirst py-2">
             <article
                 class="d-flex flex-column justify-content-center align-items-center h-100">
@@ -96,289 +102,309 @@
         <div class="bannerSecond" id="bannerSecond">
             <div class="container-fluid d-flex flex-column  align-items-center">
                 <div class="bannnerContent">
-                <div class="section"><h2 class="section_Title">Sứ mệnh</h2></div>
-               <div class="d-flex  flex-column align-items-center  my-5  fst-italic fw-bold" style="width: fit-content;">
-                <blockquote
-                    class="text-center">
-                  Cùng Refre trải nghiệm khử mùi tỏa hương
-                        với công nghệ tiên tiến</blockquote>
-                <p class="text-center">và công thức đột phá giúp nâng
-                    niu vùng cánh của bạn.</p>
+                    <div class="section"><h2 class="section_Title">Sứ mệnh</h2></div>
+                    <div
+                        class="d-flex  flex-column align-items-center  my-5  fst-italic fw-bold"
+                        style="width: fit-content;">
+                        <blockquote
+                            class="text-center">
+                            Cùng Refre trải nghiệm khử mùi tỏa hương
+                            với công nghệ tiên tiến</blockquote>
+                        <p class="text-center">và công thức đột phá giúp nâng
+                            niu vùng cánh của bạn.</p>
+                    </div>
                 </div>
-                </div>
-            <div class="Breakthrough-formula">
-                <div
-                    class="container Breakthrough-formula_container mx-auto d-flex flex-column align-items-start">
-                    <div class="card-user row justify-content-xl-center justify-content-md-center justify-content-lg-start">
-    
+                <div class="Breakthrough-formula">
+                    <div
+                        class="container Breakthrough-formula_container mx-auto d-flex flex-column align-items-start">
                         <div
-                            class="text-center card-col col-xs-4 col-sm-6 col-md-6 col-lg-4 col-xl-2  mx-xl-3 mx-lg-0">
-                            <img class=" lazy banner fade-in "
-                                data-src="./assets/images/HomePage/48h.png"
-                                alt="Card image">
-                            <h4
-                                class="card-title mt-5 fw-bold fst-italic  h6">48h
-                                giảm tiết mồ hôi hiệu quả
-                            </h4>
-    
-                        </div>
-                        <div
-                            class="text-center card-col col-xs-4 col-sm-6 col-md-6 col-xl-2 col-lg-4 mx-xl-3  mx-lg-0">
-                            <img class=" lazy banner fade-in "
-                                data-src="./assets/images/HomePage/o vang.png"
-                                alt="Card image">
-                            <h4
-                                class="card-title mt-5 fw-bold fst-italic  h6">
-                                Không gây ố vàng</h4>
-    
-                        </div>
-                       
-                        <div
-                            class="text-center col-xs-4 card-col col-sm-6 col-md-6 col-xl-2  col-lg-4 mx-xl-3 mx-lg-0 ">
-                            <img class=" lazy banner fade-in "
-                                data-src="./assets/images/HomePage/24h.png"
-                                alt="Card image">
-                            <h4
-                                class="card-title mt-5 fw-bold fst-italic  h6">24h
-                                khử mùi cơ thể*
-                            </h4>
-    
-                        </div>
-                        <div
-                            class="text-center card-col col-xs-4 col-sm-6 col-md-6 mx-lg-0  col-xl-2 mx-xl-3 col-lg-4">
-                            <img class=" lazy banner fade-in "
-                                data-src="./assets/images/HomePage/k con.png"
-                                alt="Card image">
-                            <h4
-                                class="card-title mt-3 fw-bold fst-italic  h6">Không
-                                cồn
-                                                           </h4>
-                            <h4
-                                class="card-title  fw-bold fst-italic h6">
-                                Không
-                                Paraben
+                            class="card-user row justify-content-xl-center justify-content-md-center justify-content-lg-start">
 
-                            </h4>
-                            <h4
-                                class="card-title   fw-bold fst-italic  h6">Không
-                                kích ứng **
-                            </h4>
+                            <div
+                                class="text-center card-col col-xs-4 col-sm-6 col-md-6 col-lg-4 col-xl-2  mx-xl-3 mx-lg-0">
+                                <img class=" lazy banner fade-in "
+                                    data-src="./assets/images/HomePage/48h.png"
+                                    alt="Card image">
+                                <h4
+                                    class="card-title mt-5 fw-bold fst-italic  h6">48h
+                                    giảm tiết mồ hôi hiệu quả
+                                </h4>
+
+                            </div>
+                            <div
+                                class="text-center card-col col-xs-4 col-sm-6 col-md-6 col-xl-2 col-lg-4 mx-xl-3  mx-lg-0">
+                                <img class=" lazy banner fade-in "
+                                    data-src="./assets/images/HomePage/o vang.png"
+                                    alt="Card image">
+                                <h4
+                                    class="card-title mt-5 fw-bold fst-italic  h6">
+                                    Không gây ố vàng</h4>
+
+                            </div>
+
+                            <div
+                                class="text-center col-xs-4 card-col col-sm-6 col-md-6 col-xl-2  col-lg-4 mx-xl-3 mx-lg-0 ">
+                                <img class=" lazy banner fade-in "
+                                    data-src="./assets/images/HomePage/24h.png"
+                                    alt="Card image">
+                                <h4
+                                    class="card-title mt-5 fw-bold fst-italic  h6">24h
+                                    khử mùi cơ thể*
+                                </h4>
+
+                            </div>
+                            <div
+                                class="text-center card-col col-xs-4 col-sm-6 col-md-6 mx-lg-0  col-xl-2 mx-xl-3 col-lg-4">
+                                <img class=" lazy banner fade-in "
+                                    data-src="./assets/images/HomePage/k con.png"
+                                    alt="Card image">
+                                <div class="mt-5"> <h4
+                                        class="card-title mt-3 fw-bold fst-italic  h6">Không
+                                        cồn
+                                    </h4>
+                                    <h4
+                                        class="card-title  fw-bold fst-italic h6">
+                                        Không
+                                        Paraben
+
+                                    </h4>
+                                    <h4
+                                        class="card-title   fw-bold fst-italic  h6">Không
+                                        kích ứng **
+                                    </h4>
+                                </div>
+
+                            </div>
+                            <div
+                                class="text-center col-xs-4 card-col col-sm-6 col-md-6 col-xl-2 col-lg-4 mx-xl-3 mx-lg-0">
+                                <img class=" lazy banner fade-in "
+                                    data-src="./assets/images/HomePage/dang xit.png"
+                                    alt="Card image">
+                                <h4
+                                    class="card-title mt-5 fw-bold fst-italic h6">Dạng
+                                    xịt tiện dụng, dễ mang theo</h4>
+
+                            </div>
+
                         </div>
-                        <div
-                            class="text-center col-xs-4 card-col col-sm-6 col-md-6 col-xl-2 col-lg-4 mx-xl-3 mx-lg-0">
-                            <img class=" lazy banner fade-in "
-                                data-src="./assets/images/HomePage/dang xit.png"
-                                alt="Card image">
-                            <h4
-                                class="card-title mt-3 fw-bold fst-italic h6">Dạng
-                                xịt tiện dụng, dễ mang theo</h4>
-                                <h4 class="card-title mt-3 fw-bold fst-italic h6"></h4>
-    
+                        <div class="result mt-5 ">
+                            <p class="h6 text-light">* Theo kết quả thử nghiệm
+                                thực
+                                hiện bởi PT Equilab International, Indonesia vào
+                                11/2022.
+                            </p>
+                            <p class="h6 text-light">** Theo kết quả thử nghiệm
+                                thực
+                                hiện bởi DRC (ThaiLand) Co., Ltd. vào 10/2022.</p>
                         </div>
-    
+
                     </div>
-                    <div class="result mt-5 ">
-                        <p class="h6 text-light">* Theo kết quả thử nghiệm thực
-                            hiện bởi PT Equilab International, Indonesia vào
-                            11/2022.
-                        </p>
-                        <p class="h6 text-light">** Theo kết quả thử nghiệm thực
-                            hiện bởi DRC (ThaiLand) Co., Ltd. vào 10/2022.</p>
-                    </div>
-    
                 </div>
             </div>
         </div>
-            </div>
-            <div class="container-card my-4" id="container-card">
-                <div class="container cardContent">
-                    <div class="cardContent__item"> 
-                        <div class="card-content__item__title-shadow"><div class="card-content__item__title"><h2 class="title">01</h2></div></div>
-                        <div class="card mb-3  " >
-                        <div class="row g-0  justify-content-between align-items-center">
-                          <div class="col-lg-5">
-                            <img src="./assets/images/About/About_Photo01.png
+        <div class="container-card my-4" id="container-card">
+            <div class="container cardContent">
+                <div class="cardContent__item">
+                    <div class="card-content__item__title-shadow"><div
+                            class="card-content__item__title"><h2 class="title">01</h2></div></div>
+                    <div class="card mb-3 ">
+                        <div
+                            class="row g-0  justify-content-between align-items-center">
+                            <div class="col-lg-5">
+                                <img
+                                    src="./assets/images/About/About_Photo01.png
                             " class="img" alt="...">
-                          </div>
-                          <div class="col-lg-7">
-                            <div class="card-body">
-                              <h5 class="card-title ">FRAGGARNT </h5>
-                              <h5 class="card-title ">DEOORANT</h5>
-                              <p class="card-text my-4">Refre mang đến 9 mùi hương từ sang trọng quyến rũ như nước hoa, hay thanh dịu, thuần khiết từ cây cỏ, để bạn thỏa thích lựa chọn theo sở thích!</p>
-                             
                             </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="cardContent__item"> 
-                        <div class="card-content__item__title-shadow"><div class="card-content__item__title"><h2 class="title">02</h2></div></div>
-                        <div class="card mb-3  " >
-                        <div class="row g-0  justify-content-between align-items-center">
-                          <div class="col-lg-7">
-                            <div class="card-body">
-                              <h5 class="card-title  text-end">FRAGRANCE SENSOR</h5>
-                              <p class="card-text my-4 text-end">
-                                    Khử mùi nhưng lưu hương suốt cả ngày như nước hoa ?
-                                    Chính là nhờ công nghệ Fragrance Sensor với hoạt động chất  
-                                    Xylityl Sesquicaprylate and Cyclodextrin, khóa mùi thông minh giúp nước hoa không hòa lẫn với
-                                    mùi cơ thể, từ đó lưu hương suốt 24H.
-                              </p>
-                             
-                            </div>
-                          </div>
-                          <div class="col-lg-5">
-                            <img src="./assets/images/About/About_Photo02.png
-                            " class="img" alt="...">
-                          </div>
-                        
-                        </div>
-                      </div>
-                    </div>
-                    <div class="cardContent__item"> 
-                        <div class="card-content__item__title-shadow"><div class="card-content__item__title"><h2 class="title">03</h2></div></div>
-                        <div class="card mb-5" >
-                        <div class="row g-0  justify-content-between align-items-center">
-                          <div class="col-lg-5">
-                            <img src="./assets/images/About/About_Photo03.png
-                            " class="img" alt="...">
-                          </div>
-                          <div class="col-lg-7">
-                            <div class="card-body">
-                              <h5 class="card-title">CHIẾT XUẤT </h5>
-                              <h5 class="card-title">TỪ THIÊN NHIÊN</h5>
+                            <div class="col-lg-7">
+                                <div class="card-body">
+                                    <h5 class="card-title ">FRAGGARNT </h5>
+                                    <h5 class="card-title ">DEOORANT</h5>
+                                    <p class="card-text my-4">Refre mang đến 9
+                                        mùi hương từ sang trọng quyến rũ như
+                                        nước hoa, hay thanh dịu, thuần khiết từ
+                                        cây cỏ, để bạn thỏa thích lựa chọn theo
+                                        sở thích!</p>
 
-                              <p class="card-text  my-4">
-                               Một công thức hiệu quả nhưng lại vô cùng dịu nhẹ nhờ có 2 không: không cồn - không Paraben và các hoạt chất chiết xuất từ thiên nhiên, giúp bạn 48H tự tin!
-                              </p>
-                             
+                                </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
                     </div>
-                    <div class="cardContent__item"> 
-                        <div class="card-content__item__title-shadow"><div class="card-content__item__title"><h2 class="title">04</h2></div></div>
-                        <div class="card mb-3  " >
-                        <div class="row g-0  justify-content-between align-items-center">
-                          
-                          <div class="col-lg-7">
-                            <div class="card-body">
-                              <h5 class="card-title text-end">Dạng xịt tiện lợi</h5>
-                              <p class="card-text text-end  my-4">
-                                Nhỏ gọn, tiện lợi như một chiếc bodymist để bạn dễ dàng mang đi bất cứ đâu - du lịch, đi học hay chơi cùng bạn bè.
-                              </p>
-                             
+                </div>
+                <div class="cardContent__item">
+                    <div class="card-content__item__title-shadow"><div
+                            class="card-content__item__title"><h2 class="title">02</h2></div></div>
+                    <div class="card mb-3  ">
+                        <div
+                            class="row g-0  justify-content-between align-items-center">
+                            <div class="col-lg-7">
+                                <div class="card-body">
+                                    <h5 class="card-title  text-end">FRAGRANCE
+                                        SENSOR</h5>
+                                    <p class="card-text my-4 text-end">
+                                        Khử mùi nhưng lưu hương suốt cả ngày như
+                                        nước hoa ?
+                                        Chính là nhờ công nghệ Fragrance Sensor
+                                        với hoạt động chất
+                                        Xylityl Sesquicaprylate and
+                                        Cyclodextrin, khóa mùi thông minh giúp
+                                        nước hoa không hòa lẫn với
+                                        mùi cơ thể, từ đó lưu hương suốt 24H.
+                                    </p>
+
+                                </div>
                             </div>
-                          </div>
-                          <div class="col-lg-5">
-                            <img src="./assets/images/About/About_Photo04.png
+                            <div class="col-lg-5">
+                                <img
+                                    src="./assets/images/About/About_Photo02.png
                             " class="img" alt="...">
-                          </div>
+                            </div>
+
                         </div>
-                      </div>
                     </div>
-                </div>    
-                <div class="cardAnnounce my-5 ">
-                    <div class="container ">
-                        <div class="row justify-content-xl-center">
+                </div>
+                <div class="cardContent__item">
+                    <div class="card-content__item__title-shadow"><div
+                            class="card-content__item__title"><h2 class="title">03</h2></div></div>
+                    <div class="card mb-5">
+                        <div
+                            class="row g-0  justify-content-between align-items-center">
+                            <div class="col-lg-5">
+                                <img
+                                    src="./assets/images/About/About_Photo03.png
+                            " class="img" alt="...">
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">CHIẾT XUẤT </h5>
+                                    <h5 class="card-title">TỪ THIÊN NHIÊN</h5>
+
+                                    <p class="card-text  my-4">
+                                        Một công thức hiệu quả nhưng lại vô cùng
+                                        dịu nhẹ nhờ có 2 không: không cồn -
+                                        không Paraben và các hoạt chất chiết
+                                        xuất từ thiên nhiên, giúp bạn 48H tự
+                                        tin!
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardContent__item">
+                    <div class="card-content__item__title-shadow"><div
+                            class="card-content__item__title"><h2 class="title">04</h2></div></div>
+                    <div class="card mb-3  ">
+                        <div
+                            class="row g-0  justify-content-between align-items-center">
+
+                            <div class="col-lg-7">
+                                <div class="card-body">
+                                    <h5 class="card-title text-end">Dạng xịt
+                                        tiện lợi</h5>
+                                    <p class="card-text text-end  my-4">
+                                        Nhỏ gọn, tiện lợi như một chiếc bodymist
+                                        để bạn dễ dàng mang đi bất cứ đâu - du
+                                        lịch, đi học hay chơi cùng bạn bè.
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <img
+                                    src="./assets/images/About/About_Photo04.png
+                            " class="img" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardAnnounce my-5 ">
+                <div class="container ">
+                    <div class="row justify-content-xl-center">
                         <div class="col-4">
                             <div>
-                            <h2 >Không </h2>
-                            <h2>Cồn</h2>
-                        </div>
-                        </div>
-                        <div class="col-4">
-                            <div>                            
                                 <h2>Không </h2>
-                            <h2>PARABEN</h2>
+                                <h2>Cồn</h2>
+                            </div>
                         </div>
+                        <div class="col-4">
+                            <div>
+                                <h2>Không </h2>
+                                <h2>PARABEN</h2>
+                            </div>
 
                         </div>
                         <div class="col-4">
                             <div>
-                            <h2 >Không GÂY</h2>
-                            <h2>Ố VÀNG</h2>
+                                <h2>Không GÂY</h2>
+                                <h2>Ố VÀNG</h2>
+                            </div>
                         </div>
-                        </div>
                     </div>
-                    </div>
-                    </div>
+                </div>
             </div>
-            <div class="bannerThird my-4">
-                <article
-               
+        </div>
+        <div class="bannerThird my-4">
+            <article
                 class="d-flex flex-column py-5 align-items-center h-100">
                 <div class="my-5 ">
-                    <h2 class="mb-0 text-center  fw-bold" style="color: #5c3bac;">Trải nghiệm ngay Refre công thức mới đột phá!</h2>
-                  
+                    <h2 class="mb-0 text-center  fw-bold"
+                        style="color: #5c3bac;">Trải nghiệm ngay Refre công thức
+                        mới đột phá!</h2>
+
                 </div>
                 <a href="#container-card" class="my-3"><img
-                    src="/assets/images/Quiz/arrow up.png " alt
-                    style="width: 4em;cursor: pointer;" /></a>
+                        src="/assets/images/Quiz/arrow up.png " alt
+                        style="width: 4em;cursor: pointer;" /></a>
 
-               
             </article>
 
-            </div>
-            <footer>
-                <div class="container position-relative">
-                    <img data-src="/assets/images/HomePage/Layer 1314.png"
-                        class="img-footer lazy banner fade-in" alt />
-                    <div
-                        class="my-5 row d-flex align-items-center justify-content-between ">
-                        <div class="content conten1 col-md-4 col-xl-4">
-                            <h6 >CÔNG TY TNHH ROHTO-MENTHOLATUM (VIỆT NAM)</h6>
-                            <p>Số ĐKKD 3700239769 do Sở KHĐT Bình Dương
-                                cấp
-                                ngày 30/06/2008</p>
-                            <p>Tư vấn khách hàng:   028-38229322</p>
-                            <p>16 VSIP Đường số 5, khu công nghiệp Việt
-                                Nam -
-                                Singapore, Phường Bình Hòa, Thành phố
-                                Thuận
-                                An tỉnh Bình Dương </p>
-                        </div>
-                        <div class="content content2 col-md-4 col-xl-2">
-                            <div class="w-100">                      
-                             <p style="white-space: nowrap;" >Chính sách đổi trả và bảo hành</p>
-                            <p>Chính sách giao nhận</p>
-                            <p>Chính sách thanh toán</p>
-                            <p>Hướng dẫn đặt hàng</p>
-                        </div>
-     
-                        </div>
-                        <div
-                            class="content content3 col-md-4 d-flex align-items-end   col-xl-5">
-                            <div class="w-100">
-                                <h6>COPYRIGHT &copy  2019 ALL RIGHTS RESERVED</h6>
-    
-                                <p>Điều khoản sử dụng </p>
-                                <p>Cookies</p>
-                                <p>Chính sách bảo mật </p>
-                                <p>Sitemap</p>
-                            </div>
-                            <div class="content content4">
-                                <img src="./assets/images/HomePage/Footer_BoCTLogo.png " width="200" class="img-fluid" />
-                            </div>
-                        </div>
-    
-                    </div>
-                    <div class="popup">
-                     
-                            <img data-src="/assets/images/PopUp_Fb.png" alt class="lazy loaded" />
-                            
-                  
-                            <img data-src="/assets/images/PopUp_Insta.png" alt class="lazy loaded" />
-                            <img data-src="/assets/images/PopUp_FbInsta.png" alt class="lazy loaded" />
-                            <img data-src="/assets/images/PopUp_Home.png" alt class="lazy loaded" />
-                     
-                    </div>
+        </div>
+        <footer>
+            <div class="container position-relative top-0 h-100">
+                <div
+                    class="my-5  d-flex align-items-center flex-column justify-content-center">
+
+                
+                    <p>© Công ty TNHH Rohto-Mentholatum (Việt Nam) _ Thiết kế
+                        bởi Vipcom</p>
+                    <p>Số ĐKKD: 3700239769 do Sở KHĐT Tỉnh Bình Dương cấp ngày
+                        23/09/1988 </p>
+
+                    <p>Email: <span style="color:#5c3bac">
+                            enquiries@rohto.com.vn</span> - Hotline: 028 –
+                        38229322 </p>
+                    <p>Địa chỉ: 16  VSIP đường số 5 KCN Việt Nam - Singaporre, P.Bình Hòa, TP.Thuận An, Tỉnh Bình Dương</p>
+                    <ul>
+                        <li>Chính sách bảo mật</li>
+                        <li>Chính sách đổi trả bảo hành </li>
+                        <li>Chính sách giao nhận</li>
+                        <li>Chính sách thanh toán </li>
+                        <li>Hướng dẫn đặt hàng</li>
+                    </ul>
+                    <img src="./assets/images/HomePage/Footer_BoCTLogo.png "
+                        width="200" class="img-fluid" />
+
                 </div>
-            
-            </footer>
-    
-            <script
+                <div class="popup">
+
+                    <img data-src="/assets/images/PopUp_Fb.png" alt
+                        class="lazy loaded" />
+
+                    <img data-src="/assets/images/PopUp_Insta.png" alt
+                        class="lazy loaded" />
+                    <img data-src="/assets/images/PopUp_FbInsta.png" alt
+                        class="lazy loaded" />
+                    <img data-src="/assets/images/PopUp_Home.png" alt
+                        class="lazy loaded" />
+
+                </div>
+            </div>
+
+        </footer>
+
+        <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>

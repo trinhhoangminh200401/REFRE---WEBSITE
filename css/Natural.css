@@ -83,7 +83,14 @@ header .header-container__navigation {
     color: #000;
     text-transform: uppercase;
     font-weight: 800;
-    font-size: 1.4em;
+    font-size: 1.35em;
+
+}
+.header-container .nav-link:hover{
+    border-bottom:  2px solid black;
+}
+.hoverActive{
+    border-bottom:  2px solid black;
 
 }
 
@@ -642,35 +649,42 @@ body {
 }
 footer {
 
-    background-color: #d0d0ff;
+    background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
     min-height: 250px;
     padding: 10px 0;
     position: relative;
     bottom: 0;
 }
 
-footer .container{
+footer .container-footer {
     bottom: 0;
+    
 }
 
-footer .container .img-footer {
-    width: 15em;
-    height: 25%;
-}
 
-footer .container .row p {
-    font-size: 13px;
+footer .container div p {
+    font-size: 14px;
     margin: 0 10px;
-    color: #87469c;
+    color: #595959;
     font-weight: 600;
 }
-
-footer .container .row h6 {
-    font-weight: bold;
-    font-size: 15px;
-    color: #87469c;
+footer .container div ul {
+    display: flex;
+    list-style-type: none;
+    color: #5c3bac;
+    font-size: 14px;
 
 }
+footer .container div ul li{
+    margin:  10px 5px;
+    font-weight: 600;
+
+}
+footer .container div ul li:after {
+ content:"|"
+}
+
+
 footer .container .popup {
     top: -50%;
     right: 0;

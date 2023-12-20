@@ -56,27 +56,39 @@ export const questionnaireData = [
     answers: [
       {
         text: "Hương gỗ, mùi đất",
-        image: "path/to/image1.jpg",
+        image: "https://dummyimage.com/150x150/000/fff",
       },
       {
         text: "Hương vani, hổ phách",
-        image: "path/to/image2.jpg",
+        image: "https://dummyimage.com/150x150/000/fff",
       },
       {
         text: "Hương kẹo ngọt",
-        image: "path/to/image3.jpg",
+        image: "https://dummyimage.com/150x150/000/fff",
       },
       {
         text: "Hương hoa nồng nàn",
-        image: "path/to/image4.jpg",
+        image: "https://dummyimage.com/150x150/000/fff",
       },
       {
         text: "Hương thơm xạ hương",
-        image: "path/to/image5.jpg",
+        image: "https://dummyimage.com/150x150/000/fff",
       },
       {
         text: "Hương cây cỏ thực vật",
-        image: "path/to/image6.jpg",
+        image: "https://dummyimage.com/150x150/000/fff",
+      },
+      {
+        text: "Hương hoa nồng nàn",
+        image: "https://dummyimage.com/150x150/000/fff",
+      },
+      {
+        text: "Hương thơm xạ hương",
+        image: "https://dummyimage.com/150x150/000/fff",
+      },
+      {
+        text: "Hương cây cỏ thực vật",
+        image: "https://dummyimage.com/150x150/000/fff",
       },
       // Add more answers as needed
     ],
@@ -84,38 +96,36 @@ export const questionnaireData = [
     maxSelection: 3,
   },
   {
-    question: "Ba mùi hương bạn không thích:",
+    question: "Bạn thuộc tuýp người gì ",
     answers: [
       {
         text: "Hương gỗ, mùi đất",
-        image: "path/to/image1.jpg",
+        image: "https://dummyimage.com/150x150/000/fff",
       },
       {
         text: "Hương vani, hổ phách",
-        image: "path/to/image2.jpg",
+        image: "https://dummyimage.com/150x150/000/fff",
       },
       {
         text: "Hương kẹo ngọt",
-        image: "path/to/image3.jpg",
+        image: "https://dummyimage.com/150x150/000/fff",
       },
       {
         text: "Hương hoa nồng nàn",
-        image: "path/to/image4.jpg",
+        image: "https://dummyimage.com/150x150/000/fff",
       },
-      {
-        text: "Hương thơm xạ hương",
-        image: "path/to/image5.jpg",
-      },
-      {
-        text: "Hương cây cỏ thực vật",
-        image: "path/to/image6.jpg",
-      },
+     
     ],
-    maxSelection: 3,
+    maxSelection: 1,
   },
   {
     question: "Bạn thường xuyên ngát hương khi nào:",
-    answers: ["Đi học, đi làm", "Hẹn hò, đi chơi"],
+    answers: [
+      
+      "Đi học, đi làm", 
+      "Hẹn hò, đi chơi"
+    
+    ],
     maxSelection: 1,
   },
   {

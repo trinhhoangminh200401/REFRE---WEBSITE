@@ -25,10 +25,16 @@ header .header-container__navigation {
     color: #000;
     text-transform: uppercase;
     font-weight: 800;
-    font-size: 1.4em;
+    font-size: 1.35em;
 
 }
+.header-container .nav-link:hover{
+  border-bottom:  2px solid black;
+}
+.hoverActive{
+  border-bottom:  2px solid black;
 
+}
 .header-container .navigation__logo img {
     width: 6em;
     object-fit: cover;
@@ -51,3 +57,141 @@ header .header-container__navigation {
     height: 30em;
 
 }
+.container-card .cardContent .cardContent__item .card-content__item__title-shadow {
+    width: 8em;
+    box-shadow: 6px 7px 0px #a6aff2;
+    border-radius: 40px;
+    margin: 1.2em 0
+}
+
+.container-card .cardContent .cardContent__item .card-content__item__title-shadow .card-content__item__title {
+    width: 100%;
+    border: 3px solid white;
+    box-shadow: #fff 0px 0px 20px 0px;
+    border-radius: 40px;
+
+
+}
+
+.container-card .cardContent .cardContent__item .card-content__item__title-shadow .card-content__item__title .title {
+    font-size: 3em;
+    width: 100%;
+    box-shadow: inset #fff 0px 0px 14px 0px;
+    background-color: #7571fa;
+    height: 100%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    margin: 0;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.container-card .cardContent .cardContent__item {
+    flex-basis: 33.33%;
+    background-color: rgba(255,255,255,0.3);
+    margin: 2em 0 ;
+        padding: 1em;
+    box-sizing: border-box;
+  }
+  
+
+.container-card .cardContent .cardContent__item .card {
+    background: none;
+    border :none;
+    height: 100%;
+
+
+}
+.container-card .cardContent .cardContent__item .question-word span{
+   color : #5e40a4;
+   font-weight: 700;
+    margin-left: 2em;
+    font-size: 2em;
+    display: inline-block;
+}
+.container-card .cardContent .cardContent__item .card .nopad {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  /* Image gallery */
+  .container-card .cardContent .cardContent__item .card  .image-checkbox {
+    cursor: pointer;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 4px solid transparent;
+    margin-bottom: 0;
+    outline: 0;
+    position: relative;
+  }
+  
+  .container-card .cardContent .cardContent__item .card  .image-checkbox input[type="checkbox"] {
+    display: none;
+  }
+  
+  .container-card .cardContent .cardContent__item .card .image-checkbox-checked {
+    border-color: #4783B0;
+  }
+  
+  .container-card .cardContent .cardContent__item .card .image-checkbox .fa {
+    position: absolute;
+    color: #4A79A3;
+    background-color: #fff;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    display: none;
+  }
+  
+  .container-card .cardContent .cardContent__item .card .image-checkbox-checked .fa {
+    display: block;
+  }
+  .container-card .cardContent .cardContent__item .card .image-checkbox .content {
+    position: absolute;
+    top:50%;
+    color: white;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px black;
+  }
+  .container-card .cardContent .cardContent__item .card .nopadText  {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .container-card .cardContent .cardContent__item .card .nopadText .image-checkbox{
+  cursor: pointer;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 3px solid #7960bb;
+  border-radius: 30px;
+  font-size: 1em;
+  padding: 1em;
+  font-weight: 700;
+  color:#8683bc;
+  margin-bottom: 0;
+  outline: 0;
+  position: relative;
+}
+.container-card .cardContent .cardContent__item .card .nopadText .image-checkbox-checked {
+background-image: linear-gradient(to bottom, #ddcbfd, #a686ff);
+color:#fff
+}
+#handlesubmit{
+  background-color:#7571fa;
+   font-size: 22px;
+   border: 4px solid #fff;
+   margin:26px 0;
+  }
+  .render-result{
+    min-height: 200px;
+    background-color: #5e40a4
+  }

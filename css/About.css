@@ -26,16 +26,51 @@ header .header-container__navigation {
     color: #000;
     text-transform: uppercase;
     font-weight: 800;
-    font-size: 1.4em;
+    font-size: 1.35em;
 
 }
+.header-container .nav-link:hover{
+    border-bottom:  2px solid black;
+}
+.hoverActive{
+    border-bottom:  2px solid black;
 
+}
 .header-container .navigation__logo img {
     width: 6em;
     object-fit: cover;
     object-position: center;
 
 }
+  /* .dropend .dropdown-toggle {
+    color: salmon;
+    margin-left: 1em;
+  }
+  .dropdown-item:hover {
+    background-color: lightsalmon;
+  }
+  .dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+  }
+  .dropdown:hover > .dropdown-menu,
+  .dropend:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0.125em;
+    margin-left: 0.125em;
+  }
+  @media screen and (min-width: 769px) {
+    .dropend:hover > .dropdown-menu {
+      position: absolute;
+      top: 0;
+      left: 100%;
+    }
+    .dropend .dropdown-toggle {
+      margin-left: 0.5em;
+    }
+  }
+   */
 
 .header-container .navigation__logo .img2 {
 
@@ -155,6 +190,8 @@ blockquote:after {
 .bannerSecond .Breakthrough-formula .card-user h4 {
     color: white;
     -webkit-text-stroke-width: 1px;
+    font-family: 'Kanit', sans-serif;
+        font-size: 20px;
     -webkit-text-stroke-color: #416f37;
 }
 
@@ -269,7 +306,7 @@ blockquote:after {
 }
 footer {
 
-    background-color: #d0d0ff;
+    background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
     min-height: 250px;
     padding: 10px 0;
     position: relative;
@@ -281,24 +318,28 @@ footer .container-footer {
     
 }
 
-footer .container .img-footer {
-    width: 15em;
-    height: 25%;
-}
 
-footer .container .row p {
-    font-size: 13px;
+footer .container div p {
+    font-size: 14px;
     margin: 0 10px;
-    color: #87469c;
     font-weight: 600;
 }
-
-footer .container .row h6 {
-    font-weight: bold;
-    font-size: 15px;
-    color: #87469c;
+footer .container div ul {
+    display: flex;
+    list-style-type: none;
+    color: #5c3bac;
+    font-size: 14px;
 
 }
+footer .container div ul li{
+    margin:  10px 5px;
+    font-weight: 600;
+
+}
+footer .container div ul li:after {
+ content:"|"
+}
+
 
 
 
@@ -312,7 +353,7 @@ footer .container .row h6 {
 }
 
 .popup {
-    top: -50%;
+bottom: 30%;
     font-size: 20px;
     right: 0em;
     z-index: 70;
