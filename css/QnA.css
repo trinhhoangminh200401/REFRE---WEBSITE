@@ -1,0 +1,201 @@
+.header-container {
+    width: 100%;
+    background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
+
+
+}
+
+header .header-container__navigation {
+    width: 95%;
+    margin: 0 auto;
+
+}
+
+.header-container__navigation button {
+    color: #87469c
+}
+
+
+.header-container .navbar-nav__item {
+    margin: 0 15px;
+    color: #000;
+
+}
+
+.header-container .nav-link {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.35em;
+
+}
+
+.header-container .nav-link:hover {
+    border-bottom: 2px solid black;
+}
+
+.hoverActive {
+    border-bottom: 2px solid black;
+
+}
+
+.header-container .navigation__logo img {
+    width: 6em;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.header-container .navigation__logo .img2 {
+
+    object-fit: cover;
+    object-position: center;
+    width: 6em;
+
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.loaded {
+    opacity: 1;
+}
+
+
+.banner {
+
+    width: 100%;
+}
+
+.banner img {
+
+    width: 100%;
+
+
+
+
+}
+
+.headline {
+    margin: 0px auto;
+    width: 60%;
+}
+
+.Qna {
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.Qna .headline img {
+    width: 100%;
+    object-position: center;
+}
+
+.Qna .Qna__container .Qna__container-shadow {
+
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: rgba(187, 195, 242, 0.3) 0px 7px 49px 0px;
+    width: 80%;
+    margin: 2em auto;
+
+}
+
+.Qna .Qna__container .Qna__container-shadow .Qna__container-item {
+    /* background-color: rgba(251, 250, 255,0.2); */
+    box-shadow: inset 23px 10px 100px 20px #fff;
+    border-radius: 20px;
+    padding: 3em;
+
+}
+
+.Qna .Qna__container .Qna__container-shadow .Qna__container-item h4 {
+    color: #65479d;
+    font-weight: 900;
+    font-size: 25px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.Qna .Qna__container .Qna__container-shadow .Qna__container-item h4 span {
+    font-size: 2.6em;
+    margin-right: 10px;
+}
+
+.Qna .Qna__container .Qna__container-shadow .Qna__container-item p {
+    color: #8f88ca;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.Qna .Qna__container .Qna__container-shadow .Qna__container-item .h6 {
+    color: #8f88ca;
+    font-style: italic;
+    font-size: 14px;
+}
+footer {
+
+    background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
+    min-height: 250px;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+}
+
+footer .container-footer {
+    bottom: 0;
+    
+}
+
+
+footer .container div p {
+    font-size: 14px;
+    margin: 0 10px;
+    color: #595959;
+    font-weight: 600;
+}
+footer .container div ul {
+    display: flex;
+    list-style-type: none;
+    color: #5c3bac;
+    font-size: 14px;
+
+}
+footer .container div ul li{
+    margin:  10px 5px;
+    font-weight: 600;
+
+}
+footer .container div ul li:after {
+ content:"|"
+}
+
+
+footer .container .popup {
+    top: -50%;
+    right: 0;
+    z-index: 70;
+    font-size: 20px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+}
+footer .popup img {
+    width: 70%;
+}
+
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.loaded {
+    opacity: 1;
+}
