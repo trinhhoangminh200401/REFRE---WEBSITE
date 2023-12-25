@@ -30,9 +30,9 @@ $(document).ready(function (){
       
   });
   }
-  
+      
   // Call the function on document ready and scroll
-  fadeInOnScroll();
+  // fadeInOnScroll();
   $(window).scroll(function () {
       rightInScroll()
       fadeInOnScroll();

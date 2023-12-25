@@ -6,11 +6,11 @@ $(document).ready(function () {
       element.addClass("loaded");
     },
   });
-  
+
   $(".tab-slider-gallery .owl-carousel").owlCarousel({
     responsiveClass: true,
     autoplay: true,
-    navText:"",
+    navText: "",
     autoplayTimeout: 3000,
     responsive: {
       0: {
@@ -68,7 +68,7 @@ $(document).ready(function () {
   });
   $(".container-tabs .card-body").click(function () {
     let totalItem = $(".container-slider-image .owl-carousel .owl-item").length;
-  
+
     let position = $(this).index();
     if (position >= 0 && position < totalItem) {
       $(".container-slider-image .owl-carousel .owl-item").trigger(
@@ -89,49 +89,49 @@ $(document).ready(function () {
     container.empty();
 
     // Get the selected page from the range input
-    var selectedPage = parseInt(pagination.val()) ;
-     // Calculate the start and end indices for the current page
-    
-    var displayedItems = ProductPageService.getItems(selectedPage-1, itemsPerPage,DataUser);
-     if (displayedItems.length > 0 ){
-      displayedItems.forEach(function(item, index)  {
+    var selectedPage = parseInt(pagination.val());
+    // Calculate the start and end indices for the current page
+
+    var displayedItems = ProductPageService.getItems(
+      selectedPage - 1,
+      itemsPerPage,
+      DataUser
+    );
+    if (displayedItems.length > 0) {
+      displayedItems.forEach(function (item, index) {
         var itemElement = $("<div>")
           .addClass("text-center col-xs-4 col-sm-6 col-md-12 mx-auto my-4")
           .css("width", "400px")
           .hide();
-  
+
         // Create the elements for the item (e.g., image, username, rating, review)
         let imgElement = $("<img>")
-        .addClass("card-img-top banner fade-in")
-        .attr("src", item.imgSrc);
-  
-      imgElement.on("load", function() {
-        imgElement.addClass("loaded");
-        imgElement.attr("alt", "Card image");
-      
-      });
-      
-      // Trigger the image loading
-        
+          .addClass("card-img-top banner fade-in")
+          .attr("src", item.imgSrc);
+
+        imgElement.on("load", function () {
+          imgElement.addClass("loaded");
+          imgElement.attr("alt", "Card image");
+        });
+
+        // Trigger the image loading
+
         var usernameElement = $("<h4>")
           .addClass("card-title my-4 fw-bold fst-italic")
           .text(item.username);
-  
+
         var ratingElement = $("<div>").addClass("rating-stars text-center");
         for (let i = 0; i < item.rating; i++) {
           $("<i>")
             .addClass(`fa fa-star yellow fa-fw my-4`)
-            .appendTo(ratingElement)
-            if(i < item.rating && i > 2){
-              
-              $("<i>")
-              .addClass(`yellow`)
-            
-            }
-           }
-  
+            .appendTo(ratingElement);
+          if (i < item.rating && i > 2) {
+            $("<i>").addClass(`yellow`);
+          }
+        }
+
         var reviewElement = $("<p>").addClass("card-text").text(item.review);
-  
+
         // Append the elements to the item
         itemElement.append(
           imgElement,
@@ -139,23 +139,19 @@ $(document).ready(function () {
           ratingElement,
           reviewElement
         );
-        
+
         // Append the item to the container
         container.append(itemElement);
       });
-     }
-    
-     else{
-    
-      container.append("No user exist")
-     }
+    } else {
+      container.append("No user exist");
+    }
     // Loop through the items and create the elements
-  
+
     // Show the items with a fadeIn effect
     container.children().fadeIn();
-  
   }
-  
+
   displayItems();
 
   $("rating-stars .fa-star").click(function () {
@@ -166,7 +162,6 @@ $(document).ready(function () {
   });
   // Add an event listener to the pagination range input
   pagination.on("input", function () {
-       
-     displayItems();
+    displayItems();
   });
 });

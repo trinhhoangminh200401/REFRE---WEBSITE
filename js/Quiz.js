@@ -3,7 +3,7 @@ import { questionnaireData } from "./mockData/quiz.js";
 let newQuestionnaire = [];
 
 $(document).ready(function () {
- 
+  const result_data = $(".render-result");
   $(".lazy").Lazy({
     afterLoad: function (element) {
       element.addClass("loaded");
@@ -18,46 +18,62 @@ $(document).ready(function () {
     maxSelection,
     index
   ) {
+    if (!selectedItem) {
+      errorElement.text("Please select an answer for the question.");
+      $(
+        `.cardContent__item.cardContent__item-${index} > .error-container`
+      ).append(errorElement);
+
+      // Auto remove the error message after 5 seconds (adjust the timeout as needed)
+      setTimeout(() => {
+        errorElement.remove();
+      }, 5000);
+
+      return "Missing selection";
+    }
+
     const elementOfList = existingQuestion
       ? existingQuestion.answers.length
       : 0;
 
-    if (!selectedItem) {
-      return "Please select an answer for the question.";
-    }
+    if (
+      elementOfList >= maxSelection &&
+      !existingQuestion.answers.includes(selectedItem)
+    ) {
+      errorElement.text(`Please select exactly ${maxSelection} answer(s).`);
+      $(
+        `.cardContent__item.cardContent__item-${index} > .error-container`
+      ).append(errorElement);
 
-    if (elementOfList >= maxSelection && !existingQuestion.answers.includes(selectedItem)) {
-      if (!$(`.content.content-${index} > span`).length) {
-        errorElement.text(`Please select exactly ${maxSelection} answer(s).`);
-        $(`.content.content-${index}`).append(errorElement);
-      }
-      
-      return "Maximum selection reached!";
+      // Auto remove the error message after 5 seconds (adjust the timeout as needed)
+      setTimeout(() => {
+        errorElement.remove();
+      }, 5000);
+
+      return "Maximum selection reached";
     }
 
     return null;
   }
-
   function handleResponse(index, selectedItem) {
     const maxSelection = questionnaireData[index].maxSelection;
     let existingQuestionIndex = newQuestionnaire.findIndex(
       (question) => question.index === index
     );
-    
+
     const validationError = validateSelection(
       selectedItem,
       newQuestionnaire[existingQuestionIndex],
       maxSelection,
       index
     );
-  
+
     if (validationError) {
-      console.log(validationError);
-      return;
+      return validationError;
     }
-  
+
     let updatedQuestionnaire = cloneArray(newQuestionnaire);
-  
+
     if (existingQuestionIndex === -1) {
       const newQuestion = {
         index,
@@ -67,47 +83,22 @@ $(document).ready(function () {
       updatedQuestionnaire.push(newQuestion);
       existingQuestionIndex = updatedQuestionnaire.length - 1;
     }
-  
+
     const answers = updatedQuestionnaire[existingQuestionIndex].answers;
     const isItemSelected = answers.includes(selectedItem);
     console.log(typeof selectedItem);
     if (isItemSelected) {
-      updatedQuestionnaire[existingQuestionIndex].answers = answers.filter((item) => item !== selectedItem);
+      updatedQuestionnaire[existingQuestionIndex].answers = answers.filter(
+        (item) => item !== selectedItem
+      );
     } else {
       if (answers.length < maxSelection) {
         updatedQuestionnaire[existingQuestionIndex].answers.push(selectedItem);
-        
       }
     }
-  
+
     newQuestionnaire = updatedQuestionnaire;
   }
-  
-  // function updateStyling(index) {
-  //   const existingQuestion = newQuestionnaire.find((q) => q.index === index);
-
-  //   // Reset background color for all checkboxes
-  //   $(`.content.content-${index} input[type="checkbox"]`)
-  //     .parent()
-  //     .css("background-color", "")
-  //     .css("color", "");
-
-  //   if (existingQuestion) {
-  //     existingQuestion.answers.forEach((item) => {
-  //       const checkbox = $(
-  //         `.content.content-${index} input[type="checkbox"][value="${
-  //           typeof item === "object" ? item.text : item
-  //         }"]`
-  //       );
-  //       if (checkbox.prop("checked")) {
-  //         checkbox
-  //           .parent()
-  //           .css("background-color", "blue")
-  //           .css("color", "white");
-  //       }
-  //     });
-  //   }
-  // }
 
   function renderData() {
     const questionnaireContainer = $("#questionnaire-container");
@@ -119,10 +110,14 @@ $(document).ready(function () {
     questionnaireContainer.append(containerCard.append(containerCardContent));
 
     questionnaireData.forEach((question, index) => {
-      const cardItem = $("<div>").addClass(`cardContent__item cardContent__item-${index}`);
+      const cardItem = $("<div>").addClass(
+        `cardContent__item cardContent__item-${index}`
+      );
       const questionWord = $("<div>").addClass(
         "question-word d-flex align-items-center"
       );
+      const errorContainer = $("<div>").addClass("error-container");
+
       // Check if the question has an image
       if (
         question?.answers &&
@@ -147,7 +142,7 @@ $(document).ready(function () {
 
         const card = $("<div>").addClass("card mb-3");
         const flexContainer = $("<div>").addClass(
-          "justify-content-center d-xl-flex flex-wrap w-50 mx-auto"
+          " d-xl-flex flex-wrap w-50 mx-auto"
         );
 
         question.answers.forEach((item, itemIndex) => {
@@ -156,14 +151,12 @@ $(document).ready(function () {
           const checkbox = $("<input>").attr({
             type: "checkbox",
             name: `answer-${index}`,
-            value: item.text,  ////  note 
+            value: item.text, ////  note
           });
           const checkboxImage = $("<img>")
             .addClass("img-responsive")
             .attr("src", item.image);
-          const checkboxContent = $("<div>")
-            .addClass("content")
-            .text(item.text);
+          const checkboxContent = $("<p>").addClass("content").text(item.text);
 
           checkboxLabel.append(
             checkbox,
@@ -173,12 +166,12 @@ $(document).ready(function () {
           );
 
           flexContainer.append(
-            $("<div>").addClass("nopad text-center m-1").append(checkboxLabel)
+            $("<div>").addClass("nopad text-center").append(checkboxLabel)
           );
         });
 
         card.append(flexContainer);
-        cardItem.append(card);
+        cardItem.append(card, errorContainer);
       } else {
         // If there is no image, render this structure
         const titleShadow = $("<div>").addClass(
@@ -198,7 +191,7 @@ $(document).ready(function () {
 
         const card = $("<div>").addClass("card mb-3");
         const flexContainer = $("<div>").addClass(
-          "justify-content-center d-xl-flex flex-wrap w-75 justify-content-center mx-auto"
+          "justify-content-center d-xl-flex flex-wrap w-100  mx-auto"
         );
 
         question.answers.forEach((item, itemIndex) => {
@@ -215,7 +208,7 @@ $(document).ready(function () {
 
           flexContainer.append(
             $("<div>")
-              .addClass("nopadText text-center mx-3")
+              .addClass("nopadText text-center my-4 mx-3")
               .append(checkboxLabel)
           );
         });
@@ -229,62 +222,75 @@ $(document).ready(function () {
 
   // Call the function to render the data
   renderData();
-    // ... (existing code)
-   //-------------------------- this code isn't working
-    // Set initial state of checkboxes
-    // $(".image-checkbox").each(function () {
-    //   const $checkbox = $(this).find('input[type="checkbox"]');
-    //   const index = $checkbox.attr("name").split("-")[1];
-    //   const selectedItem = $checkbox.val();
-     
-    //   if (newQuestionnaire.some((q) => q.index === index && q.answers.includes(selectedItem))) {
-    //     $(this).addClass("image-checkbox-checked");
-    //   } else {
-    //     $(this).removeClass("image-checkbox-checked");
-    //   }
-    // });
-  
-    // // ... (rest of your existing code)
-  
-    $(".image-checkbox").on("change", function (e) {
-      const $checkbox = $(this).find('input[type="checkbox"]');
-      const index = $checkbox.attr("name").split("-")[1];
-      const selectedItem = $checkbox.val();
-    
-      const selectedCheckboxesLength = $(`.cardContent__item.cardContent__item-${index} input[type="checkbox"]:checked`);
-      const unselectedCheckboxes = $(`.cardContent__item.cardContent__item-${index} input[type="checkbox"]:not(:checked)`);
-      const maxSelection = questionnaireData[index].maxSelection;
-    
-      if ($checkbox.prop("checked") && selectedCheckboxesLength.length > maxSelection) {
-        // If the checkbox is being checked and the maxSelection limit is reached, prevent further selection
-        $(this).removeClass("image-checkbox-checked");
-        $checkbox.prop("checked", false);
-        unselectedCheckboxes.prop("disabled", true);
-      } else if (!$checkbox.prop("checked") && selectedCheckboxesLength.length >= maxSelection) {
-        // If the checkbox is being unchecked and the maxSelection limit is reached, allow unchecking
-        $(this).removeClass("image-checkbox-checked");
-        unselectedCheckboxes.prop("disabled", false);
-      } else {
-        // Otherwise, toggle the checked state and handle the response
-        $(this).toggleClass("image-checkbox-checked", $checkbox.prop("checked"));
-        unselectedCheckboxes.prop("disabled", false);
-        handleResponse(index, selectedItem);
-      }
-    });
-    
-    
+  // ... (existing code)
+  //-------------------------- this code isn't working
+  // Set initial state of checkboxes
+  // $(".image-checkbox").each(function () {
+  //   const $checkbox = $(this).find('input[type="checkbox"]');
+  //   const index = $checkbox.attr("name").split("-")[1];
+  //   const selectedItem = $checkbox.val();
+
+  //   if (newQuestionnaire.some((q) => q.index === index && q.answers.includes(selectedItem))) {
+  //     $(this).addClass("image-checkbox-checked");
+  //   } else {
+  //     $(this).removeClass("image-checkbox-checked");
+  //   }
+  // });
+
+  // // ... (rest of your existing code)
+
+  $(".image-checkbox").on("change", function (e) {
+    const $checkbox = $(this).find('input[type="checkbox"]');
+    const index = $checkbox.attr("name").split("-")[1];
+    const selectedItem = $checkbox.val();
+
+    const selectedCheckboxesLength = $(
+      `.cardContent__item.cardContent__item-${index} input[type="checkbox"]:checked`
+    );
+    const unselectedCheckboxes = $(
+      `.cardContent__item.cardContent__item-${index} input[type="checkbox"]:not(:checked)`
+    );
+    const maxSelection = questionnaireData[index].maxSelection;
+
+    if (
+      $checkbox.prop("checked") &&
+      selectedCheckboxesLength.length > maxSelection
+    ) {
+      // If the checkbox is being checked and the maxSelection limit is reached, prevent further selection
+      $(this).removeClass("image-checkbox-checked");
+      $checkbox.prop("checked", false);
+      unselectedCheckboxes.prop("disabled", true);
+    } else if (
+      !$checkbox.prop("checked") &&
+      selectedCheckboxesLength.length >= maxSelection
+    ) {
+      // If the checkbox is being unchecked and the maxSelection limit is reached, allow unchecking
+      $(this).removeClass("image-checkbox-checked");
+      unselectedCheckboxes.prop("disabled", false);
+    } else {
+      // Otherwise, toggle the checked state and handle the response
+      $(this).toggleClass("image-checkbox-checked", $checkbox.prop("checked"));
+      unselectedCheckboxes.prop("disabled", false);
+      handleResponse(index, selectedItem);
+    }
+  });
+
   function handleSubmit() {
+    $(".custom-spinner-container").show();
+
     $(".cardContent__item > .error-message").remove();
 
     newQuestionnaire.forEach((question) => {
       const maxSelection = question.question.maxSelection;
       const selectedAnswers = question.answers.length;
-      console.log(maxSelection)
+      console.log(maxSelection);
       console.log(selectedAnswers);
       if (selectedAnswers !== maxSelection) {
-        console.log("hello")
+        console.log("hello");
         errorElement.text(`Please select exactly ${maxSelection} answers.`);
-        $(`.cardContent__item.cardContent__item-${question.index}`).append(errorElement);
+        $(`.cardContent__item.cardContent__item-${question.index}`).append(
+          errorElement
+        );
       } else {
         errorElement.text(``);
       }
@@ -307,7 +313,45 @@ $(document).ready(function () {
         }
       });
     });
-  
+    let announcementAppended = false;
+    setTimeout(() => {
+      $(".custom-spinner-container").hide();
+      let annouce = $("<p>").addClass("white-color");
+      console.log(annouce.length);
+
+      if (!announcementAppended) {
+        //  console.log(announcementAppended)
+        result_data.append(annouce);
+        if (
+          newQuestionnaire.length <= 0 ||
+          newQuestionnaire.length != questionnaireData.length
+        ) {
+          console.log("lỗi");
+
+          annouce.text("yêu chọn câu trả lời đầy đủ");
+          
+        } else {
+          newQuestionnaire.map((item, index) => {
+            $(".render-result").hide();
+   
+            for (let j = 0; j < item.answers.length; j++) {
+              if (
+                item.answers[j] ==
+                  ("Hương hoa trái cây" &&
+                    "Hương kẹo ngọt" &&
+                    "Hương hoa thơm nồng") &&
+                ("Hướng nội sâu lắng" || "Hướng nội part time")
+                 && ("Đi học, Đi làm" || "Hẹn hò,đi chơi") && ("Vintage nhẹ nhàng" || "Minimalism tối giản") && "Tưới mới lạc quan"
+                ) {
+                console.log("hello");
+              }
+            }
+          });
+        }
+
+        announcementAppended = true; // Set the flag to indicate that the announcement has been appended
+      }
+    }, 2000);
   }
 
   $("#handlesubmit").on("click", handleSubmit);

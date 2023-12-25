@@ -56,68 +56,46 @@ export const questionnaireData = [
     answers: [
       {
         text: "Hương gỗ, mùi đất",
-        image: "https://dummyimage.com/150x150/000/fff",
+        image: "/assets/images/Quiz/Trang Trac Nghiem/Cau1_Pic1.png",
       },
       {
         text: "Hương vani, hổ phách",
-        image: "https://dummyimage.com/150x150/000/fff",
+        image: "/assets/images/Quiz/Trang Trac Nghiem/Cau1_Pic2.png",
       },
       {
         text: "Hương kẹo ngọt",
-        image: "https://dummyimage.com/150x150/000/fff",
+        image: "/assets/images/Quiz/Trang Trac Nghiem/Cau1_Pic3.png",
       },
       {
-        text: "Hương hoa nồng nàn",
-        image: "https://dummyimage.com/150x150/000/fff",
-      },
-      {
-        text: "Hương thơm xạ hương",
-        image: "https://dummyimage.com/150x150/000/fff",
-      },
-      {
-        text: "Hương cây cỏ thực vật",
-        image: "https://dummyimage.com/150x150/000/fff",
-      },
-      {
-        text: "Hương hoa nồng nàn",
-        image: "https://dummyimage.com/150x150/000/fff",
+        text: "Hương hoa thơm nồng",
+        image: "/assets/images/Quiz/Trang Trac Nghiem/Cau1_Pic4.png",
       },
       {
         text: "Hương thơm xạ hương",
-        image: "https://dummyimage.com/150x150/000/fff",
+        image: "/assets/images/Quiz/Trang Trac Nghiem/Cau1_Pic5.png",
+      },
+      {
+        text: "Hương thơm thực vật ",
+        image: "/assets/images/Quiz/Trang Trac Nghiem/Cau1_Pic6.png",
+      },
+      {
+        text: "Hương hoa trái cây",
+        image: "/assets/images/Quiz/Trang Trac Nghiem/Cau1_Pic7.png",
+      },
+      {
+        text: "Hương thơm hoa nhẹ nhàng tinh tế",
+        image: "/assets/images/Quiz/Trang Trac Nghiem/Cau1_Pic8.png",
       },
       {
         text: "Hương cây cỏ thực vật",
-        image: "https://dummyimage.com/150x150/000/fff",
+        image: "/assets/images/Quiz/Trang Trac Nghiem/Cau1_Pic9.png",
       },
       // Add more answers as needed
     ],
     
     maxSelection: 3,
   },
-  {
-    question: "Bạn thuộc tuýp người gì ",
-    answers: [
-      {
-        text: "Hương gỗ, mùi đất",
-        image: "https://dummyimage.com/150x150/000/fff",
-      },
-      {
-        text: "Hương vani, hổ phách",
-        image: "https://dummyimage.com/150x150/000/fff",
-      },
-      {
-        text: "Hương kẹo ngọt",
-        image: "https://dummyimage.com/150x150/000/fff",
-      },
-      {
-        text: "Hương hoa nồng nàn",
-        image: "https://dummyimage.com/150x150/000/fff",
-      },
-     
-    ],
-    maxSelection: 1,
-  },
+ 
   {
     question: "Bạn thường xuyên ngát hương khi nào:",
     answers: [
@@ -128,6 +106,7 @@ export const questionnaireData = [
     ],
     maxSelection: 1,
   },
+  
   {
     question: "Miêu tả phong cách cá nhân của bạn trong một từ:",
     answers: [
@@ -139,8 +118,32 @@ export const questionnaireData = [
     maxSelection: 1,
   },
   {
+    question: "Bạn thuộc tuýp người gì ",
+    answers: [
+      {
+        text: "Hương gỗ, mùi đất",
+        image: "/assets/images/Quiz/Trang Trac Nghiem/Cau4_Pic1.png",
+      },
+      {
+        text: "Hương vani, hổ phách",
+        image: "/assets/images/Quiz/Trang Trac Nghiem/Cau4_Pic2.png",
+      },
+      {
+        text: "Hương kẹo ngọt",
+        image: "/assets/images/Quiz/Trang Trac Nghiem/Cau4_Pic3.png",
+      },
+      {
+        text: "Hương hoa nồng nàn",
+        image: "/assets/images/Quiz/Trang Trac Nghiem/Cau4_Pic4.png",
+      },
+     
+    ],
+    maxSelection: 1,
+  },
+  {
     question: "Bạn muốn mùi hương mang lại cảm giác như thế nào:",
     answers: ["Sang trọng quyến rũ", "Tươi mới lạc quan", "Dịu dàng tinh khôi"],
     maxSelection: 1,
   },
+  
 ];
