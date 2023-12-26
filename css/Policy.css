@@ -1,0 +1,131 @@
+
+.header-container {
+    width: 100%;
+    background-image: linear-gradient(to right top, #ccd3ff,#ccd3ff,#ede4ff,#ede4ff);
+
+
+}
+
+header .header-container__navigation {
+    width: 95%;
+    margin: 0 auto;
+
+}
+
+
+
+.header-container .navbar-nav__item {
+    margin: 0 15px;
+    color: #000;
+   
+}
+
+.header-container .nav-link {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.35em;
+    width: 100%;
+
+}
+.header-container .nav-link:hover{
+    border-bottom:  2px solid black;
+}
+.hoverActive{
+    border-bottom:  2px solid black;
+
+}
+.header-container .navigation__logo img {
+    width: 6em;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.header-container .navigation__logo .img2 {
+
+    object-fit: cover;
+    object-position: center;
+    width: 6em;
+
+}
+.header-container .header-container__navigation button {
+    color:#87469c
+}
+.container-policy .line {
+ height: 3px;
+ color:#87469c;
+ margin-left: auto;
+ margin-right: auto;
+}
+.container-policy ul {
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+footer {
+
+    background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
+    min-height: 250px;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+}
+
+footer .container-footer {
+    bottom: 0;
+    
+}
+
+
+footer .container div p {
+    font-size: 14px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+footer .container div ul {
+    display: flex;
+    list-style-type: none;
+    color: #5c3bac;
+    font-size: 14px;
+
+}
+footer .container div ul li{
+    margin:  10px 5px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+footer .container div ul li:after {
+ content:"|"
+}
+
+
+
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.loaded {
+    opacity: 1;
+}
+
+.popup {
+bottom: 30%;
+    font-size: 20px;
+    right: 0em;
+    z-index: 70;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+}
+
+
+
+.popup img {
+    width: 70%;
+}

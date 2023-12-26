@@ -671,6 +671,7 @@ footer .container div ul {
 footer .container div ul li{
     margin:  10px 5px;
     font-weight: 600;
+    cursor: pointer;
 
 }
 footer .container div ul li:after {
