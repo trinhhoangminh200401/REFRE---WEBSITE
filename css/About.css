@@ -79,7 +79,76 @@ header .header-container__navigation {
     width: 6em;
 
 }
-
+.dropdown-content {
+    visibility: hidden;
+    padding: 0;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content li {
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    
+    padding: 0.5em;
+    text-align: left;
+  }
+  .dropdown-content li a {
+      font-weight: 600;
+      text-transform: uppercase;
+  }
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content li :hover {
+      background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
+  
+    color: black;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+      visibility:visible ;
+  }
+  /* Add this block of CSS for the animation */
+  @keyframes fadeInside {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @media screen and (max-width: 600px) {
+      /* Existing styles for mobile view */
+    
+      .navbar-nav .dropdown-content {
+        animation: fadeInside 3s ease-out;
+        position: static;
+        right: 0%;
+        width: 100%;
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0.3s;
+      }
+    
+      .navbar-nav .dropdown:hover .dropdown-content {
+      display: inline-block;
+      height: 100%;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    
+  
 .bannerFirst {
     background-image: url("/assets/images/About/About_FirstBanner.png");
     ;
