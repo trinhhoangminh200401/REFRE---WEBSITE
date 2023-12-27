@@ -283,10 +283,7 @@ $(document).ready(function () {
     newQuestionnaire.forEach((question) => {
       const maxSelection = question.question.maxSelection;
       const selectedAnswers = question.answers.length;
-      console.log(maxSelection);
-      console.log(selectedAnswers);
       if (selectedAnswers !== maxSelection) {
-        console.log("hello");
         errorElement.text(`Please select exactly ${maxSelection} answers.`);
         $(`.cardContent__item.cardContent__item-${question.index}`).append(
           errorElement
@@ -313,48 +310,75 @@ $(document).ready(function () {
         }
       });
     });
-    let announcementAppended = false;
     setTimeout(() => {
       $(".custom-spinner-container").hide();
-      let annouce = $("<p>").addClass("white-color");
-      console.log(annouce.length);
+      let announce = $("<p>").addClass("white-color py-5");
+      let imageError ='<img src=" https://static.vecteezy.com/system/resources/thumbnails/008/255/803/small/page-not-found-error-404-system-updates-uploading-computing-operation-installation-programs-system-maintenance-a-hand-drawn-layout-template-of-a-broken-robot-illustration-vector.jpg" width="350" height="200" class="mx-auto"   />'
+      if ($(".white-color").length === 0) {
+        result_data.append(announce,imageError);
 
-      if (!announcementAppended) {
-        //  console.log(announcementAppended)
-        result_data.append(annouce);
         if (
           newQuestionnaire.length <= 0 ||
-          newQuestionnaire.length != questionnaireData.length
+          newQuestionnaire.length !== questionnaireData.length
         ) {
-          console.log("lỗi");
-
-          annouce.text("yêu chọn câu trả lời đầy đủ");
-          
+          ;
+          announce.text("BẠN VUI LÒNG TRẢ LỜI ĐẦY ĐỦ ");
         } else {
+          let returnResult = $(".return-result")
+          console.log(newQuestionnaire)
           newQuestionnaire.map((item, index) => {
-            $(".render-result").hide();
-   
+            $('.render-result_content').hide()
             for (let j = 0; j < item.answers.length; j++) {
               if (
-                item.answers[j] ==
-                  ("Hương hoa trái cây" &&
-                    "Hương kẹo ngọt" &&
-                    "Hương hoa thơm nồng") &&
-                ("Hướng nội sâu lắng" || "Hướng nội part time")
-                 && ("Đi học, Đi làm" || "Hẹn hò,đi chơi") && ("Vintage nhẹ nhàng" || "Minimalism tối giản") && "Tưới mới lạc quan"
-                ) {
-                console.log("hello");
+                item.answers[j] === "Hương hoa trái cây" &&
+                item.answers[j] === "Hương kẹo ngọt" &&
+                item.answers[j] === "Hương hoa thơm nồng" &&
+                (item.answers[j] === "Hướng nội sâu lắng" || item.answers[j] === "Hướng nội part-time") &&
+                (item.answers[j] === "Đi học, đi làm" || item.answers[j] === "Hẹn hò,đi chơi") &&
+                (item.answers[j] === "Vintage nhẹ nhàng" || item.answers[j] === "Minimalism tối giản") &&
+                item.answers[j] === "Tưới mới lạc quan"
+              ) {
+                console.log("hello")
+
+                   returnResult.append(`<div class ="headline my-3">
+                   <img src="/assets/images/Quiz/Trang Trac Nghiem/Answer_BabyPowder_Headline.png" />
+               </div>
+                 <div class="container-content container d-flex flex-column align-items-center my-4 justify-content-center">
+                   <h4>Mùi hương hoàn hảo</h4>
+                   <h4>dành cho bạn là</h4>
+                   <h5>Thuần khiết - sảng khoái</h5>
+                 <p> Bạn thích sự ấm áp của những tia nắng mặt trời chan hòa và hít thở không khí trong lành vào sáng sớm. Tươi mát và thuần khiết của hương trà xanh từ Refre Natural Green Tea chính là chân ái mang lại cho bạn cảm giác nhẹ nhàng, thư thái và tràn đầy năng lượng để bắt đầu một ngày mới</p>
+                 </div>
+                 <div class="image-container container justify-content-center  flex-xl-row flex-sm-column  row">
+                   <div class="col-12 col-xl-3 ">
+                      <img src="/assets/images/Quiz/Trang Trac Nghiem/Answer_GreenTea_Pic1.png" />
+                   </div>
+                   <div class="col-12 col-xl-3">
+                     <img src="/assets/images/Quiz/Trang Trac Nghiem/Answer_GreenTea_Pic2.png" />
+                  </div>
+                  <div class="col-12 col-xl-3">
+                   <img src="/assets/images/Quiz/Trang Trac Nghiem/Answer_GreenTea_Pic3.png" />
+                </div>
+                </div>
+                
+   `
+                   )
+                
+              }
+              else{
+                return
               }
             }
           });
         }
-
-        announcementAppended = true; // Set the flag to indicate that the announcement has been appended
       }
+      setTimeout(() => {
+        result_data.empty();
+      }, 3000)
     }, 2000);
   }
 
-  $("#handlesubmit").on("click", handleSubmit);
+  $("#handlesubmit").on("click",  handleSubmit);
 
   function cloneArray(arr) {
     return arr.map((obj) => ({ ...obj }));

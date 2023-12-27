@@ -97,43 +97,42 @@ export const questionnaireData = [
   },
  
   {
-    question: "Bạn thường xuyên ngát hương khi nào:",
+    question: "Bạn thuộc tuýp người",
     answers: [
       
-      "Đi học, đi làm", 
-      "Hẹn hò, đi chơi"
+      "Hướng ngoại năng động", 
+      "Hướng nội sâu lắng",
+      "Hướng nội part-time"
     
     ],
     maxSelection: 1,
   },
   
   {
-    question: "Miêu tả phong cách cá nhân của bạn trong một từ:",
+    question: "Bạn thường xuyên ngát hương khi nào:",
     answers: [
-      "Vintage nhẹ nhàng",
-      "Preppy cá tính",
-      "Minimalism tối giản",
-      "Sporty năng động",
+     "Đi học, đi làm",
+     "Hẹn hò, đi chơi"
     ],
     maxSelection: 1,
   },
   {
-    question: "Bạn thuộc tuýp người gì ",
+    question: "Miêu tả phong cách cá nhân của bạn trong một từ:",
     answers: [
       {
-        text: "Hương gỗ, mùi đất",
+        text: "Vintage nhẹ nhàng",
         image: "/assets/images/Quiz/Trang Trac Nghiem/Cau4_Pic1.png",
       },
       {
-        text: "Hương vani, hổ phách",
+        text: "Preppy cá tính",
         image: "/assets/images/Quiz/Trang Trac Nghiem/Cau4_Pic2.png",
       },
       {
-        text: "Hương kẹo ngọt",
+        text: "Minimalism",
         image: "/assets/images/Quiz/Trang Trac Nghiem/Cau4_Pic3.png",
       },
       {
-        text: "Hương hoa nồng nàn",
+        text: "Sporty năng động",
         image: "/assets/images/Quiz/Trang Trac Nghiem/Cau4_Pic4.png",
       },
      
@@ -142,7 +141,7 @@ export const questionnaireData = [
   },
   {
     question: "Bạn muốn mùi hương mang lại cảm giác như thế nào:",
-    answers: ["Sang trọng quyến rũ", "Tươi mới lạc quan", "Dịu dàng tinh khôi"],
+    answers: ["Sang trọng quyến rũ", "Tưới mới lạc quan", "Dịu dàng tinh khôi"],
     maxSelection: 1,
   },
   
