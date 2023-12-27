@@ -341,7 +341,9 @@ $(document).ready(function () {
                 item.answers[j] === "Tưới mới lạc quan"
               ) {
                 if (!resultAppended) {
-                  returnResult.append(`<div class ="headline my-3">
+                  resultAppended = true; // Set the flag to true after appending result
+
+                  returnResult.html(`<div class ="headline my-3">
                     <img src="/assets/images/Quiz/Trang Trac Nghiem/Answer_BabyPowder_Headline.png" />
                   </div>
                   <div class="container-content container d-flex flex-column align-items-center my-4 justify-content-center">
@@ -362,9 +364,9 @@ $(document).ready(function () {
                     </div>
                   </div>
                 `);
-          
-                resultAppended = true; // Set the flag to true after appending result
               }
+              break;
+
             }
           
            
