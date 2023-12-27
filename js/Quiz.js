@@ -327,47 +327,47 @@ $(document).ready(function () {
           let returnResult = $(".return-result")
           console.log(newQuestionnaire)
           newQuestionnaire.map((item, index) => {
-            $('.render-result_content').hide()
+            $('.render-result_content').hide();
+            let resultAppended = false; // Flag to track if result is appended
+          
             for (let j = 0; j < item.answers.length; j++) {
               if (
-                item.answers[j] === "Hương hoa trái cây" &&
-                item.answers[j] === "Hương kẹo ngọt" &&
-                item.answers[j] === "Hương hoa thơm nồng" &&
-                (item.answers[j] === "Hướng nội sâu lắng" || item.answers[j] === "Hướng nội part-time") &&
-                (item.answers[j] === "Đi học, đi làm" || item.answers[j] === "Hẹn hò,đi chơi") &&
-                (item.answers[j] === "Vintage nhẹ nhàng" || item.answers[j] === "Minimalism tối giản") &&
+                item.answers[j] === "Hương hoa trái cây" ||
+                item.answers[j] === "Hương kẹo ngọt" ||
+                item.answers[j] === "Hương hoa thơm nồng" ||
+                (item.answers[j] === "Hướng nội sâu lắng" || item.answers[j] === "Hướng nội part-time") ||
+                (item.answers[j] === "Đi học, đi làm" || item.answers[j] === "Hẹn hò,đi chơi") ||
+                (item.answers[j] === "Vintage nhẹ nhàng" || item.answers[j] === "Minimalism tối giản") ||
                 item.answers[j] === "Tưới mới lạc quan"
               ) {
-                console.log("hello")
-
-                   returnResult.append(`<div class ="headline my-3">
-                   <img src="/assets/images/Quiz/Trang Trac Nghiem/Answer_BabyPowder_Headline.png" />
-               </div>
-                 <div class="container-content container d-flex flex-column align-items-center my-4 justify-content-center">
-                   <h4>Mùi hương hoàn hảo</h4>
-                   <h4>dành cho bạn là</h4>
-                   <h5>Thuần khiết - sảng khoái</h5>
-                 <p> Bạn thích sự ấm áp của những tia nắng mặt trời chan hòa và hít thở không khí trong lành vào sáng sớm. Tươi mát và thuần khiết của hương trà xanh từ Refre Natural Green Tea chính là chân ái mang lại cho bạn cảm giác nhẹ nhàng, thư thái và tràn đầy năng lượng để bắt đầu một ngày mới</p>
-                 </div>
-                 <div class="image-container container justify-content-center  flex-xl-row flex-sm-column  row">
-                   <div class="col-12 col-xl-3 ">
-                      <img src="/assets/images/Quiz/Trang Trac Nghiem/Answer_GreenTea_Pic1.png" />
-                   </div>
-                   <div class="col-12 col-xl-3">
-                     <img src="/assets/images/Quiz/Trang Trac Nghiem/Answer_GreenTea_Pic2.png" />
+                if (!resultAppended) {
+                  returnResult.append(`<div class ="headline my-3">
+                    <img src="/assets/images/Quiz/Trang Trac Nghiem/Answer_BabyPowder_Headline.png" />
                   </div>
-                  <div class="col-12 col-xl-3">
-                   <img src="/assets/images/Quiz/Trang Trac Nghiem/Answer_GreenTea_Pic3.png" />
-                </div>
-                </div>
-                
-   `
-                   )
-                
+                  <div class="container-content container d-flex flex-column align-items-center my-4 justify-content-center">
+                    <h4>Mùi hương hoàn hảo</h4>
+                    <h4>dành cho bạn là</h4>
+                    <h5>Thuần khiết - sảng khoái</h5>
+                    <p> Bạn thích sự ấm áp của những tia nắng mặt trời chan hòa và hít thở không khí trong lành vào sáng sớm. Tươi mát và thuần khiết của hương trà xanh từ Refre Natural Green Tea chính là chân ái mang lại cho bạn cảm giác nhẹ nhàng, thư thái và tràn đầy năng lượng để bắt đầu một ngày mới</p>
+                  </div>
+                  <div class="image-container container justify-content-center  flex-xl-row flex-sm-column  row">
+                    <div class="col-12 col-xl-3 ">
+                      <img src="/assets/images/Quiz/Trang Trac Nghiem/Answer_GreenTea_Pic1.png" />
+                    </div>
+                    <div class="col-12 col-xl-3">
+                      <img src="/assets/images/Quiz/Trang Trac Nghiem/Answer_GreenTea_Pic2.png" />
+                    </div>
+                    <div class="col-12 col-xl-3">
+                      <img src="/assets/images/Quiz/Trang Trac Nghiem/Answer_GreenTea_Pic3.png" />
+                    </div>
+                  </div>
+                `);
+          
+                resultAppended = true; // Set the flag to true after appending result
               }
-              else{
-                return
-              }
+            }
+          
+           
             }
           });
         }
