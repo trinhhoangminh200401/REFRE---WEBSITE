@@ -1,22 +1,6 @@
 import { DataUser } from "./mockDATA/user.js";
 import { ProductPageService } from "./services/Product.js";
 $(document).ready(function () {
-    $('.productList').hide();
-
-    // Show the default tab (Whitening)
-    $('#tabs-2').show();
-
-    $('.button-tab-action a').on('click', function (e) {
-        e.preventDefault();
-
-        // Hide all tab content
-        $('.productList').hide();
-
-        // Show the clicked tab content
-        var targetTabId = $(this).attr('href');
-        $(targetTabId).show();
-    });
-
   $(".lazy").Lazy({
     afterLoad: function (element) {
       element.addClass("loaded");
