@@ -1,0 +1,542 @@
+.owl-carousel .nav-btn {
+    height: 30em;
+    position: absolute;
+
+    cursor: pointer;
+    top: 13em;
+}
+
+.owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-nav.disabled {
+    display: block;
+}
+
+.owl-carousel .prev-slide {
+    left: -2.4em;
+
+
+}
+
+.owl-carousel .next-slide {
+
+    right: -2.4em;
+}
+.paginationjs{
+    margin :0px auto;
+
+}
+.paginationjs .paginationjs-pages {
+    width: 100%;
+}
+.paginationjs .paginationjs-pages ul{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    background-color: #f0e8ff;
+    border-radius: 30px;
+    width: 100%;
+    padding: 1em 0;
+
+    border: 5px solid #fff;
+    
+}
+
+.paginationjs .paginationjs-pages ul li a{
+    font-size: 1.8em;
+    color: #7a5fc8;
+    margin:  0 0.7em ;
+
+    font-style: italic;
+    font-weight: 700;
+}
+.product {
+    width: 100%;
+    margin: 0 auto;
+  
+  
+    display: flex;
+    flex-direction: column;
+  }
+.header-container {
+    width: 100%;
+    background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
+
+
+}
+
+header .header-container__navigation {
+    width: 95%;
+    margin: 0 auto;
+
+}
+
+.header-container__navigation button {
+    color: #87469c
+}
+
+
+.header-container .navbar-nav__item {
+    margin: 0 15px;
+    color: #000;
+
+}
+
+.header-container .nav-link {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.35em;
+
+}
+
+.header-container .nav-link:hover {
+    border-bottom: 2px solid black;
+}
+
+.hoverActive {
+    border-bottom: 2px solid black;
+
+}
+
+.header-container .navigation__logo img {
+    width: 6em;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.dropdown-content {
+    visibility: hidden;
+    padding: 0;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content li {
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+
+    padding: 0.5em;
+    text-align: left;
+}
+
+.dropdown-content li a {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content li :hover {
+    background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
+
+    color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+}
+
+/* Add this block of CSS for the animation */
+@keyframes fadeInside {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* Existing styles for mobile view */
+
+    .navbar-nav .dropdown-content {
+        animation: fadeInside 3s ease-out;
+        position: static;
+        right: 0%;
+        width: 100%;
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0.3s;
+    }
+
+    .navbar-nav .dropdown:hover .dropdown-content{
+        display: inline-block;
+        height: 100%;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+.banner {
+
+    width: 100%;
+}
+
+.banner img {
+
+    width: 100%;
+
+
+
+
+}
+
+.headline {
+    margin: 0px auto;
+    width: 60%;
+}
+
+
+.news {
+
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.news .headline {
+    margin: 0px auto;
+    /* background-color: #ccd3ff; */
+    width: 60%;
+}
+
+.news .headline img {
+    width: 100%;
+}
+
+.news .news-content .col-xl-5 {
+    background: #f0e8ff;
+    height: fit-content;
+    padding: 0;
+    border-radius: 30px;
+    border: 5px solid #fff;
+}
+
+.news .news-content .col-xl-5 img {
+
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.news .news-content .col-xl-5 .card-body {
+    color: #5b4897;
+    padding: 0.5em 1em;
+}
+
+.news .news-content .col-xl-5 .card-body h5 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-style: italic;
+
+}
+
+.news .news-content .col-xl-5 .card-body p {
+    font-weight: 600;
+}
+
+.news .news-content .col-xl-5 .card-body div {
+    width: 50%;
+
+}
+
+.news .news-content .col-xl-5 .card-body div a {
+    box-shadow: inset #fff 0px 0px 14px 0px;
+    background-color: #af8afc;
+    border-top-left-radius: 25px;
+    padding: 0.5em;
+    color: white;
+    border: 3px solid #fff;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    border-bottom-right-radius: 25px;
+    font-size: 1.2em;
+}
+
+
+.news .news-content .col-xl-6 .card {
+    background-color: #f0e8ff;
+    border-radius: 30px;
+    margin-top: 0.7em;
+    width: 100%;
+    border: 5px solid #fff;
+}
+
+.news .news-content .col-xl-6 .card>img {
+    border-radius: 30px;
+    width: 30%;
+
+}
+
+.news .news-content .col-xl-6 .card .card-body {
+    padding: 1em;
+    color: #5b4897;
+
+}
+
+.news .news-content .col-xl-6 .card-body h5 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-style: italic;
+
+}
+
+.news .news-content .col-xl-6 .card-body p {
+    font-weight: 600;
+}
+
+.news .news-content .col-xl-6 .card-body a {
+    box-shadow: inset #fff 0px 0px 14px 0px;
+    background-color: #af8afc;
+    border-top-left-radius: 25px;
+    padding: 0.8em 1em;
+    color: white;
+    border: 3px solid #fff;
+    text-align: center;
+    text-decoration: none;
+    border-bottom-right-radius: 25px;
+    font-size: 1.2em;
+}
+
+.pagination__container .data-container .card{
+    background-color: #f0e8ff;
+    border-radius: 30px;
+    margin-top: 0.7em;
+    width: 100%;
+    border: 5px solid #fff;
+}
+.pagination__container .data-container .card > .card-img-top{
+    border-radius: 30px;
+
+ width: 13rem;
+}
+.pagination__container .data-container .card > .card-body{
+    padding: 1em;
+    color: #5b4897;
+
+}
+
+.pagination__container .data-container .card > .card-body h5{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.pagination__container .data-container .card > .card-body p{
+  font-weight: 600;
+}
+.pagination__container .data-container .card > .card-body a{
+box-shadow: inset #fff 0px 0px 14px 0px;
+background-color: #af8afc;
+border-top-left-radius: 25px;
+padding: 0.8em 1em;
+color: white;
+border: 3px solid #fff;
+text-align: center;
+text-decoration: none;
+border-bottom-right-radius: 25px;
+font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------footer and feedback */
+.feedback>.container {
+
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.feedback .container .card-user {
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.feedback .container .card-user img {
+    width: 30%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.feedback .container .card-user h4 {
+    color: #87469c;
+
+}
+
+.feedback .container .card-user .card-text {
+    font-weight: 600;
+    padding: 0.1em;
+    /* background-color: #036040; */
+    /* text-align: left; */
+    /* background-color: #01b700; */
+    color: #87469c;
+}
+
+.feedback .container .card-user .card-body {
+    margin: 0 20px;
+}
+
+.feedback .container .card-user .card-body p {
+    margin: 20px 0;
+
+}
+
+.yellow {
+    color: #ffb211;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 3px;
+}
+
+.fa-star {
+    font-size: 25px;
+}
+
+.feedback .slider {
+    -webkit-appearance: none;
+    width: 30%;
+    /* Adjust this value based on your layout */
+    height: 25px;
+    margin: 20px auto;
+    /* Adjust margin for spacing */
+    border: 2px solid #fff;
+    background: #8987ff;
+    outline: none;
+    border-radius: 10px;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.feedback .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 60px;
+    border-radius: 8px;
+    height: 18px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.feedback .card-user .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+
+
+.latestupdate .owl-carousel .card {
+    height: 500px;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    margin: 0.5em;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+footer {
+
+    background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
+    min-height: 250px;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+}
+
+footer .container-footer {
+    bottom: 0;
+
+}
+
+
+footer .container div p {
+    font-size: 14px;
+    margin: 0 10px;
+    color: #595959;
+    font-weight: 600;
+}
+
+footer .container div ul {
+    display: flex;
+    list-style-type: none;
+    color: #5c3bac;
+    font-size: 14px;
+
+}
+
+footer .container div ul li {
+    margin: 10px 5px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+footer .container div ul li:after {
+    content: "|"
+}
+
+
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.loaded {
+    opacity: 1;
+}
+
+.popup {
+    top: -50%;
+    font-size: 20px;
+    right: 0em;
+    z-index: 70;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+}
+
+
+
+.popup img {
+    width: 70%;
+}

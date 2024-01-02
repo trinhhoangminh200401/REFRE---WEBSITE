@@ -1,5 +1,5 @@
 import { questionnaireData } from "./mockData/quiz.js";
-
+import { SessionStorage } from "./utils/storage.js";
 let newQuestionnaire = [];
 
 $(document).ready(function () {
@@ -11,7 +11,33 @@ $(document).ready(function () {
   });
 
   const errorElement = $("<span>").addClass("error-message");
+  function saveQuestionnaireState() {
+    SessionStorage.setSessionStorage("questionnaireState", JSON.stringify(newQuestionnaire));
+  }
 
+  function loadQuestionnaireState() {
+    const storedState = SessionStorage.getSessionStorage("questionnaireState");
+    if (storedState) {
+      newQuestionnaire = JSON.parse(storedState);
+
+      // Set initial state of checkboxes based on loaded data
+      $(".image-checkbox").each(function () {
+        const $checkbox = $(this).find('input[type="checkbox"]');
+        const index = $checkbox.attr("name").split("-")[1];
+        const selectedItem = $checkbox.val();
+
+        if (newQuestionnaire.some((q) => q.index === index && q.answers.includes(selectedItem))) {
+          $(this).addClass("image-checkbox-checked");
+          $checkbox.prop("checked", true);
+        } else {
+          $(this).removeClass("image-checkbox-checked");
+          $checkbox.prop("checked", false);
+        }
+      });
+    }
+  }
+
+ 
   function validateSelection(
     selectedItem,
     existingQuestion,
@@ -98,6 +124,8 @@ $(document).ready(function () {
     }
 
     newQuestionnaire = updatedQuestionnaire;
+    saveQuestionnaireState();
+
   }
 
   function renderData() {
@@ -222,6 +250,7 @@ $(document).ready(function () {
 
   // Call the function to render the data
   renderData();
+
   // ... (existing code)
   //-------------------------- this code isn't working
   // Set initial state of checkboxes
@@ -271,8 +300,12 @@ $(document).ready(function () {
       // Otherwise, toggle the checked state and handle the response
       $(this).toggleClass("image-checkbox-checked", $checkbox.prop("checked"));
       unselectedCheckboxes.prop("disabled", false);
+    
       handleResponse(index, selectedItem);
+      saveQuestionnaireState();
+
     }
+
   });
 
   function handleSubmit() {
@@ -313,33 +346,34 @@ $(document).ready(function () {
     setTimeout(() => {
       $(".custom-spinner-container").hide();
       let announce = $("<p>").addClass("white-color py-5");
-      let imageError ='<img src=" https://static.vecteezy.com/system/resources/thumbnails/008/255/803/small/page-not-found-error-404-system-updates-uploading-computing-operation-installation-programs-system-maintenance-a-hand-drawn-layout-template-of-a-broken-robot-illustration-vector.jpg" width="350" height="200" class="mx-auto"   />'
+      let imageError =
+        '<img src=" https://static.vecteezy.com/system/resources/thumbnails/008/255/803/small/page-not-found-error-404-system-updates-uploading-computing-operation-installation-programs-system-maintenance-a-hand-drawn-layout-template-of-a-broken-robot-illustration-vector.jpg" width="350" height="200" class="mx-auto"   />';
       if ($(".white-color").length === 0) {
-        result_data.append(announce,imageError);
+        result_data.append(announce, imageError);
 
         if (
           newQuestionnaire.length <= 0 ||
           newQuestionnaire.length !== questionnaireData.length
         ) {
-          ;
           announce.text("BẠN VUI LÒNG TRẢ LỜI ĐẦY ĐỦ ");
         } else {
-          let returnResult = $(".return-result")
-          console.log(newQuestionnaire)
+          let returnResult = $(".return-result");
           newQuestionnaire.map((item, index) => {
-            $('.render-result_content').hide();
+            $(".render-result_content").hide();
             let resultAppended = false; // Flag to track if result is appended
-          
-            for (let j = 0; j < item.answers.length; j++) {
-              if (
-                item.answers[j] === "Hương hoa trái cây" ||
-                item.answers[j] === "Hương kẹo ngọt" ||
-                item.answers[j] === "Hương hoa thơm nồng" ||
-                (item.answers[j] === "Hướng nội sâu lắng" || item.answers[j] === "Hướng nội part-time") ||
-                (item.answers[j] === "Đi học, đi làm" || item.answers[j] === "Hẹn hò,đi chơi") ||
-                (item.answers[j] === "Vintage nhẹ nhàng" || item.answers[j] === "Minimalism tối giản") ||
-                item.answers[j] === "Tưới mới lạc quan"
-              ) {
+            const selectedAnswers = item.answers.map(answer => answer.toLowerCase());
+            const conditions = [
+              selectedAnswers.includes("hương hoa trái cây"),
+              selectedAnswers.includes("hương kẹo ngọt"),
+              selectedAnswers.includes("hương hoa thơm nồng"),
+              (selectedAnswers.includes("hướng nội sâu lắng") || selectedAnswers.includes("hướng nội part-time")),
+              (selectedAnswers.includes("đi học, đi làm") || selectedAnswers.includes("hẹn hò, đi chơi")),
+              (selectedAnswers.includes("vintage nhẹ nhàng") || selectedAnswers.includes("minimalism tối giản")),
+              selectedAnswers.includes("tưới mới lạc quan")
+            ];
+            console.log(conditions.every(condition => condition))
+            if (conditions.every(condition => condition)) {
+                // console.log("hêlelojsdkfdhsdfjjksdhjfdsjkh")
                 if (!resultAppended) {
                   resultAppended = true; // Set the flag to true after appending result
 
@@ -364,23 +398,24 @@ $(document).ready(function () {
                     </div>
                   </div>
                 `);
+                }
+              } else {
+                returnResult.html("");
               }
-              break;
-
-            }
-          
-           
-            }
+            
           });
         }
       }
       setTimeout(() => {
         result_data.empty();
-      }, 3000)
+      }, 3000);
     }, 2000);
+    saveQuestionnaireState();
+
   }
 
-  $("#handlesubmit").on("click",  handleSubmit);
+  $("#handlesubmit").on("click", handleSubmit);
+  loadQuestionnaireState();
 
   function cloneArray(arr) {
     return arr.map((obj) => ({ ...obj }));

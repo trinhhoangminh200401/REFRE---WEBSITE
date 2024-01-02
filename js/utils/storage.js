@@ -3,6 +3,6 @@ export const  SessionStorage ={
             sessionStorage.getItem(key)
      }  , 
      setSessionStorage :(key,item)=>{
-        sessionStorage.getItem(key, item)
+        sessionStorage.setItem(key, item)
      }
 }

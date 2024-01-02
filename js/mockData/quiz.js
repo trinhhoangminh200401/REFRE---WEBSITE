@@ -92,7 +92,7 @@ export const questionnaireData = [
       },
       // Add more answers as needed
     ],
-    
+  
     maxSelection: 3,
   },
  
@@ -128,7 +128,7 @@ export const questionnaireData = [
         image: "/assets/images/Quiz/Trang Trac Nghiem/Cau4_Pic2.png",
       },
       {
-        text: "Minimalism",
+        text: "Minimalism tối giản",
         image: "/assets/images/Quiz/Trang Trac Nghiem/Cau4_Pic3.png",
       },
       {
