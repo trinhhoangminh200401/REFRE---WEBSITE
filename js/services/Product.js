@@ -12,3 +12,4 @@ export const ProductPageService = (function($) {
       getItems: getItems
     };
   })(jQuery);
+  

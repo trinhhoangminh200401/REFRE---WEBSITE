@@ -358,53 +358,56 @@ $(document).ready(function () {
           announce.text("BẠN VUI LÒNG TRẢ LỜI ĐẦY ĐỦ ");
         } else {
           let returnResult = $(".return-result");
-          newQuestionnaire.map((item, index) => {
-            $(".render-result_content").hide();
-            let resultAppended = false; // Flag to track if result is appended
-            const selectedAnswers = item.answers.map(answer => answer.toLowerCase());
-            const conditions = [
-              selectedAnswers.includes("hương hoa trái cây"),
-              selectedAnswers.includes("hương kẹo ngọt"),
-              selectedAnswers.includes("hương hoa thơm nồng"),
-              (selectedAnswers.includes("hướng nội sâu lắng") || selectedAnswers.includes("hướng nội part-time")),
-              (selectedAnswers.includes("đi học, đi làm") || selectedAnswers.includes("hẹn hò, đi chơi")),
-              (selectedAnswers.includes("vintage nhẹ nhàng") || selectedAnswers.includes("minimalism tối giản")),
-              selectedAnswers.includes("tưới mới lạc quan")
-            ];
-            console.log(conditions.every(condition => condition))
-            if (conditions.every(condition => condition)) {
-                // console.log("hêlelojsdkfdhsdfjjksdhjfdsjkh")
-                if (!resultAppended) {
-                  resultAppended = true; // Set the flag to true after appending result
+      let resultAppended = false;
 
-                  returnResult.html(`<div class ="headline my-3">
-                    <img src="/assets/images/Quiz/Trang Trac Nghiem/Answer_BabyPowder_Headline.png" />
-                  </div>
-                  <div class="container-content container d-flex flex-column align-items-center my-4 justify-content-center">
-                    <h4>Mùi hương hoàn hảo</h4>
-                    <h4>dành cho bạn là</h4>
-                    <h5>Thuần khiết - sảng khoái</h5>
-                    <p> Bạn thích sự ấm áp của những tia nắng mặt trời chan hòa và hít thở không khí trong lành vào sáng sớm. Tươi mát và thuần khiết của hương trà xanh từ Refre Natural Green Tea chính là chân ái mang lại cho bạn cảm giác nhẹ nhàng, thư thái và tràn đầy năng lượng để bắt đầu một ngày mới</p>
-                  </div>
-                  <div class="image-container container justify-content-center  flex-xl-row flex-sm-column  row">
-                    <div class="col-12 col-xl-3 ">
-                      <img src="/assets/images/Quiz/Trang Trac Nghiem/Answer_GreenTea_Pic1.png" />
-                    </div>
-                    <div class="col-12 col-xl-3">
-                      <img src="/assets/images/Quiz/Trang Trac Nghiem/Answer_GreenTea_Pic2.png" />
-                    </div>
-                    <div class="col-12 col-xl-3">
-                      <img src="/assets/images/Quiz/Trang Trac Nghiem/Answer_GreenTea_Pic3.png" />
-                    </div>
-                  </div>
-                `);
-                }
-              } else {
-                returnResult.html("");
-              }
-            
-          });
-        }
+newQuestionnaire.forEach((item, index) => {
+  $('.render-result_content').hide();
+
+  // Check if result is already appended
+  if (!resultAppended) {
+    for (let j = 0; j < item.answers.length; j++) {
+      if (
+        item.answers[j] === "Hương hoa trái cây" ||
+        item.answers[j] === "Hương kẹo ngọt" ||
+        item.answers[j] === "Hương hoa thơm nồng" ||
+        (item.answers[j] === "Hướng nội sâu lắng" || item.answers[j] === "Hướng nội part-time") ||
+        (item.answers[j] === "Đi học, đi làm" || item.answers[j] === "Hẹn hò,đi chơi") ||
+        (item.answers[j] === "Vintage nhẹ nhàng" || item.answers[j] === "Minimalism tối giản") ||
+        item.answers[j] === "Tưới mới lạc quan"
+      ) {
+        // Append your HTML content
+        let returnResult = $(".return-result");
+        returnResult.html(`<div class ="headline my-3">
+          <img src="/assets/images/Quiz/Trang Trac Nghiem/Answer_BabyPowder_Headline.png" />
+        </div>
+        <div class="container-content container d-flex flex-column align-items-center my-4 justify-content-center">
+          <h4>Mùi hương hoàn hảo</h4>
+          <h4>dành cho bạn là</h4>
+          <h5>Thuần khiết - sảng khoái</h5>
+          <p> Bạn thích sự ấm áp của những tia nắng mặt trời chan hòa và hít thở không khí trong lành vào sáng sớm. Tươi mát và thuần khiết của hương trà xanh từ Refre Natural Green Tea chính là chân ái mang lại cho bạn cảm giác nhẹ nhàng, thư thái và tràn đầy năng lượng để bắt đầu một ngày mới</p>
+        </div>
+        <div class="image-container container justify-content-center  flex-xl-row flex-sm-column  row">
+          <div class="col-12 col-xl-3 ">
+            <img src="/assets/images/Quiz/Trang Trac Nghiem/Answer_GreenTea_Pic1.png" />
+          </div>
+          <div class="col-12 col-xl-3">
+            <img src="/assets/images/Quiz/Trang Trac Nghiem/Answer_GreenTea_Pic2.png" />
+          </div>
+          <div class="col-12 col-xl-3">
+            <img src="/assets/images/Quiz/Trang Trac Nghiem/Answer_GreenTea_Pic3.png" />
+          </div>
+        </div>`);
+
+        // Set the flag to true
+        resultAppended = true;
+
+        // Break the loop after the first match
+        break;
+      }
+    }
+  }
+});
+Th  }
       }
       setTimeout(() => {
         result_data.empty();
