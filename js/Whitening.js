@@ -335,7 +335,7 @@ $(document).ready(function () {
         JSON.stringify(productDetails)
       );
 
-      const url = `http://localhost:5000/whitening.html?id=${productDetails.id}` ;
+      const url = `http://localhost:5000/whitening.html?id=${productDetails.id}` || `https://gilded-sunflower-1080d8.netlify.app/whitening?id=${productDetails.id}` ;
       history.pushState({}, null, url);
       const productIditem = SessionStorage.getSessionStorage("productDetail");
       console.log(JSON.parse(productIditem));
