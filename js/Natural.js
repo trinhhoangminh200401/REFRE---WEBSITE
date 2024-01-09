@@ -1,6 +1,8 @@
 import { DataUser } from "./mockDATA/user.js";
 import { ProductPageService } from "./services/Product.js";
 import { fakeProducts } from "./mockData/natural.js";
+import { SessionStorage } from "./utils/storage.js";
+
 $(document).ready(function () {
   $(".lazy").Lazy({
     afterLoad: function (element) {
@@ -203,4 +205,254 @@ $(document).ready(function () {
   };
 
   renderProductCards();
+  function renderProductDetail(productDetails) {
+    return `
+  <div class="tab-slider-gallery row tabs my-5 p-2 mx-auto container d-flex justify-content-center">
+      <div class="row col-12 col-sm-12 col-md-12 col-lg-3 col-xl-2 container-tabs ">
+          <div class="card-body card-purpleDarkLinear col-3 col-md-3 col-lg-6 col-xl-12">
+              <img class="lazy fade-in loaded" src="${
+                productDetails.imageList.image1
+              }" alt data-hash="0" />
+          </div>
+          <div class="card-body card-purpleNormalLinear my-2 col-3 col-md-3 col-lg-12 col-xl-12">
+              <img class="lazy fade-in loaded" src="${
+                productDetails.imageList.image2
+              }" alt="" />
+          </div>
+          <div class="card-body card-purpleNormalLinear col-xl-12 col-md-3 col-lg-6 col-3">
+              <img alt="" class="lazy fade-in loaded" src="${
+                productDetails.imageList.image3
+              }" />
+          </div>
+      </div>
+      <div class="col-xl-3 col-sm-12 col-lg-6 col-md-12 col-12 mx-3 container-slider-image">
+          <div class="owl-carousel owl-theme">
+          
+          <img class="fade-in loaded" src="${
+            productDetails?.imageList.image1
+          }" alt />
+          <img class="fade-in loaded" src="${
+            productDetails?.imageList.image2
+          }" alt />
+          <img class="fade-in loaded" src="${
+            productDetails?.imageList.image3
+          }" alt />
+          </div>
+      </div>
+      <div class="col-lg-11 col-xl-4  bg-Natural description-containers">
+          <div class="description-containers_div m-auto">
+              <div class="description-containers_title">
+                  <h3 class="purpleDark">${productDetails.title}</h3>
+                  <h3 class="purpleDark my-4">${productDetails.title1}</h3>
+              </div>
+              <div class="description-containers_content">
+           ${productDetails.contentdiv
+             .map((item) => {
+               return `<div class="content-div">
+                  <p class="purpleDark">${item.subtitle}
+                  </p>
+                  <ul class="list  purpleDark">
+                    ${item?.content
+                      .map((item2) => `<li> ${item2}</li>`)
+                      .join("") }
+                      
+                  </ul>   
+    
+              </div>`;
+             })
+             .join("")}
+            
+            
+
+              </div>
+              <div class="button-action d-flex w-100">
+                  <p href="#" class="price darkpink h5">${productDetails.price}đ</p>
+                  <a href="#" class="btn normalgreen h5">MUA NGAY</a>
+              </div>
+          </div>
+      </div>
+  </div>
+`;
+  }
+
+  function getProductIdFromUrl() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get("id");
+  }
+  function handlePageLoad() {
+    const productId = getProductIdFromUrl();
+
+    if (productId) {
+      // Product details may not be available in session storage after a reload
+      // Fetch product details based on productId (assuming fakeProducts is available globally)
+      const productDetails = fakeProducts.find(
+        (product) => product.id === parseInt(productId)
+      );
+      console.log(productDetails);
+      // Store product details in session storage
+      SessionStorage.setSessionStorage(
+        "productDetail",
+        JSON.stringify(productDetails)
+      );
+
+      // Render product details
+      const container = $(".productContainer");
+      const renderProduct = renderProductDetail(productDetails);
+      container.html(renderProduct);
+
+      // Initialize Owl Carousel
+      container
+        .html(renderProduct)
+        .promise()
+        .done(function () {
+          $(".tab-slider-gallery  .owl-carousel").owlCarousel({
+            responsiveClass: true,
+            // autoplay: true,
+            navText: "",
+            autoplayTimeout: 3000,
+            responsive: {
+              0: {
+                items: 1,
+              },
+              600: {
+                items: 1,
+              },
+              700: {
+                items: 1,
+              },
+              900: {
+                items: 1,
+              },
+              1054: {
+                items: 1,
+              },
+              1200: {
+                items: 1,
+
+                loop: false,
+              },
+            },
+          });
+        });
+      $(".container-tabs .card-body").click(function () {
+        let totalItem = $(
+          ".container-slider-image .owl-carousel .owl-item"
+        ).length;
+        let position = $(this).index();
+        console.log(position);
+        if (position >= 0 && position < totalItem) {
+          $(".container-slider-image .owl-carousel .owl-item").trigger(
+            "to.owl.carousel",
+            position
+          );
+        } else {
+          console.error("Invalid index", position);
+        }
+      });
+      $("html, body").animate(
+        {
+          scrollTop: container.offset().top,
+        },
+        500
+      );
+    } else {
+      console.error("no id valid!");
+    }
+  }
+
+  // Handle page load
+  handlePageLoad();
+  $(document).on("click", ".click", function (event) {
+    let productDetails;
+    let container = $(".productContainer");
+    event.preventDefault();
+
+    const productId = $(this).closest(".card-content").data("product-id");
+    SessionStorage.setSessionStorage("productID", productId);
+
+    const storedProductId = SessionStorage.getSessionStorage("productID");
+
+    console.log(window.location);
+    console.log(storedProductId);
+    if (storedProductId) {
+      productDetails = fakeProducts.find(
+        (product) => product.id === parseInt(storedProductId)
+      );
+
+      SessionStorage.setSessionStorage(
+        "productDetailNatural",
+        JSON.stringify(productDetails)
+      );
+      let url;
+
+      if (window.location.hostname === 'localhost') {
+        url = `http://localhost:5000/Natural.html?id=${productDetails.id}`;
+      } else {
+        url = `https://gilded-sunflower-1080d8.netlify.app/natural?id=${productDetails.id}`;
+      }
+      
+      history.pushState({}, null, url);
+      const productIditem = SessionStorage.getSessionStorage("productDetailNatural");
+      console.log(JSON.parse(productIditem));
+      let renderProduct = renderProductDetail(JSON.parse(productIditem));
+
+      container
+        .html(renderProduct)
+        .promise()
+        .done(function () {
+          $(".tab-slider-gallery  .owl-carousel").owlCarousel({
+            responsiveClass: true,
+            // autoplay: true,
+            navText: "",
+            autoplayTimeout: 3000,
+            responsive: {
+              0: {
+                items: 1,
+              },
+              600: {
+                items: 1,
+              },
+              700: {
+                items: 1,
+              },
+              900: {
+                items: 1,
+              },
+              1054: {
+                items: 1,
+              },
+              1200: {
+                items: 1,
+
+                loop: false,
+              },
+            },
+          });
+        });
+      $(".container-tabs .card-body").click(function () {
+        let totalItem = $(
+          ".container-slider-image .owl-carousel .owl-item"
+        ).length;
+        let position = $(this).index();
+        console.log(position);
+        if (position >= 0 && position < totalItem) {
+          $(".container-slider-image .owl-carousel .owl-item").trigger(
+            "to.owl.carousel",
+            position
+          );
+        } else {
+          console.error("Invalid index", position);
+        }
+      });
+      $("html, body").animate(
+        {
+          scrollTop: container.offset().top,
+        },
+        500
+      );
+    } else {
+      console.error("no id valid!");
+    }
+  });
+
 });

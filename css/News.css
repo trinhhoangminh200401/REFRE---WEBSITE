@@ -320,11 +320,12 @@ header .header-container__navigation {
 }
 .pagination__container .data-container .card > .card-img-top{
     border-radius: 30px;
-
- width: 13rem;
+ width: 25%;
+ 
 }
 .pagination__container .data-container .card > .card-body{
-    padding: 1em;
+    padding: 2em 4em ;
+    height: 100%;
     color: #5b4897;
 
 }
@@ -342,8 +343,9 @@ header .header-container__navigation {
 box-shadow: inset #fff 0px 0px 14px 0px;
 background-color: #af8afc;
 border-top-left-radius: 25px;
-padding: 0.8em 1em;
+padding:  1em 3em;
 color: white;
+width: fit-content;
 border: 3px solid #fff;
 text-align: center;
 text-decoration: none;

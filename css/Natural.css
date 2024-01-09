@@ -278,9 +278,8 @@ body {
 
 .tab-slider-gallery .container-slider-image img {
     max-width: 100%;
-    object-fit: scale-down;
-    max-height: 35em; /* Adjust this value based on your preference */
-    height: auto;
+    object-fit: cover;
+    height: 30em; /* Adjust this value based on your preference */
     display: block;
 }
 

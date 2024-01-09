@@ -1,5 +1,7 @@
 import { DataUser } from "./mockDATA/user.js";
 import { ProductPageService } from "./services/Product.js";
+import { fakeProducts as natural} from "./mockData/natural.js";
+import { fakeProducts as whitening } from "./mockData/whitening.js";
 $(document).ready(function () {
     $('.productList').hide();
 
@@ -185,4 +187,7 @@ $(document).ready(function () {
        
      displayItems();
   });
+  const productlist=$('.productList').length
+  let index =0
+ 
 });
