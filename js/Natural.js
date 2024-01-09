@@ -291,7 +291,7 @@ $(document).ready(function () {
       console.log(productDetails);
       // Store product details in session storage
       SessionStorage.setSessionStorage(
-        "productDetail",
+        "productDetailNatural",
         JSON.stringify(productDetails)
       );
 
