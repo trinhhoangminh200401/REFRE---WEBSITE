@@ -276,9 +276,8 @@ body {
 
 .tab-slider-gallery .container-slider-image img {
     max-width: 100%;
-    object-fit: scale-down;
-    max-height: 35em; /* Adjust this value based on your preference */
-    height: auto;
+    object-fit: cover;
+    height: 30rem;
     display: block;
 }
 
@@ -743,6 +742,10 @@ footer .container div ul li{
     cursor: pointer;
 
 }
+footer .container div ul li a{
+    color: #5c3bac;
+     text-decoration: none;
+  }
 footer .container div ul li:after {
  content:"|"
 }

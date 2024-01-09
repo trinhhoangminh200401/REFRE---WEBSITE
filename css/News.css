@@ -507,6 +507,10 @@ footer .container div ul li {
     cursor: pointer;
 
 }
+footer .container div ul li a{
+    color: #5c3bac;
+     text-decoration: none;
+  }
 
 footer .container div ul li:after {
     content: "|"

@@ -407,7 +407,7 @@ newQuestionnaire.forEach((item, index) => {
     }
   }
 });
-Th  }
+Th   }
       }
       setTimeout(() => {
         result_data.empty();

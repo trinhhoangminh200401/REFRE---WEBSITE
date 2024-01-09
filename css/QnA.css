@@ -234,7 +234,6 @@ footer .container div p {
 footer .container div ul {
     display: flex;
     list-style-type: none;
-    color: #5c3bac;
     font-size: 14px;
 
 }
@@ -244,6 +243,10 @@ footer .container div ul li{
     cursor: pointer;
 
 }
+footer .container div ul li a{
+    color: #5c3bac;
+     text-decoration: none;
+  }
 footer .container div ul li:after {
  content:"|"
 }

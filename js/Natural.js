@@ -1,5 +1,6 @@
 import { DataUser } from "./mockDATA/user.js";
 import { ProductPageService } from "./services/Product.js";
+import { fakeProducts } from "./mockData/natural.js";
 $(document).ready(function () {
   $(".lazy").Lazy({
     afterLoad: function (element) {
@@ -164,4 +165,42 @@ $(document).ready(function () {
   pagination.on("input", function () {
     displayItems();
   });
+  const getProductData = (product) => {
+    return `
+    <div class="card-content col-xl-4 col-lg-3 my-4 mx-xl-3 card-purple click " data-product-id="${product.id}" style="cursor:pointer">
+        <p class="card-title green-category my-4">${product.category}</p>
+        <div class="d-flex flex-column align-items-center justify-content-center">
+          <img class="card-img-top bottom lazy fade-in" src=${product.imageUrl}
+/>
+            <div class="card-body">
+                <div class="my-4">
+                    <h5 class="card-title fst-italic h5 text-uppercase purple-text">${product.title}</h5>
+                    <h5 class="card-title fst-italic h5 text-uppercase purple-text">${product.title1}</h5>
+                    <p class="purple-text">${product.description}</p>
+                </div>
+                <a href="#" class="btn w-100 py-2  px-4 btn-purple d-flex align-items-center justify-content-between click">
+                    <p class="mb-0 h5 fst-italic fw-bold">${product.price}đ</p>
+                    <p class="mb-0 h6 fst-italic ">Tìm hiểu thêm</p>
+                </a>
+            </div>
+        </div>
+    </div>
+`;
+  };
+  const renderProductCards = () => {
+    let container = $(".productlist-container");
+    let content = "";
+    fakeProducts.map((product) => {
+      const cardHtml = getProductData(product);
+      content += cardHtml;
+      container
+        .html(content)
+        .promise()
+        .done(function () {
+          $(".card-img-top").addClass("loaded");
+        });
+    });
+  };
+
+  renderProductCards();
 });
