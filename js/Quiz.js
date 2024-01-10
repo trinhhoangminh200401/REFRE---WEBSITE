@@ -408,27 +408,27 @@ $(document).ready(function () {
               item === "Hương cây cỏ thực vật" ||
               item === "Hương gỗ, mùi đất" ||
               item === "Hương thơm hoa nhẹ nhàng tinh tế" ||
-              item === "Hướng ngoại năng động" ||
-              item === "Hướng nội part-time" ||
-              item === "Đi học, đi làm" ||
-              item === "Hẹn hò, đi chơi" ||
-              item === "Vintage nhẹ nhàng" ||
+             (item === "Hướng ngoại năng động" ||
+              item === "Hướng nội part-time" )||
+              (item === "Đi học, đi làm" ||
+              item === "Hẹn hò, đi chơi" )||
+             ( item === "Vintage nhẹ nhàng" ||
               item === "Preppy cá tính" ||
-              item === "Sporty năng động" ||
-              item === "Tưới mới lạc quan" ||
-              item === "Dịu dàng tinh khôi"
+              item === "Sporty năng động" )||
+              (item === "Tưới mới lạc quan" ||
+              item === "Dịu dàng tinh khôi")
           );
           let allConditionsMet2 = answerschoice[answerschoice.length - 1].every(
             (item) =>
               item === "Hương cây cỏ thực vật" ||
               item === "Hương gỗ, mùi đất" ||
               item === "Hương thơm hoa nhẹ nhàng tinh tế" ||
-              item === "Hướng ngoại năng động" ||
-              item === "Hướng nội sâu lắng" ||
-              item === "Đi học, đi làm" ||
-              item === "Hẹn hò, đi chơi" ||
-              item === "Vintage nhẹ nhàng" ||
-              item === "Sporty năng động" ||
+            (  item === "Hướng ngoại năng động" ||
+              item === "Hướng nội sâu lắng") ||
+             ( item === "Đi học, đi làm" ||
+              item === "Hẹn hò, đi chơi" )||
+              (item === "Vintage nhẹ nhàng" ||
+              item === "Sporty năng động") ||
               item === "Tưới mới lạc quan"
           );
           let allConditionsMet3 = answerschoice[answerschoice.length - 1].every(
@@ -436,26 +436,26 @@ $(document).ready(function () {
               item === "Hương cây cỏ thực vật" ||
               item === "Hương gỗ, mùi đất" ||
               item === "Hương thơm hoa nhẹ nhàng tinh tế" ||
-              item === "Hướng ngoại năng động" ||
-              item === "Hướng nội part-time" ||
-              item === "Hẹn hò, đi chơi" ||
-              item === "Vintage nhẹ nhàng" ||
+              (item === "Hướng ngoại năng động" ||
+              item === "Hướng nội part-time" )||
+              (item === "Hẹn hò, đi chơi") ||
+              (item === "Vintage nhẹ nhàng" ||
               item === "Sporty năng động" ||
-              item === "Minimalism tối giản" ||
-              item === "Tưới mới lạc quan" ||
-              item === "Dịu dàng tinh khôi"
+              item === "Minimalism tối giản") ||
+             ( item === "Tưới mới lạc quan" ||
+              item === "Dịu dàng tinh khôi")
           );
           let allConditionsMet4 = answerschoice[answerschoice.length - 1].every(
             (item) =>
               item === "Hương hoa trái cây" ||
               item === "Hương kẹo ngọt" ||
               item === "Hương hoa thơm nồng" ||
-              item === "Hướng nội sâu lắng" ||
-              item === "Hướng nội part-time" ||
-              item === "Hẹn hò, đi chơi" ||
-              item === "Đi học, đi làm" ||
-              item === "Vintage nhẹ nhàng" ||
-              item === "Minimalism tối giản" ||
+              (item === "Hướng nội sâu lắng" ||
+              item === "Hướng nội part-time") ||
+             (item === "Hẹn hò, đi chơi" ||
+              item === "Đi học, đi làm") ||
+              (item === "Vintage nhẹ nhàng" ||
+              item === "Minimalism tối giản") ||
               item === "Tưới mới lạc quan"
           );
           let allConditionsMet5 = answerschoice[answerschoice.length - 1].every(
@@ -463,26 +463,26 @@ $(document).ready(function () {
               item === "Hương hoa trái cây" ||
               item === "Hương gỗ, mùi đất" ||
               item === "Hương thơm hoa nhẹ nhàng tinh tế" ||
-              item === "Hướng nội sâu lắng" ||
-              item === "Hướng ngoại năng động" ||
-              item === "Hẹn hò, đi chơi" ||
-              item === "Đi học, đi làm" ||
-              item === "Sporty năng động" ||
-              item === "Minimalism tối giản" ||
-              item === "Tưới mới lạc quan" ||
-              item === "Sang trọng quyến rũ"
+              (item === "Hướng nội sâu lắng" ||
+              item === "Hướng ngoại năng động") ||
+              (item === "Hẹn hò, đi chơi" ||
+              item === "Đi học, đi làm" )||
+              (item === "Sporty năng động" ||
+              item === "Minimalism tối giản") ||
+              (item === "Tưới mới lạc quan" ||
+              item === "Sang trọng quyến rũ")
           );
           let allConditionsMet6 = answerschoice[answerschoice.length - 1].every(
             (item) =>
               item === "Hương vani, hổ phách" ||
               item === "Hương hoa trái cây" ||
               item === "Hương thơm hoa nhẹ nhàng tinh tế" ||
-              item === "Hướng ngoại năng động" ||
-              item === "Hướng nội part-time" ||
-              item === "Hẹn hò, đi chơi" ||
-              item === "Vintage nhẹ nhàng" ||
+              (item === "Hướng ngoại năng động" ||
+              item === "Hướng nội part-time") ||
+              (item === "Hẹn hò, đi chơi") ||
+              (item === "Vintage nhẹ nhàng" ||
               item === "Sporty năng động" ||
-              item === "Minimalism tối giản" ||
+              item === "Minimalism tối giản") ||
               item === "Sang trọng quyến rũ"
           );
           let allConditionsMet7 = answerschoice[answerschoice.length - 1].every(
@@ -490,25 +490,25 @@ $(document).ready(function () {
               item === "Hương kẹo ngọt" ||
               item === "Hương thơm xạ hương" ||
               item === "Hương hoa trái cây" ||
-              item === "Hướng ngoại năng động" ||
-              item === "Hướng nội part-time" ||
-              item === "Hẹn hò, đi chơi" ||
-              item === "Sporty năng động" ||
+              (item === "Hướng ngoại năng động" ||
+              item === "Hướng nội part-time") ||
+              (item === "Hẹn hò, đi chơi") ||
+              (item === "Sporty năng động" ||
               item === "Vintage nhẹ nhàng" ||
-              item === "Tưới mới lạc quan" ||
-              item === "Dịu dàng tinh khôi"
+              item === "Tưới mới lạc quan") ||
+              (item === "Dịu dàng tinh khôi")
           );
           let allConditionsMet8 = answerschoice[answerschoice.length - 1].every(
             (item) =>
               item === "Hương vani, hổ phách" ||
               item === "Hương thơm xạ hương" ||
               item === "Hương cây cỏ thực vật" ||
-              item === "Hướng ngoại năng động" ||
-              item === "Hướng nội part-time" ||
-              item === "Hẹn hò, đi chơi" ||
-              item === "Vintage nhẹ nhàng" ||
+              (item === "Hướng ngoại năng động" ||
+              item === "Hướng nội part-time" )||
+              (item === "Hẹn hò, đi chơi") ||
+              (item === "Vintage nhẹ nhàng" ||
               item === "Preppy cá tính" ||
-              item === "Minimalism tối giản" ||
+              item === "Minimalism tối giản") ||
               item === "Sang trọng quyến rũ"
           );
           console.log("thg green tea", allConditionsMet);
