@@ -26,7 +26,7 @@
 
 .header-container {
     width: 100%;
-    background-image: linear-gradient(to right top, #ccd3ff,#ccd3ff,#ede4ff,#ede4ff);
+    background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
 
 
 }
@@ -42,7 +42,7 @@ header .header-container__navigation {
 .header-container .navbar-nav__item {
     margin: 0 15px;
     color: #000;
-   
+
 }
 
 .header-container .nav-link {
@@ -53,13 +53,16 @@ header .header-container__navigation {
     width: 100%;
 
 }
-.header-container .nav-link:hover{
-    border-bottom:  2px solid black;
+
+.header-container .nav-link:hover {
+    border-bottom: 2px solid black;
 }
-.hoverActive{
-    border-bottom:  2px solid black;
+
+.hoverActive {
+    border-bottom: 2px solid black;
 
 }
+
 .header-container .navigation__logo img {
     width: 6em;
     object-fit: cover;
@@ -74,9 +77,11 @@ header .header-container__navigation {
     width: 6em;
 
 }
+
 .header-container .header-container__navigation button {
-    color:#87469c
+    color: #87469c
 }
+
 /* Style the dropdown content (hidden by default) */
 .dropdown-content {
     visibility: hidden;
@@ -86,49 +91,53 @@ header .header-container__navigation {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  
-  /* Style the links inside the dropdown */
-  .dropdown-content li {
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content li {
     color: black;
     text-decoration: none;
     display: block;
     width: 100%;
-    
+
     padding: 0.5em;
     text-align: left;
-  }
-  .dropdown-content li a {
-      font-weight: 600;
-      text-transform: uppercase;
-  }
-  /* Add a grey background to dropdown links on hover */
-  .dropdown-content li :hover {
-      background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
-  
+}
+
+.dropdown-content li a {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content li :hover {
+    background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
+
     color: black;
-  }
-  
-  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
-  .dropdown:hover .dropdown-content {
-      visibility:visible ;
-  }
-  /* Add this block of CSS for the animation */
-  @keyframes fadeInside {
-      from {
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+}
+
+/* Add this block of CSS for the animation */
+@keyframes fadeInside {
+    from {
         opacity: 0;
         transform: translateY(-10px);
-      }
-      to {
+    }
+
+    to {
         opacity: 1;
         transform: translateY(0);
-      }
     }
-    
-    @media screen and (max-width: 600px) {
-      /* Existing styles for mobile view */
-    
-      .navbar-nav .dropdown-content {
+}
+
+@media screen and (max-width: 600px) {
+    /* Existing styles for mobile view */
+
+    .navbar-nav .dropdown-content {
         animation: fadeInside 3s ease-out;
         position: static;
         right: 0%;
@@ -137,18 +146,18 @@ header .header-container__navigation {
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s, visibility 0.3s;
-      }
-    
-      .navbar-nav .dropdown:hover .dropdown-content {
-      display: inline-block;
-      height: 100%;
+    }
+
+    .navbar-nav .dropdown:hover .dropdown-content {
+        display: inline-block;
+        height: 100%;
         opacity: 1;
         visibility: visible;
-      }
     }
-    
-  
-  
+}
+
+
+
 .banner {
 
     width: 100%;
@@ -201,7 +210,7 @@ header .header-container__navigation {
 .card-content .card-img-top {
     /* width: 50%; */
     height: 280px;
-    margin-bottom:2em;
+    margin-bottom: 2em;
     object-position: center bottom;
     object-fit: none;
 }
@@ -217,7 +226,7 @@ header .header-container__navigation {
     border-bottom-right-radius: 40px;
     padding-left: 8px;
     color: white;
-    box-shadow: rgba(115,111,255) 3px 2.5px;   
+    box-shadow: rgba(115, 111, 255) 3px 2.5px;
     font-weight: 900;
 
     text-transform: uppercase;
@@ -241,8 +250,8 @@ header .header-container__navigation {
     font-style: italic;
     font-weight: 900;
 
-    box-shadow: rgba(0,191,0, 0.4) 3px 2.5px;   
-     text-transform: uppercase;
+    box-shadow: rgba(0, 191, 0, 0.4) 3px 2.5px;
+    text-transform: uppercase;
     background-color: #01b700;
     border: 3px solid white;
 }
@@ -274,13 +283,15 @@ header .header-container__navigation {
 .card-body .btn-green {
     background: linear-gradient(to right, #76be83, #5db36a, #38a041);
 }
-.Breakthrough-formula .Breakthrough-formula_container{
+
+.Breakthrough-formula .Breakthrough-formula_container {
     background-color: rgba(255, 255, 255, 0.3);
     padding: 2.7em;
     border-radius: 20px;
 
 }
-.Breakthrough-formula_container img{
+
+.Breakthrough-formula_container img {
     width: 70%;
 }
 
@@ -455,26 +466,27 @@ header .header-container__navigation {
     flex-wrap: wrap;
 }
 
-.feedback .container .card-user h4
- {
+.feedback .container .card-user h4 {
     color: #87469c;
-    
+
 }
-.feedback .container .card-user .card-text{
+
+.feedback .container .card-user .card-text {
     font-weight: 600;
-    padding :0.1em;
+    padding: 0.1em;
     /* background-color: #036040; */
     /* text-align: left; */
     /* background-color: #01b700; */
     color: #87469c;
 }
+
 .feedback .container .card-user .card-body {
     margin: 0 20px;
 }
 
 .feedback .container .card-user .card-body p {
     margin: 20px 0;
-  
+
 }
 
 .yellow {
@@ -489,9 +501,11 @@ header .header-container__navigation {
 
 .feedback .slider {
     -webkit-appearance: none;
-    width: 30%; /* Adjust this value based on your layout */
+    width: 30%;
+    /* Adjust this value based on your layout */
     height: 25px;
-    margin: 20px auto; /* Adjust margin for spacing */
+    margin: 20px auto;
+    /* Adjust margin for spacing */
     border: 2px solid #fff;
     background: #8987ff;
     outline: none;
@@ -528,6 +542,7 @@ header .header-container__navigation {
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.3);
 }
+
 footer {
 
     background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
@@ -539,7 +554,7 @@ footer {
 
 footer .container-footer {
     bottom: 0;
-    
+
 }
 
 
@@ -549,24 +564,32 @@ footer .container div p {
     color: #595959;
     font-weight: 600;
 }
+
 footer .container div ul {
     display: flex;
     list-style-type: none;
     font-size: 14px;
 
 }
-footer .container div ul li{
-    margin:  10px 5px;
+
+footer .container div ul li {
+    margin: 10px 5px;
     font-weight: 600;
     cursor: pointer;
 
 }
-footer .container div ul li a{
+
+footer .container div ul li a {
     color: #5c3bac;
-     text-decoration: none;
-  }
+    text-decoration: none;
+}
+
 footer .container div ul li:after {
- content:"|"
+    content: "|"
+}
+
+footer .container div ul li:last-child:after {
+    content: ""
 }
 
 

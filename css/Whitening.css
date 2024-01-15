@@ -30,6 +30,7 @@
     background: linear-gradient(to bottom, #fbfbff, #fbfbff, #d2c8fc);
 
 }
+
 .banner {
 
     width: 100%;
@@ -43,6 +44,7 @@
 
 
 }
+
 .fade-in {
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -56,9 +58,10 @@
     margin: 0px auto;
     width: 60%
 }
+
 .header-container {
     width: 100%;
-    background-image: linear-gradient(to right top, #ccd3ff,#ccd3ff,#ede4ff,#ede4ff);
+    background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
 
 
 }
@@ -68,15 +71,16 @@ header .header-container__navigation {
     margin: 0 auto;
 
 }
+
 .header-container__navigation button {
-    color:#87469c
+    color: #87469c
 }
 
 
 .header-container .navbar-nav__item {
     margin: 0 15px;
     color: #000;
-   
+
 }
 
 .header-container .nav-link {
@@ -86,11 +90,13 @@ header .header-container__navigation {
     font-size: 1.35em;
 
 }
-.header-container .nav-link:hover{
-    border-bottom:  2px solid black;
+
+.header-container .nav-link:hover {
+    border-bottom: 2px solid black;
 }
-.hoverActive{
-    border-bottom:  2px solid black;
+
+.hoverActive {
+    border-bottom: 2px solid black;
 
 }
 
@@ -108,6 +114,7 @@ header .header-container__navigation {
     width: 6em;
 
 }
+
 .dropdown-content {
     visibility: hidden;
     padding: 0;
@@ -116,49 +123,53 @@ header .header-container__navigation {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  
-  /* Style the links inside the dropdown */
-  .dropdown-content li {
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content li {
     color: black;
-    text-decoration: none;				
+    text-decoration: none;
     display: block;
     width: 100%;
-    
+
     padding: 0.5em;
     text-align: left;
-  }
-  .dropdown-content li a {
-      font-weight: 600;
-      text-transform: uppercase;
-  }
-  /* Add a grey background to dropdown links on hover */
-  .dropdown-content li :hover {
-      background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
-  
+}
+
+.dropdown-content li a {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content li :hover {
+    background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
+
     color: black;
-  }
-  
-  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
-  .dropdown:hover .dropdown-content {
-      visibility:visible ;
-  }
-  /* Add this block of CSS for the animation */
-  @keyframes fadeInside {
-      from {
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+}
+
+/* Add this block of CSS for the animation */
+@keyframes fadeInside {
+    from {
         opacity: 0;
         transform: translateY(-10px);
-      }
-      to {
+    }
+
+    to {
         opacity: 1;
         transform: translateY(0);
-      }
     }
-    
-    @media screen and (max-width: 600px) {
-      /* Existing styles for mobile view */
-    
-      .navbar-nav .dropdown-content {
+}
+
+@media screen and (max-width: 600px) {
+    /* Existing styles for mobile view */
+
+    .navbar-nav .dropdown-content {
         animation: fadeInside 3s ease-out;
         position: static;
         right: 0%;
@@ -167,17 +178,17 @@ header .header-container__navigation {
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s, visibility 0.3s;
-      }
-    
-      .navbar-nav .dropdown:hover .dropdown-content {
-      display: inline-block;
-      height: 100%;
+    }
+
+    .navbar-nav .dropdown:hover .dropdown-content {
+        display: inline-block;
+        height: 100%;
         opacity: 1;
         visibility: visible;
-      }
     }
-    
-  
+}
+
+
 body {
     height: 1000px;
 
@@ -265,12 +276,12 @@ body {
 
 .tab-slider-gallery .container-slider-image {
     border-radius: 20px;
-    max-height: 45em; 
-    
+    max-height: 45em;
+
     overflow: hidden;
     border: 5px solid #fff;
     margin: 0;
-    background: linear-gradient(to bottom,  #f8f6ff, #e8e4ff, #e3dfff);
+    background: linear-gradient(to bottom, #f8f6ff, #e8e4ff, #e3dfff);
 }
 
 
@@ -309,7 +320,7 @@ body {
     /* background-color: aqua;  */
     outline: none;
 
-    box-shadow: inset 0px 0px 7px 7px #fff;    
+    box-shadow: inset 0px 0px 7px 7px #fff;
     border-radius: 20px;
 }
 
@@ -378,8 +389,9 @@ body {
 
 
 }
-.content-div ul{
-    padding :0;
+
+.content-div ul {
+    padding: 0;
 }
 
 .content-div li::before {
@@ -454,20 +466,21 @@ body {
 .section {
     border: 3px solid white;
     border-radius: 10px;
-    
+
     padding: 5px;
 
 }
+
 .section .section-content {
-    box-shadow: inset 0px 0px 7px 7px #fff;    
+    box-shadow: inset 0px 0px 7px 7px #fff;
     border-radius: 10px;
-    padding:10px;
+    padding: 10px;
 }
 
 .section .section-content .section-content_title {
     font-size: 2.2em;
     text-transform: uppercase;
-    
+
     font-weight: 900;
 }
 
@@ -482,20 +495,22 @@ body {
     content: "-";
     margin: 0 10px;
 }
+
 .section .section-content .section-content_list .result {
- font-style: italic;
- font-weight: 500;
- font-size: 1.2em;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.2em;
 }
+
 .productList {
-    margin-top:5em; 
+    margin-top: 5em;
 }
 
 .productList .productlist-container .card-content {
-    padding-top:12px ;
-   position: relative;
+    padding-top: 12px;
+    position: relative;
     width: 22em;
-    
+
 }
 
 .productList .productlist-container .card-content .card-img-top {
@@ -503,12 +518,12 @@ body {
     width: 80%;
     height: 20em;
     margin-top: 1em;
-   object-fit: cover;
+    object-fit: cover;
 }
 
-.productList .productlist-container  .card .bottom {
+.productList .productlist-container .card .bottom {
 
-    object-position: center ;
+    object-position: center;
 
 }
 
@@ -521,7 +536,7 @@ body {
     border-bottom-right-radius: 40px;
     padding-left: 8px;
     color: white;
-    box-shadow: rgba(115,111,255) 3px 2.5px;   
+    box-shadow: rgba(115, 111, 255) 3px 2.5px;
     font-weight: 900;
     text-transform: uppercase;
     background-color: #766dff;
@@ -530,28 +545,31 @@ body {
 
 
 }
-.productList .productlist-container .card-purple{
+
+.productList .productlist-container .card-purple {
     background-image: linear-gradient(#c4a1f5, #f4e7ff, #f4e7ff);
     border: 3px solid #fff;
-    margin-left:8px;
+    margin-left: 8px;
     border-radius: 1.5em;
     padding: 0;
 }
 
 .productList .productlist-container .card-body .purple-text {
     color: #63469c;
-  
+
 }
+
 .productList .productlist-container .card-body .card-title {
-  
-  font-weight: 900;
+
+    font-weight: 900;
 }
+
 .productList .productlist-container .card-body p {
-  
+
     font-weight: 400;
     line-height: 1.2;
-  }
-  
+}
+
 .productList .productlist-container .card-body .btn {
     border-top-left-radius: 25px;
     padding: 0.5em 1em;
@@ -561,7 +579,7 @@ body {
 }
 
 .productList .productlist-container .card-body .btn-purple {
-    background: linear-gradient(to right, #e1a1f5, #e1a1f5, #c98cfe,#c98cfe);
+    background: linear-gradient(to right, #e1a1f5, #e1a1f5, #c98cfe, #c98cfe);
     font-weight: 500;
 }
 
@@ -586,22 +604,23 @@ body {
     flex-wrap: wrap;
 }
 
-.feedback .container .card-user h4
- {
+.feedback .container .card-user h4 {
     color: #87469c;
-    
+
 }
-.feedback .container .card-user .card-text{
+
+.feedback .container .card-user .card-text {
     font-weight: 600;
     color: #87469c;
 }
+
 .feedback .container .card-user .card-body {
     margin: 0 20px;
 }
 
 .feedback .container .card-user .card-body p {
     margin: 20px 0;
-  
+
 }
 
 .yellow {
@@ -618,8 +637,8 @@ body {
     -webkit-appearance: none;
     width: 30%;
     height: 25px;
-    margin:20px auto;
-    
+    margin: 20px auto;
+
     background: #8987ff;
     outline: none;
     border-radius: 10px;
@@ -647,11 +666,13 @@ body {
     background: #04AA6D;
     cursor: pointer;
 }
-.latestupdate{
+
+.latestupdate {
     margin: 0px auto;
-   
+
 }
-.latestupdate .latest{
+
+.latestupdate .latest {
     width: 100%;
     margin: 0 auto;
 
@@ -659,16 +680,19 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 .latestupdate .owl-carousel .card {
     height: 500px;
     border: 3px solid #fff;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.3);
 }
+
 .latestupdate .owl-carousel .owl-dots.disabled,
 .owl-carousel .owl-nav.disabled {
     display: block;
 }
+
 .latestupdate .owl-carousel .nav-btn {
     height: 30em;
     position: absolute;
@@ -689,13 +713,14 @@ body {
 
     right: -2.4em;
 }
+
 .latestupdate .card-content {
     margin: 0 10px;
     padding: 10px 0;
 
 }
 
-.latestupdate  .card-content .card-img-top {
+.latestupdate .card-content .card-img-top {
     /* width: 50%; */
     height: 280px;
 
@@ -703,11 +728,12 @@ body {
     object-fit: none;
 }
 
-.latestupdate  .card .bottom {
+.latestupdate .card .bottom {
 
     object-position: center bottom;
 
 }
+
 footer {
 
     background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
@@ -719,7 +745,7 @@ footer {
 
 footer .container-footer {
     bottom: 0;
-    
+
 }
 
 
@@ -729,6 +755,7 @@ footer .container div p {
     color: #595959;
     font-weight: 600;
 }
+
 footer .container div ul {
     display: flex;
     list-style-type: none;
@@ -736,19 +763,27 @@ footer .container div ul {
     font-size: 14px;
 
 }
-footer .container div ul li{
-    margin:  10px 5px;
+
+footer .container div ul li {
+    margin: 10px 5px;
     font-weight: 600;
     cursor: pointer;
 
 }
-footer .container div ul li a{
+
+footer .container div ul li a {
     color: #5c3bac;
-     text-decoration: none;
-  }
-footer .container div ul li:after {
- content:"|"
+    text-decoration: none;
 }
+
+footer .container div ul li:after {
+    content: "|"
+}
+
+footer .container div ul li:last-child:after {
+    content: ""
+}
+
 
 
 footer .container .popup {
@@ -762,6 +797,7 @@ footer .container .popup {
     justify-content: space-between;
     position: absolute;
 }
+
 footer .popup img {
     width: 70%;
 }
