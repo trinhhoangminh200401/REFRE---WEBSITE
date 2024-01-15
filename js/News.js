@@ -159,7 +159,7 @@ $(document).ready(function () {
                     <div class="card-body d-flex flex-column  justify-content-between ">
                         <h5 class="card-title">${item.title}</h5>
                         <p class="card-text my-4">${item.description}</p>
-                        <a href="#" class="btn btn-primary">Xem tiếp</a>
+                        <a href=https://kenh14.vn/uyen-an-tung-anh-moi-cac-thanh-soi-cung-khong-the-phat-hien-ra-diem-dac-biet-nay-20230510230942398.chn class="btn btn-primary">Xem tiếp</a>
                     </div>
                     </div>
 `;
