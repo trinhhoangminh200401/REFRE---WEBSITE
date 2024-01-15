@@ -1,7 +1,6 @@
-
 .header-container {
     width: 100%;
-    background-image: linear-gradient(to right top, #ccd3ff,#ccd3ff,#ede4ff,#ede4ff);
+    background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
 
 
 }
@@ -17,7 +16,7 @@ header .header-container__navigation {
 .header-container .navbar-nav__item {
     margin: 0 15px;
     color: #000;
-   
+
 }
 
 .header-container .nav-link {
@@ -28,13 +27,16 @@ header .header-container__navigation {
     width: 100%;
 
 }
-.header-container .nav-link:hover{
-    border-bottom:  2px solid black;
+
+.header-container .nav-link:hover {
+    border-bottom: 2px solid black;
 }
-.hoverActive{
-    border-bottom:  2px solid black;
+
+.hoverActive {
+    border-bottom: 2px solid black;
 
 }
+
 .header-container .navigation__logo img {
     width: 6em;
     object-fit: cover;
@@ -49,9 +51,11 @@ header .header-container__navigation {
     width: 6em;
 
 }
+
 .header-container .header-container__navigation button {
-    color:#87469c
+    color: #87469c
 }
+
 .dropdown-content {
     visibility: hidden;
     padding: 0;
@@ -60,49 +64,53 @@ header .header-container__navigation {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  
-  /* Style the links inside the dropdown */
-  .dropdown-content li {
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content li {
     color: black;
     text-decoration: none;
     display: block;
     width: 100%;
-    
+
     padding: 0.5em;
     text-align: left;
-  }
-  .dropdown-content li a {
-      font-weight: 600;
-      text-transform: uppercase;
-  }
-  /* Add a grey background to dropdown links on hover */
-  .dropdown-content li :hover {
-      background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
-  
+}
+
+.dropdown-content li a {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content li :hover {
+    background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
+
     color: black;
-  }
-  
-  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
-  .dropdown:hover .dropdown-content {
-      visibility:visible ;
-  }
-  /* Add this block of CSS for the animation */
-  @keyframes fadeInside {
-      from {
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+}
+
+/* Add this block of CSS for the animation */
+@keyframes fadeInside {
+    from {
         opacity: 0;
         transform: translateY(-10px);
-      }
-      to {
+    }
+
+    to {
         opacity: 1;
         transform: translateY(0);
-      }
     }
-    
-    @media screen and (max-width: 600px) {
-      /* Existing styles for mobile view */
-    
-      .navbar-nav .dropdown-content {
+}
+
+@media screen and (max-width: 600px) {
+    /* Existing styles for mobile view */
+
+    .navbar-nav .dropdown-content {
         animation: fadeInside 3s ease-out;
         position: static;
         right: 0%;
@@ -111,28 +119,30 @@ header .header-container__navigation {
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s, visibility 0.3s;
-      }
-    
-      .navbar-nav .dropdown:hover .dropdown-content {
-      display: inline-block;
-      height: 100%;
+    }
+
+    .navbar-nav .dropdown:hover .dropdown-content {
+        display: inline-block;
+        height: 100%;
         opacity: 1;
         visibility: visible;
-      }
     }
-    
-  
-.container-policy .line {
- height: 3px;
- color:#87469c;
- margin-left: auto;
- margin-right: auto;
 }
+
+
+.container-policy .line {
+    height: 3px;
+    color: #87469c;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .container-policy ul {
     list-style: none;
     font-size: 20px;
     font-weight: 600;
 }
+
 footer {
 
     background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
@@ -145,7 +155,7 @@ footer {
 
 footer .container-footer {
     bottom: 0;
-    
+
 }
 
 
@@ -154,6 +164,7 @@ footer .container div p {
     margin: 0 10px;
     font-weight: 600;
 }
+
 footer .container div ul {
     display: flex;
     list-style-type: none;
@@ -161,19 +172,27 @@ footer .container div ul {
     font-size: 14px;
 
 }
-footer .container div ul li{
-    margin:  10px 5px;
+
+footer .container div ul li {
+    margin: 10px 5px;
     font-weight: 600;
     cursor: pointer;
 
 }
-footer .container div ul li a{
+
+footer .container div ul li a {
     color: #5c3bac;
-     text-decoration: none;
-  }
-footer .container div ul li:after {
- content:"|"
+    text-decoration: none;
 }
+
+footer .container div ul li:after {
+    content: "|"
+}
+
+footer .container div ul li:last-child:after {
+    content: ""
+}
+
 
 
 
@@ -188,7 +207,7 @@ footer .container div ul li:after {
 }
 
 .popup {
-bottom: 30%;
+    bottom: 30%;
     font-size: 20px;
     right: 0em;
     z-index: 70;
