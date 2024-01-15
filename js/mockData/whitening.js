@@ -218,7 +218,7 @@ export const fakeProducts = [
     "./assets/images/Whitening/Sweetie/roll_sweetie_side.png",
     "./assets/images/Whitening/Sweetie/roll_sweetie_side.png",
     "./assets/images/Whitening/Sweetie/roll_sweetie_front.png",
-    "./assets/images/Whitening/Sweetie/rollon_right_sweetie.png",
+    "./assets/images/Whitening/Sweetie/roll_right_sweetie.png",
  
     [
         {

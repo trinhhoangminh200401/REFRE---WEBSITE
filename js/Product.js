@@ -272,7 +272,6 @@ $(document).on("click", ".click", function () {
       urlNatural = `https://gilded-sunflower-1080d8.netlify.app/natural?id=${productId}`;
     }
     window.location.href=urlNatural
-    console.log(urlNatural)
   }
   else if($(this).parent().hasClass('productWhitening')) {
     const productId = $(this).closest(".card-content").data("product-id");

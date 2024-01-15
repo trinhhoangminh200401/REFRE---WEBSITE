@@ -288,6 +288,8 @@ $(document).ready(function () {
       const productDetails = fakeProducts.find(
         (product) => product.id === parseInt(productId)
       );
+      SessionStorage.setSessionStorage("productID", productId);
+  
       console.log(productDetails);
       // Store product details in session storage
       SessionStorage.setSessionStorage(
