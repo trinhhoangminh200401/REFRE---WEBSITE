@@ -158,7 +158,7 @@ $(document).ready(function () {
   };
 
   renderProductCards(fakeProducts);
-  $("#inputGroupFileAddon04").on("click", function () {
+  $("#inputGroupFileAddon04").on("click", function (e) {
     const searchValue = $(".form-control").val().toLowerCase();
 
     const filteredProducts = fakeProducts.filter((product) => {
@@ -169,7 +169,13 @@ $(document).ready(function () {
             product.category.toLowerCase().includes(searchValue)
         );
     });
-
+  const productlist= $(".productlist-container")
+    $("html, body").animate(
+      {
+        scrollTop: productlist.offset().top,
+      },
+      500
+    );
     renderProductCards(filteredProducts);
 });
   function renderProductDetail(productDetails) {

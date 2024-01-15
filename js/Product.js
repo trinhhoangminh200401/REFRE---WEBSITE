@@ -261,7 +261,56 @@ const getProductDataWhitening =(product)=>{
       });
   });
 };
-renderProductCards()
+const renderFilteredProducts = (products, container) => {
+  let content = "";
+  products.map((product) => {
+    const cardHtml = getProductData(product);
+    content += cardHtml;
+  });
+
+  container
+    .html(content)
+    .promise()
+    .done(function () {
+      $(".card-img-top").addClass("loaded");
+    });
+};
+renderProductCards();
+
+const handleSearch = (searchValue) => {
+  const searchLowerCase = searchValue.toLowerCase();
+
+  const filteredNatural = natural.filter((product) => {
+    return (
+      product.title.toLowerCase().includes(searchLowerCase) ||
+      product.title1.toLowerCase().includes(searchLowerCase) ||
+      product.description.toLowerCase().includes(searchLowerCase) ||
+      product.category.toLowerCase().includes(searchLowerCase)
+    );
+  });
+
+  const filteredWhitening = whitening.filter((whiteningItem) => {
+    return (
+      whiteningItem.title.toLowerCase().includes(searchLowerCase) ||
+      whiteningItem.title1.toLowerCase().includes(searchLowerCase) ||
+      whiteningItem.description.toLowerCase().includes(searchLowerCase) ||
+      whiteningItem.category.toLowerCase().includes(searchLowerCase)
+    );
+  });
+
+  renderFilteredProducts(filteredNatural, productlistNatural);
+  renderFilteredProducts(filteredWhitening, productListWhitening);
+};
+
+$("#inputGroupFileAddon04").on("click", function () {
+  const searchValue = $(".form-control").val();
+  handleSearch(searchValue);
+});
+
+
+
+// Initial rendering of all products
+
 $(document).on("click", ".click", function () {
   if($(this).parent().hasClass('productNatural')){
     const productId = $(this).closest(".card-content").data("product-id");

@@ -216,6 +216,13 @@ $(document).ready(function () {
             product.category.toLowerCase().includes(searchValue)
         );
     });
+    const productlist= $(".productlist-container")
+    $("html, body").animate(
+      {
+        scrollTop: productlist.offset().top,
+      },
+      500
+    );
 
     renderProductCards(filteredProducts);
 });
