@@ -1,8 +1,10 @@
 import { DataUser } from "./mockDATA/user.js";
 import { ProductPageService } from "./services/Product.js";
 import { fakeProducts as natural} from "./mockData/natural.js";
-import { fakeProducts as whitening } from "./mockData/whitening.js";
+import { fakeProducts as whitening } from "./mockData/whitening.js"; 
+import { SessionStorage } from "./utils/storage.js";
 $(document).ready(function () {
+
     $('.productList').hide();
 
     // Show the default tab (Whitening)
@@ -187,7 +189,103 @@ $(document).ready(function () {
        
      displayItems();
   });
-  const productlist=$('.productList').length
-  let index =0
+  const productlistNatural=$('.productNatural')
+  const productListWhitening =$('.productWhitening')
+  const getProductDataNatural = (product) => {
+    return `
+    <div class="card-content col-xl-4 col-lg-3 my-4 mx-xl-3 card-purple click " data-product-id="${product.id}" style="cursor:pointer">
+        <p class="card-title green-category my-4">${product.category}</p>
+        <div class="d-flex flex-column align-items-center justify-content-center">
+          <img class="card-img-top bottom lazy fade-in" src=${product.imageUrl}
+/>
+            <div class="card-body">
+                <div class="my-4">
+                    <h5 class="card-title fst-italic h5 text-uppercase purple-text">${product.title}</h5>
+                    <h5 class="card-title fst-italic h5 text-uppercase purple-text">${product.title1}</h5>
+                    <p class="purple-text">${product.description}</p>
+                </div>
+                <a href="#" class="btn w-100 py-2  px-4 btn-purple d-flex align-items-center justify-content-between click">
+                    <p class="mb-0 h5 fst-italic fw-bold">${product.price}đ</p>
+                    <p class="mb-0 h6 fst-italic ">Tìm hiểu thêm</p>
+                </a>
+            </div>
+        </div>
+    </div>
+`;
+  };
+  
  
+const getProductDataWhitening =(product)=>{
+  return `
+  <div class="card-content col-xl-4 col-lg-3 my-4 mx-xl-3 card-purple click " data-product-id="${product.id}" style="cursor:pointer">
+      <p class="card-title purple-category my-4">${product.category}</p>
+      <div class="d-flex flex-column align-items-center justify-content-center">
+        <img class="card-img-top bottom lazy fade-in" src=${product.imageUrl}
+/>
+          <div class="card-body">
+              <div class="my-4">
+                  <h5 class="card-title fst-italic h5 text-uppercase purple-text">${product.title}</h5>
+                  <h5 class="card-title fst-italic h5 text-uppercase purple-text">${product.title1}</h5>
+                  <p class="purple-text">${product.description}</p>
+              </div>
+              <a href="#" class="btn w-100 py-2  px-4 btn-purple d-flex align-items-center justify-content-between click">
+                  <p class="mb-0 h5 fst-italic">${product.price}đ</p>
+                  <p class="mb-0 h6 fst-italic ">Tìm hiểu thêm</p>
+              </a>
+          </div>
+      </div>
+  </div>
+`;
+ }
+ const renderProductCards = () => {
+  let contentNatural = "";
+  let contentWhitening=""
+  natural.map((product) => {
+    const cardNatural = getProductDataNatural(product);
+    contentNatural += cardNatural;
+    productlistNatural
+      .html(contentNatural)
+      .promise()
+      .done(function () {
+        $(".card-img-top").addClass("loaded");
+      });
+  });
+  whitening.map((whiteningItem) => {
+    const cardWhitening = getProductDataWhitening(whiteningItem);
+    contentWhitening += cardWhitening;
+    productListWhitening
+      .html(contentWhitening)
+      .promise()
+      .done(function () {
+        $(".card-img-top").addClass("loaded");
+      });
+  });
+};
+renderProductCards()
+$(document).on("click", ".click", function () {
+  if($(this).parent().hasClass('productNatural')){
+    const productId = $(this).closest(".card-content").data("product-id");
+    let urlNatural =""
+    if (window.location.hostname === 'localhost') {
+      urlNatural = `http://localhost:5000/Natural.html?id=${productId}`;
+    } else {
+      urlNatural = `https://gilded-sunflower-1080d8.netlify.app/natural?id=${productId}`;
+    }
+    window.location.href=urlNatural
+    console.log(urlNatural)
+  }
+  else if($(this).parent().hasClass('productWhitening')) {
+    const productId = $(this).closest(".card-content").data("product-id");
+
+    let urlWhitening =""
+    if (window.location.hostname === 'localhost') {
+      urlWhitening = `http://localhost:5000/whitening.html?id=${productId}`;
+    } else {
+      urlWhitening = `https://gilded-sunflower-1080d8.netlify.app/whitening?id=${productId}`;
+    }
+    window.location.href=urlWhitening
+
+  }
+
+})
 });
