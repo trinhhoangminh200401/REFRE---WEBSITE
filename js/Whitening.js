@@ -119,6 +119,7 @@ $(document).ready(function () {
   pagination.on("input", function () {
     displayItems();
   });
+  
   const getProductData = (product) => {
     return `
     <div class="card-content col-xl-4 col-lg-3 my-4 mx-xl-3 card-purple click " data-product-id="${product.id}" style="cursor:pointer">
@@ -141,10 +142,10 @@ $(document).ready(function () {
     </div>
 `;
   };
-  const renderProductCards = () => {
+  const renderProductCards = (products) => {
     let container = $(".productlist-container");
     let content = "";
-    fakeProducts.map((product) => {
+    products.map((product) => {
       const cardHtml = getProductData(product);
       content += cardHtml;
       container
@@ -156,7 +157,21 @@ $(document).ready(function () {
     });
   };
 
-  renderProductCards();
+  renderProductCards(fakeProducts);
+  $("#inputGroupFileAddon04").on("click", function () {
+    const searchValue = $(".form-control").val().toLowerCase();
+
+    const filteredProducts = fakeProducts.filter((product) => {
+        return (
+            product.title.toLowerCase().includes(searchValue) ||
+            product.title1.toLowerCase().includes(searchValue) ||
+            product.description.toLowerCase().includes(searchValue) ||
+            product.category.toLowerCase().includes(searchValue)
+        );
+    });
+
+    renderProductCards(filteredProducts);
+});
   function renderProductDetail(productDetails) {
     return `
   <div class="tab-slider-gallery row tabs my-5 p-2 mx-auto container d-flex justify-content-center">
