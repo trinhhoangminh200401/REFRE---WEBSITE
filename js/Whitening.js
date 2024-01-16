@@ -119,7 +119,7 @@ $(document).ready(function () {
   pagination.on("input", function () {
     displayItems();
   });
-  
+
   const getProductData = (product) => {
     return `
     <div class="card-content col-xl-4 col-lg-3 my-4 mx-xl-3 card-purple click " data-product-id="${product.id}" style="cursor:pointer">
@@ -158,26 +158,70 @@ $(document).ready(function () {
   };
 
   renderProductCards(fakeProducts);
-  $("#inputGroupFileAddon04").on("click", function (e) {
-    const searchValue = $(".form-control").val().toLowerCase().replace(/\s/g, "");
+  //   $("#inputGroupFileAddon04").on("click", function (e) {
+  //     const searchValue = $(".form-control").val().toLowerCase().replace(/\s/g, "");
+
+  //     const filteredProducts = fakeProducts.filter((product) => {
+  //         return (
+  //             product.title.toLowerCase().replace(/\s/g, "").includes(searchValue) ||
+  //             product.title1.toLowerCase().replace(/\s/g, "").includes(searchValue) ||
+  //             product.description.toLowerCase().replace(/\s/g, "").includes(searchValue) ||
+  //             product.category.toLowerCase().replace(/\s/g, "").includes(searchValue)
+  //         );
+  //     });
+  //   const productlist= $(".productlist-container")
+  //     $("html, body").animate(
+  //       {
+  //         scrollTop: productlist.offset().top,
+  //       },
+  //       500
+  //     );
+  //     renderProductCards(filteredProducts);
+  // });
+  function removeDiacritics(str) {
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  }
+
+  $("#inputGroupFileAddon04").on("click", function () {
+    const $formControl = $(".form-control");
+    const searchValue = removeDiacritics(
+      $formControl.val().toLowerCase().replace(/\s/g, "")
+    );
 
     const filteredProducts = fakeProducts.filter((product) => {
-        return (
-            product.title.toLowerCase().replace(/\s/g, "").includes(searchValue) ||
-            product.title1.toLowerCase().replace(/\s/g, "").includes(searchValue) ||
-            product.description.toLowerCase().replace(/\s/g, "").includes(searchValue) ||
-            product.category.toLowerCase().replace(/\s/g, "").includes(searchValue)
-        );
+      const match =
+        removeDiacritics(product.title.toLowerCase())
+          .replace(/\s/g, "")
+          .includes(searchValue) ||
+        removeDiacritics(product.title1.toLowerCase())
+          .replace(/\s/g, "")
+          .includes(searchValue) ||
+        removeDiacritics(product.description.toLowerCase())
+          .replace(/\s/g, "")
+          .includes(searchValue) ||
+        removeDiacritics(product.category.toLowerCase())
+          .replace(/\s/g, "")
+          .includes(searchValue);
+
+      // Log product properties for debugging
+      if (match) {
+        console.log("Matching Product:", product);
+      }
+
+      return match;
     });
-  const productlist= $(".productlist-container")
+
+    const $productlist = $(".productlist-container");
     $("html, body").animate(
       {
-        scrollTop: productlist.offset().top,
+        scrollTop: $productlist.offset().top,
       },
       500
     );
+
     renderProductCards(filteredProducts);
-});
+  });
+
   function renderProductDetail(productDetails) {
     return `
   <div class="tab-slider-gallery row tabs my-5 p-2 mx-auto container d-flex justify-content-center">
@@ -357,12 +401,12 @@ $(document).ready(function () {
       );
       let url;
 
-      if (window.location.hostname === 'localhost') {
+      if (window.location.hostname === "localhost") {
         url = `http://localhost:5000/whitening.html?id=${productDetails.id}`;
       } else {
         url = `https://gilded-sunflower-1080d8.netlify.app/whitening?id=${productDetails.id}`;
       }
-      
+
       history.pushState({}, null, url);
       const productIditem = SessionStorage.getSessionStorage("productDetail");
       console.log(JSON.parse(productIditem));

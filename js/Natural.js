@@ -205,30 +205,62 @@ $(document).ready(function () {
   }; 
 
   renderProductCards(fakeProducts);
-  // const removeSpecialDiacritics=(str)=>{
-  //  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-  // }
-  $("#inputGroupFileAddon04").on("click", function () {
-    const searchValue = $(".form-control").val().toLowerCase().replace(/\s/g, "");
+ 
+//   $("#inputGroupFileAddon04").on("click", function () {
+//     const searchValue = RegularExpression($(".form-control").val());
 
-    const filteredProducts = fakeProducts.filter((product) => {
-        return (
-            product.title.toLowerCase().replace(/\s/g, "").includes(searchValue) ||
-            product.title1.toLowerCase().replace(/\s/g, "").includes(searchValue) ||
-            product.description.toLowerCase().replace(/\s/g, "").includes(searchValue) ||
-            product.category.toLowerCase().replace(/\s/g, "").includes(searchValue)
-        );
-    });
-    const productlist= $(".productlist-container")
-    $("html, body").animate(
+//     const filteredProducts = fakeProducts.filter((product) => {
+//         return (
+//             product.title.toLowerCase().replace(/\s/g, "").includes(searchValue) ||
+//             product.title1.toLowerCase().replace(/\s/g, "").includes(searchValue) ||
+//             product.description.toLowerCase().replace(/\s/g, "").includes(searchValue) ||
+//             product.category.toLowerCase().replace(/\s/g, "").includes(searchValue)
+//         );
+//     });
+//     const productlist= $(".productlist-container")
+//     $("html, body").animate(
+//       {
+//         scrollTop: productlist.offset().top,
+//       },
+//       500
+//     );
+
+//     renderProductCards(filteredProducts);
+// });
+function removeDiacritics(str) {
+  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
+$("#inputGroupFileAddon04").on("click", function () {
+  const $formControl = $(".form-control");
+  const searchValue = removeDiacritics($formControl.val().toLowerCase().replace(/\s/g, ""));
+
+  const filteredProducts = fakeProducts.filter((product) => {
+      const match =
+          removeDiacritics(product.title.toLowerCase()).replace(/\s/g, "").includes(searchValue) ||
+          removeDiacritics(product.title1.toLowerCase()).replace(/\s/g, "").includes(searchValue) ||
+          removeDiacritics(product.description.toLowerCase()).replace(/\s/g, "").includes(searchValue) ||
+          removeDiacritics(product.category.toLowerCase()).replace(/\s/g, "").includes(searchValue);
+
+      // Log product properties for debugging
+      if (match) {
+          console.log("Matching Product:", product);
+      }
+
+      return match;
+  });
+
+  const $productlist = $(".productlist-container");
+  $("html, body").animate(
       {
-        scrollTop: productlist.offset().top,
+          scrollTop: $productlist.offset().top,
       },
       500
-    );
+  );
 
-    renderProductCards(filteredProducts);
+  renderProductCards(filteredProducts);
 });
+
   function renderProductDetail(productDetails) {
     return `
   <div class="tab-slider-gallery row tabs my-5 p-2 mx-auto container d-flex justify-content-center">
