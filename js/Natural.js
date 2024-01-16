@@ -202,18 +202,21 @@ $(document).ready(function () {
           $(".card-img-top").addClass("loaded");
         });
     });
-  };
+  }; 
 
   renderProductCards(fakeProducts);
+  // const removeSpecialDiacritics=(str)=>{
+  //  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+  // }
   $("#inputGroupFileAddon04").on("click", function () {
-    const searchValue = $(".form-control").val().toLowerCase();
+    const searchValue = $(".form-control").val().toLowerCase().replace(/\s/g, "");
 
     const filteredProducts = fakeProducts.filter((product) => {
         return (
-            product.title.toLowerCase().includes(searchValue) ||
-            product.title1.toLowerCase().includes(searchValue) ||
-            product.description.toLowerCase().includes(searchValue) ||
-            product.category.toLowerCase().includes(searchValue)
+            product.title.toLowerCase().replace(/\s/g, "").includes(searchValue) ||
+            product.title1.toLowerCase().replace(/\s/g, "").includes(searchValue) ||
+            product.description.toLowerCase().replace(/\s/g, "").includes(searchValue) ||
+            product.category.toLowerCase().replace(/\s/g, "").includes(searchValue)
         );
     });
     const productlist= $(".productlist-container")
