@@ -2,7 +2,7 @@ import { DataUser } from "./mockDATA/user.js";
 import { ProductPageService } from "./services/Product.js";
 import { fakeProducts } from "./mockData/natural.js";
 import { SessionStorage } from "./utils/storage.js";
-
+import { removeDiacritics } from "./utils/removeDiacritics.js";
 $(document).ready(function () {
   $(".lazy").Lazy({
     afterLoad: function (element) {
@@ -227,11 +227,20 @@ $(document).ready(function () {
 
 //     renderProductCards(filteredProducts);
 // });
-function removeDiacritics(str) {
-  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-}
 
-$("#inputGroupFileAddon04").on("click", function () {
+$("#inputGroupFileAddon04").on("click", function (event) {
+  event.preventDefault(); // Prevent the default click behavior
+
+  handleSearch();
+});
+
+$(".form-control").on("keypress", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault(); // Prevent the default form submission behavior
+    handleSearch();
+  }
+});
+ const handleSearch=()=>{
   const $formControl = $(".form-control");
   const searchValue = removeDiacritics($formControl.val().toLowerCase().replace(/\s/g, ""));
 
@@ -259,7 +268,7 @@ $("#inputGroupFileAddon04").on("click", function () {
   );
 
   renderProductCards(filteredProducts);
-});
+};
 
   function renderProductDetail(productDetails) {
     return `

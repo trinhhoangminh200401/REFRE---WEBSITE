@@ -2,7 +2,7 @@ import { DataUser } from "./mockDATA/user.js";
 import { ProductPageService } from "./services/Product.js";
 import { fakeProducts as natural} from "./mockData/natural.js";
 import { fakeProducts as whitening } from "./mockData/whitening.js"; 
-import { SessionStorage } from "./utils/storage.js";
+import { removeDiacritics } from "./utils/removeDiacritics.js";
 $(document).ready(function () {
 
     $('.productList').hide();
@@ -261,20 +261,6 @@ const getProductDataWhitening =(product)=>{
       });
   });
 };
-const renderFilteredProducts = (products, container) => {
-  let content = "";
-  products.map((product) => {
-    const cardHtml = getProductData(product);
-    content += cardHtml;
-  });
-
-  container
-    .html(content)
-    .promise()
-    .done(function () {
-      $(".card-img-top").addClass("loaded");
-    });
-};
 renderProductCards();
 
 const handleSearch = (searchValue) => {
@@ -282,32 +268,97 @@ const handleSearch = (searchValue) => {
 
   const filteredNatural = natural.filter((product) => {
     return (
-      product.title.toLowerCase().includes(searchLowerCase) ||
-      product.title1.toLowerCase().includes(searchLowerCase) ||
-      product.description.toLowerCase().includes(searchLowerCase) ||
-      product.category.toLowerCase().includes(searchLowerCase)
-    );
+      removeDiacritics(product.title.toLowerCase())
+      .replace(/\s/g, "")
+      .includes(searchLowerCase) ||
+    removeDiacritics(product.title1.toLowerCase())
+      .replace(/\s/g, "")
+      .includes(searchLowerCase) ||
+    removeDiacritics(product.description.toLowerCase())
+      .replace(/\s/g, "")
+      .includes(searchLowerCase) ||
+    removeDiacritics(product.category.toLowerCase())
+      .replace(/\s/g, "")
+      .includes(searchLowerCase)
+)
   });
 
   const filteredWhitening = whitening.filter((whiteningItem) => {
     return (
-      whiteningItem.title.toLowerCase().includes(searchLowerCase) ||
-      whiteningItem.title1.toLowerCase().includes(searchLowerCase) ||
-      whiteningItem.description.toLowerCase().includes(searchLowerCase) ||
-      whiteningItem.category.toLowerCase().includes(searchLowerCase)
+      removeDiacritics(whiteningItem.title.toLowerCase())
+      .replace(/\s/g, "")
+      .includes(searchLowerCase) ||
+    removeDiacritics(whiteningItem.title1.toLowerCase())
+      .replace(/\s/g, "")
+      .includes(searchLowerCase) ||
+    removeDiacritics(whiteningItem.description.toLowerCase())
+      .replace(/\s/g, "")
+      .includes(searchLowerCase) ||
+    removeDiacritics(whiteningItem.category.toLowerCase())
+      .replace(/\s/g, "")
+      .includes(searchLowerCase)
     );
   });
 
-  renderFilteredProducts(filteredNatural, productlistNatural);
-  renderFilteredProducts(filteredWhitening, productListWhitening);
+  // Render filtered products using specific rendering functions
+  renderFilteredProducts(filteredNatural, getProductDataNatural, productlistNatural);
+  renderFilteredProducts(filteredWhitening, getProductDataWhitening, productListWhitening);
+
+  // Show/hide tabs based on search results
+  if (filteredNatural.length > 0) {
+    $('#tabs-1').show();
+  } else {
+    $('#tabs-1').hide();
+  }
+
+  if (filteredWhitening.length > 0) {
+    $('#tabs-2').show();
+  } else {
+    $('#tabs-2').hide();
+  }
+  const productlistcontent = $(".container-tab");
+  $("html, body").animate(
+    {
+      scrollTop:productlistcontent.offset().top,
+    },
+    500
+  );
 };
 
+const renderFilteredProducts = (filteredProducts, renderFunction, container) => {
+  let content = "";
+
+  filteredProducts.forEach((product) => {
+    const cardHtml = renderFunction(product);
+    content += cardHtml;
+  });
+
+  container.html(content).promise()
+  .done(function () {
+    $(".card-img-top").addClass("loaded");
+  });;
+};
+
+
 $("#inputGroupFileAddon04").on("click", function () {
-  const searchValue = $(".form-control").val();
+  const searchValue = removeDiacritics($(".form-control").val());
   handleSearch(searchValue);
 });
 
+$("#inputGroupFileAddon04").on("click", function (event) {
+  event.preventDefault(); // Prevent the default click behavior
+  const searchValue = removeDiacritics($(".form-control").val().toLowerCase().replace(/\s/g, ""));
+  handleSearch(searchValue);
+});
 
+$(".form-control").on("keypress", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault(); // Prevent the default form submission behavior
+    const searchValue = removeDiacritics($(".form-control").val().toLowerCase().replace(/\s/g, "")
+    );
+    handleSearch(searchValue)
+  }
+});
 
 // Initial rendering of all products
 
