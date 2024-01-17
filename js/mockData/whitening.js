@@ -40,8 +40,8 @@ export const fakeProducts = [
     "/assets/images/Product/Products/Whitening/Deluxe/roll_deluxe_front.png",
     "/assets/images/Product/Products/Whitening/Deluxe/rollon_right_deluxe.png",[
         {
-            subtitle:"Dạng xịt tiện lợi tránh vi khuẩn quay trở lại vào trong cùng công thức mới đột phá giúp:",
-            content:["Khử mùi suốt 24H*","Giảm tiết mồ hôi suốt 48H*.","Không cồn, không Paraben, không gây vàng áo.","Không gây kích ứng**.","Lưu hương suốt cả ngày."]
+          subtitle:"Cảm nhận 3 tầng hương tôn nét kiêu kỳ, sang trọng",
+          content :["Tầng hương đầu: Cam Bergamot tươi mát hòa quyện cùng chút thanh dịu của quả Cam Mandarin.","Tầng hương giữa: hoa Nhài và hoa Linh Lan kiêu kỳ đua nhau tỏa hương.","Tầng hương cuối: Hoắc Hương đan xen một chút Vani ẩn chứa sự sang trọng, lôi cuốn lạ thường.          "]
         }
         ,{
             subtitle:"Cảm nhận 3 tầng hương say đắm trong tình yêu",
@@ -61,7 +61,7 @@ export const fakeProducts = [
     "./assets/images/Whitening/In_Love/roll_inlove_front.png",
     "./assets/images/Whitening/In_Love/rollon_right_inlove.png",
     [{
-        subtitle:"Cảm nhận 3 tầng hương say đắm trong tình yêu:",
+        subtitle:"Cảm nhận 3 tầng hương say đắm trong tình yêu",
         content:["Tầng hương đầu: Hoa Hồng Bulgary tinh tế hòa quyện thanh tao rõ nét từ Hoa Diên Vĩ.","Tầng hương giữa: Xạ Hương quyến rũ len lỏi cùng những cảm xúc ấn tượng từ Huệ Trắng, Hoa Cam.","Tầng hương cuối: Vani ẩn chứa sự sang trọng điểm xuyến nhẹ nhàng của hương Cây Cỏ."]
     }]
     ),
@@ -93,10 +93,10 @@ export const fakeProducts = [
     "./assets/images/BackCard/Whitening/deluxe_backcard.png",
     "./assets/images/BackCard/Mặt sau/Refree-2023-BCinfo3.jpg",
     [
-        {
-            subtitle:"Dạng xịt tiện lợi tránh vi khuẩn quay trở lại vào trong cùng công thức mới đột phá giúp:",
-            content:["Khử mùi suốt 24H*","Giảm tiết mồ hôi suốt 48H*.","Không cồn, không Paraben, không gây vàng áo.","Không gây kích ứng**.","Lưu hương suốt cả ngày."]
-        }
+      {
+        subtitle:"Cảm nhận 3 tầng hương tôn nét kiêu kỳ, sang trọng",
+        content :["Tầng hương đầu: Cam Bergamot tươi mát hòa quyện cùng chút thanh dịu của quả Cam Mandarin.","Tầng hương giữa: hoa Nhài và hoa Linh Lan kiêu kỳ đua nhau tỏa hương.","Tầng hương cuối: Hoắc Hương đan xen một chút Vani ẩn chứa sự sang trọng, lôi cuốn lạ thường.          "]
+      }
         ,{
             subtitle:"Cảm nhận 3 tầng hương say đắm trong tình yêu",
             content:["Tầng hương đầu: Hoa Hồng Bulgary tinh tế hòa quyện thanh tao rõ nét từ Hoa Diên Vĩ."]
@@ -116,7 +116,7 @@ export const fakeProducts = [
     "./assets/images/BackCard/Whitening/inlove_backcard.png",
     "./assets/images/BackCard/Mặt sau/Refree-2023-BCinfo7.jpg",
     [{
-        subtitle:"Dạng xịt tiện lợi tránh vi khuẩn quay trở lại vào trong cùng công thức mới đột phá giúp:"
+        subtitle:"Dạng xịt tiện lợi tránh vi khuẩn quay trở lại vào trong cùng công thức mới đột phá giúp"
         ,content:["Khử mùi suốt 24H*.","Giảm tiết mồ hôi suốt 48H*.","Không cồn, không Paraben, không gây vàng áo","Không gây kích ứng**.","Lưu hương suốt cả ngày"]
     },
     {
@@ -137,11 +137,11 @@ export const fakeProducts = [
     "./assets/images/BackCard/Whitening/sophis_backcard.png",
     "./assets/images/BackCard/Mặt sau/Refree-2023-BCinfo8.jpg",
     [{
-        subtitle:"Dạng xịt tiện lợi tránh vi khuẩn quay trở lại vào trong cùng công thức mới đột phá giúp: ",
+        subtitle:"Dạng xịt tiện lợi tránh vi khuẩn quay trở lại vào trong cùng công thức mới đột phá giúp ",
         content:["Khử mùi suốt 24H*","Giảm tiết mồ hôi suốt 48H*.","Không cồn, không Paraben, không gây vàng áo","Không gây kích ứng**.","Lưu hương suốt cả ngày."]
     },{
-        subtitle:" Cảm nhận 3 tầng hương của sự ngây thơ và trong trẻo.",
-        content :["Tầng hương đầu: Cam thanh nhẹ mọng nước ôm lấy các nét hương trái cây mềm mại của Táo, Vải.","Tầng hương giữa:  Hoa Nhài, Hoa Ly, Hoa Diên Vĩ nồng nàng đầy mê hoặc","Tầng hương cuối: Gỗ Đàn Hương và Cây Bách ngọt ngào mang tính ấm, tạo cảm giác sảng khoái tươi mát."]
+        subtitle:" Cảm nhận 3 tầng hương điểm nét ngọt ngào",
+        content :["Tầng hương đầu: Cam thanh nhẹ mọng nước ôm lấy các lấy các nét hương trái cây mềm mại của Táo, Vải.","Tầng hương giữa: Hoa Nhài, Hoa Ly, Hoa Diên Vĩ nồng nàng đầy mê hoặc.","Tầng hương cuối: Gỗ Đàn Hương và Cây Bách ngọt ngào mang tính ấm, tạo cảm giác sảng khoái tươi mát."]
     }
 ]
   ),
@@ -158,10 +158,10 @@ export const fakeProducts = [
     "./assets/images/BackCard/Mặt sau/Refree-2023-BCinfo9.jpg",
   
         [{
-            subtitle:"Dạng xịt tiện lợi tránh vi khuẩn quay trở lại vào trong cùng công thức mới đột phá giúp:        ",
+            subtitle:"Dạng xịt tiện lợi tránh vi khuẩn quay trở lại vào trong cùng công thức mới đột phá giúp        ",
             content:["Khử mùi suốt 24H*","Giảm tiết mồ hôi suốt 48H*.","Không cồn, không Paraben, không gây vàng áo","Không gây kích ứng**.","Lưu hương suốt cả ngày."]
         },{
-            subtitle:" Cảm nhận 3 tầng hương của sự ngây thơ và trong trẻo.",
+            subtitle:" Cảm nhận 3 tầng hương của sự ngây thơ và trong trẻo",
             content :["Tầng hương đầu: Mận, Cam mát lạnh, trong vắt tràn ngập dư vị ngọt lãng mạn của Cây Hồi.","Tầng hương giữa: Hạnh Nhân, Hoa Ly, Hoa Violet ngọt bùi như hóa thành chiếc khăn len mềm mại.","Tầng hương cuối: Gỗ Đàn Hương, Xạ Hương, Hổ Phách trở nên ngọt ngào, quyến rũ mãnh liệt hơn."]
         }
     ]
