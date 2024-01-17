@@ -710,7 +710,9 @@ footer .container div ul li a{
 footer .container div ul li:after {
  content:"|"
 }
-
+footer .container div ul li:last-child:after {
+    content: ""
+}
 
 footer .container .popup {
     top: -50%;
