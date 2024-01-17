@@ -43,7 +43,7 @@ export const fakeProducts = [
     [
       {
         subtitle:
-          "Hương hồng mộc lan thanh thoát cùng các thành phần chiết xuất từ thiên nhiên giúp:          ",
+          "Hương hồng mộc lan thanh thoát cùng các thành phần chiết xuất từ thiên nhiên giúp        ",
         content: [
           "Giảm tiết mồ hôi suốt 48 giờ.",
           "Khử mùi cơ thể suốt 24 giờ",
@@ -52,7 +52,7 @@ export const fakeProducts = [
       },
       {
         subtitle:
-        "Nếu các sản phẩm khử mùi khác có thể gây kích ứng hoặc thâm sạm vùng da dưới cánh tay, Refre Natural MỚI giúp khử mùi cơ thể và giảm tiết mồ hôi hiệu quả với thành phần chiết xuất từ thiên nhiên, thân thiện và an toàn cho da."      
+        "Nếu các sản phẩm khử mùi khác có thể gây kích ứng hoặc thâm sạm vùng da dưới cánh tay, Refre Natural MỚI giúp khử mùi cơ thể và giảm tiết mồ hôi hiệu quả với thành phần chiết xuất từ thiên nhiên, thân thiện và an toàn cho da"      
         ,content:[]
       },
     ]
@@ -71,7 +71,7 @@ export const fakeProducts = [
     [
       {
         subtitle:
-          "Hương gỗ ấm áp cùng các thành phần chiết xuất từ thiên nhiên giúp:          ",
+          "Hương gỗ ấm áp cùng các thành phần chiết xuất từ thiên nhiên giúp         ",
         content: [
           "Giảm tiết mồ hôi suốt 48 giờ.",
           "Khử mùi cơ thể suốt 24 giờ",
@@ -80,7 +80,7 @@ export const fakeProducts = [
       },
       {
         subtitle:
-        "Nếu các sản phẩm khử mùi khác có thể gây kích ứng hoặc thâm sạm vùng da dưới cánh tay, Refre Natural MỚI giúp khử mùi cơ thể và giảm tiết mồ hôi hiệu quả với thành phần chiết xuất từ thiên nhiên, thân thiện và an toàn cho da."      
+        "Nếu các sản phẩm khử mùi khác có thể gây kích ứng hoặc thâm sạm vùng da dưới cánh tay, Refre Natural MỚI giúp khử mùi cơ thể và giảm tiết mồ hôi hiệu quả với thành phần chiết xuất từ thiên nhiên, thân thiện và an toàn cho da"      
         ,content:[]
       },
     ]
@@ -99,7 +99,7 @@ export const fakeProducts = [
     [
       {
         subtitle:
-          "Hương hồng mộc lan thanh thoát cùng dạng xịt tiện lợi giúp:",
+          "Hương hồng mộc lan thanh thoát cùng dạng xịt tiện lợi giúp",
         content: [
           "Giảm tiết mồ hôi suốt 48 giờ.",
           "Khử mùi cơ thể suốt 24 giờ",
@@ -108,7 +108,7 @@ export const fakeProducts = [
       },
       {
         subtitle:
-        "Nếu các sản phẩm khử mùi khác có thể gây kích ứng hoặc thâm sạm vùng da dưới cánh tay, Refre Natural MỚI giúp khử mùi cơ thể và giảm tiết mồ hôi hiệu quả với thành phần chiết xuất từ thiên nhiên, thân thiện và an toàn cho da."      
+        "Nếu các sản phẩm khử mùi khác có thể gây kích ứng hoặc thâm sạm vùng da dưới cánh tay, Refre Natural MỚI giúp khử mùi cơ thể và giảm tiết mồ hôi hiệu quả với thành phần chiết xuất từ thiên nhiên, thân thiện và an toàn cho da"      
         ,content:[]
       },
     ]
@@ -127,7 +127,7 @@ export const fakeProducts = [
     [
       {
         subtitle:
-          "Hương hồng mộc lan thanh thoát cùng dạng xịt tiện lợi giúp:",
+          "Hương gỗ ấm áp cùng các thành phần chiết xuất từ thiên nhiên giúp",
         content: [
           "Giảm tiết mồ hôi suốt 48 giờ.",
           "Khử mùi cơ thể suốt 24 giờ",
@@ -136,7 +136,7 @@ export const fakeProducts = [
       },
       {
         subtitle:
-        "Nếu các sản phẩm khử mùi khác có thể gây kích ứng hoặc thâm sạm vùng da dưới cánh tay, Refre Natural MỚI giúp khử mùi cơ thể và giảm tiết mồ hôi hiệu quả với thành phần chiết xuất từ thiên nhiên, thân thiện và an toàn cho da."      
+        "Nếu các sản phẩm khử mùi khác có thể gây kích ứng hoặc thâm sạm vùng da dưới cánh tay, Refre Natural MỚI giúp khử mùi cơ thể và giảm tiết mồ hôi hiệu quả với thành phần chiết xuất từ thiên nhiên, thân thiện và an toàn cho da"      
         ,content:[]
       },
     ]
@@ -155,7 +155,7 @@ export const fakeProducts = [
     [
       {
         subtitle:
-          "Hương hương thảo thanh dịu cùng các thành phần chiết xuất từ thiên nhiên giúp: ",
+          "Hương hương thảo thanh dịu cùng các thành phần chiết xuất từ thiên nhiên giúp ",
         content: [
           "Giảm tiết mồ hôi suốt 48 giờ.",
           "Khử mùi cơ thể suốt 24 giờ",
@@ -164,7 +164,7 @@ export const fakeProducts = [
       },
       {
         subtitle:
-        "Nếu các sản phẩm khử mùi khác có thể gây kích ứng hoặc thâm sạm vùng da dưới cánh tay, Refre Natural MỚI giúp khử mùi cơ thể và giảm tiết mồ hôi hiệu quả với thành phần chiết xuất từ thiên nhiên, thân thiện và an toàn cho da."      
+        "Nếu các sản phẩm khử mùi khác có thể gây kích ứng hoặc thâm sạm vùng da dưới cánh tay, Refre Natural MỚI giúp khử mùi cơ thể và giảm tiết mồ hôi hiệu quả với thành phần chiết xuất từ thiên nhiên, thân thiện và an toàn cho da"      
         ,content:[]
       },
     ]
@@ -182,7 +182,7 @@ export const fakeProducts = [
     "./assets/images/Product/Products/Natural/Rosemary/Refree-2023-BCinfo3.jpg", 
     [
       {
-        subtitle: "Cảm nhận 3 tầng của sự ngay thơ trong trẻo",
+        subtitle: "Hương hương thảo thanh dịu cùng dạng xịt tiện lợi giúp",
         content: [
           "Giảm tiết mồ hôi suốt 48 giờ.",
           "Khử mùi cơ thể suốt 24 giờ",
@@ -191,7 +191,7 @@ export const fakeProducts = [
       },
       {
         subtitle:
-        "Nếu các sản phẩm khử mùi khác có thể gây kích ứng hoặc thâm sạm vùng da dưới cánh tay, Refre Natural MỚI giúp khử mùi cơ thể và giảm tiết mồ hôi hiệu quả với thành phần chiết xuất từ thiên nhiên, thân thiện và an toàn cho da."      
+        "Nếu các sản phẩm khử mùi khác có thể gây kích ứng hoặc thâm sạm vùng da dưới cánh tay, Refre Natural MỚI giúp khử mùi cơ thể và giảm tiết mồ hôi hiệu quả với thành phần chiết xuất từ thiên nhiên, thân thiện và an toàn cho da"      
         ,content:[]
       },
     ]
@@ -217,7 +217,7 @@ export const fakeProducts = [
       },
       {
         subtitle:
-        "Nếu các sản phẩm khử mùi khác có thể gây kích ứng hoặc thâm sạm vùng da dưới cánh tay, Refre Natural MỚI giúp khử mùi cơ thể và giảm tiết mồ hôi hiệu quả với thành phần chiết xuất từ thiên nhiên, thân thiện và an toàn cho da."      
+        "Nếu các sản phẩm khử mùi khác có thể gây kích ứng hoặc thâm sạm vùng da dưới cánh tay, Refre Natural MỚI giúp khử mùi cơ thể và giảm tiết mồ hôi hiệu quả với thành phần chiết xuất từ thiên nhiên, thân thiện và an toàn cho da"      
         ,content:[]
       },
     ]
@@ -236,7 +236,7 @@ export const fakeProducts = [
     [
       {
         subtitle:
-          "Hương Trà Xanh thuần khiết cùng  dạng xịt tiện lợi giúp: ",
+          "Hương Trà Xanh thuần khiết cùng các thành phần chiết xuất từ thiên nhiên giúp ",
         content: [
           "Giảm tiết mồ hôi suốt 48 giờ.",
           "Khử mùi cơ thể suốt 24 giờ",
@@ -245,7 +245,7 @@ export const fakeProducts = [
       },
       {
         subtitle:
-        "Nếu các sản phẩm khử mùi khác có thể gây kích ứng hoặc thâm sạm vùng da dưới cánh tay, Refre Natural MỚI giúp khử mùi cơ thể và giảm tiết mồ hôi hiệu quả với thành phần chiết xuất từ thiên nhiên, thân thiện và an toàn cho da."      
+        "Nếu các sản phẩm khử mùi khác có thể gây kích ứng hoặc thâm sạm vùng da dưới cánh tay, Refre Natural MỚI giúp khử mùi cơ thể và giảm tiết mồ hôi hiệu quả với thành phần chiết xuất từ thiên nhiên, thân thiện và an toàn cho da"      
         ,content:[]
       },
     ]
