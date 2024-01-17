@@ -43,10 +43,7 @@ export const fakeProducts = [
           subtitle:"Cảm nhận 3 tầng hương tôn nét kiêu kỳ, sang trọng",
           content :["Tầng hương đầu: Cam Bergamot tươi mát hòa quyện cùng chút thanh dịu của quả Cam Mandarin.","Tầng hương giữa: hoa Nhài và hoa Linh Lan kiêu kỳ đua nhau tỏa hương.","Tầng hương cuối: Hoắc Hương đan xen một chút Vani ẩn chứa sự sang trọng, lôi cuốn lạ thường.          "]
         }
-        ,{
-            subtitle:"Cảm nhận 3 tầng hương say đắm trong tình yêu",
-            content:["Tầng hương đầu: Hoa Hồng Bulgary tinh tế hòa quyện thanh tao rõ nét từ Hoa Diên Vĩ."]
-        }
+        
     ]
   ),
   generateFakeProduct(
@@ -94,13 +91,14 @@ export const fakeProducts = [
     "./assets/images/BackCard/Mặt sau/Refree-2023-BCinfo3.jpg",
     [
       {
+        subtitle:"Dạng xịt tiện lợi tránh vi khuẩn quay trở lại vào trong cùng công thức mới đột phá giúp",
+        content:["Khử mùi suốt 24H*.","Giảm tiết mồ hôi suốt 48H*.","Không cồn, không Paraben, không gây vàng áo","Không gây kích ứng**.","Lưu hương suốt cả ngày"]
+      },
+      {
         subtitle:"Cảm nhận 3 tầng hương tôn nét kiêu kỳ, sang trọng",
         content :["Tầng hương đầu: Cam Bergamot tươi mát hòa quyện cùng chút thanh dịu của quả Cam Mandarin.","Tầng hương giữa: hoa Nhài và hoa Linh Lan kiêu kỳ đua nhau tỏa hương.","Tầng hương cuối: Hoắc Hương đan xen một chút Vani ẩn chứa sự sang trọng, lôi cuốn lạ thường.          "]
-      }
-        ,{
-            subtitle:"Cảm nhận 3 tầng hương say đắm trong tình yêu",
-            content:["Tầng hương đầu: Hoa Hồng Bulgary tinh tế hòa quyện thanh tao rõ nét từ Hoa Diên Vĩ."]
-        }
+      },
+        
     ]
     
   ),
