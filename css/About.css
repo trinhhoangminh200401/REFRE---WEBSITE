@@ -414,6 +414,13 @@ footer .container div ul li:last-child:after{
   content:""
 }
 
+.togglepopup {
+  visibility: visible;
+  transition:visibility 0.5s ease;
+}
+.togglepopup.hidden {
+  visibility: hidden;
+}
 
 
 .fade-in {
@@ -426,17 +433,19 @@ footer .container div ul li:last-child:after{
 }
 
 .popup {
-bottom: 30%;
+    bottom: 30%;
     font-size: 20px;
     right: 0em;
     z-index: 70;
     height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     position: absolute;
 }
-
+.togglepopup{
+  display: none;
+}
 
 
 .popup img {

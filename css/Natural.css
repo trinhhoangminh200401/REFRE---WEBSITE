@@ -800,9 +800,10 @@ footer .container .popup {
     height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     position: absolute;
 }
+
 
 footer .popup img {
     width: 70%;

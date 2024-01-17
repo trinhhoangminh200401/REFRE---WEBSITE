@@ -270,14 +270,14 @@ header .header-container__navigation {
 .news .news-content .col-xl-6 .card {
     background-color: #f0e8ff;
     border-radius: 30px;
-    margin-top: 0.7em;
+    margin-top: 0.62xem;
     width: 100%;
     border: 5px solid #fff;
 }
 
 .news .news-content .col-xl-6 .card>img {
     border-radius: 30px;
-    width: 30%;
+    width: 31%;
 
 }
 
@@ -537,7 +537,7 @@ footer .container div ul li:after {
     height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     position: absolute;
 }
 

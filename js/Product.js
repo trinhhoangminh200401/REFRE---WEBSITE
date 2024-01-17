@@ -387,4 +387,9 @@ $(document).on("click", ".click", function () {
   }
 
 })
+
+$(".popup img:nth-child(3)").click(function() {
+  $(".togglepopup").fadeToggle("slow");
+
+});
 });

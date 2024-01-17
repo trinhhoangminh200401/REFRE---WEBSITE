@@ -521,5 +521,8 @@ $(".form-control").on("keypress", function (event) {
       console.error("no id valid!");
     }
   });
+  $(".popup img:nth-child(3)").click(function() {
+    $(".togglepopup").fadeToggle("slow");
 
+  });
 });

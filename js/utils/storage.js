@@ -4,5 +4,8 @@ export const  SessionStorage ={
      }  , 
      setSessionStorage :(key,item)=>{
         sessionStorage.setItem(key, item)
+     },
+     clearSessionStorage:(key)=>{
+            sessionStorage.removeItem(key)
      }
 }

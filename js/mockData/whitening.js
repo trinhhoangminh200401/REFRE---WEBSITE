@@ -130,14 +130,14 @@ export const fakeProducts = [
     "Dạng xịt",
     "SOPHIS",
     "HƯƠNG THANH NHÃ",
-    "Dạng xịt: Cảm nhận 3 tầng hương của sự ngây thơ và trong trẻo.",
+    "Dạng xịt: Cảm nhận 3 tầng hương mang nét thanh nhã đầy tinh tế.",
     59000,
     "./assets/images/Whitening/Sophis/spray_sophis_side.png",
     "./assets/images/Whitening/Sophis/spray_sophis_ front.png",
     "./assets/images/BackCard/Whitening/sophis_backcard.png",
     "./assets/images/BackCard/Mặt sau/Refree-2023-BCinfo8.jpg",
     [{
-        subtitle:"Dạng xịt tiện lợi tránh vi khuẩn quay trở lại vào trong cùng công thức mới đột phá giúp:        ",
+        subtitle:"Dạng xịt tiện lợi tránh vi khuẩn quay trở lại vào trong cùng công thức mới đột phá giúp: ",
         content:["Khử mùi suốt 24H*","Giảm tiết mồ hôi suốt 48H*.","Không cồn, không Paraben, không gây vàng áo","Không gây kích ứng**.","Lưu hương suốt cả ngày."]
     },{
         subtitle:" Cảm nhận 3 tầng hương của sự ngây thơ và trong trẻo.",

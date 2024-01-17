@@ -214,7 +214,7 @@ footer .container div ul li:last-child:after {
     height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     position: absolute;
 }
 

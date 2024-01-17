@@ -191,9 +191,10 @@ $(window).scroll(function () {
      displayItems();
   });
 
-  // Display the initial set of items
+  $(".popup img:nth-child(3)").click(function() {
+    $(".togglepopup").fadeToggle("slow");
 
-  // Add event listeners for previous and next buttons
+  });
   
 
 });

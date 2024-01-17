@@ -168,4 +168,8 @@ $(document).ready(function () {
       $(".data-container").html(dataHtml);
     },
   });
+  $(".popup img:nth-child(3)").click(function() {
+    $(".togglepopup").fadeToggle("slow");
+
+  });
 });

@@ -611,12 +611,12 @@ footer .container div ul li:last-child:after {
     height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     position: absolute;
+    justify-content:center ;
 }
-
-
-
+.togglepopup{
+    display: none;
+}
 .popup img {
     width: 70%;
 }

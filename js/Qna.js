@@ -24,6 +24,9 @@ $(document).ready(function (){
     
         fadeInOnScroll();
     });
-         
+    $(".popup img:nth-child(3)").click(function() {
+        $(".togglepopup").fadeToggle("slow");
+    
+      });     
 });
 

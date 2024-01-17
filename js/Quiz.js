@@ -36,7 +36,17 @@ $(document).ready(function () {
         ) {
           $(this).addClass("image-checkbox-checked");
           $checkbox.prop("checked", true);
-        } else {
+        }
+        else if (newQuestionnaire.some((q) => q.index === index && q.answers.length <= 0)) {
+          const currentQuestionnaireState = JSON.parse(sessionStorage.getItem("questionnaireState"));
+      
+          const filteredQuestionnaire = currentQuestionnaireState.filter(
+              (item) => !(item.index === index && item.answers.length <= 0)
+          );
+      
+          SessionStorage.setSessionStorage("questionnaireState", JSON.stringify(filteredQuestionnaire));
+      }
+        else {
           $(this).removeClass("image-checkbox-checked");
           $checkbox.prop("checked", false);
         }
@@ -109,7 +119,8 @@ $(document).ready(function () {
     if (existingQuestionIndex === -1) {
       const newQuestion = {
         index,
-        question: { ...questionnaireData[index] },
+        question:  questionnaireData[index].question ,
+        maxSelection:questionnaireData[index].maxSelection,
         answers: [], // Initialize answers as an empty array
       };
       updatedQuestionnaire.push(newQuestion);
@@ -308,6 +319,7 @@ $(document).ready(function () {
 
       handleResponse(index, selectedItem);
       saveQuestionnaireState();
+      loadQuestionnaireState()
     }
   });
 
@@ -315,9 +327,9 @@ $(document).ready(function () {
     $(".custom-spinner-container").show();
 
     $(".cardContent__item > .error-message").remove();
-
+    
     newQuestionnaire.forEach((question) => {
-      const maxSelection = question.question.maxSelection;
+      const maxSelection = question.maxSelection;
       const selectedAnswers = question.answers.length;
       if (selectedAnswers !== maxSelection) {
         errorElement.text(`Please select exactly ${maxSelection} answers.`);
@@ -330,7 +342,7 @@ $(document).ready(function () {
     });
 
     newQuestionnaire.forEach((question) => {
-      const maxSelection = question.question.maxSelection;
+      const maxSelection = question.maxSelection;
       question.answers.forEach((selectedItem) => {
         const existingQuestion = newQuestionnaire.find(
           (q) => q.index === question.index
@@ -346,6 +358,9 @@ $(document).ready(function () {
         }
       });
     });
+    loadQuestionnaireState()
+
+
 
     setTimeout(() => {
       $(".custom-spinner-container").hide();
@@ -359,10 +374,13 @@ $(document).ready(function () {
           newQuestionnaire.length <= 0 ||
           newQuestionnaire.length !== questionnaireData.length
         ) {
+          console.log(newQuestionnaire.index)
           announce.text("BẠN VUI LÒNG TRẢ LỜI ĐẦY ĐỦ ");
+          $(".return-result").empty()
         } else {
           let returnResult = $(".return-result");
           let merge = [];
+          console.log(newQuestionnaire)
           const answerschoice = newQuestionnaire.map((item) => {
             $(".render-result_content").hide();
             return (merge = [...merge, ...item.answers]);
@@ -816,7 +834,9 @@ $(document).ready(function () {
                 </div>
             `)
           }
-      
+      else{
+        return "No information"
+      }
         }
       }
       setTimeout(() => {
@@ -832,4 +852,8 @@ $(document).ready(function () {
   function cloneArray(arr) {
     return arr.map((obj) => ({ ...obj }));
   }
+  $(".popup img:nth-child(3)").click(function() {
+    $(".togglepopup").fadeToggle("slow");
+
+  });
 });

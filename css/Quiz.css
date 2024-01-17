@@ -450,7 +450,11 @@ footer .container div ul li a{
    text-decoration: none;
 }
 footer .container div ul li:after {
-content:"|"
+  content: "|"
+}
+
+footer .container div ul li:last-child:after {
+  content: ""
 }
 
 
@@ -462,7 +466,7 @@ footer .container .popup {
   height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   position: absolute;
 }
 footer .popup img {

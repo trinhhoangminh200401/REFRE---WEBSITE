@@ -37,6 +37,9 @@ $(document).ready(function (){
       rightInScroll()
       fadeInOnScroll();
   });
-       
+  $(".popup img:nth-child(3)").click(function() {
+    $(".togglepopup").fadeToggle("slow");
+
+  });
 });
 

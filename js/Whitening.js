@@ -479,4 +479,8 @@ $(document).ready(function () {
       console.error("no id valid!");
     }
   });
+  $(".popup img:nth-child(3)").click(function() {
+    $(".togglepopup").fadeToggle("slow");
+
+  });
 });
