@@ -1,5 +1,6 @@
 function generateFakeProduct(
   id,
+  type,
   category,
   title,
   title1,
@@ -13,6 +14,7 @@ function generateFakeProduct(
 ) {
   return {
     id: id,
+    type:type,
     category: category,
     title: title,
     title1: title1,
@@ -31,6 +33,7 @@ export const fakeProducts = [
  
   generateFakeProduct(
     2,
+    "natural",
     "Dạng lăn",
     "ROSA MAGNOLIA",
     "HƯƠNG HỒNG MỘC LAN",
@@ -59,6 +62,7 @@ export const fakeProducts = [
   ),
   generateFakeProduct(
     3,
+    "natural",
     "Dạng lăn",
     "WOODY",
     "HƯƠNG GỖ",
@@ -87,6 +91,7 @@ export const fakeProducts = [
   ),
   generateFakeProduct(
     4,
+    "natural",
     "Dạng xịt",
     "ROSA Magnolia",
     " HƯƠNG HỒNG MỘC LAN",
@@ -115,6 +120,7 @@ export const fakeProducts = [
   ),
   generateFakeProduct(
     5,
+    "natural",
     "Dạng xịt",
     "WOODY",
     "HƯƠNG GỖ",
@@ -143,6 +149,7 @@ export const fakeProducts = [
   ),
   generateFakeProduct(
     7,
+    "natural",
     "DẠNG LĂN",
     "ROSEMARY",
     "HƯƠNG THẢO",
@@ -171,6 +178,7 @@ export const fakeProducts = [
   ),
   generateFakeProduct(
     8,
+    "natural",
     "Dạng XỊT",
     "ROSEMARY",
     "HƯƠNG THẢO",
@@ -197,6 +205,7 @@ export const fakeProducts = [
     ]
   ),  generateFakeProduct(
     6,
+    "natural",
     "Dạng xịt",
     "GREEN TEA",
     " HƯƠNG TRÀ XANH",
@@ -224,6 +233,7 @@ export const fakeProducts = [
   ),
   generateFakeProduct(
     1,
+    "natural",
     "DẠNG LĂN",
     "GREEN TEA",
     "HƯƠNG TRÀ XANH",

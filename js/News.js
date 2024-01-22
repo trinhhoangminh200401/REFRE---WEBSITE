@@ -1,6 +1,7 @@
 import { DataUser } from "./mockDATA/user.js";
 import { NewItems } from "./mockData/news.js";
 import { NewsPageService } from "./services/News.js";
+import { removeDiacritics } from "./utils/removeDiacritics.js";
 
 $(document).ready(function () {
   function fadeInOnScroll() {
@@ -159,7 +160,7 @@ $(document).ready(function () {
                     <div class="card-body d-flex flex-column  justify-content-between ">
                         <h5 class="card-title">${item.title}</h5>
                         <p class="card-text my-4">${item.description}</p>
-                        <a href=https://kenh14.vn/uyen-an-tung-anh-moi-cac-thanh-soi-cung-khong-the-phat-hien-ra-diem-dac-biet-nay-20230510230942398.chn class="btn btn-primary">Xem tiếp</a>
+                        <a href=${item.showContent.URL? item.showContent.URL : `/NewDetail.html?newid=${item.id}` } class="btn btn-primary">Xem tiếp</a>
                     </div>
                     </div>
 `;

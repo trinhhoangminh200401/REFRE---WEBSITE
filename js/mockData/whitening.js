@@ -1,5 +1,6 @@
 function generateFakeProduct(
   id,
+  type,
   category,
   title,
   title1,
@@ -8,11 +9,13 @@ function generateFakeProduct(
   imageUrl,
   image1,
   image2,
+ 
   image3,
  contentdiv
 ) {
   return {
     id: id,
+    type:type,
     category: category,
     title: title,
     title1: title1,
@@ -30,12 +33,13 @@ function generateFakeProduct(
 export const fakeProducts = [
   generateFakeProduct(
     1,
+    "whitening",
     "Dạng lăn",
     "DELUXE",
     "HƯƠNG SANG TRỌNG",
     "Dạng lăn: Cảm nhận 3 tầng hương mang theo nét kiêu kỳ, sang trọng.",
     59000,
-    "./assets/images/Product/Products/Whitening/Deluxe/roll_deluxe_side.png",
+    "/assets/images/Product/Products/Whitening/Deluxe/roll_deluxe_side.png",
     "./assets/images/Product/Products/Whitening/Deluxe/roll_deluxe_side.png",
     "/assets/images/Product/Products/Whitening/Deluxe/roll_deluxe_front.png",
     "/assets/images/Product/Products/Whitening/Deluxe/rollon_right_deluxe.png",[
@@ -48,12 +52,13 @@ export const fakeProducts = [
   ),
   generateFakeProduct(
     2,
+    "whitening",
     "Dạng lăn",
     "IN LOVE",
     "HƯƠNG TÌNH YÊU",
     "Dạng lăn: Cảm nhận 3 tầng hương say đắm trong tình yêu.",
     59000,
-    "./assets/images/Whitening/In_Love/roll_inlove_side.png",
+    "./assets/images/Whitening/In_Love/roll_inlove_side.png ",
     "./assets/images/Whitening/In_Love/roll_inlove_side.png",
     "./assets/images/Whitening/In_Love/roll_inlove_front.png",
     "./assets/images/Whitening/In_Love/rollon_right_inlove.png",
@@ -64,6 +69,7 @@ export const fakeProducts = [
     ),
   generateFakeProduct(
     3,
+    "whitening",
     "Dạng lăn",
     "SOPHIS",
     "HƯƠNG THANH NHÃ",
@@ -80,6 +86,7 @@ export const fakeProducts = [
   ),
   generateFakeProduct(
     4,
+    "whitening",
     "Dạng xịt",
     "DELUXE",
     "HƯƠNG SANG TRỌNG",
@@ -104,6 +111,7 @@ export const fakeProducts = [
   ),
   generateFakeProduct(
     5,
+    "whitening",
     "Dạng xịt",
     "IN LOVE",
     "HƯƠNG TÌNH YÊU",
@@ -125,6 +133,7 @@ export const fakeProducts = [
   ),
   generateFakeProduct(
     6,
+    "whitening",
     "Dạng xịt",
     "SOPHIS",
     "HƯƠNG THANH NHÃ",
@@ -145,6 +154,7 @@ export const fakeProducts = [
   ),
   generateFakeProduct(
     7,
+    "whitening",
     "Dạng xịt",
     "SWEETIE",
     "HƯƠNG NGỌT NGÀO",
@@ -167,6 +177,7 @@ export const fakeProducts = [
   ),
   generateFakeProduct(
     8,
+    "whitening",
     "Dạng lăn",
     "BABY POWDER",
     "HƯƠNG PHẤN THƠM",
@@ -186,6 +197,7 @@ export const fakeProducts = [
   ),
   generateFakeProduct(
     9,
+    "whitening",
     "Dạng xịt",
     "BABY POWDER",
     "HƯƠNG PHẤN THƠM",
@@ -208,6 +220,7 @@ export const fakeProducts = [
   ),
   generateFakeProduct(
     10,
+    "whitening",
     "Dạng lăn",
     "SWEETIE",
     "HƯƠNG NGỌT NGÀO",
