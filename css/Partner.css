@@ -136,11 +136,8 @@ header .header-container__navigation {
     margin-left: auto;
     margin-right: auto;
 }
-
-.container-policy ul {
-    list-style: none;
-    font-size: 20px;
-    font-weight: 600;
+.listEcommerce a > img {
+    width: 100%;
 }
 
 footer {
@@ -148,9 +145,9 @@ footer {
     background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
     min-height: 250px;
     padding: 10px 0;
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
-    bottom: 0;
+    /* bottom: 0; */
 }
 
 footer .container-footer {
@@ -206,7 +203,7 @@ footer .container div ul li:last-child:after {
     opacity: 1;
 }
 
-.popup { 
+.popup {
     bottom: 30%;
     font-size: 20px;
     right: 0em;

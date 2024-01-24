@@ -15,7 +15,7 @@ export const NewItems = [
     img: "/assets/images/News/TrangTinTuc/TinTuc_Banner5.png",
     title: "Có Refre: Tạm biệt nỗi ám ảnh ố vàng",
     description:
-      "Bạn mất đi sự tinh tế và sạch sẽ của trang phục chỉ vì ố vàng.Đừng lo, Refre sẽ giúp bạn giải quyết tần tật nỗi niềm này",
+      "Ố vàng hẳn là nỗi ám ảnh khó nói nên lời của một số người, bởi điều này gây mất đi sự tinh tế và sạch sẽ của trang phục. Đừng lo, Refre sẽ giúp bạn giải quyết tất tần tật nỗi niềm này.",
     showContent: {
       URL: "",
       contentdiv: `<div class="w-100" style ="display:flex;justify-content:center;flex-direction:column;">
@@ -58,7 +58,7 @@ export const NewItems = [
     <p class="purpleDark my-3">Tình trạng "rau mùi" từ cơ thể hẳn là một trong những vấn đề nhức nhối của không ít các bạn trẻ. Điều này không chỉ gây khó chịu mà còn ảnh hưởng đến sự tự tin khi giao tiếp của ta. Đó là lý do tại sao việc sử dụng sản phẩm khử mùi đúng cách rất quan trọng. Trong bài viết này, Refre sẽ hướng dẫn bạn từ A đến Z cách sử dụng các sản phẩm khử mùi “chuẩn chỉnh” để bạn có thể tận dụng tối đa hiệu quả của chúng.
     </p>
     <div class="d-flex justify-content-center align-items-center ">
-    <img src ="/assets/images/News/TrangTinTuc/azimg.jpg" width="500" alt ="Hình ảnh" />
+    <img src ="/assets/images/News/TrangTinTuc/azimg.jpg"  alt ="Hình ảnh" />
     </div>
     <h5 class="h6 fw-bold my-3 purpleDark">Hiểu về nhu cầu và mục đích sử dụng</h5>   
      <p class="purpleDark my-3"> 
@@ -145,21 +145,262 @@ export const NewItems = [
 
          <div class="list-image my-2" >
             <div>
-         <img src="https://www.refre.com.vn/images/2021/News/picture7.jpg" style="width:80% ;margin-top: 2em"  />
-          <p class=""> Chúng ta cùng điểm sơ qua một số hình ảnh "READY GIRLS" của các cô nàng xinh đẹp ngập tràn mạng xã hội đang "làm mưa làm gió" thời gian gần đây.
+         <img src="https://www.refre.com.vn/images/2021/News/picture7.jpg"  />
+          <p class="purpleDark"> Chúng ta cùng điểm sơ qua một số hình ảnh "READY GIRLS" của các cô nàng xinh đẹp ngập tràn mạng xã hội đang "làm mưa làm gió" thời gian gần đây.
             </p>
         <p class="purpleDark">Refre khiến các nàng mê mẩn, nối tay nhau bắt "trend" siêu yêu. Nàng muốn năng động như cô nàng Võ Ngọc Trân, Phi Linh hay nhẹ nhàng như cô nàng Minh Tuyền và Mai Hà Hoàng Yến nào.
 
         </p>
          </div >
-         <img src="https://www.refre.com.vn/images/2021/News/picture8.jpg"   style="width:80% ;margin-top: 2em"/>
-         <img src="https://refre.com.vn/images/2021/News/picture9.jpg"   style="width:80% ;margin-top: 2em"/>
-         <img src="https://www.refre.com.vn/images/2021/News/picture10.jpg"   style="width:80%;margin-top: 2em "/>
-         <img src="https://www.refre.com.vn/images/2021/News/picture11.jpg"   style="width:80%;margin-top: 2em "/>
-         <img src="https://www.refre.com.vn/images/2021/News/picture12.jpg "  style="width:80%;margin-top: 2em" />
+         <img src="https://www.refre.com.vn/images/2021/News/picture8.jpg"  />
+         <img src="https://refre.com.vn/images/2021/News/picture9.jpg"      />
+         <img src="https://www.refre.com.vn/images/2021/News/picture10.jpg" />
+         <img src="https://www.refre.com.vn/images/2021/News/picture11.jpg" />
+         <img src="https://www.refre.com.vn/images/2021/News/picture12.jpg " />
         
          </div>
         </div>`,
+    },
+  },
+  {
+    id: 11,
+    img: "https://www.refre.com.vn/images/2021/new3.png",
+    title: "“I’M REAL ME, I REALLY LOVE MYSELF” - CÒN NÀNG THÌ SAO?",
+    description: `“Chẳng ngại sai, chẳng sợ khó, chẳng sợ ai đó. Bởi vì ta có: "tự tin”” - Bản tuyên ngôn REAL YOU WILL YOU siêu chất REFRE ấp ủ nay đã on air dành riêng tặng bạn!
+    `,
+    showContent: {
+      URL: "",
+      contentdiv: `
+      <div class="w-100" style ="display:flex;justify-content:center;flex-direction:column;">
+      <iframe  height="500" src="https://www.youtube.com/embed/Z-o2MLufxlE?si=mvwPxYCG8qAwGUef" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="my-2"></iframe>
+       <p class="purpleDark my-2">Sự kết hợp đặc biệt của Lona và Cara cùng diện mạo mới và công thức đột phá từ 2 dòng sản phẩm khử mùi Refre Whitening Perfume và Refre Natural; dù nàng có “bánh bèo” mê selfie, hay năng động thích khám phá, yêu tiệc tùng “bung xoã”, thì vẫn luôn sẵn sàng tự tin là chính mình trong mọi hoàn cảnh, vì có “Refre- khoá mùi toả hương thật lâu” luôn đồng hành bên cạnh.
+
+       </p>
+       <p class="purpleDark my-2"> Cùng khám phá “LUNG LINH LÀ LÊN LUÔN” phiên bản tự tin nhất hè này! Và chờ đón những bất ngờ mới cùng REFRE nhé!
+       </p>
+       <p class="purpleDark my-2">Và đừng quên bỏ túi ngay các siêu phẩm Refre tại đây https://bit.ly/39Saa0v để luôn sẵn sàng tự tin là chính mình, nàng nhé!
+
+       </p>
+      </div>
+      
+      
+      `,
+    },
+  },
+  {
+    id: 12,
+    img: "https://www.refre.com.vn/images/2021/new2.png",
+    title: "XỊT KHỬ MÙI CHIẾT XUẤT THIÊN NHIÊN REFRE NATURAL MỚI",
+    description: `“Real you, will you” Hãy để Refre Natural giúp bạn tự tin là chính mình. Là một fan chính hiệu của các sản phẩm thiên nhiên, nàng chớ mà bỏ qua em xịt khử mùi cải tiến từ công thức đến diện mạo này.
+    `,
+    showContent: {
+      URL: "",
+      contentdiv: `
+      <div class="w-100" style ="display:flex;justify-content:center;flex-direction:column;">
+        <div class="contentImage purpleDark"> 
+          <img src="https://www.refre.com.vn/images/2021/News/picture4.jpg"  alt="hỉnh ảnh" />
+          <p>Cùng Refre điểm qua yếu tố thu hút khiến các cô nàng từ cá tính đến dịu dàng đều yêu Natural:
+          </p>
+          </div>
+          <div class="contentImage my-2 purpleDark"> 
+          <img src="https://www.refre.com.vn/images/2021/News/picture5.jpg"   alt="hỉnh ảnh" />
+            <ol> 
+              <li>Thành phần chiết xuất từ Cỏ Đuôi Ngựa và tinh dầu Xô Thơm giúp khử mùi, kháng khuẩn mà đặc biệt là có khả năng giảm tiết mùi hôi hiệu quả.</li>
+              <li>Đặc điểm, năm nay Refre Natural đổi mới trong công thức - không chứa cồn, không Paraben và không muối nhôm, chính là một điểm cộng lớn trong công thức dành riêng cho các cô nàng có làn da dễ bị kích ứng. </li>
+              <li>Thành phần Xylityl Sesquicaprylate chiết xuất từ thiên nhiên giúp lọc mùi vùng da dưới cánh tay tức thì, từ đó giúp mùi hương của Refre Natural và mùi cơ thể không bị hòa lẫn. Mùi hương lúc này sẽ được giữ lâu hơn, thuần khiết hơn và hoàn hảo hơn.
+
+              </li>
+              </ol>
+          </div>
+          <div class="contentImage my-2 purpleDark"> 
+          <img src="https://www.refre.com.vn/images/2021/News/picture6.jpg"   alt="hỉnh ảnh" />
+          <p class="my-2">Không dừng lại ở đó, các mùi hương thiên nhiên được chọn lọc một cách kỹ càng để giúp các cô gái của Refre sẵn sàng cho những trải nghiệm mới mà vẫn an toàn và dịu nhẹ cho vùng da dưới cánh tay:
+          </p>
+          <div class="my-2"> 
+            <p>Green tea - hương trà xanh.</p>
+            <p>Rosemary - hương thảo.</p>
+            <p>Dành cho nàng sự bất ngờ đặc biệt với 2 sản phẩm mới: </p>
+            <p>Rosa Magnolia - hương hồng mộc lan.</p>
+            <p>Woody - hương gỗ.
+            </p>
+          </div>
+          <p>Cùng đón chờ thêm những điều mới mẻ từ Refre trong thời gian tới nhé!!!
+          </p>
+          <p>Bộ đôi Refre Whitening Perfume mới với công thức đột phá cùng diện mạo nổi bật, siêu cá tính cho các bạn gái tự tin toả sáng khi là chính mình.
+          </p>
+          <div class="contentImage my-2 purpleDark"> 
+          <img src="https://www.refre.com.vn/images/2021/News/picture1.jpg"   alt="hỉnh ảnh" />
+          <p class="my-2">Bộ sưu tập Refre Whitening Perfume mới là thành quả nghiên cứu và phát triển những nhóm mùi hương yêu thích của các nàng. Áp dụng công nghệ Fragrance Sensor mới nhất, được cấu tạo từ thành phần Xylityl Sesquicaprylate và Cyclodextrin cho hiệu quả khoá mùi - toả hương dài lâu: Thành phần Xylityl Sesquicaprylate: ngừa vi khuẩn gây mùi ở vùng da dưới cánh, giúp lưu hương một cách hoàn hảo.
+
+          </p>
+          <p class="my-2">Thành phần khóa mùi thông minh Cyclodextrin: giúp khóa mùi cơ thể vào lõi Cyclodextrin, đồng thời giải phóng các phân tử kiểm soát mùi và tỏa ra hương thơm thật lâu.
+
+          </p>
+
+        </div>
+        <div class="contentImage my-2 purpleDark">
+        <img src="https://www.refre.com.vn/images/2021/News/picture2.jpg"   alt="hỉnh ảnh" />
+        <p class="my-2">Với năm hương nước hoa đặc trưng: Deluxe sang trọng, Sweetie ngọt ngào, Sophis thanh nhã, Baby Powder phấn thơm và In Love quyến rũ bộ sản phẩm Refre Whitening Perfume là “tuyên ngôn” khẳng định chất riêng khi là chính mình của các bạn nữ.
+        </p>
+        </div>
+        <div class="contentImage my-2 purpleDark">
+        <img src="https://www.refre.com.vn/images/2021/News/picture3.jpg"   alt="hỉnh ảnh" />
+        <p class="my-2">Cùng đón chờ thêm những điều mới mẻ từ Refre trong thời gian tới nhé!!!
+        </p>
+        </div>
+      </div>
+      `,
+    },
+  },
+  {
+    id: 13,
+    img: "https://www.refre.com.vn/images/2021/new1.png",
+    title: "[NEW] ĐỘT PHÁ CÔNG THỨC - NỔI BẬT DIỆN MẠO️",
+    description: `Bộ đôi Refre Whitening Perfume mới với công thức đột phá cùng diện mạo nổi bật, siêu cá tính cho các bạn gái tự tin toả sáng khi là chính mình.`,
+    showContent: {
+      URL: "",
+      contentdiv: `
+<div class="w-100" style ="display:flex;justify-content:center;flex-direction:column;">      <div class="contentImage purpleDark my-2 ">
+      <img src="https://www.refre.com.vn/images/2021/News/picture1.jpg "   alt ="Hình ảnh" />
+      <p> Bộ sưu tập Refre Whitening Perfume mới là thành quả nghiên cứu và phát triển những nhóm mùi hương yêu thích của các nàng. Áp dụng công nghệ Fragrance Sensor mới nhất, được cấu tạo từ thành phần Xylityl Sesquicaprylate và Cyclodextrin cho hiệu quả khoá mùi - toả hương dài lâu: Thành phần Xylityl Sesquicaprylate: ngừa vi khuẩn gây mùi ở vùng da dưới cánh, giúp lưu hương một cách hoàn hảo.
+
+      </p>
+      <p>Thành phần khóa mùi thông minh Cyclodextrin: giúp khóa mùi cơ thể vào lõi Cyclodextrin, đồng thời giải phóng các phân tử kiểm soát mùi và tỏa ra hương thơm thật lâu.
+      </p>
+
+      </div>
+      <div class="contentImage purpleDark my-2 ">
+      <img src="https://www.refre.com.vn/images/2021/News/picture1.jpg "   alt ="Hình ảnh" />
+      <p> Bộ sưu tập Refre Whitening Perfume mới là thành quả nghiên cứu và phát triển những nhóm mùi hương yêu thích của các nàng. Áp dụng công nghệ Fragrance Sensor mới nhất, được cấu tạo từ thành phần Xylityl Sesquicaprylate và Cyclodextrin cho hiệu quả khoá mùi - toả hương dài lâu: Thành phần Xylityl Sesquicaprylate: ngừa vi khuẩn gây mùi ở vùng da dưới cánh, giúp lưu hương một cách hoàn hảo.
+
+      </p>
+      <p>Thành phần khóa mùi thông minh Cyclodextrin: giúp khóa mùi cơ thể vào lõi Cyclodextrin, đồng thời giải phóng các phân tử kiểm soát mùi và tỏa ra hương thơm thật lâu.
+      </p>
+      
+      </div>
+      <div class="contentImage purpleDark my-2 ">
+      <img src="https://www.refre.com.vn/images/2021/News/picture2.jpg "  alt ="Hình ảnh" />
+      <p>Với năm hương nước hoa đặc trưng: Deluxe sang trọng, Sweetie ngọt ngào, Sophis thanh nhã, Baby Powder phấn thơm và In Love quyến rũ bộ sản phẩm Refre Whitening Perfume là “tuyên ngôn” khẳng định chất riêng khi là chính mình của các bạn nữ.
+
+      </p>
+         
+      </div>
+      <div class="contentImage purpleDark my-2 ">
+      <img src="https://www.refre.com.vn/images/2021/News/picture3.jpg "  alt ="Hình ảnh" />
+      <p>Cùng đón chờ thêm những điều mới mẻ từ Refre trong thời gian tới nhé!!!
+      </p>
+      </div>
+
+      `,
+    },
+  },
+  {
+    id: 14,
+    img: "https://www.refre.com.vn/images/2018/refre-natural-dang-lan-moi-s.jpg",
+    title: "Khám phá lăn khử mùi Refre Natural hoàn toàn mới",
+    description: `Ngày mới của “teen girl” chúng mình chắc chắn không thể thiếu hương thơm thiên nhiên của Refre Natural. Thiết kế dạng lăn mới mẻ cũng chính là lựa chọn hoàn hảo cho những cô nàng yêu phong cách năng động.`,
+    showContent: {
+      URL: "",
+      contentdiv: `
+      <div class="w-100 purpleDark" style ="display:flex;justify-content:center;flex-direction:column;">
+        <p class="my-2"> Lăn khử mùi Refre Natural có thiết kế đầu lăn tiện dụng, giúp bạn gái kiểm soát tốt bề mặt tiếp xúc với da, làm tăng khả năng khử mùi cơ thể và giảm tiết mồ hôi hiệu quả vùng da dưới cánh tay. Với thiết kế nhẹ nhàng và mang làn hương thiên nhiên quyến rũ, lăn khử mùi Refre Natural lưu giữ hương thơm trên da bạn gái cả ngày thật tinh tế và thuần khiết.</p>   
+    
+        <div class="d-flex justify-content-center align-items-center ">
+        <img src ="https://www.refre.com.vn/images/news/refre-natural-dang-lan-moi.jpg"  alt ="Hình ảnh" />
+    </div>
+      <p class="my-2"> Refre Natural có chứa chiết xuất Aloe Vera (nha đam) và tinh chất Licorice (cam thảo), vô cùng thân thiện và an toàn với mọi làn da. Các thành phần này có khả năng làm dịu vùng da bị tổn thương do dùng nhíp hay dao cạo, giúp ngăn ngừa thâm sạm và làm trắng da.</p>
+      
+      <p class="my-2">“Teen girl” chúng mình sẽ thoả sức diện những chiếc áo hai dây điệu đà cùng bạn bè khi thường xuyên dùng lăn khử mùi Refre Natural, với bốn hương thơm chính: Green Tea, Rosemary, Chamomile và Ylang Ylang.</p>
+        <div class="d-flex justify-content-center align-items-center ">
+
+      <img src ="https://refre.com.vn/images/news/lan-khu-mui-refre-natural.jpg"  alt ="Hình ảnh" />
+
+      </div>
+      <p class="my-2"> Các bạn có thể tìm mua sản phẩm khử mùi Refre Natural tại các quầy mỹ phẩm Rohto ở hệ thống các siêu thị BigC, Co.op Mart hay Lotte Mart; các cửa hàng chăm sóc sắc đẹp như Medicare, Guardian; hoặc mua hàng tại các cửa hàng mỹ phẩm trên toàn quốc. Ngoài ra, các bạn có thể mua hàng online trên các trang thương mại điện tử sau:</p>
+      <div class ="d-flex flex-column">
+        <span > ►Lazada:<a class="mx-2" href = 'https://bit.ly/2JkXEqs'>https://bit.ly/2JkXEqs</a></span>
+        <span > ►Tiki: <a class="mx-2" href = 'https://bit.ly/2IFC1FK'>https://bit.ly/2IFC1FK</a></span>
+        <span > ►Shopee: <a class="mx-2" href = 'https://bit.ly/2KKuX7e'>https://bit.ly/2KKuX7e</a></span>
+
+        </div>
+      </div>
+    
+      `,
+    },
+  },
+  {
+    id: 15,
+    img: "https://www.refre.com.vn/images/2018/aqua-pure-huong-thuan-khiet-s.jpg",
+    title:
+      "  Hương thơm mát dịu như làn gió biển thuần khiết vừa được bổ sung vào dòng sản phẩm khử mùi hương nước hoa Refre Whitening, giúp điểm thêm nét thanh lịch cho cô nàng tuổi teen.  ",
+    description: `Ngày mới của “teen girl” chúng mình chắc chắn không thể thiếu hương thơm thiên nhiên của Refre Natural. Thiết kế dạng lăn mới mẻ cũng chính là lựa chọn hoàn hảo cho những cô nàng yêu phong cách năng động.`,
+    showContent: {
+      URL: "",
+      contentdiv: `
+      <div class="w-100 purpleDark" style ="display:flex;justify-content:center;flex-direction:column;">
+        <p class="my-2"> Refre Whitening Aqua Pure không chỉ mang đến làn hương thuần khiết cho bạn gái, mà còn luôn sẵn sàng đồng hành trong túi xách “cô chủ nhỏ” với hai kiểu thiết kế gồm dạng lăn và dạng xịt. Dạng lăn với đầu lăn tiện dụng, giúp giảm tiết mồ hôi và kiểm soát mùi vùng da dưới cánh tay cực tốt, lưu lại hương thơm trong thời gian dài. Trong khi đó, bạn gái có thể vô tư “dặm” hương thơm tho suốt cả ngày và ở bất kì đâu với chai xịt nhỏ nhắn.</p>
+    
+        <div class="d-flex justify-content-center align-items-center ">
+        <img src ="https://www.refre.com.vn/images/news/aqua-pure-huong-thuan-khiet.jpg"  alt ="Hình ảnh" />
+    </div>
+      <p class="my-2"> Refre Whitening Aqua Pure chứa chiết xuất Aloe Vera (nha đam) và Licorice (cam thảo) có công dụng làm dịu da và dưỡng trắng da hiệu quả. Sử dụng Refre Whitening Aqua Pure đều đặn mỗi ngày và bạn gái chúng mình không còn phải lo lắng vùng da dưới cánh tay bị tổn thương và thâm sạm do thói quen dùng nhíp hay dạo cạo không đúng cách nữa nhé.</p>
+      
+      <p class="my-2">Ngoài Aqua Pure – hương thuần khiết, dòng sản phẩm khử mùi hương nước hoa Refre Whitening còn có những nốt hương vô cùng đặc biệt khác như Deluxe, Sweetie, Baby Powder, Sophis.</p>
+        <div class="d-flex justify-content-center align-items-center ">
+
+      <img src ="https://www.refre.com.vn/images/news/refre-whitening.jpg"  alt ="Hình ảnh" />
+
+      </div>
+      <p class="my-2"> Sức hấp dẫn của dòng sản phẩm khử mùi Refre Whitening nằm ở sắc thái của từng nốt hương đại diện cho từng cung bậc cảm xúc và tính cách của bạn gái. Deluxe dành cho cô nàng yêu thích sự sang trọng. Hương phấn thơm Baby Powder lại phù hợp với bạn gái có chút tinh nghịch. Sophis là lựa chọn hoàn hảo cho cô nàng tinh tế. Và, không gì thích hợp hơn với một cô nàng kẹo ngọt đó là mùi hương ngọt ngào Sweetie.</p>
+      <p class="my-2">Mách nhỏ với các bạn gái nè, Refre Whitening có thể được sử dụng như nước hoa ở những vùng da khác như cổ, cổ tay. Vậy là các “teen girl” nhà mình tha hồ tỏa hương cả ngày rồi nhé. </p>
+      <p class="my-2">Các bạn có thể tìm mua sản phẩm khử mùi Refre Natural tại các quầy mỹ phẩm Rohto ở hệ thống các siêu thị BigC, Co.op Mart hay Lotte Mart; các cửa hàng chăm sóc sắc đẹp như Medicare, Guardian; hoặc mua hàng tại các cửa hàng mỹ phẩm trên toàn quốc. Ngoài ra, các bạn có thể mua hàng online trên các trang thương mại điện tử sau:</p>
+
+      <div class ="d-flex flex-column ">
+        <span> ►Lazada:<a class="mx-2" href = 'https://bit.ly/2JkXEqs'>https://bit.ly/2JkXEqs</a></span>
+        <span> ►Tiki: <a class="mx-2" href = 'https://bit.ly/2IFC1FK'>https://bit.ly/2IFC1FK</a></span>
+        <span> ►Shopee: <a class="mx-2" href = 'https://bit.ly/2KKuX7e'>https://bit.ly/2KKuX7e</a></span>
+
+        </div>
+      </div>
+    
+      `,
+    },
+  },
+  {
+    id: 16,
+    img: "https://www.refre.com.vn/images/2018/refre-natural-ylang-ylang-not-huong-ngot-diu-cho-ban-gai-tuoi-o-mai-s.jpg",
+    title:
+      "  Refre Natural Ylang Ylang - Nốt hương ngọt dịu cho bạn gái tuổi ô mai ",
+    description: `Dòng sản phẩm khử mùi Refre Natural dành cho các “teen girl” nay đã có thêm hương Ylang Ylang ngọt dịu. Hương thơm chiết xuất từ hoa Ngọc Lan Tây sẽ mang lại cảm giác thư giãn, thoải mái, để bạn gái chúng mình sẵn sàng khởi đầu ngày mới tự tin và tràn đầy năng lượng`,
+    showContent: {
+      URL: "",
+      contentdiv: `
+      <div class="w-100 purpleDark" style ="display:flex;justify-content:center;flex-direction:column;">
+        <p class="my-2"> Refre Natural Ylang Ylang mang đến hai sự lựa chọn tiện lợi cho bạn gái khi có cả dạng lăn và dạng xịt. Dạng lăn với đầu lăn tiện dụng, giúp giảm tiết mồ hôi và kiểm soát mùi hương vùng da dưới cánh tay cực tốt, lưu lại hương thơm trong thời gian rất dài. Trong khi đó, dạng xịt nhỏ nhắn luôn nằm gọn gàng trong túi xách xinh xinh, giúp bạn gái vô tư “dặm” hương thơm tho suốt cả ngày và ở bất kì đâu.</p>
+    
+        <div class="d-flex justify-content-center align-items-center ">
+        <img src ="https://www.refre.com.vn/images/news/refre-natural-ylang-ylang-not-huong-ngot-diu-cho-ban-gai-tuoi-o-mai.jpg"  alt ="Hình ảnh" />
+    </div>
+      <p class="my-2">Ngoài chiết xuất hương hoa Ngọc Lan Tây, sản phẩm còn chứa chiết xuất Aloe Vera (nha đam) làm dịu da và Licorice (cam thảo) dưỡng trắng da. Từ nay, bạn gái không còn phải lo lắng vùng da dưới cánh tay bị tổn thương và thâm sạm do thói quen dùng nhíp hay dạo cạo không đúng cách nữa nhé.</p>
+      
+      <p class="my-2">Ngoài hương Ylang Ylang – Ngọc Lan Tây, dòng sản phẩm khử mùi chiết xuất thiên nhiên Refre Natural còn có những nốt hương vô cùng đặc biệt khác như Green Tea – Trà Xanh, Rosemary – Hương Thảo và Chamomile – Cúc La Mã.</p>
+        <div class="d-flex justify-content-center align-items-center ">
+
+      <img src ="https://www.refre.com.vn/images/news/refre-natural.jpg"  alt ="Hình ảnh" />
+
+      </div>
+      <p class="my-2"> Mách nhỏ với các bạn gái nè, riêng chai xịt khử mùi Refre Natural có thể được sử dụng như nước hoa ở những vùng da khác như cổ, cổ tay. Vậy là các “teen girl” nhà mình tha hồ tỏa hương cả ngày rồi nhé.</p>
+      <p class="my-2"> Các bạn có thể tìm mua sản phẩm khử mùi Refre Natural tại các quầy mỹ phẩm Rohto ở hệ thống các siêu thị BigC, Co.op Mart hay Lotte Mart; các cửa hàng chăm sóc sắc đẹp như Medicare, Guardian; hoặc mua hàng tại các cửa hàng mỹ phẩm trên toàn quốc. Ngoài ra, các bạn có thể mua hàng online trên các trang thương mại điện tử sau:</p>
+    
+      <div class ="d-flex flex-column ">
+        <span> ►Lazada:<a class="mx-2" href = 'https://bit.ly/2JkXEqs'>https://bit.ly/2JkXEqs</a></span>
+        <span> ►Tiki: <a class="mx-2" href = 'https://bit.ly/2IFC1FK'>https://bit.ly/2IFC1FK</a></span>
+        <span> ►Shopee: <a class="mx-2" href = 'https://bit.ly/2KKuX7e'>https://bit.ly/2KKuX7e</a></span>
+
+        </div>
+      </div>
+    
+      `,
     },
   },
 ];

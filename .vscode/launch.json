@@ -1,19 +1,16 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-      
-
-     
-      {
-        "name": "Launch localhost",
-        "type": "chrome",
-        "request": "launch",
-        "url": "http://127.0.0.1:61699/index.html",
-        "port": 61373,
-        "webRoot": "${workspaceFolder}/wwwroot"
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch localhost",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://127.0.0.1:61699/index.html",
+      "port": 61373,
+      "webRoot": "${workspaceFolder}/wwwroot"
     },
     {
       "name": "Launch localhost",
@@ -22,15 +19,14 @@
       "url": "http://127.0.0.1:61699/Quiz.html",
       "port": 61373,
       "webRoot": "${workspaceFolder}/wwwroot"
-  },
-  {
-    "name": "Launch localhost",
-    "type": "chrome",
-    "request": "launch",
-    "url": "http://127.0.0.1:65082/Natural.html",
-    "port": 61373,
-    "webRoot": "${workspaceFolder}/wwwroot"
-},
-  
-    ]
+    },
+    {
+      "name": "Launch localhost",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://127.0.0.1:65082/Natural.html",
+      "port": 61373,
+      "webRoot": "${workspaceFolder}/wwwroot"
+    }
+  ]
 }

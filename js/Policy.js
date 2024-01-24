@@ -41,6 +41,16 @@ $(document).ready(function (){
       $(".togglepopup").fadeToggle("slow");
   
     });
+    // Add a click event to the dropdown button to handle clicking and prevent default link behavior
+    $(".navbar-nav__item .dropdown-btn").click(function (e)
+    {
+      e.preventDefault();
+
+      // Toggle the visibility of the dropdown
+      $(this).next(".dropdownmenu, .sub-dropdown-content").fadeToggle(300); // You can adjust the duration (300ms in this case)
+    });
+
+
   });
   
   

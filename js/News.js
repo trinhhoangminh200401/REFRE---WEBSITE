@@ -76,7 +76,7 @@ $(document).ready(function () {
     var displayedItems = NewsPageService.getItems(
       selectedPage - 1,
       itemsPerPage,
-      DataUser
+      DataUser,
     );
     if (displayedItems.length > 0) {
       displayedItems.forEach(function (item, index) {
@@ -118,7 +118,7 @@ $(document).ready(function () {
           imgElement,
           usernameElement,
           ratingElement,
-          reviewElement
+          reviewElement,
         );
 
         // Append the item to the container
@@ -153,14 +153,18 @@ $(document).ready(function () {
       var dataHtml = "";
       $.each(data, function (index, item) {
         dataHtml += ` 
-                    <div class="card d-flex flex-row ">                   
+                    <div class="card d-flex flex-row">                   
                       <img
                         src=${item.img}
                         class="card-img-top" alt="...">
                     <div class="card-body d-flex flex-column  justify-content-between ">
                         <h5 class="card-title">${item.title}</h5>
                         <p class="card-text my-4">${item.description}</p>
-                        <a href=${item.showContent.URL? item.showContent.URL : `/NewDetail.html?newid=${item.id}` } class="btn btn-primary">Xem tiếp</a>
+                        <a href=${
+                          item.showContent.URL
+                            ? item.showContent.URL
+                            : `/NewDetail.html?newid=${item.id}`
+                        } class="btn btn-primary">Xem tiếp</a>
                     </div>
                     </div>
 `;
@@ -169,8 +173,8 @@ $(document).ready(function () {
       $(".data-container").html(dataHtml);
     },
   });
-  $(".popup img:nth-child(3)").click(function() {
-    $(".togglepopup").fadeToggle("slow");
 
+  $(".popup img:nth-child(3)").click(function () {
+    $(".togglepopup").fadeToggle("slow");
   });
 });
