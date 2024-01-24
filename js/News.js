@@ -1,6 +1,7 @@
 import { DataUser } from "./mockDATA/user.js";
 import { NewItems } from "./mockData/news.js";
 import { NewsPageService } from "./services/News.js";
+import { cutString } from "./utils/cutString.js";
 import { removeDiacritics } from "./utils/removeDiacritics.js";
 
 $(document).ready(function () {
@@ -153,13 +154,15 @@ $(document).ready(function () {
       var dataHtml = "";
       $.each(data, function (index, item) {
         dataHtml += ` 
-                    <div class="card d-flex flex-row">                   
+                    <div class="card d-flex flex-row">
+                    <div class='imagediv'>                 
                       <img
                         src=${item.img}
                         class="card-img-top" alt="...">
+                        </div>
                     <div class="card-body d-flex flex-column  justify-content-between ">
                         <h5 class="card-title">${item.title}</h5>
-                        <p class="card-text my-4">${item.description}</p>
+                        <p class="card-text my-4">${cutString(item.description,120)}</p>
                         <a href=${
                           item.showContent.URL
                             ? item.showContent.URL
