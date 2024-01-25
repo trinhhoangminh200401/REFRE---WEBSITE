@@ -21,14 +21,17 @@
 
     right: -2.4em;
 }
-.paginationjs{
-    margin :0px auto;
+
+.paginationjs {
+    margin: 0px auto;
 
 }
+
 .paginationjs .paginationjs-pages {
     width: 100%;
 }
-.paginationjs .paginationjs-pages ul{
+
+.paginationjs .paginationjs-pages ul {
     display: flex;
     list-style: none;
     text-align: center;
@@ -38,25 +41,27 @@
     padding: 1em 0;
 
     border: 5px solid #fff;
-    
+
 }
 
-.paginationjs .paginationjs-pages ul li a{
+.paginationjs .paginationjs-pages ul li a {
     font-size: 1.8em;
     color: #7a5fc8;
-    margin:  0 0.7em ;
+    margin: 0 0.7em;
 
     font-style: italic;
     font-weight: 700;
 }
+
 .product {
     width: 100%;
     margin: 0 auto;
-  
-  
+
+
     display: flex;
     flex-direction: column;
-  }
+}
+
 .header-container {
     width: 100%;
     background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
@@ -170,7 +175,7 @@ header .header-container__navigation {
         transition: opacity 0.3s, visibility 0.3s;
     }
 
-    .navbar-nav .dropdown:hover .dropdown-content{
+    .navbar-nav .dropdown:hover .dropdown-content {
         display: inline-block;
         height: 100%;
         opacity: 1;
@@ -311,53 +316,58 @@ header .header-container__navigation {
     font-size: 1.2em;
 }
 
-.pagination__container .data-container .card{
+.pagination__container .data-container .card {
     background-color: #f0e8ff;
     border-radius: 30px;
     margin-top: 0.7em;
     width: 100%;
     max-height: 300px;
     height: 100%;
+    /* overflow: hidden; */
     border: 5px solid #fff;
 }
-.pagination__container .data-container .card >.imagediv{
+
+.pagination__container .data-container .card>.imagediv {
     max-width: 300px;
     width: 100%;
 }
-.pagination__container .data-container .card .imagediv > .card-img-top{
- border-radius: 30px;
- width: 100%;
- height: 100%;
- object-fit: cover;
+
+.pagination__container .data-container .card .imagediv>.card-img-top {
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.pagination__container .data-container .card > .card-body{
-    padding: 2em  ;
+
+.pagination__container .data-container .card>.card-body {
+    padding: 2em;
     height: 100%;
     color: #5b4897;
 
 }
 
-.pagination__container .data-container .card > .card-body h5{
+.pagination__container .data-container .card>.card-body h5 {
     text-transform: uppercase;
     font-weight: 800;
     font-style: italic;
 }
 
-.pagination__container .data-container .card > .card-body p{
-  font-weight: 600;
+.pagination__container .data-container .card>.card-body p {
+    font-weight: 600;
 }
-.pagination__container .data-container .card > .card-body a{
-box-shadow: inset #fff 0px 0px 14px 0px;
-background-color: #af8afc;
-border-top-left-radius: 25px;
-padding:  1em 3em;
-color: white;
-width: fit-content;
-border: 3px solid #fff;
-text-align: center;
-text-decoration: none;
-border-bottom-right-radius: 25px;
-font-size: 1.2em;
+
+.pagination__container .data-container .card>.card-body a {
+    box-shadow: inset #fff 0px 0px 14px 0px;
+    background-color: #af8afc;
+    border-top-left-radius: 25px;
+    padding: 1em 3em;
+    color: white;
+    width: fit-content;
+    border: 3px solid #fff;
+    text-align: center;
+    text-decoration: none;
+    border-bottom-right-radius: 25px;
+    font-size: 1.2em;
 }
 
 
@@ -483,6 +493,11 @@ font-size: 1.2em;
 .renderDetail .content-container img {
     width: 90%;
 }
+.renderDetail .content-container .contentdiv .card{
+    padding: 1em;
+   background-color: #f0e8ff;
+    border :5px solid #Fff;
+}
 footer {
 
     background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
@@ -519,14 +534,16 @@ footer .container div ul li {
     cursor: pointer;
 
 }
-footer .container div ul li a{
+
+footer .container div ul li a {
     color: #5c3bac;
-     text-decoration: none;
-  }
+    text-decoration: none;
+}
 
 footer .container div ul li:after {
     content: "|"
 }
+
 footer .container div ul li:last-child:after {
     content: ""
 }
@@ -543,7 +560,7 @@ footer .container div ul li:last-child:after {
 }
 
 .popup {
-    top: -50%; 
+    top: -50%;
     font-size: 20px;
     right: 0em;
     z-index: 70;
@@ -559,4 +576,3 @@ footer .container div ul li:last-child:after {
 .popup img {
     width: 70%;
 }
-

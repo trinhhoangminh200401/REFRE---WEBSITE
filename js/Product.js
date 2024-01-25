@@ -1,36 +1,39 @@
 import { DataUser } from "./mockDATA/user.js";
 import { ProductPageService } from "./services/Product.js";
-import { fakeProducts as natural} from "./mockData/natural.js";
-import { fakeProducts as whitening } from "./mockData/whitening.js"; 
+import { fakeProducts as natural } from "./mockData/natural.js";
+import { fakeProducts as whitening } from "./mockData/whitening.js";
 import { removeDiacritics } from "./utils/removeDiacritics.js";
-$(document).ready(function () {
+$(document).ready(function ()
+{
 
+  $('.productList').hide();
+
+  // Show the default tab (Whitening)
+  $('#tabs-2').show();
+
+  $('.button-tab-action a').on('click', function (e)
+  {
+    e.preventDefault();
+
+    // Hide all tab content
     $('.productList').hide();
 
-    // Show the default tab (Whitening)
-    $('#tabs-2').show();
-
-    $('.button-tab-action a').on('click', function (e) {
-        e.preventDefault();
-
-        // Hide all tab content
-        $('.productList').hide();
-
-        // Show the clicked tab content
-        var targetTabId = $(this).attr('href');
-        $(targetTabId).show();
-    });
+    // Show the clicked tab content
+    var targetTabId = $(this).attr('href');
+    $(targetTabId).show();
+  });
 
   $(".lazy").Lazy({
-    afterLoad: function (element) {
+    afterLoad: function (element)
+    {
       element.addClass("loaded");
     },
   });
-  
+
   $(".tab-slider-gallery .owl-carousel").owlCarousel({
     responsiveClass: true,
     // autoplay: true,
-    navText:"",
+    navText: "",
     autoplayTimeout: 3000,
     responsive: {
       0: {
@@ -86,16 +89,19 @@ $(document).ready(function () {
       },
     },
   });
-  $(".container-tabs .card-body").click(function () {
+  $(".container-tabs .card-body").click(function ()
+  {
     let totalItem = $(".container-slider-image .owl-carousel .owl-item").length;
-  
+
     let position = $(this).index();
-    if (position >= 0 && position < totalItem) {
+    if (position >= 0 && position < totalItem)
+    {
       $(".container-slider-image .owl-carousel .owl-item").trigger(
         "to.owl.carousel",
         position
       );
-    } else {
+    } else
+    {
       console.error("Invalid index", position);
     }
   });
@@ -104,54 +110,60 @@ $(document).ready(function () {
   var itemsPerPage = 6;
 
   // Function to display the items for the selected page
-  function displayItems() {
+  function displayItems ()
+  {
     // Clear the container
     container.empty();
 
     // Get the selected page from the range input
-    var selectedPage = parseInt(pagination.val()) ;
-     // Calculate the start and end indices for the current page
-    
-    var displayedItems = ProductPageService.getItems(selectedPage-1, itemsPerPage,DataUser);
-     if (displayedItems.length > 0 ){
-      displayedItems.forEach(function(item, index)  {
+    var selectedPage = parseInt(pagination.val());
+    // Calculate the start and end indices for the current page
+
+    var displayedItems = ProductPageService.getItems(selectedPage - 1, itemsPerPage, DataUser);
+    if (displayedItems.length > 0)
+    {
+      displayedItems.forEach(function (item, index)
+      {
         var itemElement = $("<div>")
           .addClass("text-center col-xs-4 col-sm-6 col-md-12 mx-auto my-4")
           .css("width", "400px")
           .hide();
-  
+
         // Create the elements for the item (e.g., image, username, rating, review)
         let imgElement = $("<img>")
-        .addClass("card-img-top banner fade-in")
-        .attr("src", item.imgSrc);
-  
-      imgElement.on("load", function() {
-        imgElement.addClass("loaded");
-        imgElement.attr("alt", "Card image");
-      
-      });
-      
-      // Trigger the image loading
-        
+          .addClass("card-img-top banner fade-in")
+          .attr("src", item.imgSrc);
+
+        imgElement.on("load", function ()
+        {
+          imgElement.addClass("loaded");
+          imgElement.attr("alt", "Card image");
+
+        });
+
+        // Trigger the image loading
+
         var usernameElement = $("<h4>")
           .addClass("card-title my-4 fw-bold fst-italic")
           .text(item.username);
-  
+
         var ratingElement = $("<div>").addClass("rating-stars text-center");
-        for (let i = 0; i < item.rating; i++) {
+        for (let i = 0; i < item.rating; i++)
+        {
           $("<i>")
             .addClass(`fa fa-star yellow fa-fw my-4`)
             .appendTo(ratingElement)
-            if(i < item.rating && i > 2){
-              
-              $("<i>")
+          if (i < item.rating && i > 2)
+          {
+
+            $("<i>")
               .addClass(`yellow`)
-            
-            }
-           }
-  
+
+          }
+        }
+
         var reviewElement = $("<p>").addClass("card-text").text(item.review);
-  
+
         // Append the elements to the item
         itemElement.append(
           imgElement,
@@ -159,39 +171,43 @@ $(document).ready(function () {
           ratingElement,
           reviewElement
         );
-        
+
         // Append the item to the container
         container.append(itemElement);
       });
-     }
-    
-     else{
-    
+    }
+
+    else
+    {
+
       container.append("No user exist")
-     }
+    }
     // Loop through the items and create the elements
-  
+
     // Show the items with a fadeIn effect
     container.children().fadeIn();
-  
+
   }
-  
+
   displayItems();
 
-  $("rating-stars .fa-star").click(function () {
+  $("rating-stars .fa-star").click(function ()
+  {
     alert("hello");
     $(this).toggleClass("yellow");
     $(this).prevAll(".fa-star").addClass("yellow");
     $(this).nextAll(".fa-star").removeClass("yellow");
   });
   // Add an event listener to the pagination range input
-  pagination.on("input", function () {
-       
-     displayItems();
+  pagination.on("input", function ()
+  {
+
+    displayItems();
   });
-  const productlistNatural=$('.productNatural')
-  const productListWhitening =$('.productWhitening')
-  const getProductDataNatural = (product) => {
+  const productlistNatural = $('.productNatural')
+  const productListWhitening = $('.productWhitening')
+  const getProductDataNatural = (product) =>
+  {
     return `
     <div class="card-content col-xl-4 col-lg-3 my-4 mx-xl-3 card-purple click " data-product-id="${product.id}" style="cursor:pointer">
         <p class="card-title green-category my-4">${product.category}</p>
@@ -213,10 +229,11 @@ $(document).ready(function () {
     </div>
 `;
   };
-  
- 
-const getProductDataWhitening =(product)=>{
-  return `
+
+
+  const getProductDataWhitening = (product) =>
+  {
+    return `
   <div class="card-content col-xl-4 col-lg-3 my-4 mx-xl-3 card-purple click " data-product-id="${product.id}" style="cursor:pointer">
       <p class="card-title purple-category my-4">${product.category}</p>
       <div class="d-flex flex-column align-items-center justify-content-center">
@@ -236,160 +253,203 @@ const getProductDataWhitening =(product)=>{
       </div>
   </div>
 `;
- }
- const renderProductCards = () => {
-  let contentNatural = "";
-  let contentWhitening=""
-  natural.map((product) => {
-    const cardNatural = getProductDataNatural(product);
-    contentNatural += cardNatural;
-    productlistNatural
-      .html(contentNatural)
-      .promise()
-      .done(function () {
-        $(".card-img-top").addClass("loaded");
-      });
-  });
-  whitening.map((whiteningItem) => {
-    const cardWhitening = getProductDataWhitening(whiteningItem);
-    contentWhitening += cardWhitening;
-    productListWhitening
-      .html(contentWhitening)
-      .promise()
-      .done(function () {
-        $(".card-img-top").addClass("loaded");
-      });
-  });
-};
-renderProductCards();
-
-const handleSearch = (searchValue) => {
-  const searchLowerCase = searchValue.toLowerCase();
-
-  const filteredNatural = natural.filter((product) => {
-    return (
-      removeDiacritics(product.title.toLowerCase())
-      .replace(/\s/g, "")
-      .includes(searchLowerCase) ||
-    removeDiacritics(product.title1.toLowerCase())
-      .replace(/\s/g, "")
-      .includes(searchLowerCase) ||
-    removeDiacritics(product.description.toLowerCase())
-      .replace(/\s/g, "")
-      .includes(searchLowerCase) ||
-    removeDiacritics(product.category.toLowerCase())
-      .replace(/\s/g, "")
-      .includes(searchLowerCase)
-)
-  });
-
-  const filteredWhitening = whitening.filter((whiteningItem) => {
-    return (
-      removeDiacritics(whiteningItem.title.toLowerCase())
-      .replace(/\s/g, "")
-      .includes(searchLowerCase) ||
-    removeDiacritics(whiteningItem.title1.toLowerCase())
-      .replace(/\s/g, "")
-      .includes(searchLowerCase) ||
-    removeDiacritics(whiteningItem.description.toLowerCase())
-      .replace(/\s/g, "")
-      .includes(searchLowerCase) ||
-    removeDiacritics(whiteningItem.category.toLowerCase())
-      .replace(/\s/g, "")
-      .includes(searchLowerCase)
-    );
-  });
-
-  // Render filtered products using specific rendering functions
-  renderFilteredProducts(filteredNatural, getProductDataNatural, productlistNatural);
-  renderFilteredProducts(filteredWhitening, getProductDataWhitening, productListWhitening);
-
-  // Show/hide tabs based on search results
-  if (filteredNatural.length > 0) {
-    $('#tabs-1').show();
-  } else {
-    $('#tabs-1').hide();
   }
-
-  if (filteredWhitening.length > 0) {
-    $('#tabs-2').show();
-  } else {
-    $('#tabs-2').hide();
-  }
-  const productlistcontent = $(".container-tab");
-  $("html, body").animate(
+  const renderProductCards = () =>
+  {
+    let contentNatural = "";
+    let contentWhitening = ""
+    natural.map((product) =>
     {
-      scrollTop:productlistcontent.offset().top,
-    },
-    500
-  );
-};
+      const cardNatural = getProductDataNatural(product);
+      contentNatural += cardNatural;
+      productlistNatural
+        .html(contentNatural)
+        .promise()
+        .done(function ()
+        {
+          $(".card-img-top").addClass("loaded");
+        });
+    });
+    whitening.map((whiteningItem) =>
+    {
+      const cardWhitening = getProductDataWhitening(whiteningItem);
+      contentWhitening += cardWhitening;
+      productListWhitening
+        .html(contentWhitening)
+        .promise()
+        .done(function ()
+        {
+          $(".card-img-top").addClass("loaded");
+        });
+    });
+  };
+  renderProductCards();
 
-const renderFilteredProducts = (filteredProducts, renderFunction, container) => {
-  let content = "";
+  const handleSearch = (searchValue) =>
+  {
+    const searchLowerCase = searchValue.toLowerCase();
 
-  filteredProducts.forEach((product) => {
-    const cardHtml = renderFunction(product);
-    content += cardHtml;
+    const filteredNatural = natural.filter((product) =>
+    {
+      return (
+        removeDiacritics(product.title.toLowerCase())
+          .replace(/\s/g, "")
+          .includes(searchLowerCase) ||
+        removeDiacritics(product.title1.toLowerCase())
+          .replace(/\s/g, "")
+          .includes(searchLowerCase) ||
+        removeDiacritics(product.description.toLowerCase())
+          .replace(/\s/g, "")
+          .includes(searchLowerCase) ||
+        removeDiacritics(product.category.toLowerCase())
+          .replace(/\s/g, "")
+          .includes(searchLowerCase) ||
+        removeDiacritics(product.type.toLowerCase())
+          .replace(/\s/g, "")
+          .includes(searchLowerCase)
+
+      )
+
+    });
+
+    const filteredWhitening = whitening.filter((whiteningItem) =>
+    {
+      return (
+        removeDiacritics(whiteningItem.title.toLowerCase())
+          .replace(/\s/g, "")
+          .includes(searchLowerCase) ||
+        removeDiacritics(whiteningItem.title1.toLowerCase())
+          .replace(/\s/g, "")
+          .includes(searchLowerCase) ||
+        removeDiacritics(whiteningItem.description.toLowerCase())
+          .replace(/\s/g, "")
+          .includes(searchLowerCase) ||
+        removeDiacritics(whiteningItem.category.toLowerCase())
+          .replace(/\s/g, "")
+          .includes(searchLowerCase)
+      ) ||
+        removeDiacritics(whiteningItem.type.toLowerCase())
+          .replace(/\s/g, "")
+          .includes(searchLowerCase)
+
+    });
+
+    // Render filtered products using specific rendering functions
+    renderFilteredProducts(filteredNatural, getProductDataNatural, productlistNatural);
+    renderFilteredProducts(filteredWhitening, getProductDataWhitening, productListWhitening);
+
+    // Show/hide tabs based on search results
+    // if (filteredNatural.length > 0) {
+    //   $('#tabs-1').show();
+    // } else {
+    //   $('#tabs-1').hide();
+    // }
+
+    // if (filteredWhitening.length > 0) {
+    //   $('#tabs-2').show();
+    // } else {
+    //   $('#tabs-2').hide();
+    // }
+    const showNaturalTab = filteredNatural.length > 0;
+    const showWhiteningTab = filteredWhitening.length > 0;
+
+    $('#tabs-2').toggle(showWhiteningTab);
+    $('#tabs-1').toggle(showNaturalTab);
+
+    const targetTabId = showWhiteningTab ? '#tabs-2' : '#tabs-1';
+
+    $(targetTabId).show();
+
+
+    const productlistcontent = $(".container-tab");
+    $("html, body").animate(
+      {
+        scrollTop: productlistcontent.offset().top,
+      },
+      500
+    );
+  };
+
+  const renderFilteredProducts = (filteredProducts, renderFunction, container) =>
+  {
+    let content = "";
+
+    filteredProducts.forEach((product) =>
+    {
+      const cardHtml = renderFunction(product);
+      content += cardHtml;
+    });
+
+    container.html(content).promise()
+      .done(function ()
+      {
+        $(".card-img-top").addClass("loaded");
+      });;
+  };
+
+
+  $("#inputGroupFileAddon04").on("click", function ()
+  {
+    const searchValue = removeDiacritics($(".form-control").val());
+    handleSearch(searchValue);
   });
 
-  container.html(content).promise()
-  .done(function () {
-    $(".card-img-top").addClass("loaded");
-  });;
-};
+  $("#inputGroupFileAddon04").on("click", function (event)
+  {
+    event.preventDefault(); // Prevent the default click behavior
+    const searchValue = removeDiacritics($(".form-control").val().toLowerCase().replace(/\s/g, ""));
+    handleSearch(searchValue);
+  });
 
-
-$("#inputGroupFileAddon04").on("click", function () {
-  const searchValue = removeDiacritics($(".form-control").val());
-  handleSearch(searchValue);
-});
-
-$("#inputGroupFileAddon04").on("click", function (event) {
-  event.preventDefault(); // Prevent the default click behavior
-  const searchValue = removeDiacritics($(".form-control").val().toLowerCase().replace(/\s/g, ""));
-  handleSearch(searchValue);
-});
-
-$(".form-control").on("keypress", function (event) {
-  if (event.key === "Enter") {
-    event.preventDefault(); // Prevent the default form submission behavior
-    const searchValue = removeDiacritics($(".form-control").val().toLowerCase().replace(/\s/g, "")
-    );
-    handleSearch(searchValue)
-  }
-});
-
-// Initial rendering of all products
-
-$(document).on("click", ".click", function () {
-  if($(this).parent().hasClass('productNatural')){
-    const productId = $(this).closest(".card-content").data("product-id");
-    let urlNatural =""
-    if (window.location.hostname === 'localhost') {
-      urlNatural = `http://localhost:5000/Natural.html?id=${productId}`;
-    } else {
-      urlNatural = `https://gilded-sunflower-1080d8.netlify.app/natural?id=${productId}`;
+  $(".form-control").on("keypress", function (event)
+  {
+    if (event.key === "Enter")
+    {
+      event.preventDefault(); // Prevent the default form submission behavior
+      const searchValue = removeDiacritics($(".form-control").val().toLowerCase().replace(/\s/g, "")
+      );
+      handleSearch(searchValue)
     }
-    window.location.href=urlNatural
-  }
-  else if($(this).parent().hasClass('productWhitening')) {
-    const productId = $(this).closest(".card-content").data("product-id");
+  });
 
-    let urlWhitening =""
-    if (window.location.hostname === 'localhost') {
-      urlWhitening = `http://localhost:5000/whitening.html?id=${productId}`;
-    } else {
-      urlWhitening = `https://gilded-sunflower-1080d8.netlify.app/whitening?id=${productId}`;
+  // Initial rendering of all products
+
+  $(document).on("click", ".click", function ()
+  {
+    if ($(this).parent().hasClass('productNatural'))
+    {
+      const productId = $(this).closest(".card-content").data("product-id");
+      let urlNatural = ""
+      if (window.location.hostname === 'localhost')
+      {
+        urlNatural = `http://localhost:5000/Natural.html?id=${productId}`;
+      } else
+      {
+        urlNatural = `https://gilded-sunflower-1080d8.netlify.app/natural?id=${productId}`;
+      }
+      window.location.href = urlNatural
     }
-    window.location.href=urlWhitening
+    else if ($(this).parent().hasClass('productWhitening'))
+    {
+      const productId = $(this).closest(".card-content").data("product-id");
 
-  }
+      let urlWhitening = ""
+      if (window.location.hostname === 'localhost')
+      {
+        urlWhitening = `http://localhost:5000/whitening.html?id=${productId}`;
+      } else
+      {
+        urlWhitening = `https://gilded-sunflower-1080d8.netlify.app/whitening?id=${productId}`;
+      }
+      window.location.href = urlWhitening
 
-})
+    }
 
-$(".popup img:nth-child(3)").click(function() {
-  $(".togglepopup").fadeToggle("slow");
+  })
 
-});
+  $(".popup img:nth-child(3)").click(function ()
+  {
+    $(".togglepopup").fadeToggle("slow");
+
+  });
 });

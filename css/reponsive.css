@@ -1,4 +1,9 @@
  @media only screen and (max-width: 500px) {
+    .pagination__container .data-container .card {
+            width: 100%;
+            max-height: 50%;
+            height: 100%;
+        }
      .product .owl-carousel .card-product-item img {
          height: 25em;
      }
@@ -26,6 +31,7 @@
  }
 
  @media only screen and (min-width: 501px) {
+   
      .tab-slider-gallery .container-tabs {
          display: flex;
          align-items: center;
@@ -134,6 +140,12 @@
  @media only screen and (min-width: 768px) {
      /* Display the logo on larger screens */
     
+.pagination__container .data-container .card {
+
+        max-height: 450px;
+        height: 100%;
+    }
+
      .tab-slider-gallery .container-tabs {
          display: flex;
          align-items: center;
@@ -230,6 +242,11 @@
       }
 }
  @media only screen and (min-width: 1065px) and (max-width: 1242px){
+    .pagination__container .data-container .card {
+            width: 100%;
+            max-height: 300px;
+            height: 100%;
+        }
     .header-container .nav-link{
         font-size:1em;
         white-space: nowrap;

@@ -305,9 +305,9 @@ export const NewItems = [
       <div class="w-100 purpleDark" style ="display:flex;justify-content:center;flex-direction:column;">
         <p class="my-2"> Lăn khử mùi Refre Natural có thiết kế đầu lăn tiện dụng, giúp bạn gái kiểm soát tốt bề mặt tiếp xúc với da, làm tăng khả năng khử mùi cơ thể và giảm tiết mồ hôi hiệu quả vùng da dưới cánh tay. Với thiết kế nhẹ nhàng và mang làn hương thiên nhiên quyến rũ, lăn khử mùi Refre Natural lưu giữ hương thơm trên da bạn gái cả ngày thật tinh tế và thuần khiết.</p>   
     
-        <div class="d-flex justify-content-center align-items-center ">
+      <div class="d-flex justify-content-center align-items-center ">
         <img src ="https://www.refre.com.vn/images/news/refre-natural-dang-lan-moi.jpg"  alt ="Hình ảnh" />
-    </div>
+           </div>
       <p class="my-2"> Refre Natural có chứa chiết xuất Aloe Vera (nha đam) và tinh chất Licorice (cam thảo), vô cùng thân thiện và an toàn với mọi làn da. Các thành phần này có khả năng làm dịu vùng da bị tổn thương do dùng nhíp hay dao cạo, giúp ngăn ngừa thâm sạm và làm trắng da.</p>
       
       <p class="my-2">“Teen girl” chúng mình sẽ thoả sức diện những chiếc áo hai dây điệu đà cùng bạn bè khi thường xuyên dùng lăn khử mùi Refre Natural, với bốn hương thơm chính: Green Tea, Rosemary, Chamomile và Ylang Ylang.</p>
@@ -403,4 +403,158 @@ export const NewItems = [
       `,
     },
   },
+  {
+    id: 17,
+    img: "https://www.refre.com.vn/images/2017/hoang-yen-chibi-s.png",
+    title: "Hoàng Yến Chibi - “Thành công khi tự tin là chính mình”",
+    description: `<span class="fst-italic fw-normal">Bắt đầu con đường nghệ thuật, Hoàng Yến Chibi xây dựng cho mình một hình tượng teengirl dễ thương và nhí nhảnh. Vì thế, người hâm mộ đã khá bất ngờ với những hình tượng đa dạng mà Yến thể hiện khi tham gia chương trình Gương mặt thân quen 2017. Với phong cách thay đổi qua mỗi tuần thi, Yến như trưởng thành hơn và ngày càng chiếm trọn tình cảm của người xem. Cùng trò chuyện với Hoàng Yến để khám phá bí quyết tự tin biến hóa của cô bạn này nhé!<span>`,
+    showContent: {
+      URL: "",
+      contentdiv: `
+      <div class="w-100 purpleDark" style ="display:flex;justify-content:center;flex-direction:column;">
+        <h6 class="fw-bold fst-italic my-2">Chào Hoàng Yến, mọi người biết đến Yến với vai trò là một diễn viên, ca sĩ tuổi teen xinh đẹp, dễ thương và có phần nhí nhảnh. Yến có thể chia sẻ cho mọi người bí quyết xây dựng thành công hình tượng này không? </h6>
+        <p class="my-2"> Chào mọi người!</p>
+         <p class="my-2">Từ lúc bắt đầu tham gia nghệ thuật Yến đã nghĩ mình cần phải xây dựng một hình tượng nào đó sao cho phù hợp với bản thân mà cũng thật gần gũi với mọi người. Hình tượng mà mọi người cảm nhận về Yến cũng chính là con người của Yến đấy: trẻ trung, năng động, nhí nhảnh và hơi tinh nghịch nữa.</p>
+        <p class="my-2">Vì vậy Yến cũng không có bí quyết gì đâu. Yến nghĩ chỉ cần tự tin là chính mình thôi. (cười)</p>
+
+        <div class="d-flex justify-content-center flex-column align-items-center ">
+        <img src ="https://www.refre.com.vn/images/news/hoang-yen-chibi-1.png"  alt ="Hình ảnh" />
+            <p class:"text-center my-1 h6"><em>Bí quyết thành công của Yến là tự tin vào chính mình</em></p>
+        </div>
+      <h6 class="fw-bold fst-italic my-2">Nói về chương trình Gương mặt thân quen 2017, Yến đã khá thành công khi hóa thân thành nhiều nghệ sĩ nổi tiếng. Trong đó, Yến ấn tượng với lần hóa thân nào nhất?
+ </h6>
+
+      <p class="my-2">Yến thích nhất là lần được hóa thân thành nghệ sĩ Tài Linh trong trích đoạn cải lương “Bích Vân cung kỳ án”. Vì cô Tài Linh là một nghệ sĩ có tiếng, giọng của cô rất nội lực và truyền cảm, mà đây lại là một bộ môn nghệ thuật khó với các bạn trẻ như Yến, cho nên Yến phải cố gắng nhiều lắm. Vừa phải luyện giọng vừa phải tập diễn, và diễn sao cho có thần thái giống cô ấy thì rất khó, đặc biệt là ánh mắt và cách nhả chữ khi hát.</p>
+      
+      <p class="my-2">Nhưng nhờ vậy mà Yến biết được “khả năng tiềm ẩn” của mình và trưởng thành hơn. Mỗi lần hóa thân thành các nhân vật là một bài học cho Yến, Yến thấy mình thêm tự tin hơn mỗi tuần. Thật vui là nỗ lực của Yến đã được BGK công nhận và giành giải nhất tuần đó. (cười)</p>
+    <h6 class="fw-bold fst-italic my-2">Chắc hẳn việc hóa thân thành nhiều nhân vật khác nhau mỗi tuần là thử thách khó với một ca sĩ trẻ như Yến. Ở các tuần trước Yến đã hoàn thành rất tốt nhưng phần thi trong đêm chung kết lại không nhận được đánh giá cao từ BGK và chỉ đạt giải tư. Yến có cảm nhận gì về kết quả chung cuộc này không? </h6>
+    <p class="my-2">Trong đêm chung kết Yến đã thể hiện ca khúc "Focus" là một trong những ca khúc rất hay mà Yến yêu thích của Ariana Grande. Trừ đêm chung kết thì các đêm thi trước đều là do chương trình chọn nhân vật cho mình, nên Yến đã dùng cơ hội này để thể hiện ca khúc mà mình yêu thích từ lâu. Đúng như cô Mỹ Linh nói, Yến đã thách thức bản thân khi chọn một hình tượng quá khó khi mà Yến chưa thể luyến láy nhiều như chị Ariana. Phần vũ đạo cho tiết mục này cũng nhiều nên Yến bị mất sức làm phần hát chưa trọn vẹn cho lắm.</p>
+    <p class="my-2">Dù kết quả không như mong đợi nhưng Yến vẫn cảm thấy rất vui. Bởi vì đối với Yến, được thử sức mỗi tuần trong chương trình, được thể hiện bản thân và có thêm nhiều bài học kinh nghiệm cho mình là một trải nghiệm quý giá mà không phải ở đâu Yến cũng học được. Giải thưởng này là sự động viên rất lớn cho Yến, đó là sự khen thưởng cho những nỗ lực và phấn đấu của Yến trong suốt thời gian tham gia cuộc thi. Yến đã nhận được sự động viên rất lớn từ mọi người, như thế thì còn hơn giải tư nữa. (cười)</p>
+   <h6 class="fw-bold fst-italic my-2">Vậy với vai diễn Hồng Hoa trong bộ phim “Cô gái đến từ hôm qua” thì sao, Yến đã được nhiều người khen ngợi khi đảm nhận vai Hồng Hoa - một cô bạn nhỏ nhắn nhưng tính cách dữ dẵn, hay làm “kỳ đà cản mũi”. Yến có thể chia sẻ với mọi người bí quyết nhập vai thành công trong bộ phim này không?</h6>
+    <p class="my-2">Yến đã tìm hiểu kĩ về nhân vật này và thể hiện nhân vật như những gì mình cảm nhận được. Hồng Hoa là cô học trò rất dễ thương và tinh nghịch, có 1 vài nét giống Yến nên vai diễn này cũng không gây khó khăn cho Yến lắm. Khi nhận bất kỳ dự án nào Yến cũng luôn cố gắng thể hiện cho thật chân thật và tròn vai. Thấy khán giả phản ứng tích cực với vai diễn của mình Yến vui lắm. (cười)</p>
+  <h6 class="fw-bold fst-italic my-2">Trở lại thời gian gần đây nhất, được biết là Yến đang chuẩn bị cho MV Yêu một hoàng tử sắp ra mắt trong thời gian tới. Yến có thể bật mí một chút về MV này không?</h6>
+    <p class="my-2">Đây là MV Yến đã ấp ủ rất lâu cho sự trở lại của mình. Với MV lần này Yến sẽ mamg đến cho mọi người những cảnh đẹp lung linh của tỉnh Quảng Bình và một câu chuyện tình rất dễ thương tuy có phần mơ hồ. Cũng nhờ chương trình Gương mặt thân quen mà Yến nhận được sự chỉ dạy nhiệt tình từ bộ 3 BGK, và nhờ vậy khi thể hiện MV này những khuyết điểm trong giọng hát của Yến đã được khắc phục nhiều. Mọi người nhớ theo dõi và cảm nhận sự thay đổi của Yến nhé!</p>
+
+    <div class="d-flex justify-content-center flex-column align-items-center ">
+
+    <img src ="https://www.refre.com.vn/images/news/hoang-yen-chibi-2.png"  alt ="Hình ảnh" />
+            <p class:"text-center my-1 h6"><em>MV Yêu một hoàng tử đánh dấu sự trưởng thành về giọng hát và phong cách của Hoàng Yến</em></p>
+
+      </div>
+   <h6 class="fw-bold fst-italic my-2">Qua cuộc trò chuyện với Yến, có thể thấy, dù là phải hóa thân thành nhân vật nào, hay với việc gì thì Yến vẫn luôn làm rất tốt. Tất cả đều là nhờ vào sự tự tin của Yến. Vậy Yến có thể chia sẻ với mọi người bí quyết nào giúp bạn tự tin như vậy không?</h6>
+    <p class="my-2">Yến luôn nghĩ khi tự tin thì mình sẽ làm tốt mọi việc. Mình tự tin là chính mình thì mình sẽ thoải mái thể hiện được bản thân, và mọi người sẽ nhìn thấy khả năng đó của mình. Đa số mọi người sẽ nghĩ đến tự tin trong thần thái và vẻ ngoài. Nhưng đối với Yến, ngoài 2 yếu tố đó thì hương thơm từ cơ thể cũng rất quan trọng vì nó thể hiện cá tính của mỗi người. Hương thơm không chỉ mang lại cảm giác thoải mái mà còn giúp ngày mới của Yến dễ thương hơn, cuộc sống đáng yêu hơn và thấy mình đầy năng lượng cho ngày làm việc không mệt mỏi.</p>
+ 
+    <div class="d-flex justify-content-center flex-column align-items-center ">
+
+    <img src ="https://www.refre.com.vn/images/news/hoang-yen-chibi-3.jpg"  alt ="Hình ảnh" />
+            <p class:"text-center my-1 h6"><em>Hương thơm tự nhiên giúp Yến tự tin cả ngày</em></p>
+
+      </div>
+      <p class="my-2"> Cảm ơn Yến. Chúc Yến tiếp tục thành công nhé!</p>
+        <div class="card d-flex flex-col">
+         <p class="my-2">Refre có 2 dòng sản phẩm: xịt khử mùi Refre Whitening hương nước hoa (có dạng xịt và lăn) và xịt khử mùi Refre Natural chiết xuất từ thiên nhiên (dạng xịt).</p>
+          <div class="my-2">
+          <p class="my-1">+ Xịt khử mùi Refre Whitening hương nước hoa với 5 mùi hương nước hoa đại diện cho 5 phong cách: Deluxe - Hương sang trọng; Sweetie - Hương ngọt ngào; Baby Powder - Hương phấn thơm; Charming - Hương quyến rũ; Sophis - Hương tinh tế.</p>
+          <p class="my-1">+ Xịt khử mùi Refre Natural chiết xuất từ thiên nhiên giúp khử mùi, ngăn tiết mồ hôi hiệu quả, thân thiện với mọi loại da. Có 3 lựa chọn cho bạn: Green Tea - Trà Xanh; Rosemary - Hương Thảo; Chamomile - Cúc La Mã.</p>
+          </div>
+          <p class="my-2">Quà tặng hấp dẫn: tặng kèm móc gỗ dán tường xinh xắn khi mua sản phẩm xịt khử mùi Refre bất kỳ.</p>
+    
+      </div>
+    
+      `,
+    },
+  },
+   {
+    id: 18,
+    img: "https://www.refre.com.vn/images/2017/refre_natural_bi_quyet_giu_huong_cho_ngay_de_thuong_s.jpg",
+    title: "Bí quyết giữ hương cho ngày dễ thương",
+    description:
+      `Một ngày với rất nhiều hoạt động học tập, thể dục thể thao, giải trí, gặp gỡ bạn bè... trong thời tiết mùa hè nóng nực hẳn sẽ khiến các "teen girl" nhà mình bối rối vì không thể kiểm soát được mùi cơ thể. Cùng xem ngay bí quyết giữ hương cho ngày dễ thương đang khuấy đảo cộng đồng teen chúng mình nào!`,
+    showContent: {
+      URL: "",
+      contentdiv: `<div class="w-100" style ="display:flex;justify-content:center;flex-direction:column;">
+  <div class="d-flex justify-content-center align-items-center ">
+
+      <img src ="https://www.refre.com.vn/images/news/refre_natural_bi_quyet_giu_huong_cho_ngay_de_thuong.jpg"  alt ="Hình ảnh" />
+
+      </div>
+      </div>
+      `,
+    },
+  },
+  {
+    id: 19,
+    img: "https://www.refre.com.vn/images/2017/ngay-de-thuong-chibi-s.jpg",
+    title:"Refre và “Ngày dễ thương cùng Hoàng Yến Chibi”",
+    description:"Cơ hội để các bạn được nhận quà “cực kute” từ Yến và nhãn hàng Refre đây: Hãy chia sẻ những khoảnh khắc về ngày dễ thương của bạn tại cuộc thi ảnh “NGÀY DỄ THƯƠNG CHIBI” trên fanpage Refre Viet Nam để có cơ hội nhận quà hấp dẫn."
+    ,showContent: {
+      URL: "",
+      contentdiv: `
+      
+      <div class="w-100 purpleDark" style ="display:flex;justify-content:center;flex-direction:column;">
+      <p class="my-2"> Vừa qua, nữ ca sĩ “tuổi teen” Hoàng Yến Chibi đã hợp tác cùng nhãn hàng khử mùi Refre để thực hiện một video clip ngắn “Ngày Dễ Thương cùng Hoàng Yến Chibi”. Clip xoay quanh một ngày làm việc của Hoàng Yến với nhiều hoạt động như quay quảng cáo, cà phê cùng bạn bè, tập gym… Một ngày của Yến tuy khá bận rộn, có hơi mệt nhưng cô nàng vẫn thấy ngày rất “dễ thương” và luôn tràn đầy năng lượng.</p>   
+      <p class="my-2">Qua video clip này, Hoàng Yến và nhãn hàng Refre muốn gửi đến các bạn gái thông điệp ý nghĩa: “Hãy luôn tự tin, vui vẻ và tràn đầy năng lượng” để mỗi ngày của bạn đều là “ngày dễ thương” như Hoàng Yến Chibi nhé!</p>
+      <div class="d-flex justify-content-center align-items-center ">
+
+      <img src ="https://www.refre.com.vn/images/2017/ngay-de-thuong-chibi.jpg"  alt ="Hình ảnh" />
+
+      </div>
+      <p class="my-2">Và cơ hội để các bạn được nhận quà “cực kute” từ Yến và nhãn hàng Refre đây:</p>
+      <p class="my-2">Hãy chia sẻ những khoảnh khắc về ngày dễ thương của bạn tại cuộc thi ảnh “NGÀY DỄ THƯƠNG CHIBI” trên fanpage Refre Viet Nam để có cơ hội nhận quà hấp dẫn. Mỗi phần quà gồm:</p>
+      <ul>
+      <li>Xịt khử mùi Refre Deluxe – Hương Sang Trọng</li>
+      <li>Xịt khử mùi Refre Natural Green Tea – Hương Trà Xanh</li>
+      <li>Quạt xếp xinh xắn</li>
+      </ul>
+      <span >Fanpage Refre Viet Nam: <a class="mx-2" href = 'www.facebook.com/RefreVietNam'>www.facebook.com/RefreVietNam</a></span>
+      <p>Xem clip “Ngày dễ thương của Hoàng Yến Chibi” </p>
+        <div class="d-flex justify-content-center align-items-center ">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/s3QTVCXNt-s?si=HbJ-j2LCy5uRbSQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+    
+      </div>
+      
+      `
+    }
+
+  }
+  ,
+  {
+    id: 19,
+    img: "https://www.refre.com.vn/images/2017/ngay-de-thuong-chibi-s.jpg",
+    title:"Refre và “Ngày dễ thương cùng Hoàng Yến Chibi”",
+    description:"Cơ hội để các bạn được nhận quà “cực kute” từ Yến và nhãn hàng Refre đây: Hãy chia sẻ những khoảnh khắc về ngày dễ thương của bạn tại cuộc thi ảnh “NGÀY DỄ THƯƠNG CHIBI” trên fanpage Refre Viet Nam để có cơ hội nhận quà hấp dẫn."
+    ,showContent: {
+      URL: "",
+      contentdiv: `
+      
+      <div class="w-100 purpleDark" style ="display:flex;justify-content:center;flex-direction:column;">
+      <p class="my-2"> Vừa qua, nữ ca sĩ “tuổi teen” Hoàng Yến Chibi đã hợp tác cùng nhãn hàng khử mùi Refre để thực hiện một video clip ngắn “Ngày Dễ Thương cùng Hoàng Yến Chibi”. Clip xoay quanh một ngày làm việc của Hoàng Yến với nhiều hoạt động như quay quảng cáo, cà phê cùng bạn bè, tập gym… Một ngày của Yến tuy khá bận rộn, có hơi mệt nhưng cô nàng vẫn thấy ngày rất “dễ thương” và luôn tràn đầy năng lượng.</p>   
+      <p class="my-2">Qua video clip này, Hoàng Yến và nhãn hàng Refre muốn gửi đến các bạn gái thông điệp ý nghĩa: “Hãy luôn tự tin, vui vẻ và tràn đầy năng lượng” để mỗi ngày của bạn đều là “ngày dễ thương” như Hoàng Yến Chibi nhé!</p>
+      <div class="d-flex justify-content-center align-items-center ">
+
+      <img src ="https://www.refre.com.vn/images/2017/ngay-de-thuong-chibi.jpg"  alt ="Hình ảnh" />
+
+      </div>
+      <p class="my-2">Và cơ hội để các bạn được nhận quà “cực kute” từ Yến và nhãn hàng Refre đây:</p>
+      <p class="my-2">Hãy chia sẻ những khoảnh khắc về ngày dễ thương của bạn tại cuộc thi ảnh “NGÀY DỄ THƯƠNG CHIBI” trên fanpage Refre Viet Nam để có cơ hội nhận quà hấp dẫn. Mỗi phần quà gồm:</p>
+      <ul>
+      <li>Xịt khử mùi Refre Deluxe – Hương Sang Trọng</li>
+      <li>Xịt khử mùi Refre Natural Green Tea – Hương Trà Xanh</li>
+      <li>Quạt xếp xinh xắn</li>
+      </ul>
+      <span >Fanpage Refre Viet Nam: <a class="mx-2" href = 'www.facebook.com/RefreVietNam'>www.facebook.com/RefreVietNam</a></span>
+      <p>Xem clip “Ngày dễ thương của Hoàng Yến Chibi” </p>
+        <div class="d-flex justify-content-center align-items-center ">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/s3QTVCXNt-s?si=HbJ-j2LCy5uRbSQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+    
+      </div>
+      
+      `
+    }
+
+  }
 ];
