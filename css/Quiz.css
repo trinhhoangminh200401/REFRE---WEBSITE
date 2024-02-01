@@ -378,7 +378,7 @@ padding: 0;
   text-transform: uppercase;
 }
 .return-result .container-content h5{
-  background: -webkit-linear-gradient(left, #b7e2cf 50% ,#d7d1dd 40% , #edc1ff 91%);
+  background: -webkit-linear-gradient(left, #b7e2cf 50% ,#d7d1dd 40% ,#b7e2cf 30%, #edc1ff 91%);
  font-size: 1.9em;
   font-weight: 800;
   -webkit-background-clip: text;
@@ -386,7 +386,7 @@ padding: 0;
    text-transform: capitalize;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color:#8683bc;
- font-family: "Kanit",sans-serif;
+  font-family: 'Lexend Deca', sans-serif;
 }
 .return-result .container-content p{
   color:#8e8dc7;

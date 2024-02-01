@@ -54,7 +54,7 @@ $(document).ready(function () {
       1054: {
         items: 2,
       },
-      1200: {
+      1400: {
         items: 2,
       },
     },

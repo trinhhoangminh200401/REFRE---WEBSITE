@@ -362,17 +362,17 @@ header .header-container__navigation {
 
 }
 
-.product .owl-carousel .card-product-item .card-product-action p {
+.product .owl-carousel .card-product-item .green-bg  p {
     -webkit-text-stroke-width: 1.5px;
     font-style: italic;
     font-size: 33px;
-    width: 90%;
-    padding-left: 10px;
+    width: 100%;
+    padding-left: 1.2rem;
     text-align: left;
     -webkit-text-stroke-color: #01b700;
     opacity: 0.95;
     font-weight: 900;
-
+    
     font-family: 'Kanit', sans-serif;
 }
 
