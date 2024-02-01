@@ -16,6 +16,7 @@ $(document).ready(function () {
       "<div class='nav-btn prev-slide'><img src='/assets/images/HomePage/left arrow.png' /></div>",
       "<div class='nav-btn next-slide'><img src='/assets/images/HomePage/right arrow.png' /></div>",
     ],
+    loop:true,
     autoplay: true,
     autoplayTimeout: 3000,
     responsive: {
@@ -36,8 +37,6 @@ $(document).ready(function () {
       },
       1400: {
         items: 4,
-
-        loop: false,
       },
     },
   });
@@ -427,7 +426,8 @@ $(document).ready(function () {
         .done(function () {
           $(".tab-slider-gallery  .owl-carousel").owlCarousel({
             responsiveClass: true,
-            // autoplay: true,
+            autoplay: true,
+            loop:true,
             navText: "",
             autoplayTimeout: 3000,
             responsive: {
@@ -449,7 +449,6 @@ $(document).ready(function () {
               1200: {
                 items: 1,
 
-                loop: false,
               },
             },
           });

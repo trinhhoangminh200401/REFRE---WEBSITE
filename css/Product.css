@@ -621,7 +621,8 @@ body {
     flex-direction: column;
 }
 .latestupdate .owl-carousel .card {
-    height: 500px;
+    height: 300px;
+    padding: 0;
     border: 3px solid #fff;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.3);
