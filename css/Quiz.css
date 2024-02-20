@@ -377,6 +377,7 @@ padding: 0;
   line-height: 0.8;
   text-transform: uppercase;
 }
+
 .return-result .container-content h5{
   background: -webkit-linear-gradient(left, #b7e2cf 50% ,#d7d1dd 40% ,#b7e2cf 30%, #edc1ff 91%);
  font-size: 1.9em;
@@ -386,7 +387,10 @@ padding: 0;
    text-transform: capitalize;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color:#8683bc;
-  font-family: 'Lexend Deca', sans-serif;
+  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  font-family: "Inter", sans-serif;
 }
 .return-result .container-content p{
   color:#8e8dc7;
