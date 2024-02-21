@@ -26,7 +26,7 @@ $(document).ready(function () {
     fadeInOnScroll();
   });
 
-  $(".product .owl-carousel").owlCarousel({
+  $(".HomePage .product .owl-carousel").owlCarousel({
     responsiveClass: true,
     navText: [
       "<div class='nav-btn prev-slide'><img src='./assets/images/HomePage/left arrow.png' /></div>",
@@ -96,7 +96,7 @@ $(document).ready(function () {
   // Define the fake data
 
   var pagination = $("#myRange");
-  var container = $(".feedback > .container > .card-user");
+  var container = $(".HomePage .feedback > .container > .card-user");
   var itemsPerPage = 6;
 
   // Function to display the items for the selected page

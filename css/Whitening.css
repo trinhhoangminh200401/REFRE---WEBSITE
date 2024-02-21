@@ -20,23 +20,23 @@
     background-color: #bfa5ff;
 }
 
-.card-purpleDarkLinear {
+.Whitening .card-purpleDarkLinear {
     cursor: pointer;
     background: linear-gradient(to bottom right, #a3a2ff, #dacefc, #d2c8fc);
 }
 
-.card-purpleNormalLinear {
+.Whitening .card-purpleNormalLinear {
     cursor: pointer;
     background: linear-gradient(to bottom, #fbfbff, #fbfbff, #d2c8fc);
 
 }
 
-.banner {
+.Whitening .banner {
 
     width: 100%;
 }
 
-.banner img {
+.Whitening .banner img {
 
     width: 100%;
 
@@ -45,16 +45,16 @@
 
 }
 
-.fade-in {
+.Whitening .fade-in {
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
-.fade-in.loaded {
+.Whitening .fade-in.loaded {
     opacity: 1;
 }
 
-.headline {
+.Whitening .headline {
     margin: 0px auto;
     width: 60%
 }
@@ -194,13 +194,13 @@ body {
 
 }
 
-.btn {
+.Whitening .btn {
     height: 100%;
     border-radius: 20px;
 }
 
 /* Remove border from input */
-.input-container .form-control {
+.Whitening .input-container .form-control {
     border-left: 2px solid #644fa5;
     border-right: 2px solid #644fa5;
     padding: 2em;
@@ -209,12 +209,12 @@ body {
 
 }
 
-.form-control:focus {
+.Whitening .form-control:focus {
     outline: none;
 }
 
 /* Remove border from div */
-.input-container .icon {
+.Whitening .input-container .icon {
     height: 100%;
     padding: 0 20px;
     display: flex;
@@ -222,28 +222,28 @@ body {
     align-items: center;
 }
 
-.banner img {
+.Whitening .banner img {
     object-fit: cover;
     object-position: center;
 }
 
-.input-container {
+.Whitening .input-container {
     height: 70px;
     border-radius: 30px;
     background-color: #ffffff;
 
 }
 
-.input-container .icon {
+.Whitening .input-container .icon {
     color: #644fa5;
 }
 
-.input-container button {
+.Whitening .input-container button {
     color: #644fa5;
     font-weight: bold;
 }
 
-.container-tab .button-tab-action .btn {
+.Whitening .container-tab .button-tab-action .btn {
 
     margin: 0 10px;
     padding: 0.4em 1em;
@@ -257,24 +257,24 @@ body {
 
 }
 
-.container-tab .button-tab-action .btn-normalpurple {
+.Whitening .container-tab .button-tab-action .btn-normalpurple {
     background-color: #f4edff;
     color: #644fa5;
 
 }
 
-.container-tab .button-tab-action .btn-darkpurple {
+.Whitening .container-tab .button-tab-action .btn-darkpurple {
     text-decoration: underline;
     color: #fff;
     background-color: #cab2ff;
 }
 
-.tab-slider-gallery {
+.Whitening .tab-slider-gallery {
     padding: 10px;
 
 }
 
-.tab-slider-gallery .container-slider-image {
+.Whitening .tab-slider-gallery .container-slider-image {
     border-radius: 20px;
     max-height: 45em;
 
@@ -285,14 +285,14 @@ body {
 }
 
 
-.tab-slider-gallery .container-slider-image img {
+.Whitening .tab-slider-gallery .container-slider-image img {
     max-width: 100%;
     object-fit: cover;
     height: 30rem;
     display: block;
 }
 
-.tab-slider-gallery .container-tabs .card-body {
+.Whitening .tab-slider-gallery .container-tabs .card-body {
     border: 3px solid white;
     height: 14em;
     display: flex;
@@ -301,19 +301,19 @@ body {
     border-radius: 20px;
 }
 
-.tab-slider-gallery .container-tabs .card-body img {
+.Whitening .tab-slider-gallery .container-tabs .card-body img {
 
     margin: 0 auto;
 
 }
 
-.description-containers {
+.Whitening .description-containers {
     border: 5px solid #fff;
     border-radius: 20px;
     padding: 0.1em;
 }
 
-.description-containers .description-containers_div {
+.Whitening .description-containers .description-containers_div {
     height: 100%;
     padding: 1.8em;
     width: 100%;
@@ -324,34 +324,34 @@ body {
     border-radius: 20px;
 }
 
-.description-containers .description-containers_div .description-containers_title {
+.Whitening .description-containers .description-containers_div .description-containers_title {
     width: 62.5%;
     padding: 0.2em;
 
     font-style: italic;
 }
 
-.description-containers .description-containers_div .description-containers_title h3 {
+.Whitening .description-containers .description-containers_div .description-containers_title h3 {
     font-size: 1.8em;
     font-weight: 900;
     line-height: 1.3;
 }
 
-.description-containers .description-containers_div .description-containers_content {
+.Whitening .description-containers .description-containers_div .description-containers_content {
 
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
-.description-containers_content {
-
+.Whitening .description-containers_content {
+ 
     height: 320px;
     scrollbar-width: thin;
     scrollbar-color: #c3adff;
     margin: 5px;
 }
 
-.description-containers_content::-webkit-scrollbar-track {
+.Whitening .description-containers_content::-webkit-scrollbar-track {
     border-radius: 10px;
     border: 1px solid #c3adff;
     margin: 6em;
@@ -359,21 +359,21 @@ body {
 
 }
 
-.description-containers_content::-webkit-scrollbar {
+.Whitening .description-containers_content::-webkit-scrollbar {
     width: 20px;
 
 
 
 }
 
-.description-containers_content::-webkit-scrollbar-thumb {
+.Whitening .description-containers_content::-webkit-scrollbar-thumb {
     background-color: #a195f2;
     border-radius: 20px;
     padding: 10px;
 
 }
 
-.description-containers .description-containers_div .description-containers_content .content-div {
+.Whitening .description-containers .description-containers_div .description-containers_content .content-div {
     position: relative;
     margin: 1em 2em;
 
@@ -383,24 +383,24 @@ body {
 
 }
 
-.description-containers .description-containers_div .description-containers_content .content-div p {
+.Whitening .description-containers .description-containers_div .description-containers_content .content-div p {
     font-weight: 600;
     font-size: 0.875em;
 
 
 }
 
-.content-div ul {
+.Whitening .content-div ul {
     padding: 0;
 }
 
-.content-div li::before {
+.Whitening .content-div li::before {
     content: "-";
     margin-right: 1em;
 
 }
 
-.content-div li {
+.Whitening .content-div li {
     font-weight: 600;
     text-justify: inter-word;
     list-style-type: none;
@@ -412,7 +412,7 @@ body {
 
 }
 
-.description-containers .description-containers_div .description-containers_content .content-div::before {
+.Whitening .description-containers .description-containers_div .description-containers_content .content-div::before {
     content: "";
     height: 5px;
     width: 90%;
@@ -422,21 +422,21 @@ body {
     position: absolute
 }
 
-.description-containers .description-containers_div .button-action {
+.Whitening .description-containers .description-containers_div .button-action {
     margin-top: 3.6em;
 
 
     font-style: italic;
 }
 
-.description-containers .description-containers_div .button-action .btn {
+.Whitening .description-containers .description-containers_div .button-action .btn {
     padding: 0.8em 0em;
     color: #fff;
     font-weight: 500;
     text-align: center;
 }
 
-.description-containers .description-containers_div .button-action .price {
+.Whitening .description-containers .description-containers_div .button-action .price {
     color: #fff;
     font-weight: 900;
     padding: 0.6em 0em;
@@ -445,14 +445,14 @@ body {
     justify-content: center;
 }
 
-.description-containers .description-containers_div .button-action .darkpurple {
+.Whitening .description-containers .description-containers_div .button-action .darkpurple {
     background-image: linear-gradient(to right, #e1a2f6, #e1a2f6, #e1a2f6, #c99eeb);
     border-top-left-radius: 20px;
     border: 3px solid white;
     width: 100%;
 }
 
-.description-containers .description-containers_div .button-action .normalpurple {
+.Whitening .description-containers .description-containers_div .button-action .normalpurple {
     border: 3px solid white;
     width: 100%;
 
@@ -463,7 +463,7 @@ body {
     border-bottom-right-radius: 20px;
 }
 
-.section {
+.Whitening .section {
     border: 3px solid white;
     border-radius: 10px;
 
@@ -471,13 +471,13 @@ body {
 
 }
 
-.section .section-content {
+.Whitening .section .section-content {
     box-shadow: inset 0px 0px 7px 7px #fff;
     border-radius: 10px;
     padding: 10px;
 }
 
-.section .section-content .section-content_title {
+.Whitening .section .section-content .section-content_title {
     font-size: 2.2em;
     text-transform: uppercase;
 
@@ -485,35 +485,35 @@ body {
 }
 
 
-.section .section-content .section-content_list .list .section-content-list_item {
+.Whitening .section .section-content .section-content_list .list .section-content-list_item {
     list-style: none;
     font-weight: 600;
     font-size: 1.3em;
 }
 
-.section .section-content .section-content_list .list .section-content-list_item::before {
+.Whitening .section .section-content .section-content_list .list .section-content-list_item::before {
     content: "-";
     margin: 0 10px;
 }
 
-.section .section-content .section-content_list .result {
+.Whitening .section .section-content .section-content_list .result {
     font-style: italic;
     font-weight: 500;
     font-size: 1.2em;
 }
 
-.productList {
+.Whitening .productList {
     margin-top: 5em;
 }
 
-.productList .productlist-container .card-content {
+.Whitening .productList .productlist-container .card-content {
     padding-top: 12px;
     position: relative;
     width: 22em;
 
 }
 
-.productList .productlist-container .card-content .card-img-top {
+.Whitening .productList .productlist-container .card-content .card-img-top {
     /* width: 50%; */
     width: 80%;
     height: 20em;
@@ -521,13 +521,13 @@ body {
     object-fit: cover;
 }
 
-.productList .productlist-container .card .bottom {
+.Whitening .productList .productlist-container .card .bottom {
 
     object-position: center;
 
 }
 
-.productList .productlist-container .card-content .purple-category {
+.Whitening .productList .productlist-container .card-content .purple-category {
     width: 7em;
 
     padding-top: 5px;
@@ -546,7 +546,7 @@ body {
 
 }
 
-.productList .productlist-container .card-purple {
+.Whitening .productList .productlist-container .card-purple {
     background-image: linear-gradient(#c4a1f5, #f4e7ff, #f4e7ff);
     border: 3px solid #fff;
     margin-left: 8px;
@@ -554,23 +554,23 @@ body {
     padding: 0;
 }
 
-.productList .productlist-container .card-body .purple-text {
+.Whitening .productList .productlist-container .card-body .purple-text {
     color: #63469c;
 
 }
 
-.productList .productlist-container .card-body .card-title {
+.Whitening .productList .productlist-container .card-body .card-title {
 
     font-weight: 900;
 }
 
-.productList .productlist-container .card-body p {
+.Whitening .productList .productlist-container .card-body p {
 
     font-weight: 400;
     line-height: 1.2;
 }
 
-.productList .productlist-container .card-body .btn {
+.Whitening .productList .productlist-container .card-body .btn {
     border-top-left-radius: 25px;
     padding: 0.5em 1em;
     border-bottom-right-radius: 25px;
@@ -578,62 +578,62 @@ body {
     border: 5px solid #fff;
 }
 
-.productList .productlist-container .card-body .btn-purple {
+.Whitening .productList .productlist-container .card-body .btn-purple {
     background: linear-gradient(to right, #e1a1f5, #e1a1f5, #c98cfe, #c98cfe);
     font-weight: 500;
 }
 
-.feedback>.container {
+.Whitening .feedback>.container {
     border-radius: 20px;
 
 
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.feedback .container .card-user {
+.Whitening .feedback .container .card-user {
 
     display: flex;
     flex-wrap: wrap;
     padding: 20px 0;
 }
 
-.feedback .container .card-user img {
+.Whitening .feedback .container .card-user img {
     width: 30%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
 
-.feedback .container .card-user h4 {
+.Whitening .feedback .container .card-user h4 {
     color: #87469c;
 
 }
 
-.feedback .container .card-user .card-text {
+.Whitening .feedback .container .card-user .card-text {
     font-weight: 600;
     color: #87469c;
 }
 
-.feedback .container .card-user .card-body {
+.Whitening .feedback .container .card-user .card-body {
     margin: 0 20px;
 }
 
-.feedback .container .card-user .card-body p {
+.Whitening .feedback .container .card-user .card-body p {
     margin: 20px 0;
 
 }
 
-.yellow {
+.Whitening .yellow {
     color: #ffb211;
     -webkit-text-stroke-color: #fff;
     -webkit-text-stroke-width: 3px;
 }
 
-.fa-star {
+.Whitening .fa-star {
     font-size: 25px;
 }
 
-.feedback .slider {
+.Whitening .feedback .slider {
     -webkit-appearance: none;
     width: 30%;
     height: 25px;
@@ -646,11 +646,11 @@ body {
     transition: opacity .2s;
 }
 
-.slider:hover {
+.Whitening .slider:hover {
     opacity: 1;
 }
 
-.feedback .slider::-webkit-slider-thumb {
+.Whitening .feedback .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 60px;
@@ -660,19 +660,19 @@ body {
     cursor: pointer;
 }
 
-.feedback .card-user .slider::-moz-range-thumb {
+.Whitening .feedback .card-user .slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
     background: #04AA6D;
     cursor: pointer;
 }
 
-.latestupdate {
+.Whitening .latestupdate {
     margin: 0px auto;
 
 }
 
-.latestupdate .latest {
+.Whitening .latestupdate .latest {
     width: 100%;
     margin: 0 auto;
 
@@ -681,7 +681,7 @@ body {
     flex-direction: column;
 }
 
-.latestupdate .owl-carousel .card {
+.Whitening .latestupdate .owl-carousel .card {
     height: 300px;
     padding: 0;
     border: 3px solid #fff;
@@ -689,12 +689,12 @@ body {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.latestupdate .owl-carousel .owl-dots.disabled,
+.Whitening .latestupdate .owl-carousel .owl-dots.disabled,
 .owl-carousel .owl-nav.disabled {
     display: block;
 }
 
-.latestupdate .owl-carousel .nav-btn {
+.Whitening .latestupdate .owl-carousel .nav-btn {
     height: 30em;
     position: absolute;
 
@@ -704,24 +704,24 @@ body {
 
 
 
-.latestupdate .owl-carousel .prev-slide {
+.Whitening .latestupdate .owl-carousel .prev-slide {
     left: -2.4em;
 
 
 }
 
-.latestupdate .owl-carousel .next-slide {
+.Whitening .latestupdate .owl-carousel .next-slide {
 
     right: -2.4em;
 }
 
-.latestupdate .card-content {
+.Whitening .latestupdate .card-content {
     margin: 0 10px;
     padding: 10px 0;
 
 }
 
-.latestupdate .card-content .card-img-top {
+.Whitening .latestupdate .card-content .card-img-top {
     /* width: 50%; */
     height: 280px;
 
@@ -729,7 +729,7 @@ body {
     object-fit: none;
 }
 
-.latestupdate .card .bottom {
+.Whitening .latestupdate .card .bottom {
 
     object-position: center bottom;
 

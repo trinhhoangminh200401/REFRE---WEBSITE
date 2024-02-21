@@ -158,12 +158,12 @@ header .header-container__navigation {
 
 
 
-.banner {
+.HomePage .banner {
 
     width: 100%;
 }
 
-.banner img {
+.HomePage .banner img {
 
     width: 100%;
 
@@ -172,12 +172,12 @@ header .header-container__navigation {
 
 }
 
-.headline {
+.HomePage .headline {
     margin: 0px auto;
     width: 60%;
 }
 
-.best-seller img {
+.HomePage .best-seller img {
     width: 100%;
 
     object-position: center;
@@ -185,7 +185,7 @@ header .header-container__navigation {
 }
 
 
-.best-seller .container-carousel {
+.HomePage .best-seller .container-carousel {
 
     margin-top: 40px;
 }
@@ -195,19 +195,19 @@ header .header-container__navigation {
     left: -20px;
 }
 
-.best-seller .owl-carousel .card-purple {
+.HomePage .best-seller .owl-carousel .card-purple {
     background-image: linear-gradient(#c4a1f5, #f4e7ff, #f4e7ff);
     border: 3px solid #fff;
     border-radius: 20px;
 }
 
-.card-content {
+.HomePage .card-content {
     margin: 0 10px;
     padding: 10px 0;
 
 }
 
-.card-content .card-img-top {
+.HomePage .card-content .card-img-top {
     /* width: 50%; */
     height: 280px;
     margin-bottom: 2em;
@@ -217,7 +217,7 @@ header .header-container__navigation {
 
 
 
-.card-content .purple-category {
+.HomePage .card-content .purple-category {
     width: 7em;
 
     padding-top: 5px;
@@ -237,7 +237,7 @@ header .header-container__navigation {
 
 }
 
-.card-content .green-category {
+.HomePage .card-content .green-category {
     width: 7em;
 
 
@@ -256,18 +256,18 @@ header .header-container__navigation {
     border: 3px solid white;
 }
 
-.card-body .purple-text {
+.HomePage .card-body .purple-text {
     color: #8c4da1;
     font-weight: 900;
 }
 
-.card-body .green-text {
+.HomePage .card-body .green-text {
     color: #01b700;
     font-weight: 900;
 
 }
 
-.card-body .btn {
+.HomePage .card-body .btn {
     border-top-left-radius: 25px;
     padding: 0.5em 1em;
     color: white;
@@ -276,27 +276,27 @@ header .header-container__navigation {
 
 }
 
-.card-body .btn-purple {
+.HomePage .card-body .btn-purple {
     background: linear-gradient(to right, #c5a1f5, #c59ef6, #c98cfe);
 }
 
-.card-body .btn-green {
+.HomePage .card-body .btn-green {
     background: linear-gradient(to right, #76be83, #5db36a, #38a041);
 }
 
-.Breakthrough-formula .Breakthrough-formula_container {
+.HomePage .Breakthrough-formula .Breakthrough-formula_container {
     background-color: rgba(255, 255, 255, 0.3);
     padding: 2.7em;
     border-radius: 20px;
 
 }
 
-.Breakthrough-formula_container img {
+.HomePage .Breakthrough-formula_container img {
     width: 70%;
 }
 
 
-.product {
+.HomePage .product {
     width: 100%;
     margin: 0 auto;
 
@@ -305,19 +305,19 @@ header .header-container__navigation {
     flex-direction: column;
 }
 
-.product .headline img {
+.HomePage .product .headline img {
     width: 100%;
     object-position: center;
 }
 
 
-.product .owl-carousel .card-product-item {
+.HomePage .product .owl-carousel .card-product-item {
     position: relative;
     padding: 5px;
     border-radius: 20px;
 }
 
-.product .owl-carousel .card-product-item .card-product-action {
+.HomePage .product .owl-carousel .card-product-item .card-product-action {
     position: absolute;
     bottom: 5px;
     left: 3.5px;
@@ -340,7 +340,7 @@ header .header-container__navigation {
 }
 
 
-.product .owl-carousel .card-product-item .green-bg {
+.HomePage .product .owl-carousel .card-product-item .green-bg {
     background-color: #daefc8;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -351,7 +351,7 @@ header .header-container__navigation {
 
 }
 
-.product .owl-carousel .purple-bg {
+.HomePage .product .owl-carousel .purple-bg {
     background-color: #dfc3fa;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -362,7 +362,7 @@ header .header-container__navigation {
 
 }
 
-.product .owl-carousel .card-product-item .green-bg  p {
+.HomePage .product .owl-carousel .card-product-item .green-bg p {
     -webkit-text-stroke-width: 1.5px;
     font-style: italic;
     font-size: 33px;
@@ -372,11 +372,11 @@ header .header-container__navigation {
     -webkit-text-stroke-color: #01b700;
     opacity: 0.95;
     font-weight: 900;
-    
+
     font-family: 'Kanit', sans-serif;
 }
 
-.product .owl-carousel .card-product-item .purple-bg p {
+.HomePage .product .owl-carousel .card-product-item .purple-bg p {
     -webkit-text-stroke-width: 1.5px;
     font-style: italic;
     font-size: 33px;
@@ -386,7 +386,7 @@ header .header-container__navigation {
     -webkit-text-stroke-color: #353980;
 }
 
-.product .owl-carousel .card-product-item .card-product-action .button-action .btn {
+.HomePage .product .owl-carousel .card-product-item .card-product-action .button-action .btn {
 
     width: 45%;
     font-weight: 900;
@@ -395,13 +395,13 @@ header .header-container__navigation {
 
 }
 
-.product .owl-carousel .card-product-item .card-product-action .button-action .darkgreen {
+.HomePage .product .owl-carousel .card-product-item .card-product-action .button-action .darkgreen {
     background-color: #036040;
     border-top-left-radius: 20px;
     border: 3px solid white;
 }
 
-.product .owl-carousel .card-product-item .card-product-action .button-action .normalgreen {
+.HomePage .product .owl-carousel .card-product-item .card-product-action .button-action .normalgreen {
     border: 3px solid white;
     background-color: #5a985f;
     border-bottom-right-radius: 20px;
@@ -411,20 +411,19 @@ header .header-container__navigation {
 
 
 
-.product .owl-carousel .card-product-item .card-product-action .button-action .darkpurple {
+.HomePage .product .owl-carousel .card-product-item .card-product-action .button-action .darkpurple {
     background-color: #353980;
     border-top-left-radius: 20px;
     border: 3px solid white
 }
-
-.product .card-product-item .card-product-action .button-action .normalpurple {
+.HomePage .product .card-product-item .card-product-action .button-action .normalpurple {
     background-color: #9077b5;
     border-bottom-right-radius: 20px;
     border: 3px solid white;
 }
 
 
-.product .youtube {
+.HomePage .product .youtube {
     position: relative;
     width: 60%;
     height: 26em;
@@ -432,7 +431,7 @@ header .header-container__navigation {
     padding-top: 20%;
 }
 
-.product .youtube iframe {
+.HomePage .product .youtube iframe {
     width: 100%;
     position: absolute;
     height: 100%;
@@ -445,13 +444,13 @@ header .header-container__navigation {
 
 }
 
-.feedback>.container {
+.HomePage .feedback>.container {
 
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.feedback .container .card-user {
+.HomePage .feedback .container .card-user {
 
     margin: 0 auto;
     display: flex;
@@ -459,19 +458,19 @@ header .header-container__navigation {
     padding: 20px 0;
 }
 
-.feedback .container .card-user img {
+.HomePage .feedback .container .card-user img {
     width: 30%;
     display: flex;
     margin: auto;
     flex-wrap: wrap;
 }
 
-.feedback .container .card-user h4 {
+.HomePage .feedback .container .card-user h4 {
     color: #87469c;
 
 }
 
-.feedback .container .card-user .card-text {
+.HomePage .feedback .container .card-user .card-text {
     font-weight: 600;
     padding: 0.1em;
     /* background-color: #036040; */
@@ -480,26 +479,26 @@ header .header-container__navigation {
     color: #87469c;
 }
 
-.feedback .container .card-user .card-body {
+.HomePage .feedback .container .card-user .card-body {
     margin: 0 20px;
 }
 
-.feedback .container .card-user .card-body p {
+.HomePage .feedback .container .card-user .card-body p {
     margin: 20px 0;
 
 }
 
-.yellow {
+.HomePage .yellow {
     color: #ffb211;
     -webkit-text-stroke-color: #fff;
     -webkit-text-stroke-width: 3px;
 }
 
-.fa-star {
+.HomePage .fa-star {
     font-size: 25px;
 }
 
-.feedback .slider {
+.HomePage .feedback .slider {
     -webkit-appearance: none;
     width: 30%;
     /* Adjust this value based on your layout */
@@ -513,11 +512,11 @@ header .header-container__navigation {
     transition: opacity .2s;
 }
 
-.slider:hover {
+.HomePage .slider:hover {
     opacity: 1;
 }
 
-.feedback .slider::-webkit-slider-thumb {
+.HomePage .feedback .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 60px;
@@ -527,7 +526,7 @@ header .header-container__navigation {
     cursor: pointer;
 }
 
-.feedback .card-user .slider::-moz-range-thumb {
+.HomePage .feedback .card-user .slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
     background: #04AA6D;
@@ -536,9 +535,9 @@ header .header-container__navigation {
 
 
 
-.latestupdate .owl-carousel .card {
+.HomePage .latestupdate .owl-carousel .card {
     height: 300px;
-    padding:0;
+    padding: 0;
     border: 3px solid #fff;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.3);
@@ -613,11 +612,13 @@ footer .container div ul li:last-child:after {
     display: flex;
     flex-direction: column;
     position: absolute;
-    justify-content:center ;
+    justify-content: center;
 }
-.togglepopup{
+
+.togglepopup {
     display: none;
 }
+
 .popup img {
     width: 70%;
 }
@@ -626,7 +627,7 @@ footer .container div ul li:last-child:after {
     padding: 1em;
 }
 
-.card {
+.HomePage .card {
     margin: 0.5em;
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
     border: none;

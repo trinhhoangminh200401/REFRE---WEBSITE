@@ -142,12 +142,12 @@ header .header-container__navigation {
 
 
 
-.banner {
+.QNA .banner {
 
     width: 100%;
 }
 
-.banner img {
+.QNA .banner img {
 
     width: 100%;
 
@@ -156,12 +156,12 @@ header .header-container__navigation {
 
 }
 
-.headline {
+.QNA .headline {
     margin: 0px auto;
     width: 60%;
 }
 
-.Qna {
+.QNA .Qna {
     width: 100%;
     margin: 0 auto;
 
@@ -169,12 +169,12 @@ header .header-container__navigation {
     flex-direction: column;
 }
 
-.Qna .headline img {
+.QNA .Qna .headline img {
     width: 100%;
     object-position: center;
 }
 
-.Qna .Qna__container .Qna__container-shadow {
+.QNA .Qna .Qna__container .Qna__container-shadow {
 
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
     box-shadow: rgba(187, 195, 242, 0.3) 0px 7px 49px 0px;
@@ -183,7 +183,7 @@ header .header-container__navigation {
 
 }
 
-.Qna .Qna__container .Qna__container-shadow .Qna__container-item {
+.QNA .Qna .Qna__container .Qna__container-shadow .Qna__container-item {
     /* background-color: rgba(251, 250, 255,0.2); */
     box-shadow: inset 23px 10px 100px 20px #fff;
     border-radius: 20px;
@@ -191,7 +191,7 @@ header .header-container__navigation {
 
 }
 
-.Qna .Qna__container .Qna__container-shadow .Qna__container-item h4 {
+.QNA .Qna .Qna__container .Qna__container-shadow .Qna__container-item h4 {
     color: #65479d;
     font-weight: 900;
     font-size: 25px;
@@ -199,18 +199,18 @@ header .header-container__navigation {
     text-transform: uppercase;
 }
 
-.Qna .Qna__container .Qna__container-shadow .Qna__container-item h4 span {
+.QNA .Qna .Qna__container .Qna__container-shadow .Qna__container-item h4 span {
     font-size: 2.6em;
     margin-right: 10px;
 }
 
-.Qna .Qna__container .Qna__container-shadow .Qna__container-item p {
+.QNA .Qna .Qna__container .Qna__container-shadow .Qna__container-item p {
     color: #8f88ca;
     font-weight: 600;
     font-size: 20px;
 }
 
-.Qna .Qna__container .Qna__container-shadow .Qna__container-item .h6 {
+.QNA .Qna .Qna__container .Qna__container-shadow .Qna__container-item .h6 {
     color: #8f88ca;
     font-style: italic;
     font-size: 14px;

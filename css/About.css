@@ -149,7 +149,7 @@ header .header-container__navigation {
     }
     
   
-.bannerFirst {
+.About .bannerFirst {
     background-image: url("/assets/images/About/About_FirstBanner.png");
     ;
     background-repeat: no-repeat;
@@ -164,7 +164,7 @@ header .header-container__navigation {
     src: url("/assets/fonts/ProductSansBoldItalic.otf") format('opentype');
 }
 
-.bannerFirst article div h2 {
+.About .bannerFirst article div h2 {
     font-family: 'ProductSansBoldItalic', sans-serif;
     font-size: 3em;
     font-weight: bold;
@@ -175,7 +175,7 @@ header .header-container__navigation {
 
 }
 
-.bannerSecond {
+.About .bannerSecond {
     background-image: url("/assets/images/About/About_SecondBanner.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -183,7 +183,7 @@ header .header-container__navigation {
     padding: 4em;
 }
 
-.section {
+.About .section {
     width: 15em;
     margin-left: -1em;
     border: 3px solid white;
@@ -192,7 +192,7 @@ header .header-container__navigation {
 
 }
 
-.section .section_Title {
+.About .section .section_Title {
     font-size: 30px;
     width: 100%;
     box-shadow: inset #fff 0px 0px 14px 0px;
@@ -214,7 +214,7 @@ header .header-container__navigation {
 }
 
 
-.bannerSecond .container-fluid blockquote {
+.About .bannerSecond .container-fluid blockquote {
     font-weight: 100;
     font-size: 1.7em;
     line-height: 1.4;
@@ -225,13 +225,13 @@ header .header-container__navigation {
     padding: .5em;
 
 }
-.bannerSecond .container-fluid .bannnerContent p{
+.About .bannerSecond .container-fluid .bannnerContent p{
     font-size: 1.7em;
     font-weight: 600;
     font-style: italic;
     color: #d4eaf5;  
 }
-.bannerSecond .container-fluid p {
+.About .bannerSecond .container-fluid p {
     font-size: 1.3em;
     font-weight: 400;
     font-style: italic;
@@ -239,7 +239,7 @@ header .header-container__navigation {
 
 }
 
-.bannerSecond .container-fluid blockquote:before,
+.About .bannerSecond .container-fluid blockquote:before,
 blockquote:after {
     position: absolute;
     color: #f1efe6;
@@ -248,20 +248,20 @@ blockquote:after {
     height: 4rem;
 }
 
-.bannerSecond .container-fluid blockquote:before {
+.About .bannerSecond .container-fluid blockquote:before {
     content: '“';
     left: -0.6em;
     bottom: 0.2em;
 }
 
-.bannerSecond .container-fluid blockquote:after {
+.About .bannerSecond .container-fluid blockquote:after {
     content: '”';
     right: -0.4em;
     bottom: 0.2em;
 }
 
 
-.bannerSecond .Breakthrough-formula .card-user h4 {
+.About .bannerSecond .Breakthrough-formula .card-user h4 {
     color: white;
     -webkit-text-stroke-width: 1px;
     font-family: 'Kanit', sans-serif;
@@ -270,7 +270,7 @@ blockquote:after {
 }
 
 
-.container-card .cardContent .cardContent__item .card-content__item__title-shadow {
+.About .container-card .cardContent .cardContent__item .card-content__item__title-shadow {
     width: 8em;
      box-shadow: 6px 7px 0px #a6aff2;
     border-radius: 40px;
@@ -279,7 +279,7 @@ blockquote:after {
 }
 
 
-.container-card .cardContent .cardContent__item .card-content__item__title-shadow .card-content__item__title {
+.About .container-card .cardContent .cardContent__item .card-content__item__title-shadow .card-content__item__title {
     width: 100%;
     border: 3px solid white;
     
@@ -289,7 +289,7 @@ blockquote:after {
 
 }
 
-.container-card .cardContent .cardContent__item .card-content__item__title-shadow .card-content__item__title .title {
+.About .container-card .cardContent .cardContent__item .card-content__item__title-shadow .card-content__item__title .title {
     font-size: 3em;
     width: 100%;
     box-shadow: inset #fff 0px 0px 14px 0px;
@@ -311,24 +311,24 @@ blockquote:after {
 }
 
 
-.container-card .cardContent .cardContent__item {
+.About .container-card .cardContent .cardContent__item {
    max-width: 90%;
 }
 
-.container-card .cardContent .cardContent__item .card {
+.About .container-card .cardContent .cardContent__item .card {
     background-image: linear-gradient(to bottom, #efedfb, #e9e3ff, #e9e3ff, #e9e3ff);
     border-radius: 20px;
     border: 3px solid #fff;
     padding: 0;
 }
   
-  .container-card .cardContent .cardContent__item .card > .row {
+ .About .container-card .cardContent .cardContent__item .card > .row {
     height: 100%;
   }
-  .container-card .cardContent .cardContent__item .card > .row > .col-lg-5{
+ .About .container-card .cardContent .cardContent__item .card > .row > .col-lg-5{
     min-height: 100%;
   }
-    .container-card .cardContent .cardContent__item .card > .row > .col-lg-5 .img {
+  .About .container-card .cardContent .cardContent__item .card > .row > .col-lg-5 .img {
     border-radius: 20px;
     border: 3px solid #fff;
     object-fit:cover ;
@@ -337,37 +337,37 @@ blockquote:after {
     min-height: 300px;
     box-shadow: rgba(175, 181, 241, 1) 0px 13px 27px -5px, rgb(175, 181, 241) 0px 8px 16px -8px;
   }
-  .container-card .cardContent .cardContent__item .card > .row  .col-lg-7{
+  .About .container-card .cardContent .cardContent__item .card > .row  .col-lg-7{
     padding:0 4em;
 
     color:#5c3bac;
 }
-  .container-card .cardContent .cardContent__item .card > .row  .col-lg-7 h5{
+  .About .container-card .cardContent .cardContent__item .card > .row  .col-lg-7 h5{
     font-weight: 800;
     font-size: 2.8em;
     line-height: 0.8;
     text-transform: uppercase;
   }
-  .container-card .cardContent .cardContent__item .card > .row  .col-lg-7 p{
+  .About .container-card .cardContent .cardContent__item .card > .row  .col-lg-7 p{
     font-weight: 600;
   }
-  .cardAnnounce{
+.About .cardAnnounce{
     background-color: rgba(235, 229, 253,0.5)
   }
-  .cardAnnounce .container .row h2{
+ .About .cardAnnounce .container .row h2{
     width: fit-content;
     color:#5c3bac;
     font-weight: 700;
     
     text-transform: uppercase;
   }
-  .cardAnnounce .container .row > .col-4{
+ .About .cardAnnounce .container .row > .col-4{
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
   }
-  .bannerThird {
+    .About .bannerThird {
     height: 500px;
     background:rgba(233, 227, 253,0.6);
 }

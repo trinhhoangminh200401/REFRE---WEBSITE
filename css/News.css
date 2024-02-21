@@ -184,12 +184,12 @@ header .header-container__navigation {
 }
 
 
-.banner {
+.News .banner {
 
     width: 100%;
 }
 
-.banner img {
+.News .banner img {
 
     width: 100%;
 
@@ -198,13 +198,13 @@ header .header-container__navigation {
 
 }
 
-.headline {
+.News .headline {
     margin: 0px auto;
     width: 60%;
 }
 
 
-.news {
+.News .news {
 
     margin: 0 auto;
     width: 100%;
@@ -212,17 +212,17 @@ header .header-container__navigation {
     flex-direction: column;
 }
 
-.news .headline {
+.News .news .headline {
     margin: 0px auto;
     /* background-color: #ccd3ff; */
     width: 60%;
 }
 
-.news .headline img {
+.News .news .headline img {
     width: 100%;
 }
 
-.news .news-content .col-xl-5 {
+.News .news .news-content .col-xl-5 {
     background: #f0e8ff;
     height: fit-content;
     padding: 0;
@@ -230,34 +230,34 @@ header .header-container__navigation {
     border: 5px solid #fff;
 }
 
-.news .news-content .col-xl-5 img {
+.News .news .news-content .col-xl-5 img {
 
     border-radius: 30px;
     object-fit: cover;
 }
 
-.news .news-content .col-xl-5 .card-body {
+.News .news .news-content .col-xl-5 .card-body {
     color: #5b4897;
     padding: 0.5em 1em;
 }
 
-.news .news-content .col-xl-5 .card-body h5 {
+.News .news .news-content .col-xl-5 .card-body h5 {
     text-transform: uppercase;
     font-weight: 800;
     font-style: italic;
 
 }
 
-.news .news-content .col-xl-5 .card-body p {
+.News .news .news-content .col-xl-5 .card-body p {
     font-weight: 600;
 }
 
-.news .news-content .col-xl-5 .card-body div {
+.News .news .news-content .col-xl-5 .card-body div {
     width: 50%;
 
 }
 
-.news .news-content .col-xl-5 .card-body div a {
+.News .news .news-content .col-xl-5 .card-body div a {
     box-shadow: inset #fff 0px 0px 14px 0px;
     background-color: #af8afc;
     border-top-left-radius: 25px;
@@ -272,7 +272,7 @@ header .header-container__navigation {
 }
 
 
-.news .news-content .col-xl-6 .card {
+.News .news .news-content .col-xl-6 .card {
     background-color: #f0e8ff;
     border-radius: 30px;
     margin-top: 0.55em;
@@ -280,30 +280,30 @@ header .header-container__navigation {
     border: 5px solid #fff;
 }
 
-.news .news-content .col-xl-6 .card>img {
+.News .news .news-content .col-xl-6 .card>img {
     border-radius: 30px;
     width: 31%;
 
 }
 
-.news .news-content .col-xl-6 .card .card-body {
+.News .news .news-content .col-xl-6 .card .card-body {
     padding: 1em;
     color: #5b4897;
 
 }
 
-.news .news-content .col-xl-6 .card-body h5 {
+.News .news .news-content .col-xl-6 .card-body h5 {
     text-transform: uppercase;
     font-weight: 800;
     font-style: italic;
 
 }
 
-.news .news-content .col-xl-6 .card-body p {
+.News .news .news-content .col-xl-6 .card-body p {
     font-weight: 600;
 }
 
-.news .news-content .col-xl-6 .card-body a {
+.News .news .news-content .col-xl-6 .card-body a {
     box-shadow: inset #fff 0px 0px 14px 0px;
     background-color: #af8afc;
     border-top-left-radius: 25px;
@@ -316,7 +316,7 @@ header .header-container__navigation {
     font-size: 1.2em;
 }
 
-.pagination__container .data-container .card {
+.News .pagination__container .data-container .card {
     background-color: #f0e8ff;
     border-radius: 30px;
     margin-top: 0.7em;
@@ -327,36 +327,36 @@ header .header-container__navigation {
     border: 5px solid #fff;
 }
 
-.pagination__container .data-container .card>.imagediv {
+.News .pagination__container .data-container .card>.imagediv {
     max-width: 300px;
     width: 100%;
 }
 
-.pagination__container .data-container .card .imagediv>.card-img-top {
+.News .pagination__container .data-container .card .imagediv>.card-img-top {
     border-radius: 30px;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.pagination__container .data-container .card>.card-body {
+.News .pagination__container .data-container .card>.card-body {
     padding: 2em;
     height: 100%;
     color: #5b4897;
 
 }
 
-.pagination__container .data-container .card>.card-body h5 {
+.News .pagination__container .data-container .card>.card-body h5 {
     text-transform: uppercase;
     font-weight: 800;
     font-style: italic;
 }
 
-.pagination__container .data-container .card>.card-body p {
+.News .pagination__container .data-container .card>.card-body p {
     font-weight: 600;
 }
 
-.pagination__container .data-container .card>.card-body a {
+.News .pagination__container .data-container .card>.card-body a {
     box-shadow: inset #fff 0px 0px 14px 0px;
     background-color: #af8afc;
     border-top-left-radius: 25px;
@@ -390,13 +390,13 @@ header .header-container__navigation {
 
 
 /* ------------------------footer and feedback */
-.feedback>.container {
+.News .feedback>.container {
 
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.feedback .container .card-user {
+.News .feedback .container .card-user {
 
     margin: 0 auto;
     display: flex;
@@ -404,19 +404,19 @@ header .header-container__navigation {
     padding: 20px 0;
 }
 
-.feedback .container .card-user img {
+.News .feedback .container .card-user img {
     width: 30%;
     display: flex;
     margin: auto;
     flex-wrap: wrap;
 }
 
-.feedback .container .card-user h4 {
+.News .feedback .container .card-user h4 {
     color: #87469c;
 
 }
 
-.feedback .container .card-user .card-text {
+.News .feedback .container .card-user .card-text {
     font-weight: 600;
     padding: 0.1em;
     /* background-color: #036040; */
@@ -425,26 +425,26 @@ header .header-container__navigation {
     color: #87469c;
 }
 
-.feedback .container .card-user .card-body {
+.News .feedback .container .card-user .card-body {
     margin: 0 20px;
 }
 
-.feedback .container .card-user .card-body p {
+.News .feedback .container .card-user .card-body p {
     margin: 20px 0;
 
 }
 
-.yellow {
+.News .yellow {
     color: #ffb211;
     -webkit-text-stroke-color: #fff;
     -webkit-text-stroke-width: 3px;
 }
 
-.fa-star {
+.News .fa-star {
     font-size: 25px;
 }
 
-.feedback .slider {
+.News .feedback .slider {
     -webkit-appearance: none;
     width: 30%;
     /* Adjust this value based on your layout */
@@ -458,11 +458,11 @@ header .header-container__navigation {
     transition: opacity .2s;
 }
 
-.slider:hover {
+.News .slider:hover {
     opacity: 1;
 }
 
-.feedback .slider::-webkit-slider-thumb {
+.News .feedback .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 60px;
@@ -472,7 +472,7 @@ header .header-container__navigation {
     cursor: pointer;
 }
 
-.feedback .card-user .slider::-moz-range-thumb {
+.News .feedback .card-user .slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
     background: #04AA6D;
@@ -481,22 +481,22 @@ header .header-container__navigation {
 
 
 
-.latestupdate .owl-carousel .card {
+.News .latestupdate .owl-carousel .card {
     height: 300px;
     padding: 0;
     border: 3px solid #fff;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.3);
 }
-.renderDetail .content-container img {
+.News .renderDetail .content-container img {
     width: 90%;
     object-fit:cover ;
 }
 
-.renderDetail .content-container .contentdiv p,li{
+.News .renderDetail .content-container .contentdiv p,li{
         font-size: 14px;
 }
-.renderDetail .content-container .contentdiv .card{
+.News .renderDetail .content-container .contentdiv .card{
     padding: 1em;
    background-color: #f0e8ff;
     border :5px solid #Fff;
