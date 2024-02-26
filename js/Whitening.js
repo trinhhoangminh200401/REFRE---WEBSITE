@@ -315,7 +315,7 @@ $(document).ready(function () {
       console.log(productDetails);
       // Store product details in session storage
       SessionStorage.setSessionStorage(
-        "productDetail",
+        "productDetailWhitening",
         JSON.stringify(productDetails)
       );
 
@@ -392,9 +392,9 @@ $(document).ready(function () {
     event.preventDefault();
 
     const productId = $(this).closest(".card-content").data("product-id");
-    SessionStorage.setSessionStorage("productId", productId);
+    SessionStorage.setSessionStorage("productIdWhitening", productId);
 
-    const storedProductId = SessionStorage.getSessionStorage("productId");
+    const storedProductId = SessionStorage.getSessionStorage("productIdWhitening");
 
     console.log(window.location);
     console.log(storedProductId);
@@ -404,7 +404,7 @@ $(document).ready(function () {
       );
 
       SessionStorage.setSessionStorage(
-        "productDetail",
+        "productDetailWhitening",
         JSON.stringify(productDetails)
       );
       let url;

@@ -353,7 +353,7 @@ $(".form-control").on("keypress", function (event) {
       const productDetails = fakeProducts.find(
         (product) => product.id === parseInt(productId)
       );
-      SessionStorage.setSessionStorage("productID", productId);
+      SessionStorage.setSessionStorage("productIdNatural", productId);
   
       console.log(productDetails);
       // Store product details in session storage
@@ -435,9 +435,9 @@ $(".form-control").on("keypress", function (event) {
     event.preventDefault();
 
     const productId = $(this).closest(".card-content").data("product-id");
-    SessionStorage.setSessionStorage("productID", productId);
+    SessionStorage.setSessionStorage("productIdNatural", productId);
 
-    const storedProductId = SessionStorage.getSessionStorage("productID");
+    const storedProductId = SessionStorage.getSessionStorage("productIdNatural");
 
     console.log(window.location);
     console.log(storedProductId);
