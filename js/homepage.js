@@ -117,7 +117,7 @@ $(document).ready(function () {
       displayedItems.forEach(function (item, index) {
         var itemElement = $("<div>")
           .addClass("text-center col-xs-6 col-sm-6 col-md-12 col-xl-6 mx-auto my-4")
-          .css("width", "400px")
+          .css("width", "500px")
           .hide();
 
         // Create the elements for the item (e.g., image, username, rating, review)
