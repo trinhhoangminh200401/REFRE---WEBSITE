@@ -106,7 +106,7 @@ $(document).ready(function ()
   });
   var pagination = $("#myRange");
   var container = $(".feedback > .container > .card-user");
-  var itemsPerPage = 6;
+  var itemsPerPage = 4;
 
   // Function to display the items for the selected page
   function displayItems ()
@@ -124,8 +124,8 @@ $(document).ready(function ()
       displayedItems.forEach(function (item, index)
       {
         var itemElement = $("<div>")
-          .addClass("text-center col-xs-4 col-sm-6 col-md-12 mx-auto my-4")
-          .css("width", "400px")
+          .addClass("text-center col-xs-4 col-sm-6 col-md-12 col-xl-6 mx-auto my-4")
+          .css("width", "500px")
           .hide();
 
         // Create the elements for the item (e.g., image, username, rating, review)

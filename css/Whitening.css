@@ -236,11 +236,18 @@ body {
 
 .Whitening .input-container .icon {
     color: #644fa5;
+    font-size: 25px;
 }
 
 .Whitening .input-container button {
     color: #644fa5;
     font-weight: bold;
+    font-size: 20px;
+}
+.Whitening .input-container input::placeholder {
+    color: #644fa5;
+    font-size: 20px;
+
 }
 
 .Whitening .container-tab .button-tab-action .btn {
@@ -478,7 +485,7 @@ body {
 }
 
 .Whitening .section .section-content .section-content_title {
-    font-size: 2.2em;
+    font-size: 2em;
     text-transform: uppercase;
 
     font-weight: 900;
@@ -488,7 +495,7 @@ body {
 .Whitening .section .section-content .section-content_list .list .section-content-list_item {
     list-style: none;
     font-weight: 600;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 .Whitening .section .section-content .section-content_list .list .section-content-list_item::before {
@@ -499,7 +506,7 @@ body {
 .Whitening .section .section-content .section-content_list .result {
     font-style: italic;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .Whitening .productList {

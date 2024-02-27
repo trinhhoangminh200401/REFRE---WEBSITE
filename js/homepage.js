@@ -116,7 +116,7 @@ $(document).ready(function () {
     if (displayedItems.length > 0) {
       displayedItems.forEach(function (item, index) {
         var itemElement = $("<div>")
-          .addClass("text-center col-xs-6 col-sm-6 col-md-12 mx-auto my-4")
+          .addClass("text-center col-xs-6 col-sm-6 col-md-12 col-xl-6 mx-auto my-4")
           .css("width", "400px")
           .hide();
 

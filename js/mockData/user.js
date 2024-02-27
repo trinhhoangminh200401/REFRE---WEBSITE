@@ -25,7 +25,7 @@ export const DataUser = [
       username: "USER 4",
       rating: 5,
       review:
-        "Chai màu hồng hình như Rose Magnolia, mùi thơm cực đỉnh luôn í",
+        "Chai màu hồng hình như Rosa Magnolia, mùi thơm cực đỉnh luôn í",
     },
     {
       imgSrc: "/assets/images/HomePage/pic 5.png",

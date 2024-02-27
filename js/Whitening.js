@@ -43,7 +43,7 @@ $(document).ready(function () {
 
   var pagination = $("#myRange");
   var container = $(".feedback > .container > .card-user");
-  var itemsPerPage = 6;
+  var itemsPerPage = 4;
   function displayItems() {
     // Clear the container
     container.empty();
@@ -60,7 +60,7 @@ $(document).ready(function () {
     if (displayedItems.length > 0) {
       displayedItems.forEach(function (item, index) {
         var itemElement = $("<div>")
-          .addClass("text-center col-xs-4 col-sm-6 col-md-12 mx-auto my-4")
+          .addClass("text-center col-xs-4 col-sm-6 col-md-12 col-xl-6 mx-auto my-4")
           .css("width", "400px")
           .hide();
 

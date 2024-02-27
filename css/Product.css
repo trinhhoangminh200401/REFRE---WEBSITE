@@ -236,11 +236,19 @@ body {
 
 .Product .input-container .icon {
     color: #644fa5;
+    font-size: 25px;
 }
 
 .Product .input-container button {
     color: #644fa5;
+    font-size: 20px;
     font-weight: bold;
+}
+
+.Product .input-container input::placeholder {
+    color: #644fa5;
+    font-size: 20px;
+    
 }
 
 .Product .container-tab .button-tab-action .btn {
