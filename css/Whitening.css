@@ -194,7 +194,7 @@ body {
 
 }
 
-.Whitening .btn {
+.btn {
     height: 100%;
     border-radius: 20px;
 }
@@ -325,14 +325,14 @@ body {
 }
 
 .Whitening .description-containers .description-containers_div .description-containers_title {
-    width: 62.5%;
+    width: 90%;
     padding: 0.2em;
 
     font-style: italic;
 }
 
 .Whitening .description-containers .description-containers_div .description-containers_title h3 {
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: 900;
     line-height: 1.3;
 }
@@ -346,12 +346,12 @@ body {
 .Whitening .description-containers_content {
  
     height: 320px;
-    scrollbar-width: thin;
+    /* scrollbar-width: thin; */
     scrollbar-color: #c3adff;
     margin: 5px;
 }
 
-.Whitening .description-containers_content::-webkit-scrollbar-track {
+.Whitening .description-containers .description-containers_div .description-containers_content::-webkit-scrollbar-track {
     border-radius: 10px;
     border: 1px solid #c3adff;
     margin: 6em;
@@ -422,21 +422,21 @@ body {
     position: absolute
 }
 
-.Whitening .description-containers .description-containers_div .button-action {
+.Whitening  .description-containers_div .button-action {
     margin-top: 3.6em;
 
 
     font-style: italic;
 }
 
-.Whitening .description-containers .description-containers_div .button-action .btn {
+.Whitening  .description-containers_div .button-action .btn {
     padding: 0.8em 0em;
     color: #fff;
     font-weight: 500;
     text-align: center;
 }
 
-.Whitening .description-containers .description-containers_div .button-action .price {
+.Whitening  .description-containers_div .button-action .price {
     color: #fff;
     font-weight: 900;
     padding: 0.6em 0em;
@@ -445,14 +445,14 @@ body {
     justify-content: center;
 }
 
-.Whitening .description-containers .description-containers_div .button-action .darkpurple {
+.Whitening .description-containers_div .button-action .darkpurple {
     background-image: linear-gradient(to right, #e1a2f6, #e1a2f6, #e1a2f6, #c99eeb);
     border-top-left-radius: 20px;
     border: 3px solid white;
     width: 100%;
 }
 
-.Whitening .description-containers .description-containers_div .button-action .normalpurple {
+.Whitening  .description-containers_div .button-action .normalpurple{
     border: 3px solid white;
     width: 100%;
 
@@ -788,7 +788,7 @@ footer .container div ul li:last-child:after {
 
 
 footer .container .popup {
-    top: -50%;
+    top: 50%;
     right: 0;
     z-index: 70;
     font-size: 20px;
@@ -796,7 +796,7 @@ footer .container .popup {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
+    position: fixed;
 }
 
 footer .popup img {

@@ -355,10 +355,11 @@ $(document).ready(function ()
     $('#tabs-2').toggle(showWhiteningTab);
     $('#tabs-1').toggle(showNaturalTab);
 
-    const targetTabId = showWhiteningTab ? '#tabs-2' : '#tabs-1';
+    const targetTabId = showWhiteningTab ? '#tabs-2' : '#tabs-1 ';
 
     $(targetTabId).show();
-
+    
+  
 
     const productlistcontent = $(".container-tab");
     $("html, body").animate(
@@ -399,6 +400,7 @@ $(document).ready(function ()
     const searchValue = removeDiacritics($(".form-control").val().toLowerCase().replace(/\s/g, ""));
     handleSearch(searchValue);
   });
+  
 
   $(".form-control").on("keypress", function (event)
   {
@@ -445,6 +447,15 @@ $(document).ready(function ()
     }
 
   })
+  $('.button-tab-action').on('click', 'a', function(event) {
+        event.preventDefault();
+    $('.button-tab-action a').removeClass('active');
+          console.log("hello")
+        $(this).addClass('active');
+        $('.tab-content').hide();
+        const targetTabId = $(this).attr('href');
+        $(targetTabId).show();        // Your tab switching logic here
+    });
 
   $(".popup img:nth-child(3)").click(function ()
   {

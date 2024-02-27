@@ -204,7 +204,7 @@ footer .container div ul li:last-child:after {
 }
 
 .popup {
-    bottom: 30%;
+    bottom: 50%;
     font-size: 20px;
     right: 0em;
     z-index: 70;
@@ -212,7 +212,7 @@ footer .container div ul li:last-child:after {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
+    position:fixed;
 }
 
 

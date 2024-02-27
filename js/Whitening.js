@@ -229,6 +229,7 @@ $(document).ready(function () {
 
     renderProductCards(filteredProducts);
   };
+  
 
   function renderProductDetail(productDetails) {
     return `
@@ -236,17 +237,17 @@ $(document).ready(function () {
       <div class="row col-12 col-sm-12 col-md-12 col-lg-3 col-xl-2 container-tabs ">
           <div class="card-body card-purpleDarkLinear col-3 col-md-3 col-lg-6 col-xl-12">
               <img class="lazy fade-in loaded" src="${
-                productDetails.imageList.image1
+                productDetails?.imageList.image1
               }" alt data-hash="0" />
           </div>
           <div class="card-body card-purpleNormalLinear my-2 col-3 col-md-3 col-lg-12 col-xl-12">
               <img class="lazy fade-in loaded" src="${
-                productDetails.imageList.image2
+                productDetails?.imageList.image2
               }" alt="" />
           </div>
           <div class="card-body card-purpleNormalLinear col-xl-12 col-md-3 col-lg-6 col-3">
               <img alt="" class="lazy fade-in loaded" src="${
-                productDetails.imageList.image3
+                productDetails?.imageList.image3
               }" />
           </div>
       </div>
@@ -267,11 +268,11 @@ $(document).ready(function () {
       <div class="col-lg-11 col-xl-4 bg-whiteNormal description-containers">
           <div class="description-containers_div m-auto">
               <div class="description-containers_title">
-                  <h3 class="purpleDark">${productDetails.title}</h3>
-                  <h3 class="purpleDark my-4">${productDetails.title1}</h3>
+                  <h3 class="purpleDark">${productDetails?.title}</h3>
+                  <h3 class="purpleDark my-4">${productDetails?.title1}</h3>
               </div>
               <div class="description-containers_content">
-           ${productDetails.contentdiv
+           ${productDetails?.contentdiv
              .map((item) => {
                return `<div class="content-div">
                   <p class="purpleDark">${item.subtitle}
@@ -416,7 +417,7 @@ $(document).ready(function () {
       }
 
       history.pushState({}, null, url);
-      const productIditem = SessionStorage.getSessionStorage("productDetail");
+      const productIditem = SessionStorage.getSessionStorage("productDetailWhitening");
       console.log(JSON.parse(productIditem));
       let renderProduct = renderProductDetail(JSON.parse(productIditem));
 

@@ -441,8 +441,8 @@ footer .container div ul li:last-child:after{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
-}
+    position: fixed;
+  }
 .togglepopup{
   display: none;
 }

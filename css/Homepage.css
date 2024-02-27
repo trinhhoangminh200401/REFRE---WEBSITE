@@ -416,6 +416,7 @@ header .header-container__navigation {
     border-top-left-radius: 20px;
     border: 3px solid white
 }
+
 .HomePage .product .card-product-item .card-product-action .button-action .normalpurple {
     background-color: #9077b5;
     border-bottom-right-radius: 20px;
@@ -604,14 +605,13 @@ footer .container div ul li:last-child:after {
 }
 
 .popup {
-    top: -50%;
+    top: 50%;
     font-size: 20px;
-    right: 0em;
     z-index: 70;
     height: 300px;
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     justify-content: center;
 }
 

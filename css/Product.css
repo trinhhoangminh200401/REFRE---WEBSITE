@@ -30,6 +30,7 @@
     background: linear-gradient(to bottom, #fbfbff, #fbfbff, #d2c8fc);
 
 }
+
 .Product .banner {
 
     width: 100%;
@@ -43,6 +44,7 @@
 
 
 }
+
 .Product .fade-in {
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -56,9 +58,10 @@
     margin: 0px auto;
     width: 60%
 }
+
 .header-container {
     width: 100%;
-    background-image: linear-gradient(to right top, #ccd3ff,#ccd3ff,#ede4ff,#ede4ff);
+    background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
 
 
 }
@@ -68,15 +71,16 @@ header .header-container__navigation {
     margin: 0 auto;
 
 }
+
 .header-container__navigation button {
-    color:#87469c
+    color: #87469c
 }
 
 
 .header-container .navbar-nav__item {
     margin: 0 15px;
     color: #000;
-   
+
 }
 
 .header-container .nav-link {
@@ -86,11 +90,13 @@ header .header-container__navigation {
     font-size: 1.35em;
 
 }
-.header-container .nav-link:hover{
-    border-bottom:  2px solid black;
+
+.header-container .nav-link:hover {
+    border-bottom: 2px solid black;
 }
-.hoverActive{
-    border-bottom:  2px solid black;
+
+.hoverActive {
+    border-bottom: 2px solid black;
 
 }
 
@@ -108,6 +114,7 @@ header .header-container__navigation {
     width: 6em;
 
 }
+
 .dropdown-content {
     visibility: hidden;
     padding: 0;
@@ -116,49 +123,53 @@ header .header-container__navigation {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  
-  /* Style the links inside the dropdown */
-  .dropdown-content li {
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content li {
     color: black;
-    text-decoration: none;				
+    text-decoration: none;
     display: block;
     width: 100%;
-    
+
     padding: 0.5em;
     text-align: left;
-  }
-  .dropdown-content li a {
-      font-weight: 600;
-      text-transform: uppercase;
-  }
-  /* Add a grey background to dropdown links on hover */
-  .dropdown-content li :hover {
-      background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
-  
+}
+
+.dropdown-content li a {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content li :hover {
+    background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
+
     color: black;
-  }
-  
-  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
-  .dropdown:hover .dropdown-content {
-      visibility:visible ;
-  }
-  /* Add this block of CSS for the animation */
-  @keyframes fadeInside {
-      from {
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+}
+
+/* Add this block of CSS for the animation */
+@keyframes fadeInside {
+    from {
         opacity: 0;
         transform: translateY(-10px);
-      }
-      to {
+    }
+
+    to {
         opacity: 1;
         transform: translateY(0);
-      }
     }
-    
-    @media screen and (max-width: 600px) {
-      /* Existing styles for mobile view */
-    
-      .navbar-nav .dropdown-content {
+}
+
+@media screen and (max-width: 600px) {
+    /* Existing styles for mobile view */
+
+    .navbar-nav .dropdown-content {
         animation: fadeInside 3s ease-out;
         position: static;
         right: 0%;
@@ -167,17 +178,17 @@ header .header-container__navigation {
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s, visibility 0.3s;
-      }
-    
-      .navbar-nav .dropdown:hover .dropdown-content {
-      display: inline-block;
-      height: 100%;
+    }
+
+    .navbar-nav .dropdown:hover .dropdown-content {
+        display: inline-block;
+        height: 100%;
         opacity: 1;
         visibility: visible;
-      }
     }
-    
-  
+}
+
+
 body {
     height: 1000px;
 
@@ -253,14 +264,13 @@ body {
 }
 
 .Product .container-tab .button-tab-action .btn-darkpurple {
-    text-decoration: underline;
     color: #fff;
     background-color: #cab2ff;
 }
 
 
-.Product .content-div ul{
-    padding :0;
+.Product .content-div ul {
+    padding: 0;
 }
 
 .Product .content-div li::before {
@@ -335,20 +345,21 @@ body {
 .Product .section {
     border: 3px solid white;
     border-radius: 10px;
-    
+
     padding: 5px;
 
 }
+
 .Product .section .section-content {
-    box-shadow: inset 0px 0px 7px 7px #fff;    
+    box-shadow: inset 0px 0px 7px 7px #fff;
     border-radius: 10px;
-    padding:10px;
+    padding: 10px;
 }
 
 .Product .section .section-content .section-content_title {
     font-size: 2.2em;
     text-transform: uppercase;
-    
+
     font-weight: 900;
 }
 
@@ -363,21 +374,23 @@ body {
     content: "-";
     margin: 0 10px;
 }
+
 .Product .section .section-content .section-content_list .result {
- font-style: italic;
- font-weight: 500;
- font-size: 1.2em;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.2em;
 }
+
 .Product .productList1 {
-    margin-top:5em; 
+    margin-top: 5em;
 }
 
 .Product .productList1 .productlist-container .card-content {
-    padding-top:12px ;
-   position: relative;
+    padding-top: 12px;
+    position: relative;
     width: 22em;
     margin: 0 10px;
-    
+
 }
 
 .Product .productList1 .productlist-container .card-content .card-img-top {
@@ -385,12 +398,12 @@ body {
     width: 80%;
     height: 20em;
     margin-top: 1em;
-   object-fit: cover;
+    object-fit: cover;
 }
 
-.Product .productList1 .productlist-container  .card .bottom {
+.Product .productList1 .productlist-container .card .bottom {
 
-    object-position: center ;
+    object-position: center;
 
 }
 
@@ -406,16 +419,17 @@ body {
     color: white;
     font-weight: 700;
     font-style: italic;
-    box-shadow: rgba(0,191,0, 0.4) 3px 2.5px;   
-     text-transform: uppercase;
+    box-shadow: rgba(0, 191, 0, 0.4) 3px 2.5px;
+    text-transform: uppercase;
     background-color: #01b700;
     border: 3px solid white;
 
 
 }
-.Product .productList1 .productlist-container .card-purple{
-    background-image: linear-gradient(to  bottom ,#FDC0FF,#f0e9fe,#e8ffed,#e8ffed);
-    margin-left:8px;
+
+.Product .productList1 .productlist-container .card-purple {
+    background-image: linear-gradient(to bottom, #FDC0FF, #f0e9fe, #e8ffed, #e8ffed);
+    margin-left: 8px;
 
     border: 3px solid #fff;
     border-radius: 1.5em;
@@ -424,18 +438,20 @@ body {
 
 .Product .productList1 .productlist-container .card-body .purple-text {
     color: #63469c;
-  
+
 }
+
 .Product .productList1 .productlist-container .card-body .card-title {
-  
-  font-weight: 900;
+
+    font-weight: 900;
 }
+
 .Product .productList1 .productlist-container .card-body p {
-  
+
     font-weight: 400;
     line-height: 1.2;
-  }
-  
+}
+
 .Product .productList1 .productlist-container .card-body .btn {
     border-top-left-radius: 25px;
     padding: 0.5em 1em;
@@ -445,18 +461,18 @@ body {
 }
 
 .Product .productList1 .productlist-container .card-body .btn-purple {
-    background-image: linear-gradient(to  right ,#FDC0FF,#FDC0FF,#e8ffed,#e8ffed);
+    background-image: linear-gradient(to right, #FDC0FF, #FDC0FF, #e8ffed, #e8ffed);
 }
 
 .Product .productList2 {
-    margin-top:5em; 
+    margin-top: 5em;
 }
 
 .Product .productList2 .productlist-container .card-content {
-    padding-top:12px ;
-   position: relative;
+    padding-top: 12px;
+    position: relative;
     width: 22em;
-    
+
 }
 
 .Product .productList2 .productlist-container .card-content .card-img-top {
@@ -464,12 +480,12 @@ body {
     width: 80%;
     height: 20em;
     margin-top: 1em;
-   object-fit: cover;
+    object-fit: cover;
 }
 
-.Product .productList2 .productlist-container  .card .bottom {
+.Product .productList2 .productlist-container .card .bottom {
 
-    object-position: center ;
+    object-position: center;
 
 }
 
@@ -482,7 +498,7 @@ body {
     border-bottom-right-radius: 40px;
     padding-left: 8px;
     color: white;
-    box-shadow: rgba(115,111,255) 3px 2.5px;   
+    box-shadow: rgba(115, 111, 255) 3px 2.5px;
     font-weight: 900;
     text-transform: uppercase;
     background-color: #766dff;
@@ -491,28 +507,31 @@ body {
 
 
 }
-.Product .productList2 .productlist-container .card-purple{
+
+.Product .productList2 .productlist-container .card-purple {
     background-image: linear-gradient(#c4a1f5, #f4e7ff, #f4e7ff);
     border: 3px solid #fff;
-    margin-left:8px;
+    margin-left: 8px;
     border-radius: 1.5em;
     padding: 0;
 }
 
 .Product .productList2 .productlist-container .card-body .purple-text {
     color: #63469c;
-  
+
 }
+
 .Product .productList2 .productlist-container .card-body .card-title {
-  
-  font-weight: 900;
+
+    font-weight: 900;
 }
+
 .Product .productList2 .productlist-container .card-body p {
-  
+
     font-weight: 400;
     line-height: 1.2;
-  }
-  
+}
+
 .Product .productList2 .productlist-container .card-body .btn {
     border-top-left-radius: 25px;
     padding: 0.5em 1em;
@@ -522,7 +541,7 @@ body {
 }
 
 .Product .productList2 .productlist-container .card-body .btn-purple {
-    background: linear-gradient(to right, #e1a1f5, #e1a1f5, #c98cfe,#c98cfe);
+    background: linear-gradient(to right, #e1a1f5, #e1a1f5, #c98cfe, #c98cfe);
     font-weight: 500;
 }
 
@@ -547,22 +566,23 @@ body {
     flex-wrap: wrap;
 }
 
-.Product .feedback .container .card-user h4
- {
+.Product .feedback .container .card-user h4 {
     color: #87469c;
-    
+
 }
-.Product .feedback .container .card-user .card-text{
+
+.Product .feedback .container .card-user .card-text {
     font-weight: 600;
     color: #87469c;
 }
+
 .Product .feedback .container .card-user .card-body {
     margin: 0 20px;
 }
 
 .Product .feedback .container .card-user .card-body p {
     margin: 20px 0;
-  
+
 }
 
 .Product .yellow {
@@ -579,8 +599,8 @@ body {
     -webkit-appearance: none;
     width: 30%;
     height: 25px;
-    margin:20px auto;
-    
+    margin: 20px auto;
+
     background: #8987ff;
     outline: none;
     border-radius: 10px;
@@ -608,11 +628,13 @@ body {
     background: #04AA6D;
     cursor: pointer;
 }
-.Product .latestupdate{
+
+.Product .latestupdate {
     margin: 0px auto;
-   
+
 }
-.Product .latestupdate .latest{
+
+.Product .latestupdate .latest {
     width: 100%;
     margin: 0 auto;
 
@@ -620,6 +642,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 .Product .latestupdate .owl-carousel .card {
     height: 300px;
     padding: 0;
@@ -627,10 +650,12 @@ body {
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.3);
 }
+
 .Product .latestupdate .owl-carousel .owl-dots.disabled,
 .owl-carousel .owl-nav.disabled {
     display: block;
 }
+
 .Product .latestupdate .owl-carousel .nav-btn {
     height: 30em;
     position: absolute;
@@ -651,13 +676,14 @@ body {
 
     right: -2.4em;
 }
+
 .Product .latestupdate .card-content {
     margin: 0 10px;
     padding: 10px 0;
 
 }
 
-.Product .latestupdate  .card-content .card-img-top {
+.Product .latestupdate .card-content .card-img-top {
     /* width: 50%; */
     height: 280px;
 
@@ -665,11 +691,12 @@ body {
     object-fit: none;
 }
 
-.Product .latestupdate  .card .bottom {
+.Product .latestupdate .card .bottom {
 
     object-position: center bottom;
 
 }
+
 footer {
 
     background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
@@ -681,7 +708,7 @@ footer {
 
 footer .container-footer {
     bottom: 0;
-    
+
 }
 
 
@@ -691,6 +718,7 @@ footer .container div p {
     color: #595959;
     font-weight: 600;
 }
+
 footer .container div ul {
     display: flex;
     list-style-type: none;
@@ -698,25 +726,29 @@ footer .container div ul {
     font-size: 14px;
 
 }
-footer .container div ul li{
-    margin:  10px 5px;
+
+footer .container div ul li {
+    margin: 10px 5px;
     font-weight: 600;
     cursor: pointer;
 
 }
-footer .container div ul li a{
+
+footer .container div ul li a {
     color: #5c3bac;
-     text-decoration: none;
-  }
-footer .container div ul li:after {
- content:"|"
+    text-decoration: none;
 }
+
+footer .container div ul li:after {
+    content: "|"
+}
+
 footer .container div ul li:last-child:after {
     content: ""
 }
 
 footer .container .popup {
-    top: -50%;
+    top: 50%;
     right: 0;
     z-index: 70;
     font-size: 20px;
@@ -724,8 +756,13 @@ footer .container .popup {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
+    position: fixed;
 }
+
 footer .popup img {
     width: 70%;
+}
+
+.button-tab-action a.active {
+    text-decoration: underline;
 }
