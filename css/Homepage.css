@@ -281,33 +281,34 @@ header .header-container__navigation {
 
 .HomePage .card-body .btn-purple span {
     width: 100%;
-    box-shadow: inset #fff 0px 0px 13px 0px;
+    box-shadow: inset #fff 0px 0px 6px 0px;
     background: linear-gradient(to right, #c5a1f5, #c59ef6, #c98cfe);
     border-top-left-radius: 25px;
     display: flex;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
     height: 100%;
     padding: 0.4em 1em;
     border-bottom-right-radius: 25px;
     color: white;
-    
+    font-weight: 600;
     text-transform: uppercase;
 }
 
 .HomePage .card-body .btn-green span {
-        width: 100%;
+    width: 100%;
     background: linear-gradient(to right, #76be83, #5db36a, #38a041);
     border-top-left-radius: 25px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        padding: 0.4em 1em;
-        border-bottom-right-radius: 25px;
-        color: white;
-        box-shadow: inset #fff 0px 0px 13px 0px;
-        text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-weight: 600;
+    padding: 0.4em 1em;
+    border-bottom-right-radius: 25px;
+    color: white;
+    box-shadow: inset #fff 0px 0px 13px 0px;
+    text-transform: uppercase;
 }
 
 
