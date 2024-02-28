@@ -334,6 +334,7 @@ body {
 
 .Product .description-containers .description-containers_div .button-action .darkpurple {
     background-image: linear-gradient(to right, #e1a2f6, #e1a2f6, #e1a2f6, #c99eeb);
+
     border-top-left-radius: 20px;
     border: 3px solid white;
     width: 100%;
@@ -438,7 +439,7 @@ body {
 .Product .productList1 .productlist-container .card-purple {
     background-image: linear-gradient(to bottom, #FDC0FF, #f0e9fe, #e8ffed, #e8ffed);
     margin-left: 8px;
-
+    box-shadow: inset #fff 0px 0px 14px 0px;
     border: 3px solid #fff;
     border-radius: 1.5em;
     padding: 0;

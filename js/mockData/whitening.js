@@ -31,126 +31,25 @@ function generateFakeProduct(
   };
 }
 export const fakeProducts = [
-  generateFakeProduct(
-    1,
+   generateFakeProduct(
+    10,
     "whitening",
     "Dạng lăn",
-    "DELUXE",
-    "HƯƠNG SANG TRỌNG",
-    "Dạng lăn: Cảm nhận 3 tầng hương mang theo nét kiêu kỳ, sang trọng.",
+    "SWEETIE",
+    "HƯƠNG NGỌT NGÀO",
+    "Dạng lăn: Cảm nhận 3 tầng hương điểm nét ngọt ngào.",
     "59.000",
-    "/assets/images/Product/Products/Whitening/Deluxe/roll_deluxe_side.png",
-    "./assets/images/Product/Products/Whitening/Deluxe/roll_deluxe_side.png",
-    "/assets/images/Product/Products/Whitening/Deluxe/roll_deluxe_front.png",
-    "/assets/images/Product/Products/Whitening/Deluxe/rollon_right_deluxe.png",[
-        {
-          subtitle:"Cảm nhận 3 tầng hương tôn nét kiêu kỳ, sang trọng",
-          content :["Tầng hương đầu: Cam Bergamot tươi mát hòa quyện cùng chút thanh dịu của quả Cam Mandarin.","Tầng hương giữa: hoa Nhài và hoa Linh Lan kiêu kỳ đua nhau tỏa hương.","Tầng hương cuối: Hoắc Hương đan xen một chút Vani ẩn chứa sự sang trọng, lôi cuốn lạ thường.          "]
-        }
-        
-    ]
-  ),
-  generateFakeProduct(
-    2,
-    "whitening",
-    "Dạng lăn",
-    "IN LOVE",
-    "HƯƠNG TÌNH YÊU",
-    "Dạng lăn: Cảm nhận 3 tầng hương say đắm trong tình yêu.",
-    "59.000",
-    "./assets/images/Whitening/In_Love/roll_inlove_side.png ",
-    "./assets/images/Whitening/In_Love/roll_inlove_side.png",
-    "./assets/images/Whitening/In_Love/roll_inlove_front.png",
-    "./assets/images/Whitening/In_Love/rollon_right_inlove.png",
-    [{
-        subtitle:"Cảm nhận 3 tầng hương say đắm trong tình yêu",
-        content:["Tầng hương đầu: Hoa Hồng Bulgary tinh tế hòa quyện thanh tao rõ nét từ Hoa Diên Vĩ.","Tầng hương giữa: Xạ Hương quyến rũ len lỏi cùng những cảm xúc ấn tượng từ Huệ Trắng, Hoa Cam.","Tầng hương cuối: Vani ẩn chứa sự sang trọng điểm xuyến nhẹ nhàng của hương Cây Cỏ."]
-    }]
-    ),
-  generateFakeProduct(
-    3,
-    "whitening",
-    "Dạng lăn",
-    "SOPHIS",
-    "HƯƠNG THANH NHÃ",
-    "Dạng lăn: Cảm nhận 3 tầng hương mang nét thanh nhã đầy tinh tế.",
-    "59.000",
-    "./assets/images/Whitening/Sophis/roll_sophis_side.png",
-    "./assets/images/Whitening/Sophis/roll_sophis_side.png",
-    "./assets/images/Whitening/Sophis/roll_sophis_front.png",
-    "./assets/images/Whitening/Sophis/rollon_right_sophis.png"
-    ,[{
-        subtitle:"Cảm nhận 3 tầng mang nét thanh nhã đầy tinh tế",
-        content:["Tầng hương đầu: Cam thanh nhẹ mọng nước ôm lấy các lấy các nét hương trái cây mềm mại của Táo, Vải.","Tầng hương giữa:  Hoa Nhài, Hoa Ly, Hoa Diên Vĩ nồng nàng đầy mê hoặc.","Tầng hương cuối: Gỗ Đàn Hương và Cây Bách ngọt ngào mang tính ấm, tạo cảm giác sảng khoái tươi mát."]
-    }]
-  ),
-  generateFakeProduct(
-    4,
-    "whitening",
-    "Dạng xịt",
-    "DELUXE",
-    "HƯƠNG SANG TRỌNG",
-    "Dạng xịt: Cảm nhận 3 tầng hương mang nét kiêu kỳ, sang trọng.",
-    "59.000",
-    "./assets/images/Whitening/Deluxe/spray_deluxe_side.png",
-    "./assets/images/Whitening/Deluxe/spray_deluxe_ front.png",
-    "./assets/images/BackCard/Whitening/deluxe_backcard.png",
-    "./assets/images/BackCard/Mặt sau/Refree-2023-BCinfo3.jpg",
+    "./assets/images/Whitening/Sweetie/roll_sweetie_side.png",
+    "./assets/images/Whitening/Sweetie/roll_sweetie_side.png",
+    "./assets/images/Whitening/Sweetie/roll_sweetie_front.png",
+    "./assets/images/Whitening/Sweetie/roll_right_sweetie.png",
+ 
     [
-      {
-        subtitle:"Dạng xịt tiện lợi tránh vi khuẩn quay trở lại vào trong cùng công thức mới đột phá giúp",
-        content:["Khử mùi suốt 24H*.","Giảm tiết mồ hôi suốt 48H*.","Không cồn, không Paraben, không gây vàng áo","Không gây kích ứng**.","Lưu hương suốt cả ngày"]
-      },
-      {
-        subtitle:"Cảm nhận 3 tầng hương tôn nét kiêu kỳ, sang trọng",
-        content :["Tầng hương đầu: Cam Bergamot tươi mát hòa quyện cùng chút thanh dịu của quả Cam Mandarin.","Tầng hương giữa: hoa Nhài và hoa Linh Lan kiêu kỳ đua nhau tỏa hương.","Tầng hương cuối: Hoắc Hương đan xen một chút Vani ẩn chứa sự sang trọng, lôi cuốn lạ thường."]
-      },
-        
+        {
+            subtitle:" Cảm nhận 3 tầng hương điểm nét ngọt ngào.",
+            content :["Tầng hương đầu: Mận, Cam mát lạnh, trong vắt tràn ngập dư vị ngọt lãng mạn của Cây Hồi.","Tầng hương giữa: Hạnh Nhân, Hoa Ly, Hoa Violet ngọt bùi như hóa thành chiếc khăn len mềm mại.","Tầng hương cuối: Gỗ Đàn Hương, Xạ Hương, Hổ Phách trở nên ngọt ngào, quyến rũ mãnh liệt hơn."]
+        }
     ]
-    
-  ),
-  generateFakeProduct(
-    5,
-    "whitening",
-    "Dạng xịt",
-    "IN LOVE",
-    "HƯƠNG TÌNH YÊU",
-    "Dạng xịt: Cảm nhận 3 tầng huơng say đắm trong tình yêu.",
-    "59.000",
-    "./assets/images/Whitening/In_Love/spray_inlove_side.png",
-    "./assets/images/Whitening/In_Love/spray_inlove_ front.png",
-    "./assets/images/BackCard/Whitening/inlove_backcard.png",
-    "./assets/images/BackCard/Mặt sau/Refree-2023-BCinfo7.jpg",
-    [{
-        subtitle:"Dạng xịt tiện lợi tránh vi khuẩn quay trở lại vào trong cùng công thức mới đột phá giúp"
-        ,content:["Khử mùi suốt 24H*.","Giảm tiết mồ hôi suốt 48H*.","Không cồn, không Paraben, không gây vàng áo","Không gây kích ứng**.","Lưu hương suốt cả ngày"]
-    },
-    {
-        subtitle:"Cảm nhận 3 tầng hương say đắm trong tình yêu"
-        ,content:["Tầng hương đầu: Hoa Hồng Bulgary tinh tế hòa quyện thanh tao rõ nét từ Hoa Diên Vĩ.","Tầng hương giữa: Xạ Hương quyến rũ len lỏi cùng những cảm xúc ấn tượng từ Huệ Trắng, Hoa Cam.","Không cồn, không Paraben, không gây vàng áo","Tầng hương cuối: Vani ẩn chứa sự sang trọng điểm xuyến nhẹ nhàng của hương Cây Cỏ."]
-    },
-]
-  ),
-  generateFakeProduct(
-    6,
-    "whitening",
-    "Dạng xịt",
-    "SOPHIS",
-    "HƯƠNG THANH NHÃ",
-    "Dạng xịt: Cảm nhận 3 tầng hương mang nét thanh nhã đầy tinh tế.",
-    "59.000",
-    "./assets/images/Whitening/Sophis/spray_sophis_side.png",
-    "./assets/images/Whitening/Sophis/spray_sophis_ front.png",
-    "./assets/images/BackCard/Whitening/sophis_backcard.png",
-    "./assets/images/BackCard/Mặt sau/Refree-2023-BCinfo8.jpg",
-    [{
-        subtitle:"Dạng xịt tiện lợi tránh vi khuẩn quay trở lại vào trong cùng công thức mới đột phá giúp ",
-        content:["Khử mùi suốt 24H*","Giảm tiết mồ hôi suốt 48H*.","Không cồn, không Paraben, không gây vàng áo","Không gây kích ứng**.","Lưu hương suốt cả ngày."]
-    },{
-        subtitle:"Cảm nhận 3 tầng mang nét thanh nhã đầy tinh tế",
-        content :["Tầng hương đầu: Cam thanh nhẹ mọng nước ôm lấy các lấy các nét hương trái cây mềm mại của Táo, Vải.","Tầng hương giữa: Hoa Nhài, Hoa Ly, Hoa Diên Vĩ nồng nàng đầy mê hoặc.","Tầng hương cuối: Gỗ Đàn Hương và Cây Bách ngọt ngào mang tính ấm, tạo cảm giác sảng khoái tươi mát."]
-    }
-]
   ),
   generateFakeProduct(
     7,
@@ -175,6 +74,7 @@ export const fakeProducts = [
     ]
     
   ),
+  
   generateFakeProduct(
     8,
     "whitening",
@@ -219,25 +119,131 @@ export const fakeProducts = [
     ]
   ),
   generateFakeProduct(
-    10,
+    1,
     "whitening",
     "Dạng lăn",
-    "SWEETIE",
-    "HƯƠNG NGỌT NGÀO",
-    "Dạng lăn: Cảm nhận 3 tầng hương điểm nét ngọt ngào.",
+    "DELUXE",
+    "HƯƠNG SANG TRỌNG",
+    "Dạng lăn: Cảm nhận 3 tầng hương mang theo nét kiêu kỳ, sang trọng.",
     "59.000",
-    "./assets/images/Whitening/Sweetie/roll_sweetie_side.png",
-    "./assets/images/Whitening/Sweetie/roll_sweetie_side.png",
-    "./assets/images/Whitening/Sweetie/roll_sweetie_front.png",
-    "./assets/images/Whitening/Sweetie/roll_right_sweetie.png",
- 
-    [
+    "/assets/images/Product/Products/Whitening/Deluxe/roll_deluxe_side.png",
+    "./assets/images/Product/Products/Whitening/Deluxe/roll_deluxe_side.png",
+    "/assets/images/Product/Products/Whitening/Deluxe/roll_deluxe_front.png",
+    "/assets/images/Product/Products/Whitening/Deluxe/rollon_right_deluxe.png",[
         {
-            subtitle:" Cảm nhận 3 tầng hương điểm nét ngọt ngào.",
-            content :["Tầng hương đầu: Mận, Cam mát lạnh, trong vắt tràn ngập dư vị ngọt lãng mạn của Cây Hồi.","Tầng hương giữa: Hạnh Nhân, Hoa Ly, Hoa Violet ngọt bùi như hóa thành chiếc khăn len mềm mại.","Tầng hương cuối: Gỗ Đàn Hương, Xạ Hương, Hổ Phách trở nên ngọt ngào, quyến rũ mãnh liệt hơn."]
+          subtitle:"Cảm nhận 3 tầng hương tôn nét kiêu kỳ, sang trọng",
+          content :["Tầng hương đầu: Cam Bergamot tươi mát hòa quyện cùng chút thanh dịu của quả Cam Mandarin.","Tầng hương giữa: hoa Nhài và hoa Linh Lan kiêu kỳ đua nhau tỏa hương.","Tầng hương cuối: Hoắc Hương đan xen một chút Vani ẩn chứa sự sang trọng, lôi cuốn lạ thường.          "]
         }
+        
     ]
   ),
+  generateFakeProduct(
+    4,
+    "whitening",
+    "Dạng xịt",
+    "DELUXE",
+    "HƯƠNG SANG TRỌNG",
+    "Dạng xịt: Cảm nhận 3 tầng hương mang nét kiêu kỳ, sang trọng.",
+    "59.000",
+    "./assets/images/Whitening/Deluxe/spray_deluxe_side.png",
+    "./assets/images/Whitening/Deluxe/spray_deluxe_ front.png",
+    "./assets/images/BackCard/Whitening/deluxe_backcard.png",
+    "./assets/images/BackCard/Mặt sau/Refree-2023-BCinfo3.jpg",
+    [
+      {
+        subtitle:"Dạng xịt tiện lợi tránh vi khuẩn quay trở lại vào trong cùng công thức mới đột phá giúp",
+        content:["Khử mùi suốt 24H*.","Giảm tiết mồ hôi suốt 48H*.","Không cồn, không Paraben, không gây vàng áo","Không gây kích ứng**.","Lưu hương suốt cả ngày"]
+      },
+      {
+        subtitle:"Cảm nhận 3 tầng hương tôn nét kiêu kỳ, sang trọng",
+        content :["Tầng hương đầu: Cam Bergamot tươi mát hòa quyện cùng chút thanh dịu của quả Cam Mandarin.","Tầng hương giữa: hoa Nhài và hoa Linh Lan kiêu kỳ đua nhau tỏa hương.","Tầng hương cuối: Hoắc Hương đan xen một chút Vani ẩn chứa sự sang trọng, lôi cuốn lạ thường."]
+      },
+        
+    ]
+    
+  ),
+  generateFakeProduct(
+    2,
+    "whitening",
+    "Dạng lăn",
+    "IN LOVE",
+    "HƯƠNG TÌNH YÊU",
+    "Dạng lăn: Cảm nhận 3 tầng hương say đắm trong tình yêu.",
+    "59.000",
+    "./assets/images/Whitening/In_Love/roll_inlove_side.png ",
+    "./assets/images/Whitening/In_Love/roll_inlove_side.png",
+    "./assets/images/Whitening/In_Love/roll_inlove_front.png",
+    "./assets/images/Whitening/In_Love/rollon_right_inlove.png",
+    [{
+        subtitle:"Cảm nhận 3 tầng hương say đắm trong tình yêu",
+        content:["Tầng hương đầu: Hoa Hồng Bulgary tinh tế hòa quyện thanh tao rõ nét từ Hoa Diên Vĩ.","Tầng hương giữa: Xạ Hương quyến rũ len lỏi cùng những cảm xúc ấn tượng từ Huệ Trắng, Hoa Cam.","Tầng hương cuối: Vani ẩn chứa sự sang trọng điểm xuyến nhẹ nhàng của hương Cây Cỏ."]
+    }]
+  ),
+   generateFakeProduct(
+    5,
+    "whitening",
+    "Dạng xịt",
+    "IN LOVE",
+    "HƯƠNG TÌNH YÊU",
+    "Dạng xịt: Cảm nhận 3 tầng huơng say đắm trong tình yêu.",
+    "59.000",
+    "./assets/images/Whitening/In_Love/spray_inlove_side.png",
+    "./assets/images/Whitening/In_Love/spray_inlove_ front.png",
+    "./assets/images/BackCard/Whitening/inlove_backcard.png",
+    "./assets/images/BackCard/Mặt sau/Refree-2023-BCinfo7.jpg",
+    [{
+        subtitle:"Dạng xịt tiện lợi tránh vi khuẩn quay trở lại vào trong cùng công thức mới đột phá giúp"
+        ,content:["Khử mùi suốt 24H*.","Giảm tiết mồ hôi suốt 48H*.","Không cồn, không Paraben, không gây vàng áo","Không gây kích ứng**.","Lưu hương suốt cả ngày"]
+    },
+    {
+        subtitle:"Cảm nhận 3 tầng hương say đắm trong tình yêu"
+        ,content:["Tầng hương đầu: Hoa Hồng Bulgary tinh tế hòa quyện thanh tao rõ nét từ Hoa Diên Vĩ.","Tầng hương giữa: Xạ Hương quyến rũ len lỏi cùng những cảm xúc ấn tượng từ Huệ Trắng, Hoa Cam.","Không cồn, không Paraben, không gây vàng áo","Tầng hương cuối: Vani ẩn chứa sự sang trọng điểm xuyến nhẹ nhàng của hương Cây Cỏ."]
+    },
+]
+  ),
+  generateFakeProduct(
+    3,
+    "whitening",
+    "Dạng lăn",
+    "SOPHIS",
+    "HƯƠNG THANH NHÃ",
+    "Dạng lăn: Cảm nhận 3 tầng hương mang nét thanh nhã đầy tinh tế.",
+    "59.000",
+    "./assets/images/Whitening/Sophis/roll_sophis_side.png",
+    "./assets/images/Whitening/Sophis/roll_sophis_side.png",
+    "./assets/images/Whitening/Sophis/roll_sophis_front.png",
+    "./assets/images/Whitening/Sophis/rollon_right_sophis.png"
+    ,[{
+        subtitle:"Cảm nhận 3 tầng mang nét thanh nhã đầy tinh tế",
+        content:["Tầng hương đầu: Cam thanh nhẹ mọng nước ôm lấy các lấy các nét hương trái cây mềm mại của Táo, Vải.","Tầng hương giữa:  Hoa Nhài, Hoa Ly, Hoa Diên Vĩ nồng nàng đầy mê hoặc.","Tầng hương cuối: Gỗ Đàn Hương và Cây Bách ngọt ngào mang tính ấm, tạo cảm giác sảng khoái tươi mát."]
+    }]
+  ),
+  
+ 
+  generateFakeProduct(
+    6,
+    "whitening",
+    "Dạng xịt",
+    "SOPHIS",
+    "HƯƠNG THANH NHÃ",
+    "Dạng xịt: Cảm nhận 3 tầng hương mang nét thanh nhã đầy tinh tế.",
+    "59.000",
+    "./assets/images/Whitening/Sophis/spray_sophis_side.png",
+    "./assets/images/Whitening/Sophis/spray_sophis_ front.png",
+    "./assets/images/BackCard/Whitening/sophis_backcard.png",
+    "./assets/images/BackCard/Mặt sau/Refree-2023-BCinfo8.jpg",
+    [{
+        subtitle:"Dạng xịt tiện lợi tránh vi khuẩn quay trở lại vào trong cùng công thức mới đột phá giúp ",
+        content:["Khử mùi suốt 24H*","Giảm tiết mồ hôi suốt 48H*.","Không cồn, không Paraben, không gây vàng áo","Không gây kích ứng**.","Lưu hương suốt cả ngày."]
+    },{
+        subtitle:"Cảm nhận 3 tầng mang nét thanh nhã đầy tinh tế",
+        content :["Tầng hương đầu: Cam thanh nhẹ mọng nước ôm lấy các lấy các nét hương trái cây mềm mại của Táo, Vải.","Tầng hương giữa: Hoa Nhài, Hoa Ly, Hoa Diên Vĩ nồng nàng đầy mê hoặc.","Tầng hương cuối: Gỗ Đàn Hương và Cây Bách ngọt ngào mang tính ấm, tạo cảm giác sảng khoái tươi mát."]
+    }
+]
+  ),
+  
+  
+ 
 ];
 
 export const fakeProductsJSON = JSON.stringify(fakeProducts, null, 2);

@@ -497,7 +497,7 @@ body {
 .Whitening .section .section-content .section-content_list .list .section-content-list_item {
     list-style: none;
     font-weight: 600;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .Whitening .section .section-content .section-content_list .list .section-content-list_item::before {

@@ -60,6 +60,35 @@ export const fakeProducts = [
       },
     ]
   ),
+   generateFakeProduct(
+    4,
+    "natural",
+    "Dạng xịt",
+    "ROSA Magnolia",
+    " HƯƠNG HỒNG MỘC LAN",
+    "Mùi hương Hồng Mộc Lan tươi mát cùng dạng xịt tiện lợi giúp giảm căng thẳng, mệt mỏi.",
+    "62.000",
+    "./assets/images/Product/Products/Natural/Rosa_Magnolia/spray_rosamagnolia_side.png",
+    "./assets/images/Product/Products/Natural/Rosa_Magnolia/spray_rosamagnolia_side.png",
+    "./assets/images/Product/Products/Natural/Rosa_Magnolia/rosemagnolia_backcard.png",
+    "./assets/images/Product/Products/Natural/Rosa_Magnolia/Refree-2023-BCinfo2.jpg",
+    [
+      {
+        subtitle:
+          "Hương hồng mộc lan thanh thoát cùng dạng xịt tiện lợi giúp",
+        content: [
+          "Giảm tiết mồ hôi suốt 48 giờ.",
+          "Khử mùi cơ thể suốt 24 giờ",
+          "Đặc biệt, KHÔNG GÂY Ố VÀNG",
+        ],
+      },
+      {
+        subtitle:
+        "Nếu các sản phẩm khử mùi khác có thể gây kích ứng hoặc thâm sạm vùng da dưới cánh tay, Refre Natural MỚI giúp khử mùi cơ thể và giảm tiết mồ hôi hiệu quả với thành phần chiết xuất từ thiên nhiên, thân thiện và an toàn cho da"      
+        ,content:[]
+      },
+    ]
+  ),
   generateFakeProduct(
     3,
     "natural",
@@ -89,35 +118,7 @@ export const fakeProducts = [
       },
     ]
   ),
-  generateFakeProduct(
-    4,
-    "natural",
-    "Dạng xịt",
-    "ROSA Magnolia",
-    " HƯƠNG HỒNG MỘC LAN",
-    "Mùi hương Hồng Mộc Lan tươi mát cùng dạng xịt tiện lợi giúp giảm căng thẳng, mệt mỏi.",
-    "62.000",
-    "./assets/images/Product/Products/Natural/Rosa_Magnolia/spray_rosamagnolia_side.png",
-    "./assets/images/Product/Products/Natural/Rosa_Magnolia/spray_rosamagnolia_side.png",
-    "./assets/images/Product/Products/Natural/Rosa_Magnolia/rosemagnolia_backcard.png",
-    "./assets/images/Product/Products/Natural/Rosa_Magnolia/Refree-2023-BCinfo2.jpg",
-    [
-      {
-        subtitle:
-          "Hương hồng mộc lan thanh thoát cùng dạng xịt tiện lợi giúp",
-        content: [
-          "Giảm tiết mồ hôi suốt 48 giờ.",
-          "Khử mùi cơ thể suốt 24 giờ",
-          "Đặc biệt, KHÔNG GÂY Ố VÀNG",
-        ],
-      },
-      {
-        subtitle:
-        "Nếu các sản phẩm khử mùi khác có thể gây kích ứng hoặc thâm sạm vùng da dưới cánh tay, Refre Natural MỚI giúp khử mùi cơ thể và giảm tiết mồ hôi hiệu quả với thành phần chiết xuất từ thiên nhiên, thân thiện và an toàn cho da"      
-        ,content:[]
-      },
-    ]
-  ),
+ 
   generateFakeProduct(
     5,
     "natural",
@@ -203,33 +204,7 @@ export const fakeProducts = [
         ,content:[]
       },
     ]
-  ),  generateFakeProduct(
-    6,
-    "natural",
-    "Dạng xịt",
-    "GREEN TEA",
-    " HƯƠNG TRÀ XANH",
-    "Mùi hương Trà Xanh thuần khiết cùng dạng xịt tiện lợi mang lại cảm giác tươi mới, sảng khoái và tràn đầy năng lượng mỗi ngày.",
-    "62.000",
-    "./assets/images/Product/Products/Natural/Green_Tea/spray_greentea_side.png",
-    "./assets/images/Product/Products/Natural/Green_Tea/spray_greentea_side.png",
-    "./assets/images/Product/Products/Natural/Green_Tea/greentea_backcard.png",
-    "./assets/images/Product/Products/Natural/Green_Tea/Refree-2023-BCinfo.jpg",   [
-      {
-        subtitle:
-          "Hương Trà Xanh thuần khiết cùng  dạng xịt tiện lợi giúp: ",
-        content: [
-          "Giảm tiết mồ hôi suốt 48 giờ.",
-          "Khử mùi cơ thể suốt 24 giờ",
-          "Đặc biệt, KHÔNG GÂY Ố VÀNG",
-        ],
-      },
-      {
-        subtitle:
-        "Nếu các sản phẩm khử mùi khác có thể gây kích ứng hoặc thâm sạm vùng da dưới cánh tay, Refre Natural MỚI giúp khử mùi cơ thể và giảm tiết mồ hôi hiệu quả với thành phần chiết xuất từ thiên nhiên, thân thiện và an toàn cho da"      
-        ,content:[]
-      },
-    ]
+
   ),
   generateFakeProduct(
     1,
@@ -260,6 +235,35 @@ export const fakeProducts = [
       },
     ]
   ),
+  generateFakeProduct(
+    6,
+    "natural",
+    "Dạng xịt",
+    "GREEN TEA",
+    " HƯƠNG TRÀ XANH",
+    "Mùi hương Trà Xanh thuần khiết cùng dạng xịt tiện lợi mang lại cảm giác tươi mới, sảng khoái và tràn đầy năng lượng mỗi ngày.",
+    "62.000",
+    "./assets/images/Product/Products/Natural/Green_Tea/spray_greentea_side.png",
+    "./assets/images/Product/Products/Natural/Green_Tea/spray_greentea_side.png",
+    "./assets/images/Product/Products/Natural/Green_Tea/greentea_backcard.png",
+    "./assets/images/Product/Products/Natural/Green_Tea/Refree-2023-BCinfo.jpg",   [
+      {
+        subtitle:
+          "Hương Trà Xanh thuần khiết cùng  dạng xịt tiện lợi giúp: ",
+        content: [
+          "Giảm tiết mồ hôi suốt 48 giờ.",
+          "Khử mùi cơ thể suốt 24 giờ",
+          "Đặc biệt, KHÔNG GÂY Ố VÀNG",
+        ],
+      },
+      {
+        subtitle:
+        "Nếu các sản phẩm khử mùi khác có thể gây kích ứng hoặc thâm sạm vùng da dưới cánh tay, Refre Natural MỚI giúp khử mùi cơ thể và giảm tiết mồ hôi hiệu quả với thành phần chiết xuất từ thiên nhiên, thân thiện và an toàn cho da"      
+        ,content:[]
+      },
+    ]
+  ),
+  
 ];
 
 export const fakeProductsJSON = JSON.stringify(fakeProducts, null, 2);
