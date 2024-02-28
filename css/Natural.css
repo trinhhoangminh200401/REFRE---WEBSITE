@@ -435,8 +435,6 @@ body {
 
 .Natural .description-containers .description-containers_div .button-action {
     margin-top: 3.6em;
-
-
     font-style: italic;
 }
 
@@ -459,13 +457,13 @@ body {
 .Natural .description-containers .description-containers_div .button-action .darkpink {
     background-image: linear-gradient(to right bottom, #fdc0ff, #facdf8, #facdf8, #facdf8, #facdf8, #e8ffed);
     border-top-left-radius: 20px;
-    border: 2px solid #65479d;
-    width: 100%;
+            box-shadow: inset #fff 0px 0px 14px 0px;
+    border: 3px solid #fff;    width: 100%;
 }
 
 .Natural .description-containers .description-containers_div .button-action .normalgreen {
-    border: 2px solid #65479d;
-    width: 100%;
+    border: 3px solid #fff;    width: 100%;
+            box-shadow: inset #fff 0px 0px 14px 0px;
 
     background-image: linear-gradient(to bottom right, #FDC0FF, #e8ffed, #e8ffed, #e8ffed);
 
@@ -590,11 +588,13 @@ body {
     padding: 0.5em 1em;
     border-bottom-right-radius: 25px;
     color: #644fa5;
-    border: 3px solid #65479d;
+    border: 4px solid #fff;
+        box-shadow: inset #fff 0px 0px 14px 0px;
 }
 
 .Natural .productList .productlist-container .card-body .btn-purple {
-    background-image: linear-gradient(to right, #FDC0FF, #FDC0FF, #e8ffed, #e8ffed);
+    box-shadow: inset #fff 0px 0px 14px 0px;
+    background-image: linear-gradient(to right, #FDC0FF, #FDC0FF,#FDC0FF, #e8ffed, #e8ffed);
 }
 
 .Natural .feedback>.container {

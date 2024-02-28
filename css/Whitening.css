@@ -244,6 +244,7 @@ body {
     font-weight: bold;
     font-size: 20px;
 }
+
 .Whitening .input-container input::placeholder {
     color: #644fa5;
     font-size: 20px;
@@ -351,7 +352,7 @@ body {
 }
 
 .Whitening .description-containers_content {
- 
+
     height: 320px;
     /* scrollbar-width: thin; */
     scrollbar-color: #c3adff;
@@ -429,21 +430,21 @@ body {
     position: absolute
 }
 
-.Whitening  .description-containers_div .button-action {
+.Whitening .description-containers_div .button-action {
     margin-top: 3.6em;
 
 
     font-style: italic;
 }
 
-.Whitening  .description-containers_div .button-action .btn {
+.Whitening .description-containers_div .button-action .btn {
     padding: 0.8em 0em;
     color: #fff;
     font-weight: 500;
     text-align: center;
 }
 
-.Whitening  .description-containers_div .button-action .price {
+.Whitening .description-containers_div .button-action .price {
     color: #fff;
     font-weight: 900;
     padding: 0.6em 0em;
@@ -456,13 +457,14 @@ body {
     background-image: linear-gradient(to right, #e1a2f6, #e1a2f6, #e1a2f6, #c99eeb);
     border-top-left-radius: 20px;
     border: 3px solid white;
+    box-shadow: inset #fff 0px 0px 14px 0px;
     width: 100%;
 }
 
-.Whitening  .description-containers_div .button-action .normalpurple{
+.Whitening .description-containers_div .button-action .normalpurple {
     border: 3px solid white;
     width: 100%;
-
+    box-shadow: inset #fff 0px 0px 14px 0px;
 
     background-image: linear-gradient(to right, #c29ced, #ae91f8);
 
@@ -583,11 +585,13 @@ body {
     border-bottom-right-radius: 25px;
     color: white;
     border: 5px solid #fff;
+    box-shadow: inset #fff 0px 0px 14px 0px;
 }
 
 .Whitening .productList .productlist-container .card-body .btn-purple {
     background: linear-gradient(to right, #e1a1f5, #e1a1f5, #c98cfe, #c98cfe);
     font-weight: 500;
+    box-shadow: inset #fff 0px 0px 14px 0px;
 }
 
 .Whitening .feedback>.container {

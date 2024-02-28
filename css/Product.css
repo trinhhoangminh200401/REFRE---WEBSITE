@@ -194,7 +194,7 @@ body {
 
 }
 
-.Product .btn {
+.btn {
     height: 100%;
     border-radius: 20px;
 }
@@ -470,6 +470,7 @@ body {
 
 .Product .productList1 .productlist-container .card-body .btn-purple {
     background-image: linear-gradient(to right, #FDC0FF, #FDC0FF, #e8ffed, #e8ffed);
+        box-shadow: inset #fff 0px 0px 14px 0px;
 }
 
 .Product .productList2 {
@@ -551,6 +552,7 @@ body {
 .Product .productList2 .productlist-container .card-body .btn-purple {
     background: linear-gradient(to right, #e1a1f5, #e1a1f5, #c98cfe, #c98cfe);
     font-weight: 500;
+    box-shadow: inset #fff 0px 0px 14px 0px;
 }
 
 .Product .feedback>.container {
