@@ -439,6 +439,34 @@ body {
     font-style: italic;
 }
 
+.Natural .description-containers .description-containers_div .readmore {
+    display: none;
+    animation: fadeInReadmore 0.5s ease forwards;
+    margin: 0 auto;
+
+}
+.Natural .description-containers .description-containers_div .readmore div{
+    width: 100%;
+}
+.Natural .description-containers .description-containers_div .readmore div a {
+    display: inline-block;
+    width: 33.3%;
+}
+.Natural .description-containers .description-containers_div .readmore div a img{
+width: 100%;
+}
+
+
+@keyframes fadeInReadmore {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .Natural .description-containers .description-containers_div .button-action .btn {
     padding: 0.8em 0em;
     color: #5d479c;

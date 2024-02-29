@@ -291,9 +291,21 @@ $(document).ready(function () {
 
               </div>
               <div class="button-action d-flex w-100">
-                  <p href="#" class="price darkpurple h5">59.0000đ</p>
-                  <a href="#" class="btn normalpurple h5">MUA NGAY</a>
+                  <p  class="price darkpurple h5">59.0000đ</p>
+                  <a href="" class="btn normalpurple fw-bold h5">MUA NGAY</a>
               </div>
+                <div class="readmore">
+             <div class="d-flex align-items-center m-auto justify-content-center flex-wrap">
+                <a href =""><img src="/assets/images/Partner/Logo_Shopee.png" /> </a>
+                <a href =""><img src="/assets/images/Partner/Logo_Hasaki.png" /> </a>
+                <a href =""><img src="/assets/images/Partner/Logo_Lazada.png" /> </a>
+                <a href =""><img src="/assets/images/Partner/Logo_Watsons.png" /> </a>
+                <a href =""><img src="/assets/images/Partner/Logo_medicare.png" /> </a>
+                <a href =""><img src="/assets/images/Partner/Logo_Gurdian.png" /> </a>
+
+            <div>
+                </div>
+
           </div>
       </div>
   </div>
@@ -479,6 +491,13 @@ $(document).ready(function () {
       console.error("no id valid!");
     }
   });
+  $(".normalpurple").click(function ()
+  {
+    // Fade out "MUA NGAY" button and product price
+    $(".normalpurple, .price").fadeOut();
+
+    $(".readmore").fadeIn();
+  })
   $(".popup img:nth-child(3)").click(function() {
     $(".togglepopup").fadeToggle("slow");
 

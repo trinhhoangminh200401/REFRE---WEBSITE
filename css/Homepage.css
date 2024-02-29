@@ -451,27 +451,18 @@ header .header-container__navigation {
     border: 3px solid white;
 }
 
-
-.HomePage .product .youtube {
-    position: relative;
-    width: 60%;
-    height: 26em;
-    margin: 10px auto;
-    padding-top: 20%;
+.HomePage .product .youtube div {
+        width: 100%;
 }
 
-.HomePage .product .youtube iframe {
+.HomePage .product .youtube video {
+   
     width: 100%;
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
     border: 5px solid #fff;
     border-radius: 20px;
 
 }
+
 
 .HomePage .feedback>.container {
 

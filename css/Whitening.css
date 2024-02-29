@@ -452,6 +452,25 @@ body {
     display: flex;
     justify-content: center;
 }
+.Whitening .description-containers .description-containers_div .readmore {
+    display: none;
+    animation: fadeInReadmore 0.5s ease forwards;
+    margin: 0 auto;
+
+}
+
+.Whitening .description-containers .description-containers_div .readmore div {
+    width: 100%;
+}
+
+.Whitening .description-containers .description-containers_div .readmore div a {
+    display: inline-block;
+    width: 33.3%;
+}
+
+.Whitening .description-containers .description-containers_div .readmore div a img {
+    width: 100%;
+}
 
 .Whitening .description-containers_div .button-action .darkpurple {
     background-image: linear-gradient(to right, #e1a2f6, #e1a2f6, #e1a2f6, #c99eeb);

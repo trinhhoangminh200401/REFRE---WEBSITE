@@ -221,7 +221,7 @@ $(document).ready(function ()
                 </div>
                 <a href="#" class="btn w-100 py-2  px-4 btn-purple d-flex align-items-center justify-content-between click">
                     <p class="mb-0 h5 fst-italic fw-bold">${product.price}đ</p>
-                    <p class="mb-0 h6 fst-italic ">Tìm hiểu thêm</p>
+                    <p class="mb-0 h6 fst-italic fw-bold ">Tìm hiểu thêm</p>
                 </a>
             </div>
         </div>
@@ -246,7 +246,7 @@ $(document).ready(function ()
               </div>
               <a href="#" class="btn w-100 py-2  px-4 btn-purple d-flex align-items-center justify-content-between click">
                   <p class="mb-0 h5 fst-italic">${product.price}đ</p>
-                  <p class="mb-0 h6 fst-italic ">Tìm hiểu thêm</p>
+                  <p class="mb-0 h6 fst-italic fw-bold">Tìm hiểu thêm</p>
               </a>
           </div>
       </div>

@@ -182,7 +182,7 @@ $(document).ready(function () {
                 </div>
                 <a href="#" class="btn w-100 py-2  px-4 btn-purple d-flex align-items-center justify-content-between click">
                     <p class="mb-0 h5 fst-italic fw-bold">${product.price}đ</p>
-                    <p class="mb-0 h6 fst-italic ">Tìm hiểu thêm</p>
+                    <p class="mb-0 h6 fst-italic fw-bold">Tìm hiểu thêm</p>
                 </a>
             </div>
         </div>
@@ -332,14 +332,26 @@ $(".form-control").on("keypress", function (event) {
               </div>
               <div class="button-action d-flex w-100">
                   <p href="#" class="price darkpink h5">${productDetails.price}đ</p>
-                  <a href="#" class="btn normalgreen h5">MUA NGAY</a>
+                  <a  class="btn normalgreen fw-bold h5">MUA NGAY</a>
               </div>
+              <div class="readmore">
+             <div class="d-flex align-items-center m-auto justify-content-center flex-wrap">
+                <a href =""><img src="/assets/images/Partner/Logo_Shopee.png" /> </a>
+                <a href =""><img src="/assets/images/Partner/Logo_Hasaki.png" /> </a>
+                <a href =""><img src="/assets/images/Partner/Logo_Lazada.png" /> </a>
+                <a href =""><img src="/assets/images/Partner/Logo_Watsons.png" /> </a>
+                <a href =""><img src="/assets/images/Partner/Logo_medicare.png" /> </a>
+                <a href =""><img src="/assets/images/Partner/Logo_Gurdian.png" /> </a>
+
+            <div>
+                </div>
+
           </div>
       </div>
   </div>
 `;
   }
-
+  
   function getProductIdFromUrl() {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get("id");
@@ -521,6 +533,13 @@ $(".form-control").on("keypress", function (event) {
       console.error("no id valid!");
     }
   });
+  $(".normalgreen").click(function ()
+  {
+    // Fade out "MUA NGAY" button and product price
+    $(".normalgreen, .price").fadeOut();
+
+    $(".readmore").fadeIn();
+  })
   $(".popup img:nth-child(3)").click(function() {
     $(".togglepopup").fadeToggle("slow");
 
