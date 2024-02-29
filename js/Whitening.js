@@ -292,7 +292,7 @@ $(document).ready(function () {
               </div>
               <div class="button-action d-flex w-100">
                   <p  class="price darkpurple h5">59.0000đ</p>
-                  <a href="" class="btn normalpurple fw-bold h5">MUA NGAY</a>
+                  <a  class="btn normalpurple fw-bold h5">MUA NGAY</a>
               </div>
                 <div class="readmore">
              <div class="d-flex align-items-center m-auto justify-content-center flex-wrap">
