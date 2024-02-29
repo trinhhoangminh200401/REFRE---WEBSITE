@@ -32,7 +32,7 @@ $(document).ready(function () {
       "<div class='nav-btn prev-slide'><img src='./assets/images/HomePage/left arrow.png' /></div>",
       "<div class='nav-btn next-slide'><img src='./assets/images/HomePage/right arrow.png' /></div>",
     ],
-    autoplay: true,
+    // autoplay: true,
     loop: true,
     autoplayTimeout: 3000,
     responsive: {
