@@ -15,6 +15,7 @@ function handlePageLogic (currentPage)
     switch (currentPage)
     {
                  
+           case'newdetail':
           case `NewDetail.html`:
             const detailNew = new DetailNew() 
             detailNew.inititiallize()
@@ -24,35 +25,49 @@ function handlePageLogic (currentPage)
             const homepage = new HomePage()
             homepage.initialize()
             break;
+        case"about":
         case`about.html`:
         case `About.html`:
             const about = new About();
             about.init();
             break;
+         case"natural":
         case`natural.html`:
         case `Natural.html`:
             const natural = new Natural()
             natural.initialize()
             break;
+         case"whitening":
         case`whitening.html`:
         case `Whitening.html`:
             const whitening = new Whitening()
             whitening.initialize()
             break;
+         case"quiz":
         case `Quiz.html`:
             const quiz = new Quiz()
             quiz.initialize()
             break;
+         case"news":
         case `News.html`:
             const news = new News()
             news.initialize()
             break;
+         case"product":
         case `Product.html`:
             const product = new Product()
             product.initialize()
+            break;
+        case"qna":
         case `QnA.html`:
             new QNA()
             break;
+        case "policy":
+        case "partner":
+        case "paymentpolicy":
+        case "policyonline":
+        case "policyregcognize":
+        case "policysecure":    
         case `Policy.html`:
         case `Partner.html`:
         case `PaymentPolicy.html`:
@@ -68,14 +83,8 @@ function handlePageLogic (currentPage)
 }
 
 function checkPageContext() {
-    const currentPage = window.location.href;
-    
-    if (currentPage === 'https://gilded-sunflower-1080d8.netlify.app/') {
-        handlePageLogic('index.html'); 
-    } else {
-        const currentPagePath = currentPage.split('/').pop();
-        handlePageLogic(currentPagePath); // Xử lý trang hiện tại
-    }
+    const currentPage = window.location.pathname.split('/').pop();
+    handlePageLogic(currentPage);
 }
 
 checkPageContext();
