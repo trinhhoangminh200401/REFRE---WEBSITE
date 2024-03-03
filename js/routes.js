@@ -68,8 +68,14 @@ function handlePageLogic (currentPage)
 }
 
 function checkPageContext() {
-    const currentPage = window.location.pathname.split('/').pop();
-    handlePageLogic(currentPage);
+    const currentPage = window.location.href;
+    
+    if (currentPage === 'https://gilded-sunflower-1080d8.netlify.app/') {
+        handlePageLogic('index.html'); 
+    } else {
+        const currentPagePath = currentPage.split('/').pop();
+        handlePageLogic(currentPagePath); // Xử lý trang hiện tại
+    }
 }
 
 checkPageContext();
