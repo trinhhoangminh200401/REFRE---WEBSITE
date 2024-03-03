@@ -17,9 +17,7 @@ function handlePageLogic (currentPage)
                  
           case `NewDetail.html`:
             const detailNew = new DetailNew() 
-            detailNew.LazyloadDetailNew()
-            detailNew.handleWindowScroll()
-            detailNew.handleLoadPage()
+            detailNew.inititiallize()
             break;
         case ``:
         case `index.html`:

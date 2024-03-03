@@ -84,7 +84,12 @@ handleWindowScroll=() =>
     $(".togglepopup").fadeToggle("slow");
   });
   }
- 
+  inititiallize ()
+  {
+      this.LazyloadDetailNew()
+       this.handleWindowScroll()
+       this.handleLoadPage()
+ }
 }
 export default DetailNew
 
