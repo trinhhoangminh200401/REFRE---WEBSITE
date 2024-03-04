@@ -1,48 +1,53 @@
 .header-container {
-    width: 100%;
-    background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
+  width: 100%;
+  background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
 
 
 }
 
 header .header-container__navigation {
-    width: 95%;
-    margin: 0 auto;
+  width: 95%;
+  margin: 0 auto;
 
 }
 
 .header-container__navigation button {
-    color: #87469c
+  color: #87469c
 }
 
 
 .header-container .navbar-nav__item {
-    margin: 0 15px;
-    color: #000;
+  margin: 0 15px;
+  color: #000;
 
 }
 
 .header-container .nav-link {
-    color: #000;
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 1.35em;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.6em;
+  padding: 0;
 
 }
-.header-container .nav-link:hover{
-    border-bottom:  2px solid black;
+
+.header-container .nav-link:hover {
+  border-bottom: 2px solid black;
 }
-.hoverActive{
-    border-bottom:  2px solid black;
+
+.hoverActive {
+  border-bottom: 2px solid black;
 
 }
+
 .header-container .navigation__logo img {
-    width: 9em;
-    object-fit: cover;
-    object-position: center;
+  width: 9em;
+  object-fit: cover;
+  object-position: center;
 
 }
-  /* .dropend .dropdown-toggle {
+
+/* .dropend .dropdown-toggle {
     color: salmon;
     margin-left: 1em;
   }
@@ -74,380 +79,404 @@ header .header-container__navigation {
 
 .header-container .navigation__logo .img2 {
 
-    object-fit: cover;
-    object-position: center;
-    width: 6em;
+  object-fit: cover;
+  object-position: center;
+  width: 6em;
 
 }
+
 .dropdown-content {
-    visibility: hidden;
-    padding: 0;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+  visibility: hidden;
+  padding: 0;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content li {
+  color: black;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+
+  padding: 0.5em;
+  text-align: left;
+}
+
+.dropdown-content li a {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content li :hover {
+  background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
+
+  color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  visibility: visible;
+}
+
+/* Add this block of CSS for the animation */
+@keyframes fadeInside {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
   }
-  
-  /* Style the links inside the dropdown */
-  .dropdown-content li {
-    color: black;
-    text-decoration: none;
-    display: block;
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Existing styles for mobile view */
+
+  .navbar-nav .dropdown-content {
+    animation: fadeInside 3s ease-out;
+    position: static;
+    right: 0%;
     width: 100%;
-    
-    padding: 0.5em;
-    text-align: left;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
   }
-  .dropdown-content li a {
-      font-weight: 600;
-      text-transform: uppercase;
+
+  .navbar-nav .dropdown:hover .dropdown-content {
+    display: inline-block;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
   }
-  /* Add a grey background to dropdown links on hover */
-  .dropdown-content li :hover {
-      background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
-  
-    color: black;
-  }
-  
-  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
-  .dropdown:hover .dropdown-content {
-      visibility:visible ;
-  }
-  /* Add this block of CSS for the animation */
-  @keyframes fadeInside {
-      from {
-        opacity: 0;
-        transform: translateY(-10px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
-    @media screen and (max-width: 600px) {
-      /* Existing styles for mobile view */
-    
-      .navbar-nav .dropdown-content {
-        animation: fadeInside 3s ease-out;
-        position: static;
-        right: 0%;
-        width: 100%;
-        display: none;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s, visibility 0.3s;
-      }
-    
-      .navbar-nav .dropdown:hover .dropdown-content {
-      display: inline-block;
-      height: 100%;
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-    
-  
+}
+
+
 .About .bannerFirst {
-    background-image: url("/assets/images/About/About_FirstBanner.png");
-    ;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    height: 35em;
+  background-image: url("/assets/images/About/About_FirstBanner.png");
+  ;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: 35em;
 }
 
 @font-face {
-    font-family: 'ProductSansBoldItalic';
-    font-weight: 700;
-    src: url("/assets/fonts/ProductSansBoldItalic.otf") format('opentype');
+  font-family: 'ProductSansBoldItalic';
+  font-weight: 700;
+  src: url("/assets/fonts/ProductSansBoldItalic.otf") format('opentype');
 }
 
 .About .bannerFirst article div h2 {
-    font-family: 'ProductSansBoldItalic', sans-serif;
-    font-size: 3em;
-    font-weight: bold;
+  font-family: 'ProductSansBoldItalic', sans-serif;
+  font-size: 3em;
+  font-weight: bold;
 
 
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #817990;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #817990;
 
 }
 
 .About .bannerSecond {
-    background-image: url("/assets/images/About/About_SecondBanner.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 4em;
+  background-image: url("/assets/images/About/About_SecondBanner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 4em;
 }
 
 .About .section {
-    width: 15em;
-    margin-left: -1em;
-    border: 3px solid white;
-    box-shadow: #fff 0px 0px 20px 0px;
-    border-radius: 40px;
+  width: 15em;
+  margin-left: -1em;
+  border: 3px solid white;
+  box-shadow: #fff 0px 0px 20px 0px;
+  border-radius: 40px;
 
 }
 
 .About .section .section_Title {
-    font-size: 30px;
-    width: 100%;
-    box-shadow: inset #fff 0px 0px 14px 0px;
-    background-color: #7571fa;
-    height: 100%;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 40px;
-    margin: 0;
-    color: white;
-    font-weight: 700;
-    text-transform: uppercase;
+  font-size: 30px;
+  width: 100%;
+  box-shadow: inset #fff 0px 0px 14px 0px;
+  background-color: #7571fa;
+  height: 100%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  margin: 0;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
 
 }
 
 
 .About .bannerSecond .container-fluid blockquote {
-    font-weight: 100;
-    font-size: 1.7em;
-    line-height: 1.4;
-    position: relative;
-    margin: 0;
-    color: #d4eaf5;
-    font-weight: 600;
-    padding: .5em;
+  font-weight: 100;
+  font-size: 1.7em;
+  line-height: 1.4;
+  position: relative;
+  margin: 0;
+  color: #d4eaf5;
+  font-weight: 600;
+  padding: .5em;
 
 }
-.About .bannerSecond .container-fluid .bannnerContent p{
-    font-size: 1.7em;
-    font-weight: 600;
-    font-style: italic;
-    color: #d4eaf5;  
+
+.About .bannerSecond .container-fluid .bannnerContent p {
+  font-size: 1.7em;
+  font-weight: 600;
+  font-style: italic;
+  color: #d4eaf5;
 }
+
 .About .bannerSecond .container-fluid p {
-    font-size: 1.3em;
-    font-weight: 400;
-    font-style: italic;
-    color: #d4eaf5;
+  font-size: 1.3em;
+  font-weight: 400;
+  font-style: italic;
+  color: #d4eaf5;
 
 }
 
 .About .bannerSecond .container-fluid blockquote:before,
 blockquote:after {
-    position: absolute;
-    color: #f1efe6;
-    font-size: 8rem;
-    width: 4rem;
-    height: 4rem;
+  position: absolute;
+  color: #f1efe6;
+  font-size: 8rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .About .bannerSecond .container-fluid blockquote:before {
-    content: '“';
-    left: -0.6em;
-    bottom: 0.2em;
+  content: '“';
+  left: -0.6em;
+  bottom: 0.2em;
 }
 
 .About .bannerSecond .container-fluid blockquote:after {
-    content: '”';
-    right: -0.4em;
-    bottom: 0.2em;
+  content: '”';
+  right: -0.4em;
+  bottom: 0.2em;
 }
 
 
 .About .bannerSecond .Breakthrough-formula .card-user h4 {
-    color: white;
-    -webkit-text-stroke-width: 1px;
-    font-family: 'Kanit', sans-serif;
-        font-size: 20px;
-    -webkit-text-stroke-color: #416f37;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  font-family: 'Kanit', sans-serif;
+  font-size: 20px;
+  -webkit-text-stroke-color: #416f37;
 }
 
 
 .About .container-card .cardContent .cardContent__item .card-content__item__title-shadow {
-    width: 8em;
-     box-shadow: 6px 7px 0px #a6aff2;
-    border-radius: 40px;
-    margin: 1.2em 0;
-    
+  width: 8em;
+  box-shadow: 6px 7px 0px #a6aff2;
+  border-radius: 40px;
+  margin: 1.2em 0;
+
 }
 
 
 .About .container-card .cardContent .cardContent__item .card-content__item__title-shadow .card-content__item__title {
-    width: 100%;
-    border: 3px solid white;
-    
-    box-shadow: #fff 0px 0px 20px 0px;
-    border-radius: 40px;
+  width: 100%;
+  border: 3px solid white;
+
+  box-shadow: #fff 0px 0px 20px 0px;
+  border-radius: 40px;
 
 
 }
 
 .About .container-card .cardContent .cardContent__item .card-content__item__title-shadow .card-content__item__title .title {
-    font-size: 3em;
-    width: 100%;
-    box-shadow: inset #fff 0px 0px 14px 0px;
-    background-color: #7571fa;
-    height: 100%;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 40px;
-    margin: 0;
-    color: white;
-    font-weight: 700;
-    text-transform: uppercase;
+  font-size: 3em;
+  width: 100%;
+  box-shadow: inset #fff 0px 0px 14px 0px;
+  background-color: #7571fa;
+  height: 100%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  margin: 0;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
 
 }
 
 
 .About .container-card .cardContent .cardContent__item {
-   max-width: 90%;
+  max-width: 90%;
 }
 
 .About .container-card .cardContent .cardContent__item .card {
-    background-image: linear-gradient(to bottom, #efedfb, #e9e3ff, #e9e3ff, #e9e3ff);
-    border-radius: 20px;
-    border: 3px solid #fff;
-    padding: 0;
+  background-image: linear-gradient(to bottom, #efedfb, #e9e3ff, #e9e3ff, #e9e3ff);
+  border-radius: 20px;
+  border: 3px solid #fff;
+  padding: 0;
 }
-  
- .About .container-card .cardContent .cardContent__item .card > .row {
-    height: 100%;
-  }
- .About .container-card .cardContent .cardContent__item .card > .row > .col-lg-5{
-    min-height: 100%;
-  }
-  .About .container-card .cardContent .cardContent__item .card > .row > .col-lg-5 .img {
-    border-radius: 20px;
-    border: 3px solid #fff;
-    object-fit:cover ;
-    width: 100%;
-    height: 100%;
-    min-height: 300px;
-    box-shadow: rgba(175, 181, 241, 1) 0px 13px 27px -5px, rgb(175, 181, 241) 0px 8px 16px -8px;
-  }
-  .About .container-card .cardContent .cardContent__item .card > .row  .col-lg-7{
-    padding:0 4em;
 
-    color:#5c3bac;
+.About .container-card .cardContent .cardContent__item .card>.row {
+  height: 100%;
 }
-  .About .container-card .cardContent .cardContent__item .card > .row  .col-lg-7 h5{
-    font-weight: 800;
-    font-size: 2.8em;
-    line-height: 0.8;
-    text-transform: uppercase;
-  }
-  .About .container-card .cardContent .cardContent__item .card > .row  .col-lg-7 p{
-    font-weight: 600;
-  }
-.About .cardAnnounce{
-    background-color: rgba(235, 229, 253,0.5)
-  }
- .About .cardAnnounce .container .row h2{
-    width: fit-content;
-    color:#5c3bac;
-    font-weight: 700;
-    
-    text-transform: uppercase;
-  }
- .About .cardAnnounce .container .row > .col-4{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-  }
-    .About .bannerThird {
-    height: 500px;
-    background:rgba(233, 227, 253,0.6);
+
+.About .container-card .cardContent .cardContent__item .card>.row>.col-lg-5 {
+  min-height: 100%;
 }
+
+.About .container-card .cardContent .cardContent__item .card>.row>.col-lg-5 .img {
+  border-radius: 20px;
+  border: 3px solid #fff;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  box-shadow: rgba(175, 181, 241, 1) 0px 13px 27px -5px, rgb(175, 181, 241) 0px 8px 16px -8px;
+}
+
+.About .container-card .cardContent .cardContent__item .card>.row .col-lg-7 {
+  padding: 0 4em;
+
+  color: #5c3bac;
+}
+
+.About .container-card .cardContent .cardContent__item .card>.row .col-lg-7 h5 {
+  font-weight: 800;
+  font-size: 2.8em;
+  line-height: 0.8;
+  text-transform: uppercase;
+}
+
+.About .container-card .cardContent .cardContent__item .card>.row .col-lg-7 p {
+  font-weight: 600;
+}
+
+.About .cardAnnounce {
+  background-color: rgba(235, 229, 253, 0.5)
+}
+
+.About .cardAnnounce .container .row h2 {
+  width: fit-content;
+  color: #5c3bac;
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.About .cardAnnounce .container .row>.col-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.About .bannerThird {
+  height: 500px;
+  background: rgba(233, 227, 253, 0.6);
+}
+
 footer {
 
-    background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
-    min-height: 250px;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
+  background-image: linear-gradient(to right top, #ccd3ff, #ccd3ff, #ede4ff, #ede4ff);
+  min-height: 250px;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
 }
 
 footer .container-footer {
-    bottom: 0;
-    
+  bottom: 0;
+
 }
 
 
 footer .container div p {
-    font-size: 14px;
-    margin: 0 10px;
-    font-weight: 600;
+  font-size: 14px;
+  margin: 0 10px;
+  font-weight: 600;
 }
+
 footer .container div ul {
-    display: flex;
-    list-style-type: none;
-    font-size: 14px;
+  display: flex;
+  list-style-type: none;
+  font-size: 14px;
 
 }
-footer .container div ul li a{
+
+footer .container div ul li a {
   color: #5c3bac;
-   text-decoration: none;
+  text-decoration: none;
 }
-footer .container div ul li{
-    margin:  10px 5px;
-    font-weight: 600;
-    cursor: pointer;
+
+footer .container div ul li {
+  margin: 10px 5px;
+  font-weight: 600;
+  cursor: pointer;
 
 }
+
 footer .container div ul li:after {
- content:"|"
+  content: "|"
 }
-footer .container div ul li:last-child:after{
-  content:""
+
+footer .container div ul li:last-child:after {
+  content: ""
 }
 
 .togglepopup {
   visibility: visible;
-  transition:visibility 0.5s ease;
+  transition: visibility 0.5s ease;
 }
+
 .togglepopup.hidden {
   visibility: hidden;
 }
 
 
 .fade-in {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 .fade-in.loaded {
-    opacity: 1;
+  opacity: 1;
 }
 
 .popup {
-    bottom: 30%;
-    font-size: 20px;
-    right: 0em;
-    z-index: 70;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: fixed;
-  }
-.togglepopup{
+  bottom: 30%;
+  font-size: 20px;
+  right: 0em;
+  z-index: 70;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+}
+
+.togglepopup {
   display: none;
 }
 
 
 .popup img {
-    width: 70%;
+  width: 70%;
 }

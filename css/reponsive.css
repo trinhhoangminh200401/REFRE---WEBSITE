@@ -179,8 +179,18 @@
      }
 
 
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-left: 0.2rem;
+        padding-right: 0.2rem;
+}
+.header-container .navigation__logo img {
+    width: 7em;
+    object-fit: cover;
+    object-position: center;
 
+}
  }
+ 
 
  @media only screen and (max-width: 1000px) {
 
@@ -242,7 +252,7 @@
      }
 
      .header-container .nav-link {
-         font-size: 1.2em;
+         font-size: 1.4em;
          white-space: nowrap;
      }
  }

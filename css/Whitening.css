@@ -87,7 +87,8 @@ header .header-container__navigation {
     color: #000;
     text-transform: uppercase;
     font-weight: 800;
-    font-size: 1.35em;
+    font-size: 1.6em;
+    padding: 0;
 
 }
 
@@ -452,6 +453,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
 .Whitening .description-containers .description-containers_div .readmore {
     display: none;
     animation: fadeInReadmore 0.5s ease forwards;
