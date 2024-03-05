@@ -23,7 +23,8 @@ header .header-container__navigation {
     color: #000;
     text-transform: uppercase;
     font-weight: 800;
-    font-size: 1.35em;
+    /* font-size: 1.35em; */
+    margin: 10px 0;
     width: 100%;
 
 }

@@ -87,8 +87,7 @@ header .header-container__navigation {
     color: #000;
     text-transform: uppercase;
     font-weight: 800;
-    font-size: 1.65em;
-    padding: 0;
+   margin: 10px 0;
 
 }
 
