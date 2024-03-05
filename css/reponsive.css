@@ -180,8 +180,12 @@
 
 
 .navbar-expand-lg .navbar-nav .nav-link{
-    padding-left: 0.2rem;
-        padding-right: 0.2rem;
+    padding-left: 0.3rem;
+        padding-right: 0.3rem;
+}
+.header-container .nav-link {
+    font-size: 1.7em;
+    white-space: nowrap;
 }
 
  }
@@ -250,13 +254,6 @@
          font-size: 1.6em;
          white-space: nowrap;
      }
- }
-
- @media only screen and (max-width: 1400px) {
-    .header-container .nav-link {
-            font-size: 1.88em;
-            white-space: nowrap;
-        }
  }
  @media only screen and (min-width: 992px) and (max-width:1062px) {
      .header-container .nav-link {
