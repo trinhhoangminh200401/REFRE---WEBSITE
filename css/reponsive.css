@@ -254,16 +254,16 @@
 
  @media only screen and (min-width: 992px) and (max-width:1062px) {
      .header-container .nav-link {
-         font-size: 0.9em;
+         font-size: 1em;
          white-space: nowrap;
      }
 
      .header-container__navigation .navigation__logo .img2 {
-         width: 4em;
+         width: 5em;
      }
 
      .header-container__navigation .navigation__logo img {
-         width: 4em;
+         width: 6em;
      }
  }
 
@@ -299,7 +299,8 @@
      }
 
      .header-container .nav-link {
-         font-size: 1.2em;
+         font-size: 1.4em;
+         padding: 0;
          white-space: nowrap;
      }
 
@@ -308,11 +309,11 @@
      }
 
      .header-container__navigation .navigation__logo .img2 {
-         width: 8em;
+         width: 5em;
      }
 
      .header-container__navigation .navigation__logo img {
-         width: 5em;
+         width: 7em;
      }
 
  }

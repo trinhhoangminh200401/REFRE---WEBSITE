@@ -64,7 +64,7 @@ header .header-container__navigation {
 }
 
 .header-container .navigation__logo img {
-    width: 9em;
+    width: 8em;
     object-fit: cover;
     object-position: center;
 

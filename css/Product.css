@@ -87,7 +87,7 @@ header .header-container__navigation {
     color: #000;
     text-transform: uppercase;
     font-weight: 800;
-    font-size: 1.6em;
+    font-size: 1.65em;
     padding: 0;
 
 }
@@ -102,7 +102,7 @@ header .header-container__navigation {
 }
 
 .header-container .navigation__logo img {
-    width: 9em;
+    width: 8em;
     object-fit: cover;
     object-position: center;
 
