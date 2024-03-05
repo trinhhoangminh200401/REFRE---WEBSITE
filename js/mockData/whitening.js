@@ -48,7 +48,11 @@ export const fakeProducts = [
         {
             subtitle:" Cảm nhận 3 tầng hương điểm nét ngọt ngào.",
             content :["Tầng hương đầu: Mận, Cam mát lạnh, trong vắt tràn ngập dư vị ngọt lãng mạn của Cây Hồi.","Tầng hương giữa: Hạnh Nhân, Hoa Ly, Hoa Violet ngọt bùi như hóa thành chiếc khăn len mềm mại.","Tầng hương cuối: Gỗ Đàn Hương, Xạ Hương, Hổ Phách trở nên ngọt ngào, quyến rũ mãnh liệt hơn."]
-        }
+      },
+      {
+        subtitle: "Công dụng:",
+        content:["Khử mùi cơ thể suốt cả ngày và giảm tiết mồ hôi hiệu quả đến 48 giờ*.","Công thức chứa thành phần Cyclodextrin hoạt động như bộ khóa thông minh – khóa mùi cơ thể vào bên trong lõi.","Cyclodextrin khi cơ thể tăng tiết mồ hôi, đồng thời giải phóng phân tử kiểm soát mùi giúp giữ hương thơm thật lâu.","Các hạt phấn cực mịn chiết xuất từ Cây Tre giúp hút ẩm liên tục, giữ cho vùng da dưới cánh tay luôn mềm mịn, khô thoáng."," Chiết xuất Aloe Vera (Nha Đam) và Licorice (Cam Thảo) giúp dưỡng trắng da. ","Không gây ố vàng."]
+      }
     ]
   ),
   generateFakeProduct(
@@ -92,7 +96,12 @@ export const fakeProducts = [
         {
             subtitle:"Cảm nhận 3 tầng của sự ngay thơ trong trẻo            ",
             content :["Tầng hương đầu: Cam Bergamot cay nồng nhấn nhá chút ấm áp của Ngọc Lan Tây.","Tầng hương giữa:  Hoa Hồng, Đinh Hương, Linh Lan nhấn chìm vào khu vườn đầy hoa gần gũi.","Tầng hương cuối: Hoa Vòi Voi, Đào, Xạ Hương, Đậu Tonka để lại dư âm ngọt ngào, tinh thiết nhưng kém phần thu hút."]
-        }
+      },
+      {
+        subtitle: "Công dụng:",
+        content:["Khử mùi cơ thể suốt cả ngày và giảm tiết mồ hôi hiệu quả đến 48 giờ*.","Công thức chứa thành phần Cyclodextrin hoạt động như bộ khóa thông minh – khóa mùi cơ thể vào bên trong lõi.","Cyclodextrin khi cơ thể tăng tiết mồ hôi, đồng thời giải phóng phân tử kiểm soát mùi giúp giữ hương thơm thật lâu.","Các hạt phấn cực mịn chiết xuất từ Cây Tre giúp hút ẩm liên tục, giữ cho vùng da dưới cánh tay luôn mềm mịn, khô thoáng."," Chiết xuất Aloe Vera (Nha Đam) và Licorice (Cam Thảo) giúp dưỡng trắng da. ","Không gây ố vàng."]
+      }
+
     ]
   ),
   generateFakeProduct(
@@ -133,7 +142,12 @@ export const fakeProducts = [
         {
           subtitle:"Cảm nhận 3 tầng hương tôn nét kiêu kỳ, sang trọng",
           content :["Tầng hương đầu: Cam Bergamot tươi mát hòa quyện cùng chút thanh dịu của quả Cam Mandarin.","Tầng hương giữa: hoa Nhài và hoa Linh Lan kiêu kỳ đua nhau tỏa hương.","Tầng hương cuối: Hoắc Hương đan xen một chút Vani ẩn chứa sự sang trọng, lôi cuốn lạ thường.          "]
-        }
+      },
+      {
+        subtitle: "Công dụng:",
+        content:["Khử mùi cơ thể suốt cả ngày và giảm tiết mồ hôi hiệu quả đến 48 giờ*.","Công thức chứa thành phần Cyclodextrin hoạt động như bộ khóa thông minh – khóa mùi cơ thể vào bên trong lõi.","Cyclodextrin khi cơ thể tăng tiết mồ hôi, đồng thời giải phóng phân tử kiểm soát mùi giúp giữ hương thơm thật lâu.","Các hạt phấn cực mịn chiết xuất từ Cây Tre giúp hút ẩm liên tục, giữ cho vùng da dưới cánh tay luôn mềm mịn, khô thoáng."," Chiết xuất Aloe Vera (Nha Đam) và Licorice (Cam Thảo) giúp dưỡng trắng da. ","Không gây ố vàng."]
+      }
+
         
     ]
   ),
@@ -177,7 +191,13 @@ export const fakeProducts = [
     [{
         subtitle:"Cảm nhận 3 tầng hương say đắm trong tình yêu",
         content:["Tầng hương đầu: Hoa Hồng Bulgary tinh tế hòa quyện thanh tao rõ nét từ Hoa Diên Vĩ.","Tầng hương giữa: Xạ Hương quyến rũ len lỏi cùng những cảm xúc ấn tượng từ Huệ Trắng, Hoa Cam.","Tầng hương cuối: Vani ẩn chứa sự sang trọng điểm xuyến nhẹ nhàng của hương Cây Cỏ."]
-    }]
+    },
+    {
+        subtitle: "Công dụng:",
+        content:["Khử mùi cơ thể suốt cả ngày và giảm tiết mồ hôi hiệu quả đến 48 giờ*.","Công thức chứa thành phần Cyclodextrin hoạt động như bộ khóa thông minh – khóa mùi cơ thể vào bên trong lõi.","Cyclodextrin khi cơ thể tăng tiết mồ hôi, đồng thời giải phóng phân tử kiểm soát mùi giúp giữ hương thơm thật lâu.","Các hạt phấn cực mịn chiết xuất từ Cây Tre giúp hút ẩm liên tục, giữ cho vùng da dưới cánh tay luôn mềm mịn, khô thoáng."," Chiết xuất Aloe Vera (Nha Đam) và Licorice (Cam Thảo) giúp dưỡng trắng da. ","Không gây ố vàng."]
+      }
+
+    ]
   ),
    generateFakeProduct(
     5,
@@ -216,7 +236,13 @@ export const fakeProducts = [
     ,[{
         subtitle:"Cảm nhận 3 tầng mang nét thanh nhã đầy tinh tế",
         content:["Tầng hương đầu: Cam thanh nhẹ mọng nước ôm lấy các lấy các nét hương trái cây mềm mại của Táo, Vải.","Tầng hương giữa:  Hoa Nhài, Hoa Ly, Hoa Diên Vĩ nồng nàng đầy mê hoặc.","Tầng hương cuối: Gỗ Đàn Hương và Cây Bách ngọt ngào mang tính ấm, tạo cảm giác sảng khoái tươi mát."]
-    }]
+    },
+      {
+        subtitle: "Công dụng:",
+        content:["Khử mùi cơ thể suốt cả ngày và giảm tiết mồ hôi hiệu quả đến 48 giờ*.","Công thức chứa thành phần Cyclodextrin hoạt động như bộ khóa thông minh – khóa mùi cơ thể vào bên trong lõi.","Cyclodextrin khi cơ thể tăng tiết mồ hôi, đồng thời giải phóng phân tử kiểm soát mùi giúp giữ hương thơm thật lâu.","Các hạt phấn cực mịn chiết xuất từ Cây Tre giúp hút ẩm liên tục, giữ cho vùng da dưới cánh tay luôn mềm mịn, khô thoáng."," Chiết xuất Aloe Vera (Nha Đam) và Licorice (Cam Thảo) giúp dưỡng trắng da. ","Không gây ố vàng."]
+      }
+
+    ]
   ),
   
  

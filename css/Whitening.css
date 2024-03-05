@@ -203,7 +203,9 @@ body {
 /* Remove border from input */
 .Whitening .input-container .form-control {
     border-left: 2px solid #644fa5;
-    border-right: 2px solid #644fa5;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
     padding: 2em;
     border-radius: 20px;
 
@@ -231,6 +233,7 @@ body {
 .Whitening .input-container {
     height: 70px;
     border-radius: 30px;
+    width: 80%;
     background-color: #ffffff;
 
 }

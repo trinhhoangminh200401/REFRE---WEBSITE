@@ -201,12 +201,17 @@ body {
 }
 
 /* Remove border from input */
+.Product .input-container{
+    width: 100%;
+}
 .Product .input-container .form-control {
     border-left: 2px solid #644fa5;
-    border-right: 2px solid #644fa5;
+    border-right: none; 
+    border-top: none;
+    border-bottom: none;
     padding: 2em;
     border-radius: 20px;
-
+  
 
 }
 
@@ -230,6 +235,7 @@ body {
 
 .Product .input-container {
     height: 70px;
+    width: 80%;
     border-radius: 30px;
     background-color: #ffffff;
 
@@ -312,7 +318,7 @@ body {
 
 .Product .description-containers .description-containers_div .button-action {
     margin-top: 3.6em;
-
+    
 
     font-style: italic;
 }

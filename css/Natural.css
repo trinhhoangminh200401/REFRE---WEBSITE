@@ -202,7 +202,10 @@ body {
 /* Remove border from input */
 .Natural .input-container .form-control {
     border-left: 2px solid #644fa5;
-    border-right: 2px solid #644fa5;
+    border-left: 2px solid #644fa5;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
     padding: 2em;
     border-radius: 20px;
 
@@ -231,6 +234,7 @@ body {
 
 .Natural .input-container {
     height: 70px;
+    width: 80%;
     border-radius: 30px;
     background-color: #ffffff;
 
