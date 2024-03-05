@@ -15,7 +15,8 @@ function handlePageLogic (currentPage)
     switch (currentPage)
     {
                  
-           case'newdetail':
+        case 'newdetail':
+        case"newdetail.html":
           case `NewDetail.html`:
             const detailNew = new DetailNew() 
             detailNew.inititiallize()
@@ -43,22 +44,27 @@ function handlePageLogic (currentPage)
             const whitening = new Whitening()
             whitening.initialize()
             break;
-         case"quiz":
+        case "quiz":
+        case "quiz.html":
         case `Quiz.html`:
             const quiz = new Quiz()
             quiz.initialize()
             break;
-         case"news":
+        case "news":
+        case "news.html":
         case `News.html`:
             const news = new News()
             news.initialize()
             break;
          case"product":
+        case"product.html":
         case `Product.html`:
             const product = new Product()
             product.initialize()
             break;
-        case"qna":
+        case "qna":
+        case"qna.html":
+   
         case `QnA.html`:
             new QNA()
             break;

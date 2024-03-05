@@ -1049,13 +1049,13 @@ $(".form-control").on("keypress", function (event) {
     this.handleInputSearch()
     $(document).on("click", ".click", this.handleClick.bind(this));
     this.handleLoadPage()
-  //   $(".normalgreen").click(function ()
-  // {
-  //   // Fade out "MUA NGAY" button and product price
-  //   $(".normalgreen, .price").fadeOut();
+    $(".normalpurple").click(function ()
+  {
+    // Fade out "MUA NGAY" button and product price
+    $(".normalpurple, .price").fadeOut();
 
-  //   $(".readmore").fadeIn();
-  // })
+    $(".readmore").fadeIn();
+  })
   }
 
 }
