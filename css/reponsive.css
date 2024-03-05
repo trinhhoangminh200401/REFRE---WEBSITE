@@ -247,11 +247,17 @@
      }
 
      .header-container .nav-link {
-         font-size: 1.4em;
+         font-size: 1.6em;
          white-space: nowrap;
      }
  }
 
+ @media only screen and (max-width: 1400px) {
+    .header-container .nav-link {
+            font-size: 1.88em;
+            white-space: nowrap;
+        }
+ }
  @media only screen and (min-width: 992px) and (max-width:1062px) {
      .header-container .nav-link {
          font-size: 1em;
