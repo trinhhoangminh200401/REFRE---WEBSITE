@@ -49,8 +49,8 @@ export const fakeProducts = [
           "Hương hồng mộc lan thanh thoát cùng các thành phần chiết xuất từ thiên nhiên giúp        ",
         content: [
           "Giảm tiết mồ hôi suốt 48 giờ.",
-          "Khử mùi cơ thể suốt 24 giờ",
-          "Đặc biệt, KHÔNG GÂY Ố VÀNG",
+          "Khử mùi cơ thể suốt 24 giờ.",
+          "Đặc biệt, KHÔNG GÂY Ố VÀNG.",
         ],
       },
      {
@@ -78,8 +78,8 @@ export const fakeProducts = [
           "Hương hồng mộc lan thanh thoát cùng dạng xịt tiện lợi giúp",
         content: [
           "Giảm tiết mồ hôi suốt 48 giờ.",
-          "Khử mùi cơ thể suốt 24 giờ",
-          "Đặc biệt, KHÔNG GÂY Ố VÀNG",
+          "Khử mùi cơ thể suốt 24 giờ.",
+          "Đặc biệt, KHÔNG GÂY Ố VÀNG.",
         ],
       },
       {
@@ -107,8 +107,8 @@ export const fakeProducts = [
           "Hương gỗ ấm áp cùng các thành phần chiết xuất từ thiên nhiên giúp         ",
         content: [
           "Giảm tiết mồ hôi suốt 48 giờ.",
-          "Khử mùi cơ thể suốt 24 giờ",
-          "Đặc biệt, KHÔNG GÂY Ố VÀNG",
+          "Khử mùi cơ thể suốt 24 giờ.",
+          "Đặc biệt, KHÔNG GÂY Ố VÀNG.",
         ],
       },
       {
@@ -134,11 +134,11 @@ export const fakeProducts = [
     [
       {
         subtitle:
-          "Hương gỗ ấm áp cùng các thành phần chiết xuất từ thiên nhiên giúp",
+          "Hương gỗ ấm áp cùng các thành phần chiết xuất từ thiên nhiên giúp: ",
         content: [
           "Giảm tiết mồ hôi suốt 48 giờ.",
-          "Khử mùi cơ thể suốt 24 giờ",
-          "Đặc biệt, KHÔNG GÂY Ố VÀNG",
+          "Khử mùi cơ thể suốt 24 giờ.",
+          "Đặc biệt, KHÔNG GÂY Ố VÀNG.",
         ],
       },
       {
@@ -163,11 +163,11 @@ export const fakeProducts = [
     [
       {
         subtitle:
-          "Hương hương thảo thanh dịu cùng các thành phần chiết xuất từ thiên nhiên giúp ",
+          "Hương hương thảo thanh dịu cùng các thành phần chiết xuất từ thiên nhiên giúp: ",
         content: [
           "Giảm tiết mồ hôi suốt 48 giờ.",
-          "Khử mùi cơ thể suốt 24 giờ",
-          "Đặc biệt, KHÔNG GÂY Ố VÀNG",
+          "Khử mùi cơ thể suốt 24 giờ.",
+          "Đặc biệt, KHÔNG GÂY Ố VÀNG.",
         ],
       },
       {
@@ -194,8 +194,8 @@ export const fakeProducts = [
         subtitle: "Hương hương thảo thanh dịu cùng dạng xịt tiện lợi giúp",
         content: [
           "Giảm tiết mồ hôi suốt 48 giờ.",
-          "Khử mùi cơ thể suốt 24 giờ",
-          "Đặc biệt, KHÔNG GÂY Ố VÀNG",
+          "Khử mùi cơ thể suốt 24 giờ.",
+          "Đặc biệt, KHÔNG GÂY Ố VÀNG.",
         ],
       },
       {
@@ -224,8 +224,8 @@ export const fakeProducts = [
           "Hương Trà Xanh thuần khiết cùng các thành phần chiết xuất từ thiên nhiên giúp ",
         content: [
           "Giảm tiết mồ hôi suốt 48 giờ.",
-          "Khử mùi cơ thể suốt 24 giờ",
-          "Đặc biệt, KHÔNG GÂY Ố VÀNG",
+          "Khử mùi cơ thể suốt 24 giờ.",
+          "Đặc biệt, KHÔNG GÂY Ố VÀNG.",
         ],
       },
      {
@@ -252,8 +252,8 @@ export const fakeProducts = [
           "Hương Trà Xanh thuần khiết cùng  dạng xịt tiện lợi giúp: ",
         content: [
           "Giảm tiết mồ hôi suốt 48 giờ.",
-          "Khử mùi cơ thể suốt 24 giờ",
-          "Đặc biệt, KHÔNG GÂY Ố VÀNG",
+          "Khử mùi cơ thể suốt 24 giờ.",
+          "Đặc biệt, KHÔNG GÂY Ố VÀNG.",
         ],
       },
       {

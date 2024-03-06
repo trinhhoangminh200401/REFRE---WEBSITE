@@ -70,7 +70,7 @@ export const fakeProducts = [
   
         [{
             subtitle:"Dạng xịt tiện lợi tránh vi khuẩn quay trở lại vào trong cùng công thức mới đột phá giúp        ",
-            content:["Khử mùi suốt 24H*","Giảm tiết mồ hôi suốt 48H*.","Không cồn, không Paraben, không gây vàng áo","Không gây kích ứng**.","Lưu hương suốt cả ngày."]
+            content:["Khử mùi suốt 24H*","Giảm tiết mồ hôi suốt 48H*.","Không cồn, không Paraben, không gây vàng áo.","Không gây kích ứng**.","Lưu hương suốt cả ngày."]
         },{
             subtitle:" Cảm nhận 3 tầng hương điểm nét ngọt ngào",
             content :["Tầng hương đầu: Mận, Cam mát lạnh, trong vắt tràn ngập dư vị ngọt lãng mạn của Cây Hồi.","Tầng hương giữa: Hạnh Nhân, Hoa Ly, Hoa Violet ngọt bùi như hóa thành chiếc khăn len mềm mại.","Tầng hương cuối: Gỗ Đàn Hương, Xạ Hương, Hổ Phách trở nên ngọt ngào, quyến rũ mãnh liệt hơn."]
@@ -120,7 +120,7 @@ export const fakeProducts = [
     [
         {
             subtitle:"Dạng xịt tiện lợi tránh vi khuẩn quay trở lại vào trong cùng công thức mới đột phá giúp:        ",
-            content:["Khử mùi suốt 24H*","Giảm tiết mồ hôi suốt 48H*.","Không cồn, không Paraben, không gây vàng áo","Không gây kích ứng**.","Lưu hương suốt cả ngày."]
+            content:["Khử mùi suốt 24H*","Giảm tiết mồ hôi suốt 48H*.","Không cồn, không Paraben, không gây vàng áo.","Không gây kích ứng**.","Lưu hương suốt cả ngày."]
         },{
             subtitle:" Cảm nhận 3 tầng hương của sự ngây thơ và trong trẻo.",
             content :["Tầng hương đầu: Cam Bergamot cay nồng nhấn nhá chút ấm áp của Ngọc Lan Tây.","Tầng hương giữa:  Hoa Hồng, Đinh Hương, Linh Lan nhấn chìm vào khu vườn đầy hoa gần gũi.","Tầng hương cuối: Hoa Vòi Voi, Đào, Xạ Hương, Đậu Tonka để lại dư âm ngọt ngào, tinh thiết nhưng kém phần thu hút."]

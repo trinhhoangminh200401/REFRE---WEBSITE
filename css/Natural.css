@@ -400,9 +400,9 @@ body {
 }
 
 .Natural .description-containers .description-containers_div .description-containers_content .content-div p {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 0.875em;
-
+    margin:0;
 
 }
 
