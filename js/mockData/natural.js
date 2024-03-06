@@ -57,7 +57,7 @@ export const fakeProducts = [
         subtitle:
         "Công dụng: "      
         ,content:[" Công thức có chứa thành phần chiết xuất từ thiên nhiên giúp khử mùi cơ thể suốt cả ngày và giảm tiết mồ hôi đến 48 giờ.*","Chiết xuất Aloe Vera (Nha Đam) và Licorice (Cam Thảo) giúp dưỡng trắng da. ","Chiết xuất Aloe Vera (Nha Đam) và Licorice (Cam Thảo) giúp dưỡng trắng da. ","Nếu các sản phẩm khử mùi khác có thể gây kích ứng hoặc thâm sạm vùng da dưới cánh tay, Refre Natural MỚI giúp khử mùi cơ thể và giảm tiết mồ hôi hiệu quả với thành phần chiết xuất từ thiên nhiên, thân thiện và an toàn cho da."]
-      },,
+      },
     ]
   ),
    generateFakeProduct(
@@ -220,8 +220,7 @@ export const fakeProducts = [
     "./assets/images/Natural/Green_Tea/rollon_right_greentea.png",
     [
       {
-        subtitle:
-          "Hương Trà Xanh thuần khiết cùng các thành phần chiết xuất từ thiên nhiên giúp ",
+        subtitle: "Hương Trà Xanh thuần khiết cùng các thành phần chiết xuất từ thiên nhiên giúp ",
         content: [
           "Giảm tiết mồ hôi suốt 48 giờ.",
           "Khử mùi cơ thể suốt 24 giờ.",
@@ -229,10 +228,9 @@ export const fakeProducts = [
         ],
       },
      {
-        subtitle:
-        "Công dụng: "      
+        subtitle: "Công dụng:"      
         ,content:[" Công thức có chứa thành phần chiết xuất từ thiên nhiên giúp khử mùi cơ thể suốt cả ngày và giảm tiết mồ hôi đến 48 giờ.*","Chiết xuất Aloe Vera (Nha Đam) và Licorice (Cam Thảo) giúp dưỡng trắng da. ","Chiết xuất Aloe Vera (Nha Đam) và Licorice (Cam Thảo) giúp dưỡng trắng da. ","Nếu các sản phẩm khử mùi khác có thể gây kích ứng hoặc thâm sạm vùng da dưới cánh tay, Refre Natural MỚI giúp khử mùi cơ thể và giảm tiết mồ hôi hiệu quả với thành phần chiết xuất từ thiên nhiên, thân thiện và an toàn cho da."]
-      },,
+      },
     ]
   ),
   generateFakeProduct(
@@ -257,8 +255,7 @@ export const fakeProducts = [
         ],
       },
       {
-        subtitle:
-        "Nếu các sản phẩm khử mùi khác có thể gây kích ứng hoặc thâm sạm vùng da dưới cánh tay, Refre Natural MỚI giúp khử mùi cơ thể và giảm tiết mồ hôi hiệu quả với thành phần chiết xuất từ thiên nhiên, thân thiện và an toàn cho da"      
+        subtitle:"Nếu các sản phẩm khử mùi khác có thể gây kích ứng hoặc thâm sạm vùng da dưới cánh tay, Refre Natural MỚI giúp khử mùi cơ thể và giảm tiết mồ hôi hiệu quả với thành phần chiết xuất từ thiên nhiên, thân thiện và an toàn cho da"      
         ,content:[]
       },
     ]
