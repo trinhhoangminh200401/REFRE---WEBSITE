@@ -396,9 +396,9 @@ font-size: 1.57em;
 .HomePage .product .owl-carousel .card-product-item .green-bg p {
     -webkit-text-stroke-width: 1.5px;
     font-style: italic;
-    font-size: 37px;
+    font-size: 34px;
     width: 100%;
-    padding-left: 1.2rem;
+    padding-left: 2rem;
     text-align: left;
     -webkit-text-stroke-color: #01b700;
     opacity: 0.95;
@@ -410,7 +410,7 @@ font-size: 1.57em;
 .HomePage .product .owl-carousel .card-product-item .purple-bg p {
     -webkit-text-stroke-width: 1.5px;
     font-style: italic;
-    font-size: 37px;
+    font-size: 34px;
     width: 90%;
     font-weight: 900;
     font-family: 'Kanit', sans-serif;
