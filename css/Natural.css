@@ -87,8 +87,8 @@ header .header-container__navigation {
     color: #000;
     text-transform: uppercase;
     font-weight: 800;
-   margin: 10px 0;
-
+    margin: 10px 0;
+font-size: 1.57em;
 }
 
 .header-container .nav-link:hover {
@@ -101,7 +101,7 @@ header .header-container__navigation {
 }
 
 .header-container .navigation__logo img {
-    width: 8em;
+    width: 100%;
     object-fit: cover;
     object-position: center;
 
@@ -203,9 +203,9 @@ body {
 .Natural .input-container .form-control {
     border-left: 2px solid #644fa5;
     border-left: 2px solid #644fa5;
-        border-right: none;
-        border-top: none;
-        border-bottom: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
     padding: 2em;
     border-radius: 20px;
 
@@ -302,7 +302,7 @@ body {
 .Natural .tab-slider-gallery .container-slider-image img {
     max-width: 100%;
     object-fit: cover;
-    height: 30em;
+    height: 38em;
     /* Adjust this value based on your preference */
     display: block;
 }
@@ -317,10 +317,9 @@ body {
 }
 
 .Natural .tab-slider-gallery .container-tabs .card-body img {
-
+    width: 100%;
     margin: 0 auto;
-    object-fit: scale-down;
-    height: 100%;
+    
 }
 
 .Natural .description-containers {
@@ -391,7 +390,7 @@ body {
 
 .Natural .description-containers .description-containers_div .description-containers_content .content-div {
     position: relative;
-    margin: 1em 2em;
+    margin: 2em;
 
     display: flex;
     flex-direction: column;
@@ -402,7 +401,7 @@ body {
 .Natural .description-containers .description-containers_div .description-containers_content .content-div p {
     font-weight: 700;
     font-size: 0.875em;
-    margin:0;
+    margin: 0;
 
 }
 

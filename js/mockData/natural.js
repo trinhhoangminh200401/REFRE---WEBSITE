@@ -39,9 +39,9 @@ export const fakeProducts = [
     "HƯƠNG HỒNG MỘC LAN",
     "Dạng lăn truyền thống hương Hồng Mộc Lan tươi mát, thư thái, giúp xua tan căng thẳng mệt mỏi.",
     "62.000",
-    "./assets/images/Product/Products/Natural/Rosa_Magnolia/roll_rose_magnolia.png",
-    "./assets/images/Product/Products/Natural/Rosa_Magnolia/roll_rose_magnolia.png",
-    "./assets/images/Product/Products/Natural/Rosa_Magnolia/roll_rosa_magnolia_front.png",
+    "./assets/images/Product/Products/Natural/Rosa_Magnolia/roll_rose magnolia.png",
+    "./assets/images/Product/Products/Natural/Rosa_Magnolia/roll_rose magnolia.png",
+    "./assets/images/Product/Products/Natural/Rosa_Magnolia/roll_rosa magnolia_front.png",
     "./assets/images/Product/Products/Natural/Rosa_Magnolia/rollon_right_rosa_magnolia.png",
     [
       {

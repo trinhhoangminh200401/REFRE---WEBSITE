@@ -14,6 +14,9 @@ body {
     background-position: center center;
     background-image: url("/assets/images/BG.png");
 }
+.navbar-expand-lg .navbar-nav .nav-link{
+            padding:0
+        }
 .btn{
     border-radius: 0;
 }

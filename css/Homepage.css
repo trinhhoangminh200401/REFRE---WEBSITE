@@ -51,8 +51,8 @@ header .header-container__navigation {
     font-weight: 800;
     /* font-size: 1.35em;
      */
-    
-    width: 100%;
+font-size: 1.57em;
+ width: 100%;
     margin :10px 0;
 
 }
@@ -318,12 +318,12 @@ header .header-container__navigation {
 .HomePage .Breakthrough-formula .Breakthrough-formula_container {
     background-color: rgba(255, 255, 255, 0.3);
     padding: 2.7em;
-    border-radius: 20px;
+    border-radius: 20px
 
 }
 
 .HomePage .Breakthrough-formula_container img {
-    width: 70%;
+    width: 100%;
 }
 
 

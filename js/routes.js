@@ -92,6 +92,31 @@ function checkPageContext() {
     const currentPage = window.location.pathname.split('/').pop();
     handlePageLogic(currentPage);
 }
+        var currentUrl = window.location.pathname;
+var navLinks = $('.navbar-nav__item > .nav-link');
+        navLinks.each(function() {
+            var linkHref = $(this).attr('href');
+            console.log("hello")
+            if (currentUrl === linkHref) {
+                $(this).addClass('hoverActive');
+            }
+           else if (currentUrl.startsWith('/whitening.html') || 
+         currentUrl.startsWith('/whitening') ||
+         currentUrl.startsWith('/Whitening.html') || 
+         currentUrl.startsWith('/Natural.html') ||
+         currentUrl.startsWith('/natural.html') ||
+         currentUrl.startsWith('/natural'))
+            {
+                let targetIndex = 1;
+                let linkAtIndex = navLinks.eq(targetIndex);
+                linkAtIndex.addClass('hoverActive')
 
+            }
+                
+            else
+            {
+                $(this).removeClass('hoverActive');
+            }
+        });
 checkPageContext();
 

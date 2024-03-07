@@ -90,6 +90,7 @@ header .header-container__navigation {
     /* font-size: 1.65em;
     padding: 0; */
     margin: 10px 0;
+font-size: 1.57em;
 }
 
 .header-container .nav-link:hover {
@@ -300,7 +301,7 @@ body {
 .Whitening .tab-slider-gallery .container-slider-image img {
     max-width: 100%;
     object-fit: cover;
-    height: 30rem;
+    height: 38rem;
     display: block;
 }
 
@@ -314,7 +315,7 @@ body {
 }
 
 .Whitening .tab-slider-gallery .container-tabs .card-body img {
-
+    width: 100%;
     margin: 0 auto;
 
 }
@@ -387,7 +388,7 @@ body {
 
 .Whitening .description-containers .description-containers_div .description-containers_content .content-div {
     position: relative;
-    margin: 1em 2em;
+    margin: 2em;
 
     display: flex;
     flex-direction: column;
