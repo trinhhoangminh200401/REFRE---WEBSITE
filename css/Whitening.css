@@ -90,7 +90,6 @@ header .header-container__navigation {
     /* font-size: 1.65em;
     padding: 0; */
     margin: 10px 0;
-font-size: 1.57em;
 }
 
 .header-container .nav-link:hover {
@@ -301,7 +300,7 @@ body {
 .Whitening .tab-slider-gallery .container-slider-image img {
     max-width: 100%;
     object-fit: cover;
-    height: 38rem;
+    height: 30rem;
     display: block;
 }
 
@@ -315,7 +314,7 @@ body {
 }
 
 .Whitening .tab-slider-gallery .container-tabs .card-body img {
-    width: 100%;
+
     margin: 0 auto;
 
 }
@@ -388,7 +387,7 @@ body {
 
 .Whitening .description-containers .description-containers_div .description-containers_content .content-div {
     position: relative;
-    margin: 2em;
+    margin: 1em 2em;
 
     display: flex;
     flex-direction: column;
@@ -437,40 +436,13 @@ body {
 
 .Whitening .description-containers_div .button-action {
     margin-top: 3.6em;
+
+
     font-style: italic;
-        border: 3px solid white;
-        padding: 0;
-        height: 10%;
-        border-bottom-right-radius: 20px;
-        border-top-left-radius: 20px;
 }
-@keyframes borderAnimation {
-    0% {
-        border-color: #fff;
-    }
 
-    25% {
-        border-color: #c99eeb;
-    }
-
-    50% {
-        border-color: #e1a2f6,;
-    }
-
-    75% {
-        border-color: #e1a2f6,;
-    }
-
-    100% {
-        border-color: #63469c;
-    }
-}
-.Whitening .description-containers_div .button-action:hover {
-        animation: borderAnimation 2s infinite;
-            /* Apply the keyframe animation */
-    }
 .Whitening .description-containers_div .button-action .btn {
-    padding: 0.9em 0em;
+    padding: 0.8em 0em;
     color: #fff;
     font-weight: 500;
     text-align: center;
@@ -508,16 +480,16 @@ body {
 .Whitening .description-containers_div .button-action .darkpurple {
     background-image: linear-gradient(to right, #e1a2f6, #e1a2f6, #e1a2f6, #c99eeb);
     border-top-left-radius: 20px;
+    border: 3px solid white;
     box-shadow: inset #fff 0px 0px 14px 0px;
     width: 100%;
-    height: 100%;
 }
 
 .Whitening .description-containers_div .button-action .normalpurple {
+    border: 3px solid white;
     width: 100%;
     box-shadow: inset #fff 0px 0px 14px 0px;
-height: 100%;
-    border: 0.5px solid ;
+
     background-image: linear-gradient(to right, #c29ced, #ae91f8);
 
 
