@@ -51,7 +51,7 @@ header .header-container__navigation {
 
     object-fit: cover;
     object-position: center;
-    width: 6em;
+    width: 7em;
 
 }
 
@@ -139,16 +139,19 @@ header .header-container__navigation {
     margin-left: auto;
     margin-right: auto;
 }
-.Partner .listEcommerce  {
+
+.Partner .listEcommerce {
     width: 100%;
 }
-.Partner .listEcommerce a{
+
+.Partner .listEcommerce a {
     width: 33.3%;
     height: 50%;
     margin: 10px 0;
-    
+
 }
-.Partner .listEcommerce a > img {
+
+.Partner .listEcommerce a>img {
     width: 100%;
 }
 
@@ -224,7 +227,7 @@ footer .container div ul li:last-child:after {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position:fixed;
+    position: fixed;
 }
 
 

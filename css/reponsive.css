@@ -64,7 +64,7 @@
     }
 
     .header-container .nav-link {
-         font-size: 1.2em; 
+        font-size: 1.2em;
         white-space: nowrap;
     }
 }
@@ -77,7 +77,7 @@
     }
 
     .header-container__navigation .navigation__logo .img2 {
-        width: 5em;
+        width: 7em;
     }
 
     .header-container__navigation .navigation__logo img {
