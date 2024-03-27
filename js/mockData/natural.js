@@ -193,7 +193,7 @@ export const fakeProducts = [
       {
         subtitle: "Hương hương thảo thanh dịu cùng dạng xịt tiện lợi giúp",
         content: [
-          "Giảm tiết mồ hôi suốt 48 giờ.",
+          " Giảm tiết mồ hôi suốt 48 giờ.",
           "Khử mùi cơ thể suốt 24 giờ.",
           "Đặc biệt, KHÔNG GÂY Ố VÀNG.",
         ],
