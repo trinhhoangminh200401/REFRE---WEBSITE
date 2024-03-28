@@ -1169,7 +1169,7 @@
   let result_data = $(".render-result");
 
 
-  let errorElement = $("<span>").addClass("error-message");
+  // let errorElement = $("<span>").addClass("error-message");
   class Quiz
   {
 
@@ -1187,54 +1187,46 @@
       });
 
     }
-    loadQuestionnaireState ()
-    {
-      const storedState = SessionStorage.getSessionStorage("questionnaireState");
-      if (storedState)
-      {
+   loadQuestionnaireState() {
+    const storedState = SessionStorage.getSessionStorage("questionnaireState");
+    if (storedState) {
         const newQuestionnaire = JSON.parse(storedState);
 
         // Set initial state of checkboxes based on loaded data
-        $(".image-checkbox").each((index, element) =>
-        {
-          const $checkbox = $(element).find('input[type="checkbox"]');
-          const name = $checkbox.attr("name");
-          if (name)
-          {
-            const index = name.split("-")[1]; // Check if name exists before splitting
-            const selectedItem = $checkbox.val();
+        $(".image-checkbox").each((index, element) => {
+            const $checkbox = $(element).find('input[type="checkbox"]');
+            const name = $checkbox.attr("name");
 
-            if (index !== undefined && selectedItem !== undefined)
-            {
-              if (newQuestionnaire.some((q) => q.index === index && q.answers.includes(selectedItem)))
-              {
-                $(element).addClass("image-checkbox-checked");
-                $checkbox.prop("checked", true);
-              } else if (newQuestionnaire.some((q) => q.index === index && q.answers.length <= 0))
-              {
-                const currentQuestionnaireState = JSON.parse(SessionStorage.getSessionStorage("questionnaireState"));
+            if (name) {
+                const index = name.split("-")[1]; // Check if name exists before splitting
+                const selectedItem = $checkbox.val();
 
-                const filteredQuestionnaire = currentQuestionnaireState.filter(
-                  (item) => !(item.index === index && item.answers.length <= 0)
-                );
+                if (index !== undefined && selectedItem !== undefined) {
+                    if (newQuestionnaire.some((q) => q.index === index && q.answers.includes(selectedItem))) {
+                        $(element).addClass("image-checkbox-checked");
+                        $checkbox.prop("checked", true);
+                    } else if (newQuestionnaire.some((q) => q.index === index && q.answers.length <= 0)) {
+                        const currentQuestionnaireState = JSON.parse(SessionStorage.getSessionStorage("questionnaireState"));
 
-                SessionStorage.setSessionStorage("questionnaireState", JSON.stringify(filteredQuestionnaire));
-              } else
-              {
-                $(element).removeClass("image-checkbox-checked");
-                $checkbox.prop("checked", false);
-              }
-            } else
-            {
-              console.error("Name or selected item undefined for checkbox element:", element);
+                        const filteredQuestionnaire = currentQuestionnaireState.filter(
+                            (item) => !(item.index === index && item.answers.length <= 0)
+                        );
+                          $(element).removeClass("image-checkbox-checked");
+                        $checkbox.prop("checked", false);
+                        SessionStorage.setSessionStorage("questionnaireState", JSON.stringify(filteredQuestionnaire));
+                    } 
+                } else {
+                    console.error("Name or selected item undefined for checkbox element:", element);
+                }
+            } else {
+                console.error("Name attribute not found for checkbox element:", element);
             }
-          } else
-          {
-            console.error("Name attribute not found for checkbox element:", element);
-          }
+
+         
         });
-      }
     }
+}
+
 
     saveQuestionnaireState ()
     {
