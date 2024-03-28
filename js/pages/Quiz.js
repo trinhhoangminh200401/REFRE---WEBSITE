@@ -1170,7 +1170,8 @@
 
 
   // let errorElement = $("<span>").addClass("error-message");
-  class Quiz
+let errorElement = $("<span>").addClass("error-message");  
+class Quiz
   {
 
     constructor ()
@@ -1187,47 +1188,60 @@
       });
 
     }
-   loadQuestionnaireState() {
-    const storedState = SessionStorage.getSessionStorage("questionnaireState");
-    if (storedState) {
-        const newQuestionnaire = JSON.parse(storedState);
+  loadQuestionnaireState() {
+  const storedState = SessionStorage.getSessionStorage("questionnaireState"); // Use getItem instead of getSessionStorage
+  if (storedState) {
+    const newQuestionnaire = JSON.parse(storedState);
 
-        // Set initial state of checkboxes based on loaded data
-        $(".image-checkbox").each((index, element) => {
-            const $checkbox = $(element).find('input[type="checkbox"]');
-            const name = $checkbox.attr("name");
+    // Set initial state of checkboxes based on loaded data
+    $(".image-checkbox").each((index, element) => {
+      const $checkbox = element.querySelector('input[type="checkbox"]'); // Use querySelector instead of $(element).find()
+      const name = $checkbox.getAttribute("name"); // Use getAttribute instead of attr()
 
-            if (name) {
-                const index = name.split("-")[1]; // Check if name exists before splitting
-                const selectedItem = $checkbox.val();
+      if (name) {
+        const index = name.split("-")[1]; // Check if name exists before splitting
+        const selectedItem = $checkbox.value; // Use value instead of val()
 
-                if (index !== undefined && selectedItem !== undefined) {
-                    if (newQuestionnaire.some((q) => q.index === index && q.answers.includes(selectedItem))) {
-                        $(element).addClass("image-checkbox-checked");
-                        $checkbox.prop("checked", true);
-                    } else if (newQuestionnaire.some((q) => q.index === index && q.answers.length <= 0)) {
-                        const currentQuestionnaireState = JSON.parse(SessionStorage.getSessionStorage("questionnaireState"));
+        if (index !== undefined && selectedItem !== undefined) {
+          if (newQuestionnaire.some((q) => q.index === index && q.answers.includes(selectedItem))) {
+            const currentQuestionnaireState = JSON.parse(sessionStorage.getItem("questionnaireState"));
 
-                        const filteredQuestionnaire = currentQuestionnaireState.filter(
-                            (item) => !(item.index === index && item.answers.length <= 0)
-                        );
-                          $(element).removeClass("image-checkbox-checked");
-                        $checkbox.prop("checked", false);
-                        SessionStorage.setSessionStorage("questionnaireState", JSON.stringify(filteredQuestionnaire));
-                    } 
-                } else {
-                    console.error("Name or selected item undefined for checkbox element:", element);
-                }
-            } else {
-                console.error("Name attribute not found for checkbox element:", element);
-            }
+            const filteredQuestionnaire = currentQuestionnaireState.filter(
+              (item) => !(item.index === index && item.answers.length <= 0)
+            );
 
-         
-        });
-    }
+            sessionStorage.setItem("questionnaireState", JSON.stringify(filteredQuestionnaire));
+            element.classList.add("image-checkbox-checked"); // Use classList for class manipulation
+            $checkbox.checked = true;
+          } else {
+            element.classList.remove("image-checkbox-checked");
+            $checkbox.checked = false;
+          }
+        } else {
+          console.error("Name or selected item undefined for checkbox element:", element);
+        }
+      } else {
+        console.error("Name attribute not found for checkbox element:", element);
+      }
+
+      // Check if all checkboxes for the question are deselected
+      const questionIndex = $checkbox.getAttribute("name").split("-")[1];
+      const allCheckboxesUnchecked = !Array.from(document.querySelectorAll(`.image-checkbox[name^="question-${questionIndex}"]`))
+        .some((checkbox) => checkbox.checked); // Use Array.from and some for checking all checkboxes
+
+      if (allCheckboxesUnchecked) {
+        // Remove question from session storage
+        const storedState = sessionStorage.getItem("questionnaireState");
+        if (storedState) {
+          const newQuestionnaire = JSON.parse(storedState);
+
+          const filteredQuestionnaire = newQuestionnaire.filter(item => item.index !== parseInt(questionIndex));
+          sessionStorage.setItem("questionnaireState", JSON.stringify(filteredQuestionnaire));
+        }
+      }
+    });
+  }
 }
-
-
     saveQuestionnaireState ()
     {
       SessionStorage.setSessionStorage(
